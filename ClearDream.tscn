@@ -1,0 +1,1864 @@
+[gd_scene format=3 uid="uid://bpqw7d6be6ga2"]
+
+[ext_resource type="Script" uid="uid://dnbd7rccx31f4" path="res://Engine/ClearDream.gd" id="1_ixf11"]
+[ext_resource type="PackedScene" uid="uid://dgj1jmqn2laqb" path="res://Engine/-ui-/ui.tscn" id="2_vgfqu"]
+[ext_resource type="Texture2D" uid="uid://gt4fe7slygdr" path="res://z.gdset/ui_ico/ra2_sprite/img_Side.png" id="9_remxr"]
+[ext_resource type="Theme" uid="uid://cx50ltwhyporl" path="res://z.gdset/theme/Side/Flag.tres" id="18_kjcfr"]
+[ext_resource type="Texture2D" uid="uid://dqwpln6dwphtc" path="res://z.gdset/ui_ico/ra2_img/side_bar.png" id="18_r5lup"]
+[ext_resource type="Texture2D" uid="uid://cux7dx4i4rrmk" path="res://z.gdset/ui_ico/ra2_img/bottom_bar.png" id="19_6cxkw"]
+[ext_resource type="PackedScene" uid="uid://b3qscmhm0p35p" path="res://Engine/-ui-/shp_editer.tscn" id="20_kg3aa"]
+[ext_resource type="Theme" uid="uid://cg0h00hsidvr4" path="res://z.gdset/theme/Side/Set Ico.tres" id="24_qvnx1"]
+[ext_resource type="Theme" uid="uid://kq7xyaisxja8" path="res://z.gdset/theme/Side/Set Tex.tres" id="27_44qef"]
+[ext_resource type="Texture2D" uid="uid://di8aifrtfmhl1" path="res://z.gdset/ui_ico/ra2_sprite/img_CrateBars.png" id="113_1o6ek"]
+[ext_resource type="Theme" uid="uid://dacsd05ihal65" path="res://z.gdset/theme/Input_Iron.tres" id="114_srkyc"]
+[ext_resource type="Texture2D" uid="uid://e0xxhl1j6o3i" path="res://z.gdset/ui_ico/ra2_sprite/pix61_scene.png" id="117_hthy0"]
+[ext_resource type="Texture2D" uid="uid://dy4gopy53av5v" path="res://z.gdset/ui_ico/ra2_sprite/pix61_Crate.png" id="118_tqhy4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hisxl"]
+bg_color = Color(0.2509804, 0.078431375, 0.5882353, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r5lup"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_j1iy6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7wta4"]
+atlas = ExtResource("9_remxr")
+region = Rect2(0, 0, 85, 85)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ad87m"]
+atlas = ExtResource("9_remxr")
+region = Rect2(85, 0, 85, 85)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hxmgt"]
+atlas = ExtResource("9_remxr")
+region = Rect2(170, 0, 85, 85)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ixf11"]
+atlas = ExtResource("9_remxr")
+region = Rect2(255, 0, 85, 85)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u22sw"]
+atlas = ExtResource("9_remxr")
+region = Rect2(340, 0, 85, 85)
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_kjcfr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d6sf5"]
+bg_color = Color(0.2509804, 0.078431375, 0.5882353, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5rn5e"]
+content_margin_left = 4.0
+content_margin_right = 4.0
+bg_color = Color(0.2509804, 0.078431375, 0.5882353, 1)
+border_width_bottom = 4
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8kqao"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ad87m"]
+bg_color = Color(0.5822391, 0.0011191362, 0.7202741, 1)
+border_width_bottom = 3
+border_color = Color(0.31867984, 0.000320262, 0.4016685, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qd0ox"]
+bg_color = Color(0.6392157, 0.25490198, 0, 1)
+corner_radius_top_left = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u22sw"]
+bg_color = Color(0.3497552, 0.0015514466, 0.67242676, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6cxkw"]
+bg_color = Color(0.67058825, 0.16862746, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2ggk3"]
+bg_color = Color(0.2901961, 0, 0.6, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_otkkd"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.3143161, 0.31431615, 0.31431586, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ufmsx"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bfw52"]
+bg_color = Color(0.5822391, 0.0011191362, 0.7202741, 1)
+border_width_bottom = 3
+border_color = Color(0.31867984, 0.000320262, 0.4016685, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ixf11"]
+bg_color = Color(0.67, 0.1675, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sn8lc"]
+bg_color = Color(0.2888139, 0.0010262439, 0.6004437, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j1iy6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kjcfr"]
+bg_color = Color(0.09411765, 0.09411765, 0.09411765, 0.74509805)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_srkyc"]
+atlas = ExtResource("113_1o6ek")
+region = Rect2(0, 0, 59, 60)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1o6ek"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rm81a"]
+atlas = SubResource("CompressedTexture2D_1o6ek")
+region = Rect2(60, 0, 59, 60)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2tqx6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3herv"]
+atlas = SubResource("CompressedTexture2D_2tqx6")
+region = Rect2(119, 0, 59, 60)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gfcud"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vjdvk"]
+atlas = SubResource("CompressedTexture2D_gfcud")
+region = Rect2(180, 0, 59, 60)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hthy0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tqhy4"]
+atlas = SubResource("CompressedTexture2D_hthy0")
+region = Rect2(240, 0, 59, 60)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_i02n6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j23xs"]
+atlas = SubResource("CompressedTexture2D_i02n6")
+region = Rect2(300, 0, 59, 60)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_j1ji5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v2u1w"]
+atlas = SubResource("CompressedTexture2D_j1ji5")
+region = Rect2(360, 0, 59, 60)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rrau5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_10n74"]
+atlas = SubResource("CompressedTexture2D_rrau5")
+region = Rect2(420, 0, 59, 60)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_na1xd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8mfpm"]
+atlas = SubResource("CompressedTexture2D_na1xd")
+region = Rect2(480, 0, 59, 60)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i02n6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j23xs"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8mfpm"]
+bg_color = Color(0, 0, 0, 0.5882353)
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_vgfqu"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_a0dyo"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_l62bh"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_v7wno"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_3oahs"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_remxr"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_bx7f4"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_kg3aa"]
+
+[node name="ClearDream" type="Node" unique_id=732338532]
+script = ExtResource("1_ixf11")
+
+[node name="UI" parent="." unique_id=329371658 instance=ExtResource("2_vgfqu")]
+
+[node name="Engine" type="Control" parent="." unique_id=649323521]
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+
+[node name="side" type="Control" parent="Engine" unique_id=636887087]
+anchors_preset = 0
+offset_left = 7.0
+offset_top = 69.0
+offset_right = 924.0
+offset_bottom = 487.0
+mouse_filter = 2
+
+[node name="title" type="Label" parent="Engine/side" unique_id=885236371]
+layout_mode = 0
+offset_right = 917.0
+offset_bottom = 23.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_hisxl")
+text = "     Side              Flag                                         NewSet                                                                   Tech"
+
+[node name="Black" type="Panel" parent="Engine/side" unique_id=437765467]
+visible = false
+layout_mode = 0
+offset_top = 23.0
+offset_right = 76.0
+offset_bottom = 418.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_r5lup")
+
+[node name="Side" type="VBoxContainer" parent="Engine/side" unique_id=889379114]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 28.0
+offset_right = 72.0
+offset_bottom = 338.0
+theme_override_constants/separation = 9
+
+[node name="side1" type="Button" parent="Engine/side/Side" unique_id=1839106545]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/icon_max_width = 60
+toggle_mode = true
+button_pressed = true
+button_group = SubResource("ButtonGroup_j1iy6")
+icon = SubResource("AtlasTexture_7wta4")
+flat = true
+icon_alignment = 1
+
+[node name="label" type="Label" parent="Engine/side/Side/side1" unique_id=1267243311]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 62.0
+offset_right = 46.0
+offset_bottom = 82.0
+size_flags_horizontal = 6
+theme_override_font_sizes/font_size = 14
+text = "GDI"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="side2" type="Button" parent="Engine/side/Side" unique_id=1369053895]
+modulate = Color(0.26293245, 0.26293245, 0.26293245, 1)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/icon_max_width = 60
+toggle_mode = true
+button_group = SubResource("ButtonGroup_j1iy6")
+icon = SubResource("AtlasTexture_ad87m")
+flat = true
+icon_alignment = 1
+
+[node name="label" type="Label" parent="Engine/side/Side/side2" unique_id=134547579]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 62.0
+offset_right = 50.0
+offset_bottom = 82.0
+size_flags_horizontal = 6
+theme_override_font_sizes/font_size = 14
+text = "NOD"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="side3" type="Button" parent="Engine/side/Side" unique_id=32579437]
+modulate = Color(0.26293245, 0.26293245, 0.26293245, 1)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/icon_max_width = 60
+toggle_mode = true
+button_group = SubResource("ButtonGroup_j1iy6")
+icon = SubResource("AtlasTexture_hxmgt")
+flat = true
+icon_alignment = 1
+
+[node name="label" type="Label" parent="Engine/side/Side/side3" unique_id=1075026379]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 62.0
+offset_right = 58.0
+offset_bottom = 82.0
+size_flags_horizontal = 6
+theme_override_font_sizes/font_size = 14
+text = "Civilian"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="side4" type="Button" parent="Engine/side/Side" unique_id=349817827]
+modulate = Color(0.26293245, 0.26293245, 0.26293245, 1)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/icon_max_width = 60
+toggle_mode = true
+button_group = SubResource("ButtonGroup_j1iy6")
+icon = SubResource("AtlasTexture_ixf11")
+flat = true
+icon_alignment = 1
+
+[node name="label" type="Label" parent="Engine/side/Side/side4" unique_id=1448090527]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 62.0
+offset_right = 59.0
+offset_bottom = 82.0
+size_flags_horizontal = 6
+theme_override_font_sizes/font_size = 14
+text = "Mutant"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="side5" type="Button" parent="Engine/side/Side" unique_id=408334505]
+modulate = Color(0.26293245, 0.26293245, 0.26293245, 1)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/icon_max_width = 60
+toggle_mode = true
+button_group = SubResource("ButtonGroup_j1iy6")
+icon = SubResource("AtlasTexture_u22sw")
+flat = true
+icon_alignment = 1
+
+[node name="label" type="Label" parent="Engine/side/Side/side5" unique_id=2101913432]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 62.0
+offset_right = 48.0
+offset_bottom = 82.0
+size_flags_horizontal = 6
+theme_override_font_sizes/font_size = 14
+text = "Yuri"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Flag" type="FlowContainer" parent="Engine/side" unique_id=520077629]
+visible = false
+layout_mode = 0
+offset_left = 80.0
+offset_top = 32.0
+offset_right = 289.0
+offset_bottom = 398.0
+vertical = true
+
+[node name="flag_1" type="Button" parent="Engine/side/Flag" unique_id=1090288856]
+custom_minimum_size = Vector2(100, 70)
+layout_mode = 2
+theme = ExtResource("18_kjcfr")
+toggle_mode = true
+button_pressed = true
+button_group = SubResource("ButtonGroup_kjcfr")
+text = "
+Americans"
+
+[node name="ico" type="TextureRect" parent="Engine/side/Flag/flag_1" unique_id=711903780]
+texture_filter = 1
+layout_mode = 0
+offset_left = 26.5
+offset_top = 11.0
+offset_right = 71.5
+offset_bottom = 32.0
+size_flags_horizontal = 4
+mouse_filter = 2
+stretch_mode = 3
+
+[node name="flag_2" type="Button" parent="Engine/side/Flag" unique_id=2098458298]
+custom_minimum_size = Vector2(100, 70)
+layout_mode = 2
+theme = ExtResource("18_kjcfr")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_kjcfr")
+text = "
+Alliance"
+
+[node name="ico" type="TextureRect" parent="Engine/side/Flag/flag_2" unique_id=1350383950]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 35)
+layout_mode = 0
+offset_left = 19.5
+offset_top = 4.0
+offset_right = 80.5
+offset_bottom = 39.0
+mouse_filter = 2
+stretch_mode = 3
+
+[node name="flag_3" type="Button" parent="Engine/side/Flag" unique_id=1617793145]
+custom_minimum_size = Vector2(100, 70)
+layout_mode = 2
+theme = ExtResource("18_kjcfr")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_kjcfr")
+text = "
+French"
+
+[node name="ico" type="TextureRect" parent="Engine/side/Flag/flag_3" unique_id=1205843338]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 35)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 4.0
+offset_right = 80.0
+offset_bottom = 39.0
+mouse_filter = 2
+stretch_mode = 3
+
+[node name="flag_4" type="Button" parent="Engine/side/Flag" unique_id=911818193]
+custom_minimum_size = Vector2(100, 70)
+layout_mode = 2
+theme = ExtResource("18_kjcfr")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_kjcfr")
+text = "
+Germans"
+
+[node name="ico" type="TextureRect" parent="Engine/side/Flag/flag_4" unique_id=1394254601]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 35)
+layout_mode = 0
+offset_left = 14.5
+offset_top = 4.0
+offset_right = 85.5
+offset_bottom = 39.0
+mouse_filter = 2
+stretch_mode = 3
+
+[node name="flag_5" type="Button" parent="Engine/side/Flag" unique_id=401017953]
+custom_minimum_size = Vector2(100, 70)
+layout_mode = 2
+theme = ExtResource("18_kjcfr")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_kjcfr")
+text = "
+British"
+
+[node name="ico" type="TextureRect" parent="Engine/side/Flag/flag_5" unique_id=1869756955]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 35)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 4.0
+offset_right = 80.0
+offset_bottom = 39.0
+mouse_filter = 2
+stretch_mode = 3
+
+[node name="NewSet" type="FlowContainer" parent="Engine/side" unique_id=1406827239]
+layout_mode = 0
+offset_left = 292.0
+offset_top = 32.0
+offset_right = 603.0
+offset_bottom = 341.0
+
+[node name="spec_1" type="Button" parent="Engine/side/NewSet" unique_id=1259347187]
+custom_minimum_size = Vector2(100, 90)
+layout_mode = 2
+theme = ExtResource("24_qvnx1")
+text = "
+空降伞兵"
+
+[node name="ico2" type="TextureRect" parent="Engine/side/NewSet/spec_1" unique_id=1899180163]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 8.5
+offset_right = 80.0
+offset_bottom = 56.5
+mouse_filter = 2
+
+[node name="upgrade_1" type="Button" parent="Engine/side/NewSet" unique_id=1723925400]
+custom_minimum_size = Vector2(100, 90)
+layout_mode = 2
+theme = ExtResource("24_qvnx1")
+text = "
+初始升级"
+
+[node name="ico" type="TextureRect" parent="Engine/side/NewSet/upgrade_1" unique_id=85449632]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 8.5
+offset_right = 80.0
+offset_bottom = 56.5
+mouse_filter = 2
+
+[node name="speed" type="Button" parent="Engine/side/NewSet" unique_id=413052773]
+custom_minimum_size = Vector2(100, 90)
+layout_mode = 2
+theme = ExtResource("27_44qef")
+text = "建造速度
+设置"
+
+[node name="global6" type="Button" parent="Engine/side/NewSet" unique_id=232016819]
+custom_minimum_size = Vector2(100, 90)
+layout_mode = 2
+theme = ExtResource("27_44qef")
+text = "费用倍率
+x0.2"
+
+[node name="addSet" type="Button" parent="Engine/side/NewSet" unique_id=818619562]
+custom_minimum_size = Vector2(100, 90)
+layout_mode = 2
+theme = ExtResource("27_44qef")
+text = "添加特性
++"
+
+[node name="theme" type="Control" parent="Engine" unique_id=525228191]
+visible = false
+anchors_preset = 0
+offset_left = 7.0
+offset_top = 69.0
+offset_right = 924.0
+offset_bottom = 487.0
+mouse_filter = 2
+
+[node name="title" type="Label" parent="Engine/theme" unique_id=1075051803]
+layout_mode = 0
+offset_right = 917.0
+offset_bottom = 23.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_d6sf5")
+text = "     UI Theme                                                                                                            Audio Theme                       "
+
+[node name="UI" type="Control" parent="Engine/theme" unique_id=1796518780]
+anchors_preset = 0
+offset_left = -7.0
+offset_top = -69.0
+offset_right = 33.0
+offset_bottom = -29.0
+
+[node name="img" type="Control" parent="Engine/theme/UI" unique_id=2085235288]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ref" type="TextureRect" parent="Engine/theme/UI/img" unique_id=1704085172]
+modulate = Color(0.497474, 0.497474, 0.497474, 1)
+custom_minimum_size = Vector2(120, 80)
+layout_mode = 0
+offset_left = 19.0
+offset_top = 104.0
+offset_right = 219.0
+offset_bottom = 284.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+expand_mode = 1
+
+[node name="Sel" type="OptionButton" parent="Engine/theme/UI/img" unique_id=793152661]
+custom_minimum_size = Vector2(120, 35)
+layout_mode = 0
+offset_left = 281.0
+offset_top = 104.0
+offset_right = 401.0
+offset_bottom = 139.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_5rn5e")
+alignment = 1
+selected = 2
+item_count = 11
+popup/item_0/text = "Logo"
+popup/item_0/id = 0
+popup/item_1/text = "启动壁纸"
+popup/item_1/id = 1
+popup/item_2/text = "主页"
+popup/item_2/id = 2
+popup/item_3/text = "设置"
+popup/item_3/id = 3
+popup/item_4/text = "遭遇战"
+popup/item_4/id = 4
+popup/item_5/text = "地图模式"
+popup/item_5/id = 5
+popup/item_6/text = "单人战役"
+popup/item_6/id = 6
+popup/item_7/text = "网际网路"
+popup/item_7/id = 7
+popup/item_8/text = "退出游戏"
+popup/item_8/id = 8
+popup/item_9/text = "游戏结束判定"
+popup/item_9/id = 9
+popup/item_10/text = "载入图"
+popup/item_10/id = 10
+
+[node name="SideBar" type="TextureRect" parent="Engine/theme/UI/img" unique_id=1217864168]
+layout_mode = 0
+offset_left = 219.0
+offset_top = 104.0
+offset_right = 271.0
+offset_bottom = 292.27588
+texture = ExtResource("18_r5lup")
+expand_mode = 1
+
+[node name="BottomBar" type="TextureRect" parent="Engine/theme/UI/img" unique_id=106111708]
+layout_mode = 0
+offset_left = 19.000002
+offset_top = 284.00003
+offset_right = 518.99994
+offset_bottom = 303.99997
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("19_6cxkw")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Engine/theme/UI" unique_id=418680671]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 295.0
+offset_right = 314.0
+offset_bottom = 457.0
+theme_override_font_sizes/font_size = 14
+text = "主页视频: ra2ts_l.bik (28s)
+仪表盘: sdtp.shp (168x199) (2帧)
+仪表更换模式: sdwrntmp.shp (168x177) (6帧)
+仪表动画: sdwrnanm.shp (92x53) (91帧)
+按钮动画: sdbtnanm.shp (156x42) (17帧)
+按钮背景: sdbtnbkgd.shp (168x42)
+底边栏: lwscrnl.shp (632x32)"
+
+[node name="Sel2" type="CheckButton" parent="Engine/theme/UI" unique_id=1312995611]
+custom_minimum_size = Vector2(120, 35)
+layout_mode = 0
+offset_left = 281.0
+offset_top = 166.0
+offset_right = 401.0
+offset_bottom = 201.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_5rn5e")
+text = "元素框"
+alignment = 1
+
+[node name="BGM" type="Node2D" parent="Engine/theme" unique_id=1663529215]
+position = Vector2(529, 23)
+
+[node name="bg" type="Panel" parent="Engine/theme/BGM" unique_id=214719346]
+offset_top = 27.0
+offset_right = 216.0
+offset_bottom = 177.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8kqao")
+
+[node name="label" type="Label" parent="Engine/theme/BGM" unique_id=1069160872]
+offset_right = 216.0
+offset_bottom = 28.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ad87m")
+text = "背景音乐"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Intro" type="Label" parent="Engine/theme/BGM" unique_id=1496035932]
+custom_minimum_size = Vector2(100, 32)
+offset_left = 6.0
+offset_top = 32.0
+offset_right = 106.0
+offset_bottom = 64.0
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_qd0ox")
+text = "开场序章"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Drok" type="Label" parent="Engine/theme/BGM" unique_id=1616848209]
+custom_minimum_size = Vector2(100, 32)
+offset_left = 110.0
+offset_top = 32.0
+offset_right = 210.0
+offset_bottom = 64.0
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_u22sw")
+text = "Drok"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LOADING" type="Label" parent="Engine/theme/BGM" unique_id=187895851]
+custom_minimum_size = Vector2(100, 32)
+offset_left = 6.0
+offset_top = 68.0
+offset_right = 106.0
+offset_bottom = 100.0
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_qd0ox")
+text = "过场配乐"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Bully" type="Label" parent="Engine/theme/BGM" unique_id=2032436522]
+custom_minimum_size = Vector2(100, 32)
+offset_left = 110.0
+offset_top = 68.0
+offset_right = 210.0
+offset_bottom = 100.0
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_u22sw")
+text = "Bully"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SCORE" type="Label" parent="Engine/theme/BGM" unique_id=2060414751]
+custom_minimum_size = Vector2(100, 32)
+offset_left = 6.0
+offset_top = 104.0
+offset_right = 106.0
+offset_bottom = 136.0
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_qd0ox")
+text = "积分结算"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Scorex" type="Label" parent="Engine/theme/BGM" unique_id=25998568]
+custom_minimum_size = Vector2(100, 32)
+offset_left = 110.0
+offset_top = 104.0
+offset_right = 210.0
+offset_bottom = 136.0
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_u22sw")
+text = "ScoreX"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CREDITS" type="Label" parent="Engine/theme/BGM" unique_id=988553026]
+custom_minimum_size = Vector2(100, 32)
+offset_left = 6.0
+offset_top = 140.0
+offset_right = 106.0
+offset_bottom = 172.0
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_qd0ox")
+text = "鸣谢动画"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OptionX" type="Label" parent="Engine/theme/BGM" unique_id=1078089141]
+custom_minimum_size = Vector2(100, 32)
+offset_left = 110.0
+offset_top = 140.0
+offset_right = 210.0
+offset_bottom = 172.0
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_u22sw")
+text = "OptionX"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Music Pack" type="Node2D" parent="Engine/theme" unique_id=1282100294]
+position = Vector2(529, 204)
+
+[node name="bg" type="Panel" parent="Engine/theme/Music Pack" unique_id=1538667656]
+offset_top = 27.0
+offset_right = 216.0
+offset_bottom = 176.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8kqao")
+
+[node name="label" type="Label" parent="Engine/theme/Music Pack" unique_id=1405740691]
+offset_right = 216.0
+offset_bottom = 28.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ad87m")
+text = "音乐包 Music Pack"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Intro" type="Label" parent="Engine/theme/Music Pack" unique_id=1318622374]
+custom_minimum_size = Vector2(100, 32)
+offset_left = 6.0
+offset_top = 32.0
+offset_right = 210.0
+offset_bottom = 64.0
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_6cxkw")
+text = "RedAlert 2 "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Intro2" type="Label" parent="Engine/theme/Music Pack" unique_id=1306060468]
+custom_minimum_size = Vector2(100, 32)
+offset_left = 6.0
+offset_top = 68.0
+offset_right = 210.0
+offset_bottom = 100.0
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_2ggk3")
+text = "Yuri's Revenge"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="add1" type="Button" parent="Engine/theme/Music Pack" unique_id=2064850386]
+offset_left = 6.0
+offset_top = 104.0
+offset_right = 210.0
+offset_bottom = 136.0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_otkkd")
+toggle_mode = true
+text = "+"
+
+[node name="add2" type="Button" parent="Engine/theme/Music Pack" unique_id=911848152]
+offset_left = 6.0
+offset_top = 140.0
+offset_right = 210.0
+offset_bottom = 172.0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_otkkd")
+toggle_mode = true
+text = "+"
+
+[node name="Battle Wav" type="Node2D" parent="Engine/theme" unique_id=1911945095]
+position = Vector2(749, 13)
+
+[node name="bg" type="Panel" parent="Engine/theme/Battle Wav" unique_id=2127919796]
+offset_top = 27.0
+offset_right = 168.0
+offset_bottom = 405.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ufmsx")
+
+[node name="label" type="Label" parent="Engine/theme/Battle Wav" unique_id=1404910161]
+offset_top = 10.0
+offset_right = 168.0
+offset_bottom = 38.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_bfw52")
+text = "战斗演奏曲"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="slot" type="VBoxContainer" parent="Engine/theme/Battle Wav" unique_id=1330962254]
+offset_left = 4.0
+offset_top = 40.0
+offset_right = 164.0
+offset_bottom = 402.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 2
+
+[node name="music1" type="Label" parent="Engine/theme/Battle Wav/slot" unique_id=682791445]
+custom_minimum_size = Vector2(160, 24)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_ixf11")
+text = "Hell March 2"
+horizontal_alignment = 1
+
+[node name="music2" type="Label" parent="Engine/theme/Battle Wav/slot" unique_id=1491238265]
+custom_minimum_size = Vector2(160, 24)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_ixf11")
+text = "Ready the Army"
+horizontal_alignment = 1
+
+[node name="music3" type="Label" parent="Engine/theme/Battle Wav/slot" unique_id=203291870]
+custom_minimum_size = Vector2(160, 24)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_ixf11")
+text = "Grinder"
+horizontal_alignment = 1
+
+[node name="music4" type="Label" parent="Engine/theme/Battle Wav/slot" unique_id=876067682]
+custom_minimum_size = Vector2(160, 24)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_ixf11")
+text = "In Deep"
+horizontal_alignment = 1
+
+[node name="music5" type="Label" parent="Engine/theme/Battle Wav/slot" unique_id=2049767545]
+custom_minimum_size = Vector2(160, 24)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_ixf11")
+text = "Destroy"
+horizontal_alignment = 1
+
+[node name="music6" type="Label" parent="Engine/theme/Battle Wav/slot" unique_id=542922879]
+custom_minimum_size = Vector2(160, 24)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_ixf11")
+text = "Blow It Up"
+horizontal_alignment = 1
+
+[node name="music7" type="Label" parent="Engine/theme/Battle Wav/slot" unique_id=333685792]
+custom_minimum_size = Vector2(160, 24)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_ixf11")
+text = "Eagle Hunter"
+horizontal_alignment = 1
+
+[node name="music8" type="Label" parent="Engine/theme/Battle Wav/slot" unique_id=905779053]
+custom_minimum_size = Vector2(160, 24)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_ixf11")
+text = "Fortification"
+horizontal_alignment = 1
+
+[node name="music9" type="Label" parent="Engine/theme/Battle Wav/slot" unique_id=935422328]
+custom_minimum_size = Vector2(160, 24)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_ixf11")
+text = "Jank"
+horizontal_alignment = 1
+
+[node name="music10" type="Label" parent="Engine/theme/Battle Wav/slot" unique_id=1788687617]
+custom_minimum_size = Vector2(160, 24)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_sn8lc")
+text = "Brain Freeze"
+horizontal_alignment = 1
+
+[node name="music11" type="Label" parent="Engine/theme/Battle Wav/slot" unique_id=490924254]
+custom_minimum_size = Vector2(160, 24)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_sn8lc")
+text = "Defend the Base"
+horizontal_alignment = 1
+
+[node name="music12" type="Label" parent="Engine/theme/Battle Wav/slot" unique_id=259477758]
+custom_minimum_size = Vector2(160, 24)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_sn8lc")
+text = "Phat Attack"
+horizontal_alignment = 1
+
+[node name="music13" type="Label" parent="Engine/theme/Battle Wav/slot" unique_id=840211823]
+custom_minimum_size = Vector2(160, 24)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_sn8lc")
+text = "Tactics"
+horizontal_alignment = 1
+
+[node name="music14" type="Label" parent="Engine/theme/Battle Wav/slot" unique_id=1939773871]
+custom_minimum_size = Vector2(160, 24)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_sn8lc")
+text = "Deceiver"
+horizontal_alignment = 1
+
+[node name="Set" type="Button" parent="Engine/theme/Battle Wav" unique_id=318819030]
+visible = false
+offset_top = 38.0
+offset_right = 168.0
+offset_bottom = 405.0
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_j1iy6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_kjcfr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kjcfr")
+toggle_mode = true
+button_pressed = true
+text = "Set"
+
+[node name="crate" type="Control" parent="Engine" unique_id=371208342]
+visible = false
+anchors_preset = 0
+
+[node name="flow" type="FlowContainer" parent="Engine/crate" unique_id=1532920345]
+layout_mode = 1
+offset_left = 634.0
+offset_top = 87.0
+offset_right = 914.0
+offset_bottom = 357.0
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+metadata/_edit_group_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Engine/crate/flow" unique_id=1036158757]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Sprite2D" type="TextureRect" parent="Engine/crate/flow/VBoxContainer" unique_id=1841640099]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 4
+texture = SubResource("AtlasTexture_srkyc")
+
+[node name="CrateMinimum" type="LineEdit" parent="Engine/crate/flow/VBoxContainer" unique_id=17024008]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("114_srkyc")
+text = "1"
+alignment = 1
+
+[node name="info1" type="Label" parent="Engine/crate/flow/VBoxContainer" unique_id=586539800]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "最少宝箱"
+horizontal_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Engine/crate/flow" unique_id=130000227]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Sprite2D2" type="TextureRect" parent="Engine/crate/flow/VBoxContainer2" unique_id=1914689082]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 4
+texture = SubResource("AtlasTexture_rm81a")
+
+[node name="CrateMaximum" type="LineEdit" parent="Engine/crate/flow/VBoxContainer2" unique_id=764597849]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("114_srkyc")
+text = "255"
+alignment = 1
+
+[node name="info2" type="Label" parent="Engine/crate/flow/VBoxContainer2" unique_id=2021039498]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "最多宝箱"
+horizontal_alignment = 1
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="Engine/crate/flow" unique_id=990801388]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Sprite2D3" type="TextureRect" parent="Engine/crate/flow/VBoxContainer3" unique_id=213427661]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 4
+texture = SubResource("AtlasTexture_3herv")
+
+[node name="CrateRadius" type="LineEdit" parent="Engine/crate/flow/VBoxContainer3" unique_id=1772530120]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("114_srkyc")
+text = "3.0"
+alignment = 1
+
+[node name="info3" type="Label" parent="Engine/crate/flow/VBoxContainer3" unique_id=528711943]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "效果范围"
+horizontal_alignment = 1
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="Engine/crate/flow" unique_id=1535124716]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Sprite2D4" type="TextureRect" parent="Engine/crate/flow/VBoxContainer4" unique_id=575713470]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 4
+texture = SubResource("AtlasTexture_vjdvk")
+
+[node name="CrateRegen" type="LineEdit" parent="Engine/crate/flow/VBoxContainer4" unique_id=2009755162]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("114_srkyc")
+text = "3"
+alignment = 1
+
+[node name="info4" type="Label" parent="Engine/crate/flow/VBoxContainer4" unique_id=1271833707]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "再生间隔"
+horizontal_alignment = 1
+
+[node name="VBoxContainer5" type="VBoxContainer" parent="Engine/crate/flow" unique_id=768583014]
+visible = false
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Sprite2D5" type="TextureRect" parent="Engine/crate/flow/VBoxContainer5" unique_id=1327189965]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 4
+texture = SubResource("AtlasTexture_tqhy4")
+
+[node name="FreeMCV" type="LineEdit" parent="Engine/crate/flow/VBoxContainer5" unique_id=711032566]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("114_srkyc")
+text = "yes"
+alignment = 1
+
+[node name="info5" type="Label" parent="Engine/crate/flow/VBoxContainer5" unique_id=947147015]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "免费MCV"
+horizontal_alignment = 1
+
+[node name="VBoxContainer6" type="VBoxContainer" parent="Engine/crate/flow" unique_id=352952132]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Sprite2D6" type="TextureRect" parent="Engine/crate/flow/VBoxContainer6" unique_id=1767355760]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 4
+texture = SubResource("AtlasTexture_j23xs")
+
+[node name="WaterCrate" type="LineEdit" parent="Engine/crate/flow/VBoxContainer6" unique_id=1632054984]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("114_srkyc")
+text = "Money"
+alignment = 1
+
+[node name="info6" type="Label" parent="Engine/crate/flow/VBoxContainer6" unique_id=209314296]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "单人任务
+木箱水箱"
+horizontal_alignment = 1
+
+[node name="VBoxContainer7" type="VBoxContainer" parent="Engine/crate/flow" unique_id=2060007820]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Sprite2D7" type="TextureRect" parent="Engine/crate/flow/VBoxContainer7" unique_id=999525812]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 4
+texture = SubResource("AtlasTexture_v2u1w")
+
+[node name="SilverCrate" type="LineEdit" parent="Engine/crate/flow/VBoxContainer7" unique_id=1333789145]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("114_srkyc")
+text = "HealBase"
+alignment = 1
+
+[node name="info7" type="Label" parent="Engine/crate/flow/VBoxContainer7" unique_id=1622713757]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "单人任务
+银色箱子"
+horizontal_alignment = 1
+
+[node name="VBoxContainer8" type="VBoxContainer" parent="Engine/crate/flow" unique_id=1620880170]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Sprite2D8" type="TextureRect" parent="Engine/crate/flow/VBoxContainer8" unique_id=883075093]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 4
+texture = SubResource("AtlasTexture_10n74")
+
+[node name="SoloCrateMoney" type="LineEdit" parent="Engine/crate/flow/VBoxContainer8" unique_id=1155183015]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("114_srkyc")
+text = "5000"
+alignment = 1
+
+[node name="info8" type="Label" parent="Engine/crate/flow/VBoxContainer8" unique_id=757149860]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "单人奖励
+金钱限额"
+horizontal_alignment = 1
+
+[node name="VBoxContainer9" type="VBoxContainer" parent="Engine/crate/flow" unique_id=676247002]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Sprite2D9" type="TextureRect" parent="Engine/crate/flow/VBoxContainer9" unique_id=611392363]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 4
+texture = SubResource("AtlasTexture_8mfpm")
+
+[node name="UnitCrateType" type="LineEdit" parent="Engine/crate/flow/VBoxContainer9" unique_id=1665410098]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("114_srkyc")
+text = "none"
+alignment = 1
+
+[node name="info9" type="Label" parent="Engine/crate/flow/VBoxContainer9" unique_id=1731419963]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "单位箱
+类型"
+horizontal_alignment = 1
+
+[node name="Preview" type="Control" parent="Engine/crate" unique_id=1115206897]
+anchors_preset = 0
+offset_left = 27.0
+offset_top = 89.0
+offset_right = 27.0
+offset_bottom = 89.0
+
+[node name="Line" type="Line2D" parent="Engine/crate/Preview" unique_id=1451043229]
+position = Vector2(-75, -37)
+points = PackedVector2Array(78, 40, 333, 40, 333, 219, 78, 219)
+closed = true
+width = 3.0
+default_color = Color(0.92941177, 0.30980393, 0, 1)
+
+[node name="Scene" type="ColorRect" parent="Engine/crate/Preview" unique_id=794329800]
+clip_children = 1
+texture_filter = 1
+layout_mode = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 256.0
+offset_bottom = 180.0
+mouse_filter = 2
+
+[node name="Scene" type="Sprite2D" parent="Engine/crate/Preview/Scene" unique_id=1295418323]
+texture_filter = 1
+position = Vector2(126, 88)
+
+[node name="Img1" type="Panel" parent="Engine/crate" unique_id=1627111496]
+z_index = 1
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 0
+offset_left = 311.0
+offset_top = 92.0
+offset_right = 372.0
+offset_bottom = 153.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_i02n6")
+
+[node name="Line" type="Line2D" parent="Engine/crate/Img1" unique_id=1965654927]
+z_index = -1
+position = Vector2(-213, -97)
+points = PackedVector2Array(212, 159, 275, 159, 275, 96, 212, 96)
+closed = true
+width = 2.0
+default_color = Color(0.92941177, 0.30980393, 0, 1)
+
+[node name="Scene" type="Sprite2D" parent="Engine/crate/Img1" unique_id=419965138]
+z_index = -1
+texture_filter = 1
+position = Vector2(30.5, 30.5)
+texture = ExtResource("117_hthy0")
+hframes = 2
+
+[node name="184" type="Sprite2D" parent="Engine/crate/Img1" unique_id=304338791]
+z_index = -1
+position = Vector2(30, 23)
+texture = ExtResource("118_tqhy4")
+hframes = 2
+
+[node name="CrateImg" type="Label" parent="Engine/crate/Img1" unique_id=507662904]
+z_index = -1
+layout_mode = 0
+offset_left = 9.0
+offset_top = 67.0
+offset_right = 51.0
+offset_bottom = 90.0
+text = "Crate"
+
+[node name="WoodCrateImg" type="Label" parent="Engine/crate/Img1" unique_id=913574968]
+z_index = -1
+layout_mode = 0
+offset_left = -20.0
+offset_top = 88.0
+offset_right = 81.0
+offset_bottom = 108.0
+theme_override_font_sizes/font_size = 14
+text = "Goodie Crate"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Img2" type="Panel" parent="Engine/crate" unique_id=927765574]
+z_index = 1
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 0
+offset_left = 311.0
+offset_top = 209.0
+offset_right = 372.0
+offset_bottom = 270.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_j23xs")
+
+[node name="Line" type="Line2D" parent="Engine/crate/Img2" unique_id=1402927170]
+z_index = -1
+position = Vector2(-213, -97)
+points = PackedVector2Array(212, 159, 275, 159, 275, 96, 212, 96)
+closed = true
+width = 2.0
+default_color = Color(0.92941177, 0.30980393, 0, 1)
+
+[node name="Scene" type="Sprite2D" parent="Engine/crate/Img2" unique_id=146699844]
+z_index = -1
+texture_filter = 1
+position = Vector2(30.5, 30.5)
+texture = ExtResource("117_hthy0")
+hframes = 2
+frame = 1
+
+[node name="248" type="Sprite2D" parent="Engine/crate/Img2" unique_id=1725950431]
+z_index = -1
+position = Vector2(30, 23)
+texture = ExtResource("118_tqhy4")
+hframes = 2
+frame = 1
+
+[node name="WCrateImg" type="Label" parent="Engine/crate/Img2" unique_id=202338538]
+z_index = -1
+layout_mode = 0
+offset_left = 2.0
+offset_top = 67.0
+offset_right = 59.0
+offset_bottom = 90.0
+text = "WCrate"
+
+[node name="WaterCrateImg" type="Label" parent="Engine/crate/Img2" unique_id=2066016446]
+z_index = -1
+layout_mode = 0
+offset_left = -10.5
+offset_top = 88.0
+offset_right = 71.5
+offset_bottom = 108.0
+theme_override_font_sizes/font_size = 14
+text = "Water Crate"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Option" type="Control" parent="Engine" unique_id=1937125993]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="FlowContainer" type="FlowContainer" parent="Engine/Option" unique_id=928468683]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 95.0
+offset_right = 475.0
+offset_bottom = 480.0
+
+[node name="ParaDrop" type="Label" parent="Engine/Option/FlowContainer" unique_id=1730363461]
+custom_minimum_size = Vector2(120, 90)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_8mfpm")
+text = "ParaDrop"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SpyStuff" type="Label" parent="Engine/Option/FlowContainer" unique_id=841787221]
+custom_minimum_size = Vector2(120, 90)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_8mfpm")
+text = "SpyStuff"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Upgrade" type="Label" parent="Engine/Option/FlowContainer" unique_id=1567258036]
+custom_minimum_size = Vector2(120, 90)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_8mfpm")
+text = "Upgrade
+Ability"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DeathAnimation" type="Label" parent="Engine/Option/FlowContainer" unique_id=1223106178]
+custom_minimum_size = Vector2(120, 90)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_8mfpm")
+text = "Death
+Animation"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Hover Pips" type="Label" parent="Engine/Option/FlowContainer" unique_id=1785322911]
+custom_minimum_size = Vector2(120, 90)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_8mfpm")
+text = "Hover
+Pips"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Hover Pips2" type="Label" parent="Engine/Option/FlowContainer" unique_id=458087]
+custom_minimum_size = Vector2(120, 90)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_8mfpm")
+text = "Window Size"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Hover Pips3" type="Label" parent="Engine/Option/FlowContainer" unique_id=1008203501]
+custom_minimum_size = Vector2(120, 90)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_8mfpm")
+text = "Taunt
+wav"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Hover Pips4" type="Label" parent="Engine/Option/FlowContainer" unique_id=209837905]
+custom_minimum_size = Vector2(120, 90)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_8mfpm")
+text = "Super
+Weapon"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Hover Pips5" type="Label" parent="Engine/Option/FlowContainer" unique_id=1449567731]
+custom_minimum_size = Vector2(120, 90)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_8mfpm")
+text = "Tiberium
+Ore/Gems"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ParaDrop" type="Label" parent="Engine/Option" unique_id=2061527597]
+visible = false
+layout_mode = 0
+offset_left = 39.0
+offset_top = 116.0
+offset_right = 149.0
+offset_bottom = 269.0
+text = "空降伞兵
+投放范围=1024
+美军: E1,8
+联盟: E1,8
+苏军: E2,9
+尤里: INIT,6"
+
+[node name="Spy" type="Label" parent="Engine/Option" unique_id=825497122]
+visible = false
+layout_mode = 0
+offset_left = 33.0
+offset_top = 100.0
+offset_right = 369.0
+offset_bottom = 279.0
+text = "渗透鼠标图像=
+间谍伪装外观：E1
+间谍停电时间：1000
+偷窃金钱比例：.5
+
+坦克伪装外观：Tree01,Tree02,Tree03,Tree04
+伪装闪烁时间：20"
+
+[node name="Upgrade" type="Label" parent="Engine/Option" unique_id=1012557794]
+visible = false
+layout_mode = 0
+offset_left = 30.0
+offset_top = 83.0
+offset_right = 894.0
+offset_bottom = 418.0
+text = "升级经验门槛：3.0  (单位自身倍率)
+等级上限：2
+伤害1.1   速度1.2   视力0.0   护甲1.5   射速0.6
+
+一级升级变形   二级升级变形 
+升级音效：UpgradeVerteran
+
+[FASTER,STRONGER,FIREPOWER,SCATTER,ROF,SIGHT,CLOAK,TIBERIUM_PROOF,
+VEIN_PROOF,SELF_HEAL,EXPLODES,RADAR_INVISIBLE,SENSORS,FEARLESS,C4,
+TIBERIUM_HEAL,GUARD_AREA,CRUSHER]
+
+EMPIMMUNE 免疫EMP,RADIMMUNE 免疫辐射,PROTECTED_DRIVER 免疫狙杀驾驶员,UNWARPABLE 无法被超时空传送
+POISONIMMUNE 免疫毒,PSIONICWEAPONIMMUNE 免疫精神攻击,PSIONICSIMMUNE 免疫心灵控制（超武依然有效） "
+
+[node name="radar" type="Label" parent="Engine/Option" unique_id=1299504019]
+visible = false
+layout_mode = 0
+offset_left = 22.0
+offset_top = 82.0
+offset_right = 1253.0
+offset_bottom = 651.0
+text = "; Controls for radar events
+; The events, in order, are:
+; (1) Generic Combat Event,
+; (2) Generic Noncombat Event,
+; (3) Dropzone Event,
+; (4) Base Under Attack Event,
+; (5) Harvester Under Attack Event,
+; (6) Enemy Object Sensed Event
+; So, for example, to change the visibility duration of the Harvester Under Attack Event,
+; you would change the fifth number in the list for RadarEventVisibilityDurations
+;
+RadarEventSuppressionDistances=8, 8, 8, 8, 8, 6			; suppression distance in cells
+RadarEventVisibilityDurations=200,200,200,200,200,200  ; event visibility in frames
+RadarEventDurations=400,400,400,400,400,400  ;  event duration in frames
+FlashFrameTime=7
+RadarCombatFlashTime=49	; this should ALWAYS be an odd multiple of FlashFrameTime, ie RadarCombatFlashTime / FlashFrameTime should be an odd number
+RadarEventMinRadius=8
+RadarEventSpeed=1.2
+RadarEventRotationSpeed=.05
+RadarEventColorSpeed=.1
+RevealTriggerRadius=9   ; the sight range of a \"reveal around waypoint\" trigger, 10 is maximum
+AllyReveal=yes          ; Allies automatically reveal radar maps to each other?
+LocalRadarColor=0,255,0		; PCG. This is the color that you show up as on the radar, no matter
+; what your house color is.  I.e. if you are blue in the game, and this
+; color is green, then you show up as green on the radar.
+"
+
+[node name="death" type="Label" parent="Engine/Option" unique_id=1424073497]
+visible = false
+layout_mode = 0
+offset_left = 22.0
+offset_top = 82.0
+offset_right = 230.0
+offset_bottom = 283.0
+text = ";*** Animation labels ***
+DamageFireTypes=FIRE01,FIRE02,FIRE03  ; Fires that can spring up on damaged buildings
+OreTwinkle=TWNK1                      ; This is the anim to use for the Ore Twinkle.
+BarrelExplode=EXPLOLRG  ; exploding crates animation
+BarrelDebris=GASTANK,PIECE  ; exploding crate debris list
+BarrelParticle=SmallGreySSys
+NukeTakeOff=NUKETO ;gs
+Wake=WAKE1              ; wake effect when traveling on/over water
+DropPod=DROPPOD,DROPPOD2 ; mark to leave after drop pod lands
+DeadBodies=DEATH_A,DEATH_B,DEATH_C,DEATH_D,DEATH_E,DEATH_F   ; choice of dead bodies to leave around
+MetallicDebris=DBRIS1LG,DBRIS2LG,DBRIS3LG,DBRIS4LG,DBRIS5LG,DBRIS6LG,DBRIS7LG,DBRIS8LG,DBRIS9LG,DBRS10LG,DBRIS1SM,DBRIS2SM,DBRIS3SM,DBRIS4SM,DBRIS5SM,DBRIS6SM,DBRIS7SM,DBRIS8SM,DBRIS9SM,DBRS10SM,pole,poleb,off
+BridgeExplosions=TWLT026,TWLT036,TWLT050,TWLT070	; the explosions to use for the bridge explosion effect
+IonBlast=RING1          ; initial anim when ion cannon hits
+IonBeam=IONBEAM
+WeatherConClouds=WCCLOUD1,WCCLOUD2,WCCLOUD3		; PCG. The clouds used to show the weather controller effect.
+WeatherConBolts=WCLBOLT1,WCLBOLT2,WCLBOLT3		; PCG. The lightning bolts used to show the weather controller effect.
+WeatherConBoltExplosion=EXPLOLB					; PCG. Special bolt explosion.
+;Psychic Dominator control
+DominatorWarhead=DominatorWH ; warhead used for the damage part
+DominatorDamage=1000;250
+DominatorCaptureRange=1;4;now that warhead is actually needed to do damage, here is the capture range
+DominatorFirstAnim=PDFXCLD;gs this is the whole giant heeead
+DominatorSecondAnim=PDFXLOC;gs this is the ring on the ground
+DominatorFireAtPercentage=20; ;50; gs at this percent into the FirstAnim, the actual effect will fire
+ChronoPlacement=CHRONOAR; SJM: User just designated site of Chrono transfer SOURCE
+ChronoBeam=CHRONOBM		;GEF initial anim when chrono sphere strikes -- SJM: no longer used
+ChronoBlast=CHRONOFD	; SJM: Chrono transfer SOURCE ACTIVATES
+ChronoBlastDest=CHRONOTG; SJM: Chrono transfer DESTINATION ACTIVATES
+WarpIn=WARPIN;WAKE2			; animation when warping in
+WarpOut=WARPOUT;WAKE2			; animation when warping out
+WarpAway=WARPAWAY;RING1		; animation when warping something out of existance
+IronCurtainInvokeAnim=IRONBLST; anim that plays upon invocation of the Iron Curtain
+ForceShieldInvokeAnim=FORCSHLD
+WeaponNullifyAnim=IRONFX	; animation to play when a weapon is neutralized by Invulnerability
+ChronoSparkle1=CHRONOSK		;animation to play over something getting chronoed (teleported or out of time)
+InfantryExplode=S_BANG34 ; animation when infantry just explodes
+FlamingInfantry=FLAMEGUY  ; anim to use for special onfire infantry logic
+InfantryHeadPop=YURIDIE;gs other generic death anims
+InfantryNuked=NUKEDIE
+InfantryVirus=VIRUSD
+InfantryBrute=BRUTDIE
+InfantryMutate=GENDEATH
+Behind=BEHIND
+MoveFlash=RING          ; movement destination click feedback animation
+Parachute=PARACH        ; big parachute used for paratroopers
+BombParachute=PARABOMB  ; parachute used for parabombs and other parachuted ordinance
+DropZoneAnim=BEACON     ; animation to use for the drop zone flair
+EMPulseSparkles=EMP_FX01	; Anim to play over units disabled by an EM Pulse.
+"
+
+[node name="Ore_tiberium_Gem" type="Label" parent="Engine/Option" unique_id=36052796]
+visible = false
+layout_mode = 0
+offset_left = 22.0
+offset_top = 82.0
+offset_right = 903.0
+offset_bottom = 2237.0
+text = "TiberiumHeal=.010       ; minutes between applying Tiberium healing [for those units that heal in Tiberium]
+Meteorites=no           ; Are tiberium meteorites going to occur?
+TiberiumShortScan=6;//gs revert 3; sgc was 6 ; cell radius to scan when harvesting a single patch of Tiberium
+TiberiumLongScan=48      ; cells radius to scan when looking for a new Tiberium patch to harvest
+TiberiumTransmogrify=40
+TiberiumExplosive=no   ; Is tiberium extra explosive?
+TiberiumExplosionDamage=0 ; the amount of damage dealt out by explosion in a big tiberium chain reaction
+TiberiumStrength=-1 ;	the higher this value, the harder it is to get big tiberium to explode
+
+GrowthRate=5            ; minutes between ore (Tiberium) growth
+TiberiumGrows=yes       ; Does ore grow denser over time?
+TiberiumSpreads=yes     ; Does ore spread into adjacent areas?
+PurifierBonus=.25 ; percent ore purifiers add to ore value
+OreTwinkle=TWNK1                      ; This is the anim to use for the Ore Twinkle.
+OreTwinkleChance=30                   ; At map startup, there is 1 chance in N that a cell with ore will get a twinkle anim.
+
+[Tiberiums]
+0=Riparius
+1=Cruentus
+2=Vinifera
+3=Aboreus
+
+; Name = display name
+; Image = image to use [1=small, 2=large, 3=vine]
+; Value = credit value per 'bail'
+; Growth = growth rate
+; Spread = spread rate
+; Power = explosive power per 'bail' (def=0)
+; Color = display color of the Tiberium
+; Shard = crystal to fly off when chain reacting (def=none)
+
+
+; This is Ore
+[Riparius]
+Name=Tiberium Riparius
+Image=1
+Power=0
+Value=25
+Growth=2200
+GrowthPercentage=.06
+Spread=2200
+SpreadPercentage=.06
+Color=NeonGreen			; **WARNING**: If you change this color, notify Bret_a
+
+; These are Gems
+[Cruentus]
+Name=Tiberium Cruentus
+Image=2
+Value=50
+Growth=10000
+GrowthPercentage=0
+Spread=10000
+SpreadPercentage=0
+Power=0 ;10
+Color=NeonBlue			; **WARNING**: If you change this color, notify Bret_a
+Debris=CRYSTAL1,CRYSTAL2,CRYSTAL3,CRYSTAL4
+
+; This may also be ore - DB
+[Vinifera]
+Name=Tiberium Vinifera
+Image=3
+Value=25
+Growth=2200
+GrowthPercentage=.06
+Spread=2200
+SpreadPercentage=.06
+Power=0 ; 10
+Color=NeonBlue		; **WARNING**: If you change this color, notify Bret_a
+Debris=CRYSTAL1,CRYSTAL2,CRYSTAL3,CRYSTAL4
+
+; This might be ore, I'm not certain - DB
+[Aboreus]
+Name=Tiberium Aboreus
+Image=4
+Value=25
+Growth=2200
+GrowthPercentage=.06
+Spread=2200
+SpreadPercentage=.06
+Power=0
+Color=NeonBlue		; **WARNING**: If you change this color, notify Bret_a
+Debris=CRYSTAL1,CRYSTAL2,CRYSTAL3,CRYSTAL4
+"
+
+[node name="Shroud" type="Label" parent="Engine/Option" unique_id=1548883425]
+visible = false
+layout_mode = 0
+offset_left = 20.0
+offset_top = 254.0
+offset_right = 749.0
+offset_bottom = 433.0
+text = "FogOfWar=no             ; Is fog of war enabled?
+BlendedFog=yes          ; should we blend the fog (as opposed to dither it)
+AircraftFogReveal=6
+ShroudRate=4            ; minutes between each shroud creep process [0 means no shadow creep]
+FogRate=.01
+ShroudGrow=no           ; Does the shroud grow back over time?
+Shroud=yes"
+
+[node name="Control" type="Control" parent="Engine" unique_id=4573259]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="title" type="Label" parent="Engine/Control" unique_id=420578314]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 69.0
+offset_right = 923.0
+offset_bottom = 92.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_d6sf5")
+text = "                                阵营颜色示例                                                颜色设置"
+
+[node name="shp_editer" parent="." unique_id=719034873 instance=ExtResource("20_kg3aa")]
+
+[node name="display" parent="shp_editer/left" parent_id_path=PackedInt32Array(719034873, 1858227871) index="3" unique_id=781820689]
+button_group = SubResource("ButtonGroup_vgfqu")
+
+[node name="anmi" parent="shp_editer/left" parent_id_path=PackedInt32Array(719034873, 1858227871) index="4" unique_id=824568057]
+button_group = SubResource("ButtonGroup_vgfqu")
+
+[node name="arrow" parent="shp_editer/TimeLine/LPad/L" parent_id_path=PackedInt32Array(719034873, 1102286417) index="5" unique_id=479168006]
+button_group = SubResource("ButtonGroup_a0dyo")
+
+[node name="clip" parent="shp_editer/TimeLine/LPad/L" parent_id_path=PackedInt32Array(719034873, 1102286417) index="6" unique_id=1586411797]
+button_group = SubResource("ButtonGroup_a0dyo")
+
+[node name="paint" parent="shp_editer/TimeLine/LPad/L" parent_id_path=PackedInt32Array(719034873, 1102286417) index="7" unique_id=935340047]
+button_group = SubResource("ButtonGroup_a0dyo")
+
+[node name="filter" parent="shp_editer/TimeLine/LPad/L" parent_id_path=PackedInt32Array(719034873, 1102286417) index="8" unique_id=1750768630]
+button_group = SubResource("ButtonGroup_a0dyo")
+
+[node name="visible" parent="shp_editer/TimeLine/LPad/L" parent_id_path=PackedInt32Array(719034873, 1102286417) index="9" unique_id=1286025761]
+button_group = SubResource("ButtonGroup_a0dyo")
+
+[node name="bg" parent="shp_editer/EX/margin/Scroll/display" parent_id_path=PackedInt32Array(719034873, 1134812055) index="16" unique_id=1740577560]
+button_group = SubResource("ButtonGroup_l62bh")
+
+[node name="opacity" parent="shp_editer/EX/margin/Scroll/display" parent_id_path=PackedInt32Array(719034873, 1134812055) index="17" unique_id=379788679]
+button_group = SubResource("ButtonGroup_l62bh")
+
+[node name="Temperate" parent="shp_editer/EX/margin/Scroll/display" parent_id_path=PackedInt32Array(719034873, 1134812055) index="18" unique_id=902726598]
+button_group = SubResource("ButtonGroup_l62bh")
+
+[node name="Snow" parent="shp_editer/EX/margin/Scroll/display" parent_id_path=PackedInt32Array(719034873, 1134812055) index="19" unique_id=2105228985]
+button_group = SubResource("ButtonGroup_l62bh")
+
+[node name="Urban" parent="shp_editer/EX/margin/Scroll/display" parent_id_path=PackedInt32Array(719034873, 1134812055) index="20" unique_id=837985769]
+button_group = SubResource("ButtonGroup_l62bh")
+
+[node name="Desert" parent="shp_editer/EX/margin/Scroll/display" parent_id_path=PackedInt32Array(719034873, 1134812055) index="21" unique_id=2077395211]
+button_group = SubResource("ButtonGroup_l62bh")
+
+[node name="Lunar" parent="shp_editer/EX/margin/Scroll/display" parent_id_path=PackedInt32Array(719034873, 1134812055) index="22" unique_id=653067298]
+button_group = SubResource("ButtonGroup_l62bh")
+
+[node name="NewUrban" parent="shp_editer/EX/margin/Scroll/display" parent_id_path=PackedInt32Array(719034873, 1134812055) index="23" unique_id=910666505]
+button_group = SubResource("ButtonGroup_l62bh")
+
+[node name="i_ra2" parent="shp_editer/EX/margin/Scroll/display" parent_id_path=PackedInt32Array(719034873, 1134812055) index="24" unique_id=458430217]
+button_group = SubResource("ButtonGroup_v7wno")
+
+[node name="i_yuri" parent="shp_editer/EX/margin/Scroll/display" parent_id_path=PackedInt32Array(719034873, 1134812055) index="25" unique_id=239766171]
+button_group = SubResource("ButtonGroup_v7wno")
+
+[node name="anim" parent="shp_editer/EX/margin/Scroll/display/ra2_pal" parent_id_path=PackedInt32Array(719034873, 1385694327) index="1" unique_id=275909411]
+button_group = SubResource("ButtonGroup_3oahs")
+
+[node name="cameo" parent="shp_editer/EX/margin/Scroll/display/ra2_pal" parent_id_path=PackedInt32Array(719034873, 1385694327) index="2" unique_id=1445029238]
+button_group = SubResource("ButtonGroup_3oahs")
+
+[node name="snow" parent="shp_editer/EX/margin/Scroll/display/ra2_pal" parent_id_path=PackedInt32Array(719034873, 1385694327) index="3" unique_id=2087862842]
+button_group = SubResource("ButtonGroup_3oahs")
+
+[node name="urban" parent="shp_editer/EX/margin/Scroll/display/ra2_pal" parent_id_path=PackedInt32Array(719034873, 1385694327) index="4" unique_id=1956361455]
+button_group = SubResource("ButtonGroup_3oahs")
+
+[node name="mousepal" parent="shp_editer/EX/margin/Scroll/display/ra2_pal" parent_id_path=PackedInt32Array(719034873, 1385694327) index="5" unique_id=172982264]
+button_group = SubResource("ButtonGroup_3oahs")
+
+[node name="temperat" parent="shp_editer/EX/margin/Scroll/display/ra2_pal" parent_id_path=PackedInt32Array(719034873, 1385694327) index="6" unique_id=1295299641]
+button_group = SubResource("ButtonGroup_3oahs")
+
+[node name="waypoint" parent="shp_editer/EX/margin/Scroll/display/ra2_pal" parent_id_path=PackedInt32Array(719034873, 1385694327) index="7" unique_id=1394070318]
+button_group = SubResource("ButtonGroup_3oahs")
+
+[node name="test" parent="shp_editer/EX/margin/Scroll/display/ra2_pal" parent_id_path=PackedInt32Array(719034873, 1385694327) index="8" unique_id=643986181]
+button_group = SubResource("ButtonGroup_3oahs")
+
+[node name="city" parent="shp_editer/EX/margin/Scroll/display/ra2_pal" parent_id_path=PackedInt32Array(719034873, 1385694327) index="9" unique_id=290208538]
+button_group = SubResource("ButtonGroup_3oahs")
+
+[node name="iso" parent="shp_editer/EX/margin/Scroll/display/ra2_pal" parent_id_path=PackedInt32Array(719034873, 1385694327) index="10" unique_id=1612325759]
+button_group = SubResource("ButtonGroup_3oahs")
+
+[node name="unit" parent="shp_editer/EX/margin/Scroll/display/ra2_pal" parent_id_path=PackedInt32Array(719034873, 1385694327) index="11" unique_id=498724278]
+button_group = SubResource("ButtonGroup_3oahs")
+
+[node name="sno" parent="shp_editer/EX/margin/Scroll/display/ra2_pal" parent_id_path=PackedInt32Array(719034873, 1385694327) index="12" unique_id=900777273]
+button_group = SubResource("ButtonGroup_remxr")
+
+[node name="tem" parent="shp_editer/EX/margin/Scroll/display/ra2_pal" parent_id_path=PackedInt32Array(719034873, 1385694327) index="13" unique_id=794872424]
+button_group = SubResource("ButtonGroup_remxr")
+
+[node name="urb" parent="shp_editer/EX/margin/Scroll/display/ra2_pal" parent_id_path=PackedInt32Array(719034873, 1385694327) index="14" unique_id=642070357]
+button_group = SubResource("ButtonGroup_remxr")
+
+[node name="desert" parent="shp_editer/EX/margin/Scroll/display/yuri_pal" parent_id_path=PackedInt32Array(719034873, 2055869922) index="1" unique_id=1721141395]
+button_group = SubResource("ButtonGroup_bx7f4")
+
+[node name="lunar" parent="shp_editer/EX/margin/Scroll/display/yuri_pal" parent_id_path=PackedInt32Array(719034873, 2055869922) index="2" unique_id=11931081]
+button_group = SubResource("ButtonGroup_bx7f4")
+
+[node name="observer" parent="shp_editer/EX/margin/Scroll/display/yuri_pal" parent_id_path=PackedInt32Array(719034873, 2055869922) index="3" unique_id=550181860]
+button_group = SubResource("ButtonGroup_bx7f4")
+
+[node name="radaryuri" parent="shp_editer/EX/margin/Scroll/display/yuri_pal" parent_id_path=PackedInt32Array(719034873, 2055869922) index="4" unique_id=1450550293]
+button_group = SubResource("ButtonGroup_bx7f4")
+
+[node name="urbann" parent="shp_editer/EX/margin/Scroll/display/yuri_pal" parent_id_path=PackedInt32Array(719034873, 2055869922) index="5" unique_id=800056555]
+button_group = SubResource("ButtonGroup_bx7f4")
+
+[node name="iso" parent="shp_editer/EX/margin/Scroll/display/yuri_pal" parent_id_path=PackedInt32Array(719034873, 2055869922) index="6" unique_id=462693331]
+button_group = SubResource("ButtonGroup_bx7f4")
+
+[node name="lib" parent="shp_editer/EX/margin/Scroll/display/yuri_pal" parent_id_path=PackedInt32Array(719034873, 2055869922) index="7" unique_id=695757311]
+button_group = SubResource("ButtonGroup_bx7f4")
+
+[node name="unit" parent="shp_editer/EX/margin/Scroll/display/yuri_pal" parent_id_path=PackedInt32Array(719034873, 2055869922) index="8" unique_id=376827805]
+button_group = SubResource("ButtonGroup_bx7f4")
+
+[node name="des" parent="shp_editer/EX/margin/Scroll/display/yuri_pal" parent_id_path=PackedInt32Array(719034873, 2055869922) index="9" unique_id=103236359]
+button_group = SubResource("ButtonGroup_kg3aa")
+
+[node name="lun" parent="shp_editer/EX/margin/Scroll/display/yuri_pal" parent_id_path=PackedInt32Array(719034873, 2055869922) index="10" unique_id=1575094756]
+button_group = SubResource("ButtonGroup_kg3aa")
+
+[node name="ubn" parent="shp_editer/EX/margin/Scroll/display/yuri_pal" parent_id_path=PackedInt32Array(719034873, 2055869922) index="11" unique_id=2043155283]
+button_group = SubResource("ButtonGroup_kg3aa")
+
+[node name="LayerManager" parent="shp_editer" index="5" unique_id=446514948]
+visible = true
+
+[editable path="shp_editer"]
+[editable path="shp_editer/Test_shp"]
