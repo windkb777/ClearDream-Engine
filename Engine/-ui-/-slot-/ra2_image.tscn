@@ -1,0 +1,88 @@
+[gd_scene format=3 uid="uid://bdgk33ja1qm3d"]
+
+[ext_resource type="Script" uid="uid://dvstqhekebdib" path="res://Engine/-ui-/-slot-/image.gd" id="1_tkl8y"]
+[ext_resource type="Texture2D" uid="uid://bh51a0ml22x0y" path="res://z.gdset/ui_ico/ico/expand.svg" id="2_3qvi7"]
+[ext_resource type="Texture2D" uid="uid://ddmetkvqe8e60" path="res://z.gdset/ui_ico/ico/minus.svg" id="3_4ywpt"]
+[ext_resource type="Texture2D" uid="uid://c0c8gvbvy7i7d" path="res://z.gdset/ui_ico/ico/close.svg" id="4_18byb"]
+[ext_resource type="Script" uid="uid://dyndmcfpei83b" path="res://Engine/-class-/Format.gd" id="5_ibep2"]
+
+[sub_resource type="Gradient" id="Gradient_0p7jv"]
+colors = PackedColorArray(0.30980393, 0.11372549, 0.6784314, 1, 0.14260218, 0.011843101, 0.42092565, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_vggtd"]
+gradient = SubResource("Gradient_0p7jv")
+width = 930
+height = 20
+fill_to = Vector2(1, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b5eic"]
+texture = SubResource("GradientTexture2D_vggtd")
+texture_margin_left = 8.0
+
+[node name="Test_shp" type="Control" unique_id=1598018473]
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1_tkl8y")
+
+[node name="title" type="Label" parent="." unique_id=2111300493 groups=["Drag"]]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 322.0
+offset_bottom = 28.0
+mouse_filter = 0
+theme_override_styles/normal = SubResource("StyleBoxTexture_b5eic")
+text = "Test.shp"
+
+[node name="Image" type="Panel" parent="." unique_id=1015956553]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 28.0
+offset_right = 322.0
+offset_bottom = 268.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("5_ibep2")
+metadata/_custom_type_script = "uid://dyndmcfpei83b"
+
+[node name="line" type="Line2D" parent="." unique_id=610216045]
+visible = false
+points = PackedVector2Array(0, 0, 322, 0, 322, 268, 0, 268)
+closed = true
+width = 2.0
+default_color = Color(0.29219037, 0.2921899, 0.29219013, 1)
+
+[node name="-" type="HBoxContainer" parent="." unique_id=198503731]
+layout_mode = 1
+offset_left = 251.0
+offset_top = 5.0
+offset_right = 319.0
+offset_bottom = 25.0
+
+[node name="min" type="Button" parent="-" unique_id=927086133]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+icon = ExtResource("3_4ywpt")
+expand_icon = true
+
+[node name="full" type="Button" parent="-" unique_id=1551932018]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+icon = ExtResource("2_3qvi7")
+expand_icon = true
+
+[node name="close" type="Button" parent="-" unique_id=1608956768]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+icon = ExtResource("4_18byb")
+expand_icon = true

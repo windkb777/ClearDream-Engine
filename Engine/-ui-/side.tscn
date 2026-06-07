@@ -1,0 +1,1455 @@
+[gd_scene format=3 uid="uid://i7qgdb77vm44"]
+
+[ext_resource type="Texture2D" uid="uid://gt4fe7slygdr" path="res://z.gdset/ui_ico/ra2_sprite/img_Side.png" id="1_8ljsu"]
+[ext_resource type="Script" uid="uid://imcfndqbscq5" path="res://Engine/-script-/-ins/side.gd" id="1_pklgd"]
+[ext_resource type="Theme" uid="uid://cx50ltwhyporl" path="res://z.gdset/theme/Side/Flag.tres" id="2_np8at"]
+[ext_resource type="Theme" uid="uid://cg0h00hsidvr4" path="res://z.gdset/theme/Side/Set Ico.tres" id="3_hcdtn"]
+[ext_resource type="Theme" uid="uid://kq7xyaisxja8" path="res://z.gdset/theme/Side/Set Tex.tres" id="4_5mtdr"]
+[ext_resource type="Texture2D" uid="uid://b2h0dldgewsev" path="res://ResPack/Flags/usai.png" id="5_s1khn"]
+[ext_resource type="Texture2D" uid="uid://bumxnibyftaju" path="res://ResPack/Flags/japi.png" id="6_y0w1w"]
+[ext_resource type="Texture2D" uid="uid://p7nbp0we8rbm" path="res://ResPack/Flags/frai.png" id="7_1v0pq"]
+[ext_resource type="Texture2D" uid="uid://dcpdkw1loqyri" path="res://ResPack/Flags/germ.png" id="8_wah2g"]
+[ext_resource type="Texture2D" uid="uid://yw2x2ii8timl" path="res://ResPack/Flags/ukin.png" id="9_jv70m"]
+[ext_resource type="Texture2D" uid="uid://c72g6efpd05sh" path="res://ResPack/Flags/djbi.png" id="10_4ibf3"]
+[ext_resource type="Texture2D" uid="uid://dw3hggm76dpa5" path="res://ResPack/Flags/arbi.png" id="11_4pfpo"]
+[ext_resource type="Texture2D" uid="uid://bkepwl6mrwk8s" path="res://ResPack/Flags/lati.png" id="12_2ta47"]
+[ext_resource type="Texture2D" uid="uid://qtvrxtx3ea13" path="res://ResPack/Flags/rusi.png" id="13_x3owo"]
+[ext_resource type="Texture2D" uid="uid://bywdl500fv1hg" path="res://ResPack/Flags/yrii.png" id="14_cn7ug"]
+[ext_resource type="Texture2D" uid="uid://bo6uplmwp8qjg" path="res://z.gdset/ui_ico/yr-yuri-logo.png" id="15_qemld"]
+[ext_resource type="Texture2D" uid="uid://bbpbtnnk4et2o" path="res://ResPack/Flags/rani.png" id="15_rnxqe"]
+[ext_resource type="Texture2D" uid="uid://wxpu4n7fkjvr" path="res://ResPack/Cameo/GDI/00059.png" id="23_isq13"]
+[ext_resource type="Texture2D" uid="uid://ccchm8kvk1wi" path="res://ResPack/Cameo/00096.png" id="26_p876w"]
+[ext_resource type="Texture2D" uid="uid://dp1v56i3sicn1" path="res://ResPack/Cameo/00128.png" id="27_4248f"]
+[ext_resource type="Texture2D" uid="uid://bmdi0ygbtcg7h" path="res://ResPack/Cameo/00051.png" id="28_56qr1"]
+[ext_resource type="Texture2D" uid="uid://cqyaovqnygxor" path="res://ResPack/Cameo/00127.png" id="29_7d8ud"]
+[ext_resource type="Texture2D" uid="uid://dwk86d18bk0g0" path="res://ResPack/Cameo/00065.png" id="30_0dy4b"]
+[ext_resource type="Texture2D" uid="uid://c3ce2mj6pv16g" path="res://ResPack/Cameo/00008.png" id="31_vnacs"]
+[ext_resource type="Texture2D" uid="uid://bul41wj33jdcx" path="res://ResPack/Cameo/00116.png" id="32_jpuje"]
+[ext_resource type="Texture2D" uid="uid://vunmwaha2fr0" path="res://ResPack/Cameo/00114.png" id="33_cxjvn"]
+[ext_resource type="Texture2D" uid="uid://dduici1df377q" path="res://ResPack/Cameo/00117.png" id="34_3fw78"]
+[ext_resource type="Texture2D" uid="uid://cfwyjw0uajigm" path="res://ResPack/Cameo/00134.png" id="35_ef1rq"]
+[ext_resource type="Texture2D" uid="uid://c8hpbeoiatyud" path="res://ResPack/Cameo/00058.png" id="36_gumrh"]
+[ext_resource type="Texture2D" uid="uid://cea71i2ynb14o" path="res://ResPack/Cameo/00176.png" id="37_120n5"]
+[ext_resource type="Texture2D" uid="uid://cgwarhxv2omf" path="res://ResPack/Cameo/00019.png" id="38_6sqqy"]
+[ext_resource type="Texture2D" uid="uid://bjl7t1div4u0v" path="res://ResPack/Cameo/00000.png" id="39_m36mh"]
+[ext_resource type="Texture2D" uid="uid://bwprfsw51gal1" path="res://ResPack/Cameo/00049.png" id="40_7cygu"]
+[ext_resource type="Texture2D" uid="uid://b8tm3cmu0bkfo" path="res://ResPack/Cameo/00060.png" id="41_r8xev"]
+[ext_resource type="Texture2D" uid="uid://b4nvgxxn5vuox" path="res://ResPack/Cameo/00063.png" id="42_sxlqm"]
+[ext_resource type="Texture2D" uid="uid://b0ewlmnryyapk" path="res://ResPack/Cameo/00089.png" id="43_omlm7"]
+[ext_resource type="Texture2D" uid="uid://ocajtx3413ma" path="res://ResPack/Cameo/00139.png" id="44_fwgsb"]
+[ext_resource type="Texture2D" uid="uid://bykm6h2t5cug1" path="res://ResPack/Cameo/00149.png" id="45_cjje1"]
+[ext_resource type="Texture2D" uid="uid://3drktqnlh4n7" path="res://ResPack/Cameo/00151.png" id="46_ast62"]
+[ext_resource type="Texture2D" uid="uid://c64hileifygk" path="res://ResPack/Cameo/00158.png" id="47_ytv0g"]
+[ext_resource type="Texture2D" uid="uid://d0uapoquv536j" path="res://ResPack/Cameo/00032.png" id="48_3rrrg"]
+[ext_resource type="Texture2D" uid="uid://bfxiiwddqpb3p" path="res://ResPack/Cameo/00027.png" id="49_2jp61"]
+[ext_resource type="Texture2D" uid="uid://dj0x78h7plh3x" path="res://ResPack/Cameo/00074.png" id="50_y2xea"]
+[ext_resource type="Texture2D" uid="uid://cyk8eeyvalru7" path="res://ResPack/Cameo/00050.png" id="51_6emx4"]
+[ext_resource type="Texture2D" uid="uid://i0rwnvkhqvuf" path="res://ResPack/Cameo/00010.png" id="52_2cb67"]
+[ext_resource type="Texture2D" uid="uid://d2784gxq6kvl8" path="res://ResPack/Cameo/00141.png" id="53_qmtot"]
+[ext_resource type="Texture2D" uid="uid://ukyi38gkmc8f" path="res://ResPack/Cameo/00070.png" id="54_ri30v"]
+[ext_resource type="Texture2D" uid="uid://djwg4r2ds80u8" path="res://ResPack/Cameo/00005.png" id="55_vr36g"]
+[ext_resource type="Texture2D" uid="uid://11vrpyw4mjh2" path="res://ResPack/Cameo/00011.png" id="56_p2kx4"]
+[ext_resource type="Texture2D" uid="uid://hlg3lt3pxf21" path="res://ResPack/Cameo/00056.png" id="57_08jwr"]
+[ext_resource type="Texture2D" uid="uid://dlf7hyjc08hg5" path="res://ResPack/Cameo/00068.png" id="58_57bjy"]
+[ext_resource type="Texture2D" uid="uid://bb08nbcurvkci" path="res://ResPack/Cameo/00130.png" id="59_mi4vy"]
+[ext_resource type="Texture2D" uid="uid://evhnfqwabcpy" path="res://ResPack/Cameo/00132.png" id="60_kmxuy"]
+[ext_resource type="Texture2D" uid="uid://c0px437vnwgdo" path="res://ResPack/Cameo/00155.png" id="61_fv3wq"]
+[ext_resource type="Texture2D" uid="uid://i7q4tgpm2clx" path="res://ResPack/Cameo/00164.png" id="62_3ypj8"]
+[ext_resource type="Texture2D" uid="uid://217tbj7sdjls" path="res://ResPack/Cameo/00009.png" id="63_qpn4p"]
+[ext_resource type="Texture2D" uid="uid://v6ctfxrpurv1" path="res://ResPack/Cameo/00004.png" id="64_u4mgl"]
+[ext_resource type="Texture2D" uid="uid://bygi04labwl0j" path="res://ResPack/Cameo/00026.png" id="65_0qnsw"]
+[ext_resource type="Texture2D" uid="uid://dja4k25d21w8j" path="res://ResPack/Cameo/00039.png" id="66_dcttr"]
+[ext_resource type="Texture2D" uid="uid://b01ak464slg3q" path="res://ResPack/Cameo/00045.png" id="67_yp3es"]
+[ext_resource type="Texture2D" uid="uid://ct7a07cah351b" path="res://ResPack/Cameo/00091.png" id="68_4opw4"]
+[ext_resource type="Texture2D" uid="uid://qjxljqohb0o7" path="res://ResPack/Cameo/00042.png" id="69_sbyn3"]
+[ext_resource type="Texture2D" uid="uid://qp334jcmvok" path="res://ResPack/Cameo/00161.png" id="70_a13j2"]
+[ext_resource type="Texture2D" uid="uid://dkg458ownf22" path="res://ResPack/Cameo/00036.png" id="71_513xn"]
+[ext_resource type="Texture2D" uid="uid://c17tmcik0wnhl" path="res://ResPack/Cameo/00177.png" id="72_v2acq"]
+[ext_resource type="Texture2D" uid="uid://cohmaf2i4ewvr" path="res://ResPack/Cameo/00055.png" id="73_6lx0v"]
+[ext_resource type="Texture2D" uid="uid://cw5y40vthl7nh" path="res://ResPack/Cameo/00014.png" id="74_llt61"]
+[ext_resource type="Texture2D" uid="uid://dbwf1gyypx8h2" path="res://ResPack/Cameo/00007.png" id="75_7ekfa"]
+[ext_resource type="Texture2D" uid="uid://cvb3q8r65lur8" path="res://ResPack/Cameo/00029.png" id="76_vv6k8"]
+[ext_resource type="Texture2D" uid="uid://n4egms0vogev" path="res://ResPack/Cameo/00145.png" id="77_gqdr0"]
+[ext_resource type="Texture2D" uid="uid://ctj34yt7l5lx5" path="res://ResPack/Cameo/00107.png" id="78_4ofhx"]
+[ext_resource type="Texture2D" uid="uid://cusw03q6cxjlp" path="res://ResPack/Cameo/00105.png" id="79_3i4ed"]
+[ext_resource type="Texture2D" uid="uid://6gxs7xo8rbrx" path="res://ResPack/Cameo/00108.png" id="80_xbueo"]
+[ext_resource type="Texture2D" uid="uid://dxl1cml3171y6" path="res://ResPack/Cameo/00129.png" id="81_0hldh"]
+[ext_resource type="Texture2D" uid="uid://cu5sfj5k2k38b" path="res://ResPack/Cameo/00080.png" id="82_skwnn"]
+[ext_resource type="Texture2D" uid="uid://c8qtkucqd4r4q" path="res://ResPack/Cameo/00104.png" id="83_m6bvh"]
+[ext_resource type="Texture2D" uid="uid://bbvmoooy1aq0e" path="res://ResPack/Cameo/00013.png" id="84_3fpqe"]
+[ext_resource type="Texture2D" uid="uid://c0yj0qa3fwfp7" path="res://ResPack/Cameo/00052.png" id="85_dqcg4"]
+[ext_resource type="Texture2D" uid="uid://hyjscfmvu8q2" path="res://ResPack/Cameo/00110.png" id="86_pa50o"]
+[ext_resource type="Texture2D" uid="uid://dibnin6l6321p" path="res://ResPack/Cameo/00115.png" id="87_c8clw"]
+[ext_resource type="Texture2D" uid="uid://dkdew3deq7b7c" path="res://ResPack/Cameo/00169.png" id="88_w4gb8"]
+[ext_resource type="Texture2D" uid="uid://lua8ag4cvv1y" path="res://ResPack/Cameo/00071.png" id="89_kywq5"]
+[ext_resource type="Texture2D" uid="uid://emhnlkqbeqrl" path="res://ResPack/Cameo/00017.png" id="90_mhup8"]
+[ext_resource type="Texture2D" uid="uid://dft1ki6t8iebb" path="res://ResPack/Cameo/00037.png" id="91_y25kf"]
+[ext_resource type="Texture2D" uid="uid://c7ohqq3hgwk8v" path="res://ResPack/Cameo/00043.png" id="92_s7xt2"]
+[ext_resource type="Texture2D" uid="uid://ugwsvnr8v8q2" path="res://ResPack/Cameo/00047.png" id="93_rd0lc"]
+[ext_resource type="Texture2D" uid="uid://dqq60uketn647" path="res://ResPack/Cameo/00053.png" id="94_782rp"]
+[ext_resource type="Texture2D" uid="uid://nuy3vx08lod1" path="res://ResPack/Cameo/00085.png" id="95_o5k63"]
+[ext_resource type="Texture2D" uid="uid://ct1dxfggv02n3" path="res://ResPack/Cameo/00094.png" id="96_3vpju"]
+[ext_resource type="Texture2D" uid="uid://bglrn1sbvqkl4" path="res://ResPack/Cameo/00143.png" id="97_5s5bb"]
+[ext_resource type="Texture2D" uid="uid://cjugdfmbq6sg2" path="res://ResPack/Cameo/00167.png" id="98_e17l7"]
+[ext_resource type="Texture2D" uid="uid://bbka8wjdn1se1" path="res://ResPack/Cameo/00122.png" id="99_ka804"]
+[ext_resource type="Texture2D" uid="uid://fgonjlc1hgo" path="res://ResPack/Cameo/00118.png" id="100_fabsc"]
+[ext_resource type="Texture2D" uid="uid://2bdjphbtbj88" path="res://ResPack/Cameo/00201.png" id="101_dw6fr"]
+[ext_resource type="Texture2D" uid="uid://b2w0cv4hpqrug" path="res://ResPack/Cameo/00137.png" id="102_4nba3"]
+[ext_resource type="Texture2D" uid="uid://cxip1iv0v6rva" path="res://ResPack/Cameo/00152.png" id="103_upvci"]
+[ext_resource type="Texture2D" uid="uid://de4uiyhnf1pn3" path="res://ResPack/Cameo/00015.png" id="104_2ojxn"]
+[ext_resource type="Texture2D" uid="uid://cxxngdhimi0dt" path="res://ResPack/Cameo/00111.png" id="105_xoock"]
+[ext_resource type="Texture2D" uid="uid://dko5sdv22hbpo" path="res://ResPack/Cameo/00072.png" id="106_nrkct"]
+[ext_resource type="Texture2D" uid="uid://d13uye4usowhb" path="res://ResPack/Cameo/00076.png" id="107_lldop"]
+[ext_resource type="Texture2D" uid="uid://bd7bn1d8p1r0u" path="res://ResPack/Cameo/00078.png" id="108_a6tm1"]
+[ext_resource type="Texture2D" uid="uid://cnv6pdlaft2a2" path="res://ResPack/Cameo/00101.png" id="109_wgdf4"]
+[ext_resource type="Texture2D" uid="uid://b0uwm1p4aas00" path="res://ResPack/Cameo/00166.png" id="110_inm16"]
+[ext_resource type="Texture2D" uid="uid://bl3t0f78hhago" path="res://ResPack/Cameo/00170.png" id="111_80jv2"]
+[ext_resource type="Texture2D" uid="uid://drddwp7rqigse" path="res://ResPack/Cameo/00172.png" id="112_2j1e8"]
+[ext_resource type="Texture2D" uid="uid://o1gcodgiwqdq" path="res://ResPack/Cameo/00179.png" id="113_j5cax"]
+[ext_resource type="Texture2D" uid="uid://1l0dtuedcdax" path="res://ResPack/Cameo/00157.png" id="114_qiawq"]
+[ext_resource type="Texture2D" uid="uid://c3nbjs38rxumq" path="res://ResPack/Cameo/00136.png" id="115_oue15"]
+[ext_resource type="Texture2D" uid="uid://ddcbvs7s2iror" path="res://ResPack/Cameo/00154.png" id="116_1lpir"]
+[ext_resource type="Texture2D" uid="uid://m88vd3ygv1s6" path="res://ResPack/Cameo/00075.png" id="117_pkxms"]
+[ext_resource type="Texture2D" uid="uid://dsbs4tgk68m1i" path="res://ResPack/Cameo/00100.png" id="118_ek0ye"]
+[ext_resource type="Texture2D" uid="uid://ymq1haspuho8" path="res://ResPack/Cameo/00084.png" id="119_aajrn"]
+[ext_resource type="Texture2D" uid="uid://c4xhf2p6igc02" path="res://ResPack/Cameo/00034.png" id="120_h5wk6"]
+[ext_resource type="Texture2D" uid="uid://co6icjs8s787f" path="res://ResPack/Cameo/00109.png" id="121_0i4xj"]
+[ext_resource type="Texture2D" uid="uid://do57coay75gby" path="res://ResPack/Cameo/00083.png" id="122_vdhbm"]
+[ext_resource type="Texture2D" uid="uid://d32elleglqqhr" path="res://ResPack/Cameo/00087.png" id="123_r3xoc"]
+[ext_resource type="Texture2D" uid="uid://dldewqyi0yiox" path="res://ResPack/Cameo/00120.png" id="124_btcj6"]
+[ext_resource type="Texture2D" uid="uid://os0f7gip74yc" path="res://ResPack/Cameo/00106.png" id="125_o3e65"]
+[ext_resource type="Texture2D" uid="uid://p12seaiy35or" path="res://ResPack/Cameo/00187.png" id="126_iy5ax"]
+[ext_resource type="Texture2D" uid="uid://x10s4frg51dt" path="res://ResPack/Cameo/00147.png" id="127_pq5ts"]
+[ext_resource type="Texture2D" uid="uid://duvr1t1ct030d" path="res://ResPack/Cameo/00190.png" id="128_cwf7b"]
+[ext_resource type="Texture2D" uid="uid://boev5kng5776d" path="res://ResPack/Cameo/00121.png" id="129_it1ou"]
+[ext_resource type="Texture2D" uid="uid://dmlqtric4dqca" path="res://ResPack/Cameo/00066.png" id="130_8nk4k"]
+[ext_resource type="Texture2D" uid="uid://djdvbxm04salt" path="res://ResPack/Cameo/00035.png" id="131_3lsge"]
+[ext_resource type="Texture2D" uid="uid://di8dwenekjrdo" path="res://ResPack/Cameo/00189.png" id="132_5w2ly"]
+[ext_resource type="Texture2D" uid="uid://xadoukshsyu2" path="res://ResPack/Cameo/00062.png" id="133_xwcy6"]
+[ext_resource type="Texture2D" uid="uid://0w8rmh7or780" path="res://ResPack/Cameo/00125.png" id="134_ptnid"]
+[ext_resource type="Texture2D" uid="uid://bh0t7i2aro8dd" path="res://ResPack/Cameo/00160.png" id="135_smvah"]
+[ext_resource type="Texture2D" uid="uid://b31gvfngdhmba" path="res://ResPack/Cameo/00031.png" id="136_mpm3c"]
+[ext_resource type="Texture2D" uid="uid://bjgq0ug2s2ksd" path="res://ResPack/Cameo/00016.png" id="137_5quga"]
+[ext_resource type="Texture2D" uid="uid://bihxc3yeydjla" path="res://ResPack/Cameo/00020.png" id="138_nopfy"]
+[ext_resource type="Texture2D" uid="uid://dxtykjowl3igt" path="res://ResPack/Cameo/00081.png" id="139_0d6ia"]
+[ext_resource type="Texture2D" uid="uid://nwx72xyo3qui" path="res://ResPack/Cameo/00174.png" id="140_ph2ko"]
+[ext_resource type="Texture2D" uid="uid://ctr3mymvh422p" path="res://ResPack/Cameo/00180.png" id="141_h7s6i"]
+[ext_resource type="Texture2D" uid="uid://dipqnsnisyepa" path="res://ResPack/Cameo/00183.png" id="142_q1t3e"]
+[ext_resource type="Texture2D" uid="uid://vy8lj2kytm8w" path="res://ResPack/Cameo/00193.png" id="143_1aeql"]
+[ext_resource type="Texture2D" uid="uid://bvcu172ohmxaa" path="res://ResPack/Cameo/00195.png" id="144_kntdv"]
+[ext_resource type="Texture2D" uid="uid://crub8rbiev82w" path="res://ResPack/Cameo/00198.png" id="145_4dxt7"]
+[ext_resource type="Texture2D" uid="uid://dfgfttp4l47b0" path="res://ResPack/Cameo/00040.png" id="146_biyeh"]
+[ext_resource type="Texture2D" uid="uid://dji2cdbds1bil" path="res://ResPack/Cameo/00197.png" id="147_yvsds"]
+[ext_resource type="Texture2D" uid="uid://tqg8ops6qje1" path="res://ResPack/Cameo/00092.png" id="148_rjp50"]
+[ext_resource type="Texture2D" uid="uid://cqp6tb7okl7o5" path="res://ResPack/Cameo/00191.png" id="149_15b2i"]
+[ext_resource type="Texture2D" uid="uid://cmg8pawmpdw62" path="res://ResPack/Cameo/00162.png" id="150_bnrtt"]
+[ext_resource type="Texture2D" uid="uid://db4w7ld2434k" path="res://ResPack/Cameo/00024.png" id="151_gkboc"]
+[ext_resource type="Texture2D" uid="uid://ciycwb15d1dpx" path="res://ResPack/Cameo/00098.png" id="152_884lt"]
+[ext_resource type="Texture2D" uid="uid://bk2t7mypptxwo" path="res://ResPack/Cameo/00002.png" id="153_bw625"]
+[ext_resource type="Texture2D" uid="uid://bjern8vb7u60k" path="res://ResPack/Cameo/00200.png" id="153_ecnsx"]
+[ext_resource type="Texture2D" uid="uid://bkhvxmoonaibx" path="res://ResPack/Cameo/00185.png" id="154_8d6ma"]
+[ext_resource type="Texture2D" uid="uid://cxvnyct72ijf3" path="res://ResPack/Cameo/00022.png" id="155_t0gyn"]
+[ext_resource type="Texture2D" uid="uid://gmbl03mlnn31" path="res://ResPack/Cameo/00126.png" id="156_eiqmw"]
+[ext_resource type="Texture2D" uid="uid://b5thghiv4ogbs" path="res://ResPack/Cameo/00067.png" id="157_ha6ja"]
+[ext_resource type="Texture2D" uid="uid://co4gp8qdlgktw" path="res://ResPack/Cameo/00103.png" id="158_8anw1"]
+[ext_resource type="Texture2D" uid="uid://dgptfnx6gclfj" path="res://ResPack/Cameo/00113.png" id="159_f6sk8"]
+[ext_resource type="Texture2D" uid="uid://bkwpouk2pnbj8" path="res://ResPack/Cameo/00124.png" id="160_f4g8v"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hisxl"]
+bg_color = Color(0.2509804, 0.078431375, 0.5882353, 1)
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_l8r1r"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_u86dk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rej87"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 48
+corner_radius_top_right = 48
+corner_radius_bottom_right = 48
+corner_radius_bottom_left = 48
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_iceqs"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7wta4"]
+atlas = ExtResource("1_8ljsu")
+region = Rect2(0, 0, 85, 85)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ad87m"]
+atlas = ExtResource("1_8ljsu")
+region = Rect2(85, 0, 85, 85)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hxmgt"]
+atlas = ExtResource("1_8ljsu")
+region = Rect2(170, 0, 85, 85)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ixf11"]
+atlas = ExtResource("1_8ljsu")
+region = Rect2(255, 0, 85, 85)
+
+[node name="side" type="Control" unique_id=366494639]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 7.0
+offset_top = 69.0
+offset_right = 924.0
+offset_bottom = 487.0
+mouse_filter = 2
+script = ExtResource("1_pklgd")
+
+[node name="title" type="Label" parent="." unique_id=1970665514]
+layout_mode = 0
+offset_right = 917.0
+offset_bottom = 23.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_hisxl")
+text = "      Base / Defense / Lab                     Unit / Ship                             Tank / Plane                Spec                      PowerAdd"
+
+[node name="country" type="Control" parent="." unique_id=650350564]
+anchors_preset = 0
+offset_left = -7.0
+offset_top = -69.0
+offset_right = 33.0
+offset_bottom = -29.0
+
+[node name="GDI" type="Control" parent="country" unique_id=1046669400]
+anchors_preset = 0
+offset_left = 11.0
+offset_top = 499.0
+offset_right = 527.0
+offset_bottom = 569.0
+
+[node name="flag_1" type="Button" parent="country/GDI" unique_id=861698566]
+custom_minimum_size = Vector2(100, 70)
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 70.0
+theme = ExtResource("2_np8at")
+toggle_mode = true
+button_pressed = true
+button_group = SubResource("ButtonGroup_l8r1r")
+text = "
+Americans"
+
+[node name="ico" type="TextureRect" parent="country/GDI/flag_1" unique_id=2088927731]
+texture_filter = 1
+layout_mode = 0
+offset_left = 26.5
+offset_top = 11.0
+offset_right = 71.5
+offset_bottom = 32.0
+size_flags_horizontal = 4
+mouse_filter = 2
+texture = ExtResource("5_s1khn")
+stretch_mode = 3
+
+[node name="flag_2" type="Button" parent="country/GDI" unique_id=2082116390]
+custom_minimum_size = Vector2(100, 70)
+layout_mode = 0
+offset_left = 104.0
+offset_right = 204.0
+offset_bottom = 70.0
+theme = ExtResource("2_np8at")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_l8r1r")
+text = "
+Alliance"
+
+[node name="ico" type="TextureRect" parent="country/GDI/flag_2" unique_id=589792460]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 35)
+layout_mode = 0
+offset_left = 19.5
+offset_top = 4.0
+offset_right = 80.5
+offset_bottom = 39.0
+mouse_filter = 2
+texture = ExtResource("6_y0w1w")
+stretch_mode = 3
+
+[node name="flag_3" type="Button" parent="country/GDI" unique_id=448171600]
+custom_minimum_size = Vector2(100, 70)
+layout_mode = 0
+offset_left = 208.0
+offset_right = 308.0
+offset_bottom = 70.0
+theme = ExtResource("2_np8at")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_l8r1r")
+text = "
+French"
+
+[node name="ico" type="TextureRect" parent="country/GDI/flag_3" unique_id=536168250]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 35)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 4.0
+offset_right = 80.0
+offset_bottom = 39.0
+mouse_filter = 2
+texture = ExtResource("7_1v0pq")
+stretch_mode = 3
+
+[node name="flag_4" type="Button" parent="country/GDI" unique_id=1237880107]
+custom_minimum_size = Vector2(100, 70)
+layout_mode = 0
+offset_left = 312.0
+offset_right = 412.0
+offset_bottom = 70.0
+theme = ExtResource("2_np8at")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_l8r1r")
+text = "
+Germans"
+
+[node name="ico" type="TextureRect" parent="country/GDI/flag_4" unique_id=1954050895]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 35)
+layout_mode = 0
+offset_left = 14.5
+offset_top = 4.0
+offset_right = 85.5
+offset_bottom = 39.0
+mouse_filter = 2
+texture = ExtResource("8_wah2g")
+stretch_mode = 3
+
+[node name="flag_5" type="Button" parent="country/GDI" unique_id=2144217131]
+custom_minimum_size = Vector2(100, 70)
+layout_mode = 0
+offset_left = 416.0
+offset_right = 516.0
+offset_bottom = 70.0
+theme = ExtResource("2_np8at")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_l8r1r")
+text = "
+British"
+
+[node name="ico" type="TextureRect" parent="country/GDI/flag_5" unique_id=1559798332]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 35)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 4.0
+offset_right = 80.0
+offset_bottom = 39.0
+mouse_filter = 2
+texture = ExtResource("9_jv70m")
+stretch_mode = 3
+
+[node name="NOD" type="Control" parent="country" unique_id=510507662]
+visible = false
+anchors_preset = 0
+offset_left = 11.0
+offset_top = 499.0
+offset_right = 527.0
+offset_bottom = 569.0
+
+[node name="flag_6" type="Button" parent="country/NOD" unique_id=608981044]
+custom_minimum_size = Vector2(100, 70)
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 70.0
+theme = ExtResource("2_np8at")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_u86dk")
+text = "
+Africans"
+
+[node name="ico" type="TextureRect" parent="country/NOD/flag_6" unique_id=1903359875]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 35)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 4.0
+offset_right = 80.0
+offset_bottom = 39.0
+mouse_filter = 2
+texture = ExtResource("10_4ibf3")
+stretch_mode = 3
+
+[node name="flag_7" type="Button" parent="country/NOD" unique_id=227130978]
+custom_minimum_size = Vector2(100, 70)
+layout_mode = 0
+offset_left = 104.0
+offset_right = 204.0
+offset_bottom = 70.0
+theme = ExtResource("2_np8at")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_u86dk")
+text = "
+Arabs"
+
+[node name="ico" type="TextureRect" parent="country/NOD/flag_7" unique_id=578084427]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 35)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 4.0
+offset_right = 80.0
+offset_bottom = 39.0
+mouse_filter = 2
+texture = ExtResource("11_4pfpo")
+stretch_mode = 3
+
+[node name="flag_8" type="Button" parent="country/NOD" unique_id=287728882]
+custom_minimum_size = Vector2(100, 70)
+layout_mode = 0
+offset_left = 208.0
+offset_right = 308.0
+offset_bottom = 70.0
+theme = ExtResource("2_np8at")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_u86dk")
+text = "
+Cuba"
+
+[node name="ico" type="TextureRect" parent="country/NOD/flag_8" unique_id=899982371]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 35)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 4.0
+offset_right = 80.0
+offset_bottom = 39.0
+mouse_filter = 2
+texture = ExtResource("12_2ta47")
+stretch_mode = 3
+
+[node name="flag_9" type="Button" parent="country/NOD" unique_id=1558127158]
+custom_minimum_size = Vector2(100, 70)
+layout_mode = 0
+offset_left = 312.0
+offset_right = 412.0
+offset_bottom = 70.0
+theme = ExtResource("2_np8at")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_u86dk")
+text = "
+Russians"
+
+[node name="ico" type="TextureRect" parent="country/NOD/flag_9" unique_id=1362522302]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 35)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 4.0
+offset_right = 80.0
+offset_bottom = 39.0
+mouse_filter = 2
+texture = ExtResource("13_x3owo")
+stretch_mode = 3
+
+[node name="yuri" type="Control" parent="country" unique_id=89291812]
+visible = false
+anchors_preset = 0
+offset_left = 11.0
+offset_top = 499.0
+offset_right = 527.0
+offset_bottom = 569.0
+
+[node name="flag_10" type="Button" parent="country/yuri" unique_id=492908408]
+custom_minimum_size = Vector2(100, 70)
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 70.0
+theme = ExtResource("2_np8at")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_u86dk")
+text = "
+Yuri"
+
+[node name="ico" type="TextureRect" parent="country/yuri/flag_10" unique_id=991814539]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 35)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 4.0
+offset_right = 80.0
+offset_bottom = 39.0
+mouse_filter = 2
+texture = ExtResource("14_cn7ug")
+stretch_mode = 3
+
+[node name="Civilian" type="Control" parent="country" unique_id=423940895]
+visible = false
+anchors_preset = 0
+offset_left = 11.0
+offset_top = 499.0
+offset_right = 527.0
+offset_bottom = 569.0
+
+[node name="flag_13" type="Button" parent="country/Civilian" unique_id=1432976204]
+custom_minimum_size = Vector2(100, 70)
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 70.0
+theme = ExtResource("2_np8at")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_u86dk")
+text = "
+Neutral"
+
+[node name="ico" type="TextureRect" parent="country/Civilian/flag_13" unique_id=430511726]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 35)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 4.0
+offset_right = 80.0
+offset_bottom = 39.0
+mouse_filter = 2
+texture = ExtResource("15_rnxqe")
+stretch_mode = 3
+
+[node name="Mutant" type="Control" parent="country" unique_id=845719853]
+visible = false
+anchors_preset = 0
+offset_left = 11.0
+offset_top = 499.0
+offset_right = 527.0
+offset_bottom = 569.0
+
+[node name="flag_14" type="Button" parent="country/Mutant" unique_id=1225941659]
+custom_minimum_size = Vector2(100, 70)
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 70.0
+theme = ExtResource("2_np8at")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_u86dk")
+text = "
+Special"
+
+[node name="ico" type="TextureRect" parent="country/Mutant/flag_14" unique_id=358849531]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 35)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 4.0
+offset_right = 80.0
+offset_bottom = 39.0
+mouse_filter = 2
+texture = ExtResource("15_rnxqe")
+stretch_mode = 3
+
+[node name="side" type="Control" parent="." unique_id=24684322]
+anchors_preset = 0
+offset_left = -7.0
+offset_top = -69.0
+offset_right = 33.0
+offset_bottom = -29.0
+
+[node name="gdi" type="Button" parent="side" unique_id=961087047]
+clip_children = 1
+custom_minimum_size = Vector2(85, 85)
+layout_mode = 0
+offset_left = 604.0
+offset_top = 506.00003
+offset_right = 689.0
+offset_bottom = 591.0
+scale = Vector2(0.65, 0.65)
+theme_override_styles/normal = SubResource("StyleBoxFlat_rej87")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rej87")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rej87")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_iceqs")
+
+[node name="TextureRect" type="TextureRect" parent="side/gdi" unique_id=768478322]
+layout_mode = 0
+offset_right = 85.0
+offset_bottom = 85.0
+texture = SubResource("AtlasTexture_7wta4")
+
+[node name="nod" type="Button" parent="side" unique_id=936742066]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+clip_children = 1
+custom_minimum_size = Vector2(85, 85)
+layout_mode = 0
+offset_left = 667.05
+offset_top = 506.00003
+offset_right = 752.05
+offset_bottom = 591.0
+scale = Vector2(0.65, 0.65)
+theme_override_styles/normal = SubResource("StyleBoxFlat_rej87")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rej87")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rej87")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_iceqs")
+
+[node name="TextureRect" type="TextureRect" parent="side/nod" unique_id=1645125689]
+layout_mode = 0
+offset_right = 85.0
+offset_bottom = 85.0
+texture = SubResource("AtlasTexture_ad87m")
+
+[node name="yuri" type="Button" parent="side" unique_id=1790396077]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+custom_minimum_size = Vector2(85, 80)
+layout_mode = 0
+offset_left = 730.1
+offset_top = 506.00003
+offset_right = 815.1
+offset_bottom = 591.0
+scale = Vector2(0.65, 0.65)
+toggle_mode = true
+button_group = SubResource("ButtonGroup_iceqs")
+icon = ExtResource("15_qemld")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="et" type="Button" parent="side" unique_id=645830483]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+clip_children = 1
+custom_minimum_size = Vector2(85, 85)
+layout_mode = 0
+offset_left = 793.15
+offset_top = 506.00003
+offset_right = 878.15
+offset_bottom = 591.0
+scale = Vector2(0.65, 0.65)
+theme_override_styles/normal = SubResource("StyleBoxFlat_rej87")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rej87")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rej87")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_iceqs")
+
+[node name="TextureRect" type="TextureRect" parent="side/et" unique_id=600821215]
+layout_mode = 0
+offset_right = 85.0
+offset_bottom = 85.0
+texture = SubResource("AtlasTexture_hxmgt")
+
+[node name="civ" type="Button" parent="side" unique_id=321315179]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+clip_children = 1
+custom_minimum_size = Vector2(85, 85)
+layout_mode = 0
+offset_left = 856.2
+offset_top = 506.00003
+offset_right = 941.2
+offset_bottom = 591.0
+scale = Vector2(0.65, 0.65)
+theme_override_styles/normal = SubResource("StyleBoxFlat_rej87")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rej87")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rej87")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_iceqs")
+
+[node name="TextureRect" type="TextureRect" parent="side/civ" unique_id=1064849272]
+layout_mode = 0
+offset_right = 85.0
+offset_bottom = 85.0
+texture = SubResource("AtlasTexture_ixf11")
+
+[node name="tech-tree" type="Control" parent="." unique_id=373732438]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="GDI" type="Control" parent="tech-tree" unique_id=672146303]
+anchors_preset = 0
+
+[node name="base" type="FlowContainer" parent="tech-tree/GDI" unique_id=923064659]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 30.0
+offset_right = 199.0
+offset_bottom = 130.0
+
+[node name="00096" type="TextureRect" parent="tech-tree/GDI/base" unique_id=923827732]
+layout_mode = 2
+texture = ExtResource("26_p876w")
+
+[node name="00128" type="TextureRect" parent="tech-tree/GDI/base" unique_id=555657192]
+layout_mode = 2
+texture = ExtResource("27_4248f")
+
+[node name="00051" type="TextureRect" parent="tech-tree/GDI/base" unique_id=1276668670]
+layout_mode = 2
+texture = ExtResource("28_56qr1")
+
+[node name="00127" type="TextureRect" parent="tech-tree/GDI/base" unique_id=374591601]
+layout_mode = 2
+texture = ExtResource("29_7d8ud")
+
+[node name="00065" type="TextureRect" parent="tech-tree/GDI/base" unique_id=1951397147]
+layout_mode = 2
+texture = ExtResource("30_0dy4b")
+
+[node name="00008" type="TextureRect" parent="tech-tree/GDI/base" unique_id=863529525]
+layout_mode = 2
+texture = ExtResource("31_vnacs")
+
+[node name="def" type="FlowContainer" parent="tech-tree/GDI" unique_id=970838329]
+z_index = 2
+custom_minimum_size = Vector2(124, 0)
+layout_mode = 0
+offset_left = 11.0
+offset_top = 146.0
+offset_right = 199.0
+offset_bottom = 246.0
+
+[node name="00116" type="TextureRect" parent="tech-tree/GDI/def" unique_id=1119875483]
+layout_mode = 2
+texture = ExtResource("32_jpuje")
+
+[node name="00114" type="TextureRect" parent="tech-tree/GDI/def" unique_id=145725421]
+layout_mode = 2
+texture = ExtResource("33_cxjvn")
+
+[node name="00117" type="TextureRect" parent="tech-tree/GDI/def" unique_id=1889281483]
+layout_mode = 2
+texture = ExtResource("34_3fw78")
+
+[node name="00134" type="TextureRect" parent="tech-tree/GDI/def" unique_id=1489166855]
+layout_mode = 2
+texture = ExtResource("35_ef1rq")
+
+[node name="00058" type="TextureRect" parent="tech-tree/GDI/def" unique_id=489423760]
+layout_mode = 2
+texture = ExtResource("36_gumrh")
+
+[node name="00176" type="TextureRect" parent="tech-tree/GDI/def" unique_id=157319726]
+layout_mode = 2
+texture = ExtResource("37_120n5")
+
+[node name="unit" type="FlowContainer" parent="tech-tree/GDI" unique_id=1674709901]
+z_index = 2
+layout_mode = 0
+offset_left = 216.0
+offset_top = 30.0
+offset_right = 404.0
+offset_bottom = 234.0
+
+[node name="00019" type="TextureRect" parent="tech-tree/GDI/unit" unique_id=667603352]
+layout_mode = 2
+texture = ExtResource("38_6sqqy")
+
+[node name="00000" type="TextureRect" parent="tech-tree/GDI/unit" unique_id=706781310]
+layout_mode = 2
+texture = ExtResource("39_m36mh")
+
+[node name="00049" type="TextureRect" parent="tech-tree/GDI/unit" unique_id=918719566]
+layout_mode = 2
+texture = ExtResource("40_7cygu")
+
+[node name="00060" type="TextureRect" parent="tech-tree/GDI/unit" unique_id=980309160]
+layout_mode = 2
+texture = ExtResource("41_r8xev")
+
+[node name="00063" type="TextureRect" parent="tech-tree/GDI/unit" unique_id=1631517056]
+layout_mode = 2
+texture = ExtResource("42_sxlqm")
+
+[node name="00089" type="TextureRect" parent="tech-tree/GDI/unit" unique_id=206432668]
+layout_mode = 2
+texture = ExtResource("43_omlm7")
+
+[node name="00139" type="TextureRect" parent="tech-tree/GDI/unit" unique_id=1132403782]
+layout_mode = 2
+texture = ExtResource("44_fwgsb")
+
+[node name="00151" type="TextureRect" parent="tech-tree/GDI/unit" unique_id=169770531]
+layout_mode = 2
+texture = ExtResource("46_ast62")
+
+[node name="00158" type="TextureRect" parent="tech-tree/GDI/unit" unique_id=93641896]
+layout_mode = 2
+texture = ExtResource("47_ytv0g")
+
+[node name="00032" type="TextureRect" parent="tech-tree/GDI/unit" unique_id=2023711138]
+layout_mode = 2
+texture = ExtResource("48_3rrrg")
+
+[node name="00027" type="TextureRect" parent="tech-tree/GDI/unit" unique_id=95293064]
+layout_mode = 2
+texture = ExtResource("49_2jp61")
+
+[node name="plane" type="FlowContainer" parent="tech-tree/GDI" unique_id=1752481429]
+z_index = 2
+layout_mode = 0
+offset_left = 421.0
+offset_top = 264.0
+offset_right = 609.0
+offset_bottom = 312.0
+
+[node name="00074" type="TextureRect" parent="tech-tree/GDI/plane" unique_id=118053812]
+layout_mode = 2
+texture = ExtResource("50_y2xea")
+
+[node name="00050" type="TextureRect" parent="tech-tree/GDI/plane" unique_id=75791437]
+layout_mode = 2
+texture = ExtResource("51_6emx4")
+
+[node name="00141" type="TextureRect" parent="tech-tree/GDI/plane" unique_id=1951483127]
+layout_mode = 2
+texture = ExtResource("53_qmtot")
+
+[node name="tank" type="FlowContainer" parent="tech-tree/GDI" unique_id=688173905]
+z_index = 2
+layout_mode = 0
+offset_left = 421.0
+offset_top = 30.0
+offset_right = 610.0
+offset_bottom = 234.0
+
+[node name="00070" type="TextureRect" parent="tech-tree/GDI/tank" unique_id=1706336463]
+layout_mode = 2
+texture = ExtResource("54_ri30v")
+
+[node name="00005" type="TextureRect" parent="tech-tree/GDI/tank" unique_id=1747040986]
+layout_mode = 2
+texture = ExtResource("55_vr36g")
+
+[node name="00011" type="TextureRect" parent="tech-tree/GDI/tank" unique_id=1557188035]
+layout_mode = 2
+texture = ExtResource("56_p2kx4")
+
+[node name="00056" type="TextureRect" parent="tech-tree/GDI/tank" unique_id=211960457]
+layout_mode = 2
+texture = ExtResource("57_08jwr")
+
+[node name="00068" type="TextureRect" parent="tech-tree/GDI/tank" unique_id=828098212]
+layout_mode = 2
+texture = ExtResource("58_57bjy")
+
+[node name="00096" type="TextureRect" parent="tech-tree/GDI/tank" unique_id=1829510508]
+layout_mode = 2
+texture = ExtResource("26_p876w")
+
+[node name="00141" type="TextureRect" parent="tech-tree/GDI/tank" unique_id=119902999]
+layout_mode = 2
+texture = ExtResource("53_qmtot")
+
+[node name="00130" type="TextureRect" parent="tech-tree/GDI/tank" unique_id=1055372243]
+layout_mode = 2
+texture = ExtResource("59_mi4vy")
+
+[node name="00132" type="TextureRect" parent="tech-tree/GDI/tank" unique_id=600865476]
+layout_mode = 2
+texture = ExtResource("60_kmxuy")
+
+[node name="00155" type="TextureRect" parent="tech-tree/GDI/tank" unique_id=530427382]
+layout_mode = 2
+texture = ExtResource("61_fv3wq")
+
+[node name="ship" type="FlowContainer" parent="tech-tree/GDI" unique_id=285477988]
+z_index = 2
+layout_mode = 0
+offset_left = 216.0
+offset_top = 264.0
+offset_right = 404.0
+offset_bottom = 416.0
+
+[node name="00009" type="TextureRect" parent="tech-tree/GDI/ship" unique_id=2076606522]
+layout_mode = 2
+texture = ExtResource("63_qpn4p")
+
+[node name="00004" type="TextureRect" parent="tech-tree/GDI/ship" unique_id=1799373083]
+layout_mode = 2
+texture = ExtResource("64_u4mgl")
+
+[node name="00026" type="TextureRect" parent="tech-tree/GDI/ship" unique_id=1832653056]
+layout_mode = 2
+texture = ExtResource("65_0qnsw")
+
+[node name="00039" type="TextureRect" parent="tech-tree/GDI/ship" unique_id=111308138]
+layout_mode = 2
+texture = ExtResource("66_dcttr")
+
+[node name="00045" type="TextureRect" parent="tech-tree/GDI/ship" unique_id=411817668]
+layout_mode = 2
+texture = ExtResource("67_yp3es")
+
+[node name="00091" type="TextureRect" parent="tech-tree/GDI/ship" unique_id=1427447161]
+layout_mode = 2
+texture = ExtResource("68_4opw4")
+
+[node name="00042" type="TextureRect" parent="tech-tree/GDI/ship" unique_id=1265361829]
+layout_mode = 2
+texture = ExtResource("69_sbyn3")
+
+[node name="lab" type="FlowContainer" parent="tech-tree/GDI" unique_id=1993070041]
+z_index = 2
+layout_mode = 0
+offset_left = 11.0
+offset_top = 264.0
+offset_right = 199.0
+offset_bottom = 416.0
+
+[node name="00161" type="TextureRect" parent="tech-tree/GDI/lab" unique_id=1894706752]
+layout_mode = 2
+texture = ExtResource("70_a13j2")
+
+[node name="00036" type="TextureRect" parent="tech-tree/GDI/lab" unique_id=760385371]
+layout_mode = 2
+texture = ExtResource("71_513xn")
+
+[node name="00177" type="TextureRect" parent="tech-tree/GDI/lab" unique_id=179762851]
+layout_mode = 2
+texture = ExtResource("72_v2acq")
+
+[node name="00055" type="TextureRect" parent="tech-tree/GDI/lab" unique_id=1955832454]
+layout_mode = 2
+texture = ExtResource("73_6lx0v")
+
+[node name="00029" type="TextureRect" parent="tech-tree/GDI/lab" unique_id=998765514]
+layout_mode = 2
+texture = ExtResource("76_vv6k8")
+
+[node name="00014" type="TextureRect" parent="tech-tree/GDI/lab" unique_id=1143665457]
+layout_mode = 2
+texture = ExtResource("74_llt61")
+
+[node name="spec" type="FlowContainer" parent="tech-tree/GDI" unique_id=611719808]
+layout_mode = 0
+offset_left = 622.0
+offset_top = 30.0
+offset_right = 682.0
+offset_bottom = 286.0
+
+[node name="00007" type="TextureRect" parent="tech-tree/GDI/spec" unique_id=1304781011]
+layout_mode = 2
+texture = ExtResource("75_7ekfa")
+
+[node name="00010" type="TextureRect" parent="tech-tree/GDI/spec" unique_id=283618156]
+layout_mode = 2
+texture = ExtResource("52_2cb67")
+
+[node name="00059" type="TextureRect" parent="tech-tree/GDI/spec" unique_id=118951534]
+layout_mode = 2
+texture = ExtResource("23_isq13")
+
+[node name="00164" type="TextureRect" parent="tech-tree/GDI/spec" unique_id=1925290126]
+layout_mode = 2
+texture = ExtResource("62_3ypj8")
+
+[node name="00149" type="TextureRect" parent="tech-tree/GDI/spec" unique_id=402314403]
+layout_mode = 2
+texture = ExtResource("45_cjje1")
+
+[node name="NOD" type="Control" parent="tech-tree" unique_id=1458689674]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="base" type="FlowContainer" parent="tech-tree/NOD" unique_id=1042316699]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 30.0
+offset_right = 199.0
+offset_bottom = 130.0
+
+[node name="00145" type="TextureRect" parent="tech-tree/NOD/base" unique_id=515680362]
+layout_mode = 2
+texture = ExtResource("77_gqdr0")
+
+[node name="00107" type="TextureRect" parent="tech-tree/NOD/base" unique_id=1413986509]
+layout_mode = 2
+texture = ExtResource("78_4ofhx")
+
+[node name="00105" type="TextureRect" parent="tech-tree/NOD/base" unique_id=1811076976]
+layout_mode = 2
+texture = ExtResource("79_3i4ed")
+
+[node name="00108" type="TextureRect" parent="tech-tree/NOD/base" unique_id=1373537758]
+layout_mode = 2
+texture = ExtResource("80_xbueo")
+
+[node name="00129" type="TextureRect" parent="tech-tree/NOD/base" unique_id=40474611]
+layout_mode = 2
+texture = ExtResource("81_0hldh")
+
+[node name="00080" type="TextureRect" parent="tech-tree/NOD/base" unique_id=70930995]
+layout_mode = 2
+texture = ExtResource("82_skwnn")
+
+[node name="def" type="FlowContainer" parent="tech-tree/NOD" unique_id=1817421121]
+z_index = 2
+custom_minimum_size = Vector2(124, 0)
+layout_mode = 0
+offset_left = 11.0
+offset_top = 146.0
+offset_right = 199.0
+offset_bottom = 246.0
+
+[node name="00104" type="TextureRect" parent="tech-tree/NOD/def" unique_id=1234093072]
+layout_mode = 2
+texture = ExtResource("83_m6bvh")
+
+[node name="00013" type="TextureRect" parent="tech-tree/NOD/def" unique_id=1583908572]
+layout_mode = 2
+texture = ExtResource("84_3fpqe")
+
+[node name="00052" type="TextureRect" parent="tech-tree/NOD/def" unique_id=568881849]
+layout_mode = 2
+texture = ExtResource("85_dqcg4")
+
+[node name="00110" type="TextureRect" parent="tech-tree/NOD/def" unique_id=347651151]
+layout_mode = 2
+texture = ExtResource("86_pa50o")
+
+[node name="00115" type="TextureRect" parent="tech-tree/NOD/def" unique_id=601061595]
+layout_mode = 2
+texture = ExtResource("87_c8clw")
+
+[node name="00169" type="TextureRect" parent="tech-tree/NOD/def" unique_id=1404667129]
+layout_mode = 2
+texture = ExtResource("88_w4gb8")
+
+[node name="unit" type="FlowContainer" parent="tech-tree/NOD" unique_id=1477681372]
+z_index = 2
+layout_mode = 0
+offset_left = 216.0
+offset_top = 30.0
+offset_right = 404.0
+offset_bottom = 234.0
+
+[node name="00071" type="TextureRect" parent="tech-tree/NOD/unit" unique_id=1634014845]
+layout_mode = 2
+texture = ExtResource("89_kywq5")
+
+[node name="00017" type="TextureRect" parent="tech-tree/NOD/unit" unique_id=1981817270]
+layout_mode = 2
+texture = ExtResource("90_mhup8")
+
+[node name="00043" type="TextureRect" parent="tech-tree/NOD/unit" unique_id=1080800981]
+layout_mode = 2
+texture = ExtResource("92_s7xt2")
+
+[node name="00047" type="TextureRect" parent="tech-tree/NOD/unit" unique_id=800813870]
+layout_mode = 2
+texture = ExtResource("93_rd0lc")
+
+[node name="00053" type="TextureRect" parent="tech-tree/NOD/unit" unique_id=806269306]
+layout_mode = 2
+texture = ExtResource("94_782rp")
+
+[node name="00085" type="TextureRect" parent="tech-tree/NOD/unit" unique_id=1736792450]
+layout_mode = 2
+texture = ExtResource("95_o5k63")
+
+[node name="00094" type="TextureRect" parent="tech-tree/NOD/unit" unique_id=1116135693]
+layout_mode = 2
+texture = ExtResource("96_3vpju")
+
+[node name="00143" type="TextureRect" parent="tech-tree/NOD/unit" unique_id=1353028634]
+layout_mode = 2
+texture = ExtResource("97_5s5bb")
+
+[node name="00122" type="TextureRect" parent="tech-tree/NOD/unit" unique_id=912845129]
+layout_mode = 2
+texture = ExtResource("99_ka804")
+
+[node name="00118" type="TextureRect" parent="tech-tree/NOD/unit" unique_id=545160048]
+layout_mode = 2
+texture = ExtResource("100_fabsc")
+
+[node name="plane" type="FlowContainer" parent="tech-tree/NOD" unique_id=697931578]
+z_index = 2
+layout_mode = 0
+offset_left = 421.0
+offset_top = 264.0
+offset_right = 609.0
+offset_bottom = 364.0
+
+[node name="00201" type="TextureRect" parent="tech-tree/NOD/plane" unique_id=2035593498]
+layout_mode = 2
+texture = ExtResource("101_dw6fr")
+
+[node name="00137" type="TextureRect" parent="tech-tree/NOD/plane" unique_id=1428556594]
+layout_mode = 2
+texture = ExtResource("102_4nba3")
+
+[node name="00152" type="TextureRect" parent="tech-tree/NOD/plane" unique_id=404545645]
+layout_mode = 2
+texture = ExtResource("103_upvci")
+
+[node name="00015" type="TextureRect" parent="tech-tree/NOD/plane" unique_id=1014539814]
+layout_mode = 2
+texture = ExtResource("104_2ojxn")
+
+[node name="tank" type="FlowContainer" parent="tech-tree/NOD" unique_id=911081946]
+z_index = 2
+layout_mode = 0
+offset_left = 421.0
+offset_top = 30.0
+offset_right = 610.0
+offset_bottom = 234.0
+
+[node name="00111" type="TextureRect" parent="tech-tree/NOD/tank" unique_id=461052675]
+layout_mode = 2
+texture = ExtResource("105_xoock")
+
+[node name="00072" type="TextureRect" parent="tech-tree/NOD/tank" unique_id=249705703]
+layout_mode = 2
+texture = ExtResource("106_nrkct")
+
+[node name="00076" type="TextureRect" parent="tech-tree/NOD/tank" unique_id=700310124]
+layout_mode = 2
+texture = ExtResource("107_lldop")
+
+[node name="00078" type="TextureRect" parent="tech-tree/NOD/tank" unique_id=1094928673]
+layout_mode = 2
+texture = ExtResource("108_a6tm1")
+
+[node name="00101" type="TextureRect" parent="tech-tree/NOD/tank" unique_id=535064343]
+layout_mode = 2
+texture = ExtResource("109_wgdf4")
+
+[node name="00172" type="TextureRect" parent="tech-tree/NOD/tank" unique_id=572482168]
+layout_mode = 2
+texture = ExtResource("112_2j1e8")
+
+[node name="ship" type="FlowContainer" parent="tech-tree/NOD" unique_id=607465860]
+z_index = 2
+layout_mode = 0
+offset_left = 216.0
+offset_top = 264.0
+offset_right = 408.0
+offset_bottom = 416.0
+
+[node name="00179" type="TextureRect" parent="tech-tree/NOD/ship" unique_id=171649962]
+layout_mode = 2
+texture = ExtResource("113_j5cax")
+
+[node name="00157" type="TextureRect" parent="tech-tree/NOD/ship" unique_id=1230491460]
+layout_mode = 2
+texture = ExtResource("114_qiawq")
+
+[node name="00136" type="TextureRect" parent="tech-tree/NOD/ship" unique_id=949804210]
+layout_mode = 2
+texture = ExtResource("115_oue15")
+
+[node name="00154" type="TextureRect" parent="tech-tree/NOD/ship" unique_id=5584970]
+layout_mode = 2
+texture = ExtResource("116_1lpir")
+
+[node name="00075" type="TextureRect" parent="tech-tree/NOD/ship" unique_id=980591421]
+layout_mode = 2
+texture = ExtResource("117_pkxms")
+
+[node name="lab" type="FlowContainer" parent="tech-tree/NOD" unique_id=674977227]
+z_index = 2
+layout_mode = 0
+offset_left = 11.0
+offset_top = 264.0
+offset_right = 199.0
+offset_bottom = 416.0
+
+[node name="00100" type="TextureRect" parent="tech-tree/NOD/lab" unique_id=1837676082]
+layout_mode = 2
+texture = ExtResource("118_ek0ye")
+
+[node name="00084" type="TextureRect" parent="tech-tree/NOD/lab" unique_id=897318959]
+layout_mode = 2
+texture = ExtResource("119_aajrn")
+
+[node name="00034" type="TextureRect" parent="tech-tree/NOD/lab" unique_id=1594312463]
+layout_mode = 2
+texture = ExtResource("120_h5wk6")
+
+[node name="00109" type="TextureRect" parent="tech-tree/NOD/lab" unique_id=1418066247]
+layout_mode = 2
+texture = ExtResource("121_0i4xj")
+
+[node name="00083" type="TextureRect" parent="tech-tree/NOD/lab" unique_id=552996834]
+layout_mode = 2
+texture = ExtResource("122_vdhbm")
+
+[node name="00087" type="TextureRect" parent="tech-tree/NOD/lab" unique_id=806284944]
+layout_mode = 2
+texture = ExtResource("123_r3xoc")
+
+[node name="00120" type="TextureRect" parent="tech-tree/NOD/lab" unique_id=103601219]
+layout_mode = 2
+texture = ExtResource("124_btcj6")
+
+[node name="00106" type="TextureRect" parent="tech-tree/NOD/lab" unique_id=1931238996]
+layout_mode = 2
+texture = ExtResource("125_o3e65")
+
+[node name="spec" type="FlowContainer" parent="tech-tree/NOD" unique_id=1212886222]
+layout_mode = 0
+offset_left = 624.0
+offset_top = 30.0
+offset_right = 684.0
+offset_bottom = 182.0
+
+[node name="00037" type="TextureRect" parent="tech-tree/NOD/spec" unique_id=730616742]
+layout_mode = 2
+texture = ExtResource("91_y25kf")
+
+[node name="00167" type="TextureRect" parent="tech-tree/NOD/spec" unique_id=1872408517]
+layout_mode = 2
+texture = ExtResource("98_e17l7")
+
+[node name="00166" type="TextureRect" parent="tech-tree/NOD/spec" unique_id=2110237172]
+layout_mode = 2
+texture = ExtResource("110_inm16")
+
+[node name="00170" type="TextureRect" parent="tech-tree/NOD/spec" unique_id=888984111]
+layout_mode = 2
+texture = ExtResource("111_80jv2")
+
+[node name="Yuri" type="Control" parent="tech-tree" unique_id=79104529]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="base" type="FlowContainer" parent="tech-tree/Yuri" unique_id=833485673]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 30.0
+offset_right = 199.0
+offset_bottom = 130.0
+
+[node name="00187" type="TextureRect" parent="tech-tree/Yuri/base" unique_id=1609851298]
+layout_mode = 2
+texture = ExtResource("126_iy5ax")
+
+[node name="00147" type="TextureRect" parent="tech-tree/Yuri/base" unique_id=680846882]
+layout_mode = 2
+texture = ExtResource("127_pq5ts")
+
+[node name="00190" type="TextureRect" parent="tech-tree/Yuri/base" unique_id=2012365745]
+layout_mode = 2
+texture = ExtResource("128_cwf7b")
+
+[node name="00121" type="TextureRect" parent="tech-tree/Yuri/base" unique_id=1785105293]
+layout_mode = 2
+texture = ExtResource("129_it1ou")
+
+[node name="00066" type="TextureRect" parent="tech-tree/Yuri/base" unique_id=1858149497]
+layout_mode = 2
+texture = ExtResource("130_8nk4k")
+
+[node name="00035" type="TextureRect" parent="tech-tree/Yuri/base" unique_id=1209616514]
+layout_mode = 2
+texture = ExtResource("131_3lsge")
+
+[node name="def" type="FlowContainer" parent="tech-tree/Yuri" unique_id=1518484979]
+z_index = 2
+custom_minimum_size = Vector2(124, 0)
+layout_mode = 0
+offset_left = 11.0
+offset_top = 146.0
+offset_right = 199.0
+offset_bottom = 246.0
+
+[node name="00189" type="TextureRect" parent="tech-tree/Yuri/def" unique_id=992720513]
+layout_mode = 2
+texture = ExtResource("132_5w2ly")
+
+[node name="00062" type="TextureRect" parent="tech-tree/Yuri/def" unique_id=380871566]
+layout_mode = 2
+texture = ExtResource("133_xwcy6")
+
+[node name="00125" type="TextureRect" parent="tech-tree/Yuri/def" unique_id=685287373]
+layout_mode = 2
+texture = ExtResource("134_ptnid")
+
+[node name="00160" type="TextureRect" parent="tech-tree/Yuri/def" unique_id=234127257]
+layout_mode = 2
+texture = ExtResource("135_smvah")
+
+[node name="00031" type="TextureRect" parent="tech-tree/Yuri/def" unique_id=1491536920]
+layout_mode = 2
+texture = ExtResource("136_mpm3c")
+
+[node name="unit" type="FlowContainer" parent="tech-tree/Yuri" unique_id=1434036145]
+z_index = 2
+layout_mode = 0
+offset_left = 216.0
+offset_top = 30.0
+offset_right = 404.0
+offset_bottom = 234.0
+
+[node name="00016" type="TextureRect" parent="tech-tree/Yuri/unit" unique_id=874417326]
+layout_mode = 2
+texture = ExtResource("137_5quga")
+
+[node name="00020" type="TextureRect" parent="tech-tree/Yuri/unit" unique_id=1896471099]
+layout_mode = 2
+texture = ExtResource("138_nopfy")
+
+[node name="00081" type="TextureRect" parent="tech-tree/Yuri/unit" unique_id=915639194]
+layout_mode = 2
+texture = ExtResource("139_0d6ia")
+
+[node name="00174" type="TextureRect" parent="tech-tree/Yuri/unit" unique_id=10520442]
+layout_mode = 2
+texture = ExtResource("140_ph2ko")
+
+[node name="00180" type="TextureRect" parent="tech-tree/Yuri/unit" unique_id=591618456]
+layout_mode = 2
+texture = ExtResource("141_h7s6i")
+
+[node name="00183" type="TextureRect" parent="tech-tree/Yuri/unit" unique_id=617948079]
+layout_mode = 2
+texture = ExtResource("142_q1t3e")
+
+[node name="00193" type="TextureRect" parent="tech-tree/Yuri/unit" unique_id=453505347]
+layout_mode = 2
+texture = ExtResource("143_1aeql")
+
+[node name="00195" type="TextureRect" parent="tech-tree/Yuri/unit" unique_id=1881360648]
+layout_mode = 2
+texture = ExtResource("144_kntdv")
+
+[node name="00198" type="TextureRect" parent="tech-tree/Yuri/unit" unique_id=907140464]
+layout_mode = 2
+texture = ExtResource("145_4dxt7")
+
+[node name="plane" type="FlowContainer" parent="tech-tree/Yuri" unique_id=313804233]
+z_index = 2
+layout_mode = 0
+offset_left = 421.0
+offset_top = 264.0
+offset_right = 609.0
+offset_bottom = 364.0
+
+[node name="00040" type="TextureRect" parent="tech-tree/Yuri/plane" unique_id=1828377380]
+layout_mode = 2
+texture = ExtResource("146_biyeh")
+
+[node name="tank" type="FlowContainer" parent="tech-tree/Yuri" unique_id=688989132]
+z_index = 2
+layout_mode = 0
+offset_left = 421.0
+offset_top = 30.0
+offset_right = 610.0
+offset_bottom = 234.0
+
+[node name="00197" type="TextureRect" parent="tech-tree/Yuri/tank" unique_id=543875236]
+layout_mode = 2
+texture = ExtResource("147_yvsds")
+
+[node name="00092" type="TextureRect" parent="tech-tree/Yuri/tank" unique_id=57474616]
+layout_mode = 2
+texture = ExtResource("148_rjp50")
+
+[node name="00191" type="TextureRect" parent="tech-tree/Yuri/tank" unique_id=210176230]
+layout_mode = 2
+texture = ExtResource("149_15b2i")
+
+[node name="00162" type="TextureRect" parent="tech-tree/Yuri/tank" unique_id=494274577]
+layout_mode = 2
+texture = ExtResource("150_bnrtt")
+
+[node name="00024" type="TextureRect" parent="tech-tree/Yuri/tank" unique_id=561154450]
+layout_mode = 2
+texture = ExtResource("151_gkboc")
+
+[node name="00098" type="TextureRect" parent="tech-tree/Yuri/tank" unique_id=62008062]
+layout_mode = 2
+texture = ExtResource("152_884lt")
+
+[node name="ship" type="FlowContainer" parent="tech-tree/Yuri" unique_id=750267698]
+z_index = 2
+layout_mode = 0
+offset_left = 216.0
+offset_top = 264.0
+offset_right = 408.0
+offset_bottom = 416.0
+
+[node name="00200" type="TextureRect" parent="tech-tree/Yuri/ship" unique_id=159268821]
+layout_mode = 2
+texture = ExtResource("153_ecnsx")
+
+[node name="00185" type="TextureRect" parent="tech-tree/Yuri/ship" unique_id=964418539]
+layout_mode = 2
+texture = ExtResource("154_8d6ma")
+
+[node name="00022" type="TextureRect" parent="tech-tree/Yuri/ship" unique_id=409820757]
+layout_mode = 2
+texture = ExtResource("155_t0gyn")
+
+[node name="lab" type="FlowContainer" parent="tech-tree/Yuri" unique_id=1695157633]
+z_index = 2
+layout_mode = 0
+offset_left = 11.0
+offset_top = 264.0
+offset_right = 199.0
+offset_bottom = 416.0
+
+[node name="00126" type="TextureRect" parent="tech-tree/Yuri/lab" unique_id=583542708]
+layout_mode = 2
+texture = ExtResource("156_eiqmw")
+
+[node name="00067" type="TextureRect" parent="tech-tree/Yuri/lab" unique_id=817840793]
+layout_mode = 2
+texture = ExtResource("157_ha6ja")
+
+[node name="00103" type="TextureRect" parent="tech-tree/Yuri/lab" unique_id=997409531]
+layout_mode = 2
+texture = ExtResource("158_8anw1")
+
+[node name="00113" type="TextureRect" parent="tech-tree/Yuri/lab" unique_id=409242964]
+layout_mode = 2
+texture = ExtResource("159_f6sk8")
+
+[node name="00124" type="TextureRect" parent="tech-tree/Yuri/lab" unique_id=1965174486]
+layout_mode = 2
+texture = ExtResource("160_f4g8v")
+
+[node name="Civ" type="Control" parent="tech-tree" unique_id=1659173136]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Mutant" type="Control" parent="tech-tree" unique_id=886717014]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NewSet" type="FlowContainer" parent="." unique_id=1750011450]
+layout_mode = 0
+offset_left = 700.0
+offset_top = 32.0
+offset_right = 904.0
+offset_bottom = 421.0
+
+[node name="upgrade_1" type="Button" parent="NewSet" unique_id=445530488]
+custom_minimum_size = Vector2(100, 90)
+layout_mode = 2
+theme = ExtResource("3_hcdtn")
+text = "
+初始升级"
+
+[node name="ico" type="TextureRect" parent="NewSet/upgrade_1" unique_id=1323280759]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 8.5
+offset_right = 80.0
+offset_bottom = 56.5
+mouse_filter = 2
+texture = ExtResource("153_bw625")
+
+[node name="speed" type="Button" parent="NewSet" unique_id=978310594]
+custom_minimum_size = Vector2(100, 90)
+layout_mode = 2
+theme = ExtResource("4_5mtdr")
+text = "建造速度
+设置"
+
+[node name="global6" type="Button" parent="NewSet" unique_id=1082545995]
+custom_minimum_size = Vector2(100, 90)
+layout_mode = 2
+theme = ExtResource("4_5mtdr")
+text = "费用倍率
+x0.2"
+
+[node name="addSet" type="Button" parent="NewSet" unique_id=1264407197]
+custom_minimum_size = Vector2(100, 90)
+layout_mode = 2
+theme = ExtResource("4_5mtdr")
+text = "添加特性
++"

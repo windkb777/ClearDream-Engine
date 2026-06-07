@@ -1,0 +1,342 @@
+[gd_scene format=3 uid="uid://uee6me8lrarb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8mfpm"]
+bg_color = Color(0, 0, 0, 0.5882353)
+
+[node name="Option" type="Control" unique_id=530826238]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="FlowContainer" type="FlowContainer" parent="." unique_id=1396943615]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 95.0
+offset_right = 475.0
+offset_bottom = 480.0
+
+[node name="ParaDrop" type="Label" parent="FlowContainer" unique_id=1616469994]
+custom_minimum_size = Vector2(120, 90)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_8mfpm")
+text = "ParaDrop"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SpyStuff" type="Label" parent="FlowContainer" unique_id=989990968]
+custom_minimum_size = Vector2(120, 90)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_8mfpm")
+text = "SpyStuff"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Upgrade" type="Label" parent="FlowContainer" unique_id=119984607]
+custom_minimum_size = Vector2(120, 90)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_8mfpm")
+text = "Upgrade
+Ability"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DeathAnimation" type="Label" parent="FlowContainer" unique_id=1171270043]
+custom_minimum_size = Vector2(120, 90)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_8mfpm")
+text = "Death
+Animation"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Hover Pips" type="Label" parent="FlowContainer" unique_id=1920823284]
+custom_minimum_size = Vector2(120, 90)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_8mfpm")
+text = "Hover
+Pips"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Hover Pips2" type="Label" parent="FlowContainer" unique_id=507318104]
+custom_minimum_size = Vector2(120, 90)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_8mfpm")
+text = "Window Size"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Hover Pips3" type="Label" parent="FlowContainer" unique_id=1559124991]
+custom_minimum_size = Vector2(120, 90)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_8mfpm")
+text = "Taunt
+wav"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Hover Pips4" type="Label" parent="FlowContainer" unique_id=965749029]
+custom_minimum_size = Vector2(120, 90)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_8mfpm")
+text = "Super
+Weapon"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Hover Pips5" type="Label" parent="FlowContainer" unique_id=1242617359]
+custom_minimum_size = Vector2(120, 90)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_8mfpm")
+text = "Tiberium
+Ore/Gems"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ParaDrop" type="Label" parent="." unique_id=1961163327]
+visible = false
+layout_mode = 0
+offset_left = 39.0
+offset_top = 116.0
+offset_right = 149.0
+offset_bottom = 269.0
+text = "空降伞兵
+投放范围=1024
+美军: E1,8
+联盟: E1,8
+苏军: E2,9
+尤里: INIT,6"
+
+[node name="Spy" type="Label" parent="." unique_id=432597861]
+visible = false
+layout_mode = 0
+offset_left = 33.0
+offset_top = 100.0
+offset_right = 369.0
+offset_bottom = 279.0
+text = "渗透鼠标图像=
+间谍伪装外观：E1
+间谍停电时间：1000
+偷窃金钱比例：.5
+
+坦克伪装外观：Tree01,Tree02,Tree03,Tree04
+伪装闪烁时间：20"
+
+[node name="Upgrade" type="Label" parent="." unique_id=1254077378]
+visible = false
+layout_mode = 0
+offset_left = 30.0
+offset_top = 83.0
+offset_right = 894.0
+offset_bottom = 418.0
+text = "升级经验门槛：3.0  (单位自身倍率)
+等级上限：2
+伤害1.1   速度1.2   视力0.0   护甲1.5   射速0.6
+
+一级升级变形   二级升级变形 
+升级音效：UpgradeVerteran
+
+[FASTER,STRONGER,FIREPOWER,SCATTER,ROF,SIGHT,CLOAK,TIBERIUM_PROOF,
+VEIN_PROOF,SELF_HEAL,EXPLODES,RADAR_INVISIBLE,SENSORS,FEARLESS,C4,
+TIBERIUM_HEAL,GUARD_AREA,CRUSHER]
+
+EMPIMMUNE 免疫EMP,RADIMMUNE 免疫辐射,PROTECTED_DRIVER 免疫狙杀驾驶员,UNWARPABLE 无法被超时空传送
+POISONIMMUNE 免疫毒,PSIONICWEAPONIMMUNE 免疫精神攻击,PSIONICSIMMUNE 免疫心灵控制（超武依然有效） "
+
+[node name="radar" type="Label" parent="." unique_id=1740382046]
+visible = false
+layout_mode = 0
+offset_left = 22.0
+offset_top = 82.0
+offset_right = 1253.0
+offset_bottom = 651.0
+text = "; Controls for radar events
+; The events, in order, are:
+; (1) Generic Combat Event,
+; (2) Generic Noncombat Event,
+; (3) Dropzone Event,
+; (4) Base Under Attack Event,
+; (5) Harvester Under Attack Event,
+; (6) Enemy Object Sensed Event
+; So, for example, to change the visibility duration of the Harvester Under Attack Event,
+; you would change the fifth number in the list for RadarEventVisibilityDurations
+;
+RadarEventSuppressionDistances=8, 8, 8, 8, 8, 6			; suppression distance in cells
+RadarEventVisibilityDurations=200,200,200,200,200,200  ; event visibility in frames
+RadarEventDurations=400,400,400,400,400,400  ;  event duration in frames
+FlashFrameTime=7
+RadarCombatFlashTime=49	; this should ALWAYS be an odd multiple of FlashFrameTime, ie RadarCombatFlashTime / FlashFrameTime should be an odd number
+RadarEventMinRadius=8
+RadarEventSpeed=1.2
+RadarEventRotationSpeed=.05
+RadarEventColorSpeed=.1
+RevealTriggerRadius=9   ; the sight range of a \"reveal around waypoint\" trigger, 10 is maximum
+AllyReveal=yes          ; Allies automatically reveal radar maps to each other?
+LocalRadarColor=0,255,0		; PCG. This is the color that you show up as on the radar, no matter
+; what your house color is.  I.e. if you are blue in the game, and this
+; color is green, then you show up as green on the radar.
+"
+
+[node name="death" type="Label" parent="." unique_id=340625276]
+visible = false
+layout_mode = 0
+offset_left = 22.0
+offset_top = 82.0
+offset_right = 230.0
+offset_bottom = 283.0
+text = ";*** Animation labels ***
+DamageFireTypes=FIRE01,FIRE02,FIRE03  ; Fires that can spring up on damaged buildings
+OreTwinkle=TWNK1                      ; This is the anim to use for the Ore Twinkle.
+BarrelExplode=EXPLOLRG  ; exploding crates animation
+BarrelDebris=GASTANK,PIECE  ; exploding crate debris list
+BarrelParticle=SmallGreySSys
+NukeTakeOff=NUKETO ;gs
+Wake=WAKE1              ; wake effect when traveling on/over water
+DropPod=DROPPOD,DROPPOD2 ; mark to leave after drop pod lands
+DeadBodies=DEATH_A,DEATH_B,DEATH_C,DEATH_D,DEATH_E,DEATH_F   ; choice of dead bodies to leave around
+MetallicDebris=DBRIS1LG,DBRIS2LG,DBRIS3LG,DBRIS4LG,DBRIS5LG,DBRIS6LG,DBRIS7LG,DBRIS8LG,DBRIS9LG,DBRS10LG,DBRIS1SM,DBRIS2SM,DBRIS3SM,DBRIS4SM,DBRIS5SM,DBRIS6SM,DBRIS7SM,DBRIS8SM,DBRIS9SM,DBRS10SM,pole,poleb,off
+BridgeExplosions=TWLT026,TWLT036,TWLT050,TWLT070	; the explosions to use for the bridge explosion effect
+IonBlast=RING1          ; initial anim when ion cannon hits
+IonBeam=IONBEAM
+WeatherConClouds=WCCLOUD1,WCCLOUD2,WCCLOUD3		; PCG. The clouds used to show the weather controller effect.
+WeatherConBolts=WCLBOLT1,WCLBOLT2,WCLBOLT3		; PCG. The lightning bolts used to show the weather controller effect.
+WeatherConBoltExplosion=EXPLOLB					; PCG. Special bolt explosion.
+;Psychic Dominator control
+DominatorWarhead=DominatorWH ; warhead used for the damage part
+DominatorDamage=1000;250
+DominatorCaptureRange=1;4;now that warhead is actually needed to do damage, here is the capture range
+DominatorFirstAnim=PDFXCLD;gs this is the whole giant heeead
+DominatorSecondAnim=PDFXLOC;gs this is the ring on the ground
+DominatorFireAtPercentage=20; ;50; gs at this percent into the FirstAnim, the actual effect will fire
+ChronoPlacement=CHRONOAR; SJM: User just designated site of Chrono transfer SOURCE
+ChronoBeam=CHRONOBM		;GEF initial anim when chrono sphere strikes -- SJM: no longer used
+ChronoBlast=CHRONOFD	; SJM: Chrono transfer SOURCE ACTIVATES
+ChronoBlastDest=CHRONOTG; SJM: Chrono transfer DESTINATION ACTIVATES
+WarpIn=WARPIN;WAKE2			; animation when warping in
+WarpOut=WARPOUT;WAKE2			; animation when warping out
+WarpAway=WARPAWAY;RING1		; animation when warping something out of existance
+IronCurtainInvokeAnim=IRONBLST; anim that plays upon invocation of the Iron Curtain
+ForceShieldInvokeAnim=FORCSHLD
+WeaponNullifyAnim=IRONFX	; animation to play when a weapon is neutralized by Invulnerability
+ChronoSparkle1=CHRONOSK		;animation to play over something getting chronoed (teleported or out of time)
+InfantryExplode=S_BANG34 ; animation when infantry just explodes
+FlamingInfantry=FLAMEGUY  ; anim to use for special onfire infantry logic
+InfantryHeadPop=YURIDIE;gs other generic death anims
+InfantryNuked=NUKEDIE
+InfantryVirus=VIRUSD
+InfantryBrute=BRUTDIE
+InfantryMutate=GENDEATH
+Behind=BEHIND
+MoveFlash=RING          ; movement destination click feedback animation
+Parachute=PARACH        ; big parachute used for paratroopers
+BombParachute=PARABOMB  ; parachute used for parabombs and other parachuted ordinance
+DropZoneAnim=BEACON     ; animation to use for the drop zone flair
+EMPulseSparkles=EMP_FX01	; Anim to play over units disabled by an EM Pulse.
+"
+
+[node name="Ore_tiberium_Gem" type="Label" parent="." unique_id=1652458409]
+visible = false
+layout_mode = 0
+offset_left = 22.0
+offset_top = 82.0
+offset_right = 903.0
+offset_bottom = 2237.0
+text = "TiberiumHeal=.010       ; minutes between applying Tiberium healing [for those units that heal in Tiberium]
+Meteorites=no           ; Are tiberium meteorites going to occur?
+TiberiumShortScan=6;//gs revert 3; sgc was 6 ; cell radius to scan when harvesting a single patch of Tiberium
+TiberiumLongScan=48      ; cells radius to scan when looking for a new Tiberium patch to harvest
+TiberiumTransmogrify=40
+TiberiumExplosive=no   ; Is tiberium extra explosive?
+TiberiumExplosionDamage=0 ; the amount of damage dealt out by explosion in a big tiberium chain reaction
+TiberiumStrength=-1 ;	the higher this value, the harder it is to get big tiberium to explode
+
+GrowthRate=5            ; minutes between ore (Tiberium) growth
+TiberiumGrows=yes       ; Does ore grow denser over time?
+TiberiumSpreads=yes     ; Does ore spread into adjacent areas?
+PurifierBonus=.25 ; percent ore purifiers add to ore value
+OreTwinkle=TWNK1                      ; This is the anim to use for the Ore Twinkle.
+OreTwinkleChance=30                   ; At map startup, there is 1 chance in N that a cell with ore will get a twinkle anim.
+
+[Tiberiums]
+0=Riparius
+1=Cruentus
+2=Vinifera
+3=Aboreus
+
+; Name = display name
+; Image = image to use [1=small, 2=large, 3=vine]
+; Value = credit value per 'bail'
+; Growth = growth rate
+; Spread = spread rate
+; Power = explosive power per 'bail' (def=0)
+; Color = display color of the Tiberium
+; Shard = crystal to fly off when chain reacting (def=none)
+
+
+; This is Ore
+[Riparius]
+Name=Tiberium Riparius
+Image=1
+Power=0
+Value=25
+Growth=2200
+GrowthPercentage=.06
+Spread=2200
+SpreadPercentage=.06
+Color=NeonGreen			; **WARNING**: If you change this color, notify Bret_a
+
+; These are Gems
+[Cruentus]
+Name=Tiberium Cruentus
+Image=2
+Value=50
+Growth=10000
+GrowthPercentage=0
+Spread=10000
+SpreadPercentage=0
+Power=0 ;10
+Color=NeonBlue			; **WARNING**: If you change this color, notify Bret_a
+Debris=CRYSTAL1,CRYSTAL2,CRYSTAL3,CRYSTAL4
+
+; This may also be ore - DB
+[Vinifera]
+Name=Tiberium Vinifera
+Image=3
+Value=25
+Growth=2200
+GrowthPercentage=.06
+Spread=2200
+SpreadPercentage=.06
+Power=0 ; 10
+Color=NeonBlue		; **WARNING**: If you change this color, notify Bret_a
+Debris=CRYSTAL1,CRYSTAL2,CRYSTAL3,CRYSTAL4
+
+; This might be ore, I'm not certain - DB
+[Aboreus]
+Name=Tiberium Aboreus
+Image=4
+Value=25
+Growth=2200
+GrowthPercentage=.06
+Spread=2200
+SpreadPercentage=.06
+Power=0
+Color=NeonBlue		; **WARNING**: If you change this color, notify Bret_a
+Debris=CRYSTAL1,CRYSTAL2,CRYSTAL3,CRYSTAL4
+"
+
+[node name="Shroud" type="Label" parent="." unique_id=2102296473]
+visible = false
+layout_mode = 0
+offset_left = 20.0
+offset_top = 254.0
+offset_right = 749.0
+offset_bottom = 433.0
+text = "FogOfWar=no             ; Is fog of war enabled?
+BlendedFog=yes          ; should we blend the fog (as opposed to dither it)
+AircraftFogReveal=6
+ShroudRate=4            ; minutes between each shroud creep process [0 means no shadow creep]
+FogRate=.01
+ShroudGrow=no           ; Does the shroud grow back over time?
+Shroud=yes"

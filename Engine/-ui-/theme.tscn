@@ -1,0 +1,863 @@
+[gd_scene format=3 uid="uid://cu7rtmfafxma1"]
+
+[ext_resource type="Script" uid="uid://dxqtdcnqccubp" path="res://Engine/-script-/-ins/theme.gd" id="1_4rljl"]
+[ext_resource type="Texture2D" uid="uid://dqwpln6dwphtc" path="res://z.gdset/ui_ico/ra2_img/side_bar.png" id="1_f4k1q"]
+[ext_resource type="Texture2D" uid="uid://cux7dx4i4rrmk" path="res://z.gdset/ui_ico/ra2_img/bottom_bar.png" id="2_t5skt"]
+[ext_resource type="Texture2D" uid="uid://bljruv1ujijop" path="res://ResPack/UI_Theme/0.png" id="3_t5skt"]
+[ext_resource type="Texture2D" uid="uid://rilpa3nhvfoc" path="res://ResPack/UI_Theme/1.png" id="5_iipk4"]
+[ext_resource type="Texture2D" uid="uid://buis8llsxkojk" path="res://ResPack/UI_Theme/2.png" id="6_o4hq5"]
+[ext_resource type="Texture2D" uid="uid://bp3c5nwanbu8f" path="res://ResPack/UI_Theme/3.png" id="7_4qols"]
+[ext_resource type="Texture2D" uid="uid://by475u3vwn7jg" path="res://ResPack/UI_Theme/4.png" id="8_abv78"]
+[ext_resource type="Texture2D" uid="uid://d0dt8radf66ej" path="res://ResPack/UI_Theme/5.png" id="9_oux0s"]
+[ext_resource type="Texture2D" uid="uid://jya1uylaafdm" path="res://ResPack/UI_Theme/6.png" id="10_6gx4y"]
+[ext_resource type="Texture2D" uid="uid://c7vwfrk72irlm" path="res://ResPack/UI_Theme/7.png" id="11_ncotf"]
+[ext_resource type="Texture2D" uid="uid://cy77xrbsnpa4e" path="res://ResPack/UI_Theme/8.png" id="12_50lb3"]
+[ext_resource type="Texture2D" uid="uid://oy8nntvb6xsh" path="res://ResPack/UI_Theme/9.png" id="13_abtvn"]
+[ext_resource type="Texture2D" uid="uid://b5unkklygjt3" path="res://ResPack/UI_Theme/a0.png" id="14_dlbmy"]
+[ext_resource type="Texture2D" uid="uid://mfu5i13k87vv" path="res://ResPack/UI_Theme/a5.png" id="15_n6w2h"]
+[ext_resource type="Texture2D" uid="uid://2ebcw5fr0ewx" path="res://ResPack/UI_Theme/a7.png" id="16_xkc1y"]
+[ext_resource type="Texture2D" uid="uid://dx0lfb3q5ddx8" path="res://ResPack/UI_Theme/mpascrnl.png" id="17_rofk4"]
+[ext_resource type="Texture2D" uid="uid://ddafh761vnr7v" path="res://ResPack/UI_Theme/mpsscrnl.png" id="18_pepbi"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d6sf5"]
+bg_color = Color(0.2509804, 0.078431375, 0.5882353, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5rn5e"]
+content_margin_left = 4.0
+content_margin_right = 4.0
+bg_color = Color(0.2509804, 0.078431375, 0.5882353, 1)
+border_width_bottom = 4
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8kqao"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ad87m"]
+bg_color = Color(0.5822391, 0.0011191362, 0.7202741, 1)
+border_width_bottom = 3
+border_color = Color(0.31867984, 0.000320262, 0.4016685, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qd0ox"]
+bg_color = Color(0.6392157, 0.25490198, 0, 1)
+corner_radius_top_left = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u22sw"]
+bg_color = Color(0.3497552, 0.0015514466, 0.67242676, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6cxkw"]
+bg_color = Color(0.67058825, 0.16862746, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2ggk3"]
+bg_color = Color(0.2901961, 0, 0.6, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_otkkd"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.3143161, 0.31431615, 0.31431586, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ufmsx"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bfw52"]
+bg_color = Color(0.5822391, 0.0011191362, 0.7202741, 1)
+border_width_bottom = 3
+border_color = Color(0.31867984, 0.000320262, 0.4016685, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ixf11"]
+bg_color = Color(0.67, 0.1675, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sn8lc"]
+bg_color = Color(0.2888139, 0.0010262439, 0.6004437, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j1iy6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kjcfr"]
+bg_color = Color(0.09411765, 0.09411765, 0.09411765, 0.74509805)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xxt5l"]
+content_margin_left = 3.0
+content_margin_top = 3.0
+content_margin_right = 3.0
+content_margin_bottom = 3.0
+bg_color = Color(0, 0, 0, 0.7058824)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mmcu0"]
+content_margin_left = 3.0
+content_margin_top = 3.0
+content_margin_right = 3.0
+content_margin_bottom = 3.0
+bg_color = Color(0, 0.6413911, 0.9392796, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_xxt5l"]
+
+[node name="theme" type="Control" unique_id=607463627]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 7.0
+offset_top = 69.0
+offset_right = 924.0
+offset_bottom = 487.0
+mouse_filter = 2
+script = ExtResource("1_4rljl")
+
+[node name="title" type="Label" parent="." unique_id=2061941710]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 917.0
+offset_bottom = 23.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_d6sf5")
+text = "     UI Theme                                                                                                            Audio Theme                       "
+
+[node name="UI" type="Control" parent="." unique_id=1979396480]
+anchors_preset = 0
+offset_left = -7.0
+offset_top = -69.0
+offset_right = 33.0
+offset_bottom = -29.0
+
+[node name="img" type="Control" parent="UI" unique_id=621405569]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ref" type="TextureRect" parent="UI/img" unique_id=1338343797]
+modulate = Color(0.497474, 0.497474, 0.497474, 1)
+custom_minimum_size = Vector2(120, 80)
+layout_mode = 0
+offset_left = 19.0
+offset_top = 104.0
+offset_right = 219.0
+offset_bottom = 284.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+expand_mode = 1
+
+[node name="Sel" type="OptionButton" parent="UI/img" unique_id=784103332]
+custom_minimum_size = Vector2(120, 35)
+layout_mode = 0
+offset_left = 281.0
+offset_top = 104.0
+offset_right = 401.0
+offset_bottom = 139.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_5rn5e")
+alignment = 1
+selected = 2
+item_count = 11
+popup/item_0/text = "Logo"
+popup/item_0/id = 0
+popup/item_1/text = "启动壁纸"
+popup/item_1/id = 1
+popup/item_2/text = "主页"
+popup/item_2/id = 2
+popup/item_3/text = "设置"
+popup/item_3/id = 3
+popup/item_4/text = "遭遇战"
+popup/item_4/id = 4
+popup/item_5/text = "地图模式"
+popup/item_5/id = 5
+popup/item_6/text = "单人战役"
+popup/item_6/id = 6
+popup/item_7/text = "网际网路"
+popup/item_7/id = 7
+popup/item_8/text = "退出游戏"
+popup/item_8/id = 8
+popup/item_9/text = "游戏结束判定"
+popup/item_9/id = 9
+popup/item_10/text = "载入图"
+popup/item_10/id = 10
+
+[node name="SideBar" type="TextureRect" parent="UI/img" unique_id=2046923691]
+layout_mode = 0
+offset_left = 219.0
+offset_top = 104.0
+offset_right = 271.0
+offset_bottom = 292.27588
+texture = ExtResource("1_f4k1q")
+expand_mode = 1
+
+[node name="BottomBar" type="TextureRect" parent="UI/img" unique_id=825324588]
+layout_mode = 0
+offset_left = 19.000002
+offset_top = 284.00003
+offset_right = 518.99994
+offset_bottom = 303.99997
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_t5skt")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="UI" unique_id=1898734422]
+visible = false
+layout_mode = 0
+offset_left = 22.0
+offset_top = 295.0
+offset_right = 314.0
+offset_bottom = 457.0
+theme_override_font_sizes/font_size = 14
+text = "主页视频: ra2ts_l.bik (28s)
+仪表盘: sdtp.shp (168x199) (2帧)
+仪表更换模式: sdwrntmp.shp (168x177) (6帧)
+仪表动画: sdwrnanm.shp (92x53) (91帧)
+按钮动画: sdbtnanm.shp (156x42) (17帧)
+按钮背景: sdbtnbkgd.shp (168x42)
+底边栏: lwscrnl.shp (632x32)"
+
+[node name="Sel2" type="CheckButton" parent="UI" unique_id=1466194073]
+visible = false
+custom_minimum_size = Vector2(120, 35)
+layout_mode = 0
+offset_left = 281.0
+offset_top = 166.0
+offset_right = 401.0
+offset_bottom = 201.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_5rn5e")
+text = "元素框"
+alignment = 1
+
+[node name="BGM" type="Node2D" parent="." unique_id=1437540796]
+position = Vector2(529, 23)
+
+[node name="bg" type="Panel" parent="BGM" unique_id=686880082]
+offset_top = 27.0
+offset_right = 216.0
+offset_bottom = 177.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8kqao")
+
+[node name="label" type="Label" parent="BGM" unique_id=637459101]
+offset_right = 216.0
+offset_bottom = 28.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ad87m")
+text = "背景音乐"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Intro" type="Label" parent="BGM" unique_id=1115694948]
+custom_minimum_size = Vector2(100, 32)
+offset_left = 6.0
+offset_top = 32.0
+offset_right = 106.0
+offset_bottom = 64.0
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_qd0ox")
+text = "开场序章"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Drok" type="Label" parent="BGM" unique_id=1803230823]
+custom_minimum_size = Vector2(100, 32)
+offset_left = 110.0
+offset_top = 32.0
+offset_right = 210.0
+offset_bottom = 64.0
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_u22sw")
+text = "Drok"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LOADING" type="Label" parent="BGM" unique_id=1908197326]
+custom_minimum_size = Vector2(100, 32)
+offset_left = 6.0
+offset_top = 68.0
+offset_right = 106.0
+offset_bottom = 100.0
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_qd0ox")
+text = "过场配乐"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Bully" type="Label" parent="BGM" unique_id=977924577]
+custom_minimum_size = Vector2(100, 32)
+offset_left = 110.0
+offset_top = 68.0
+offset_right = 210.0
+offset_bottom = 100.0
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_u22sw")
+text = "Bully"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SCORE" type="Label" parent="BGM" unique_id=719600049]
+custom_minimum_size = Vector2(100, 32)
+offset_left = 6.0
+offset_top = 104.0
+offset_right = 106.0
+offset_bottom = 136.0
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_qd0ox")
+text = "积分结算"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Scorex" type="Label" parent="BGM" unique_id=446596929]
+custom_minimum_size = Vector2(100, 32)
+offset_left = 110.0
+offset_top = 104.0
+offset_right = 210.0
+offset_bottom = 136.0
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_u22sw")
+text = "ScoreX"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CREDITS" type="Label" parent="BGM" unique_id=910700795]
+custom_minimum_size = Vector2(100, 32)
+offset_left = 6.0
+offset_top = 140.0
+offset_right = 106.0
+offset_bottom = 172.0
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_qd0ox")
+text = "鸣谢动画"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OptionX" type="Label" parent="BGM" unique_id=1455487197]
+custom_minimum_size = Vector2(100, 32)
+offset_left = 110.0
+offset_top = 140.0
+offset_right = 210.0
+offset_bottom = 172.0
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_u22sw")
+text = "OptionX"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Music Pack" type="Node2D" parent="." unique_id=65406729]
+position = Vector2(529, 204)
+
+[node name="bg" type="Panel" parent="Music Pack" unique_id=246019936]
+offset_top = 27.0
+offset_right = 216.0
+offset_bottom = 176.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8kqao")
+
+[node name="label" type="Label" parent="Music Pack" unique_id=1449327263]
+offset_right = 216.0
+offset_bottom = 28.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ad87m")
+text = "音乐包 Music Pack"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Intro" type="Label" parent="Music Pack" unique_id=1992032179]
+custom_minimum_size = Vector2(100, 32)
+offset_left = 6.0
+offset_top = 32.0
+offset_right = 210.0
+offset_bottom = 64.0
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_6cxkw")
+text = "RedAlert 2 "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Intro2" type="Label" parent="Music Pack" unique_id=1280582124]
+custom_minimum_size = Vector2(100, 32)
+offset_left = 6.0
+offset_top = 68.0
+offset_right = 210.0
+offset_bottom = 100.0
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_2ggk3")
+text = "Yuri's Revenge"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="add1" type="Button" parent="Music Pack" unique_id=1322500912]
+offset_left = 6.0
+offset_top = 104.0
+offset_right = 210.0
+offset_bottom = 136.0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_otkkd")
+toggle_mode = true
+text = "+"
+
+[node name="add2" type="Button" parent="Music Pack" unique_id=1987103778]
+offset_left = 6.0
+offset_top = 140.0
+offset_right = 210.0
+offset_bottom = 172.0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_otkkd")
+toggle_mode = true
+text = "+"
+
+[node name="Battle Wav" type="Node2D" parent="." unique_id=590403093]
+position = Vector2(749, 13)
+
+[node name="bg" type="Panel" parent="Battle Wav" unique_id=170953479]
+offset_top = 27.0
+offset_right = 168.0
+offset_bottom = 405.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ufmsx")
+
+[node name="label" type="Label" parent="Battle Wav" unique_id=1008692551]
+offset_top = 10.0
+offset_right = 168.0
+offset_bottom = 38.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_bfw52")
+text = "战斗演奏曲"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="slot" type="VBoxContainer" parent="Battle Wav" unique_id=491992620]
+offset_left = 4.0
+offset_top = 40.0
+offset_right = 164.0
+offset_bottom = 402.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 2
+
+[node name="music1" type="Label" parent="Battle Wav/slot" unique_id=813126847]
+custom_minimum_size = Vector2(160, 24)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_ixf11")
+text = "Hell March 2"
+horizontal_alignment = 1
+
+[node name="music2" type="Label" parent="Battle Wav/slot" unique_id=1864293054]
+custom_minimum_size = Vector2(160, 24)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_ixf11")
+text = "Ready the Army"
+horizontal_alignment = 1
+
+[node name="music3" type="Label" parent="Battle Wav/slot" unique_id=1516204429]
+custom_minimum_size = Vector2(160, 24)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_ixf11")
+text = "Grinder"
+horizontal_alignment = 1
+
+[node name="music4" type="Label" parent="Battle Wav/slot" unique_id=1767026227]
+custom_minimum_size = Vector2(160, 24)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_ixf11")
+text = "In Deep"
+horizontal_alignment = 1
+
+[node name="music5" type="Label" parent="Battle Wav/slot" unique_id=637044996]
+custom_minimum_size = Vector2(160, 24)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_ixf11")
+text = "Destroy"
+horizontal_alignment = 1
+
+[node name="music6" type="Label" parent="Battle Wav/slot" unique_id=1475846764]
+custom_minimum_size = Vector2(160, 24)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_ixf11")
+text = "Blow It Up"
+horizontal_alignment = 1
+
+[node name="music7" type="Label" parent="Battle Wav/slot" unique_id=871499537]
+custom_minimum_size = Vector2(160, 24)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_ixf11")
+text = "Eagle Hunter"
+horizontal_alignment = 1
+
+[node name="music8" type="Label" parent="Battle Wav/slot" unique_id=969906501]
+custom_minimum_size = Vector2(160, 24)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_ixf11")
+text = "Fortification"
+horizontal_alignment = 1
+
+[node name="music9" type="Label" parent="Battle Wav/slot" unique_id=1218630818]
+custom_minimum_size = Vector2(160, 24)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_ixf11")
+text = "Jank"
+horizontal_alignment = 1
+
+[node name="music10" type="Label" parent="Battle Wav/slot" unique_id=1645247965]
+custom_minimum_size = Vector2(160, 24)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_sn8lc")
+text = "Brain Freeze"
+horizontal_alignment = 1
+
+[node name="music11" type="Label" parent="Battle Wav/slot" unique_id=1613675279]
+custom_minimum_size = Vector2(160, 24)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_sn8lc")
+text = "Defend the Base"
+horizontal_alignment = 1
+
+[node name="music12" type="Label" parent="Battle Wav/slot" unique_id=1452721656]
+custom_minimum_size = Vector2(160, 24)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_sn8lc")
+text = "Phat Attack"
+horizontal_alignment = 1
+
+[node name="music13" type="Label" parent="Battle Wav/slot" unique_id=1016573756]
+custom_minimum_size = Vector2(160, 24)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_sn8lc")
+text = "Tactics"
+horizontal_alignment = 1
+
+[node name="music14" type="Label" parent="Battle Wav/slot" unique_id=829424065]
+custom_minimum_size = Vector2(160, 24)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_sn8lc")
+text = "Deceiver"
+horizontal_alignment = 1
+
+[node name="Set" type="Button" parent="Battle Wav" unique_id=1464365343]
+visible = false
+offset_top = 38.0
+offset_right = 168.0
+offset_bottom = 405.0
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_j1iy6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_kjcfr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kjcfr")
+toggle_mode = true
+button_pressed = true
+text = "Set"
+
+[node name="0" type="TextureRect" parent="." unique_id=991266466]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 23.0
+offset_right = 801.0
+offset_bottom = 623.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_t5skt")
+
+[node name="ea_wwlogo" type="Button" parent="0" unique_id=407822604]
+custom_minimum_size = Vector2(90, 80)
+layout_mode = 0
+offset_left = 14.0
+offset_top = 616.0
+offset_right = 59.0
+offset_bottom = 656.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_xxt5l")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mmcu0")
+toggle_mode = true
+button_pressed = true
+button_group = SubResource("ButtonGroup_xxt5l")
+icon = ExtResource("3_t5skt")
+icon_alignment = 1
+expand_icon = true
+
+[node name="glslmd" type="Button" parent="0" unique_id=2031802682]
+custom_minimum_size = Vector2(90, 80)
+layout_mode = 0
+offset_left = 112.0
+offset_top = 616.0
+offset_right = 157.0
+offset_bottom = 656.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_xxt5l")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mmcu0")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_xxt5l")
+icon = ExtResource("5_iipk4")
+icon_alignment = 1
+expand_icon = true
+
+[node name="ra2ts_l" type="Button" parent="0" unique_id=537475784]
+custom_minimum_size = Vector2(90, 80)
+layout_mode = 0
+offset_left = 210.0
+offset_top = 616.0
+offset_right = 255.0
+offset_bottom = 656.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_xxt5l")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mmcu0")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_xxt5l")
+icon = ExtResource("6_o4hq5")
+icon_alignment = 1
+expand_icon = true
+
+[node name="mnscrnl" type="Button" parent="0" unique_id=1662111163]
+custom_minimum_size = Vector2(90, 80)
+layout_mode = 0
+offset_left = 308.0
+offset_top = 616.0
+offset_right = 353.0
+offset_bottom = 656.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_xxt5l")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mmcu0")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_xxt5l")
+icon = ExtResource("7_4qols")
+icon_alignment = 1
+expand_icon = true
+
+[node name="fsbkgbld" type="Button" parent="0" unique_id=1747666287]
+custom_minimum_size = Vector2(90, 80)
+layout_mode = 0
+offset_left = 406.0
+offset_top = 616.0
+offset_right = 451.0
+offset_bottom = 656.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_xxt5l")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mmcu0")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_xxt5l")
+icon = ExtResource("8_abv78")
+icon_alignment = 1
+expand_icon = true
+
+[node name="mnscrnlcoopgamesetup" type="Button" parent="0" unique_id=57336771]
+custom_minimum_size = Vector2(90, 80)
+layout_mode = 0
+offset_left = 504.0
+offset_top = 616.0
+offset_right = 549.0
+offset_bottom = 656.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_xxt5l")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mmcu0")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_xxt5l")
+icon = ExtResource("9_oux0s")
+icon_alignment = 1
+expand_icon = true
+
+[node name="mnscrnlcustomizebattle" type="Button" parent="0" unique_id=1054966899]
+custom_minimum_size = Vector2(90, 80)
+layout_mode = 0
+offset_left = 602.0
+offset_top = 616.0
+offset_right = 647.0
+offset_bottom = 656.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_xxt5l")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mmcu0")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_xxt5l")
+icon = ExtResource("10_6gx4y")
+icon_alignment = 1
+expand_icon = true
+
+[node name="mutiplayselection" type="Button" parent="0" unique_id=76798883]
+custom_minimum_size = Vector2(90, 80)
+layout_mode = 0
+offset_left = 700.0
+offset_top = 616.0
+offset_right = 745.0
+offset_bottom = 656.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_xxt5l")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mmcu0")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_xxt5l")
+icon = ExtResource("11_ncotf")
+icon_alignment = 1
+expand_icon = true
+
+[node name="pudlgbgn" type="Button" parent="0" unique_id=1067585640]
+custom_minimum_size = Vector2(90, 80)
+layout_mode = 0
+offset_left = 14.0
+offset_top = 704.0
+offset_right = 59.0
+offset_bottom = 744.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_xxt5l")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mmcu0")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_xxt5l")
+icon = ExtResource("12_50lb3")
+icon_alignment = 1
+expand_icon = true
+
+[node name="grfxtxt" type="Button" parent="0" unique_id=1177759523]
+custom_minimum_size = Vector2(90, 80)
+layout_mode = 0
+offset_left = 112.0
+offset_top = 704.0
+offset_right = 157.0
+offset_bottom = 744.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_xxt5l")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mmcu0")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_xxt5l")
+icon = ExtResource("13_abtvn")
+icon_alignment = 1
+expand_icon = true
+
+[node name="ls800ustates" type="Button" parent="0" unique_id=1011398567]
+custom_minimum_size = Vector2(90, 80)
+layout_mode = 0
+offset_left = 210.0
+offset_top = 704.0
+offset_right = 255.0
+offset_bottom = 744.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_xxt5l")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mmcu0")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_xxt5l")
+icon = ExtResource("14_dlbmy")
+icon_alignment = 1
+expand_icon = true
+
+[node name="ls800russia" type="Button" parent="0" unique_id=196656821]
+custom_minimum_size = Vector2(90, 80)
+layout_mode = 0
+offset_left = 308.0
+offset_top = 704.0
+offset_right = 353.0
+offset_bottom = 744.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_xxt5l")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mmcu0")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_xxt5l")
+icon = ExtResource("15_n6w2h")
+icon_alignment = 1
+expand_icon = true
+
+[node name="ls800yuri" type="Button" parent="0" unique_id=19239653]
+custom_minimum_size = Vector2(90, 80)
+layout_mode = 0
+offset_left = 406.0
+offset_top = 704.0
+offset_right = 451.0
+offset_bottom = 744.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_xxt5l")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mmcu0")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_xxt5l")
+icon = ExtResource("16_xkc1y")
+icon_alignment = 1
+expand_icon = true
+
+[node name="mpascrnl" type="Button" parent="0" unique_id=696124759]
+custom_minimum_size = Vector2(90, 80)
+layout_mode = 0
+offset_left = 504.0
+offset_top = 704.0
+offset_right = 549.0
+offset_bottom = 744.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_xxt5l")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mmcu0")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_xxt5l")
+icon = ExtResource("17_rofk4")
+icon_alignment = 1
+expand_icon = true
+
+[node name="mpsscrnl" type="Button" parent="0" unique_id=2125341560]
+custom_minimum_size = Vector2(90, 80)
+layout_mode = 0
+offset_left = 602.0
+offset_top = 704.0
+offset_right = 647.0
+offset_bottom = 744.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_xxt5l")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mmcu0")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_xxt5l")
+icon = ExtResource("18_pepbi")
+icon_alignment = 1
+expand_icon = true
+
+[node name="empty__" type="Button" parent="0" unique_id=931792172]
+custom_minimum_size = Vector2(90, 80)
+layout_mode = 0
+offset_left = 700.0
+offset_top = 704.0
+offset_right = 745.0
+offset_bottom = 744.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_xxt5l")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mmcu0")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_xxt5l")
+icon_alignment = 1
+expand_icon = true
+
+[node name="tips" type="RichTextLabel" parent="." unique_id=744438905]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 430.0
+offset_right = 912.0
+offset_bottom = 500.0
+text = "Tip : 游戏启动视频文件位于游戏根目录，名称为ea_wwlogo.bik,该视频如若需要替换,格式须统一为bik (Bink Video),名称同样.由于是视频格式,所以并不需要Pal色盘文件进行画面调色."
+
+[node name="ui" type="Button" parent="." unique_id=2146181831]
+layout_mode = 0
+offset_left = 405.0
+offset_top = 28.0
+offset_right = 525.0
+offset_bottom = 84.0
+text = "Simple
+Files"
+
+[node name="aud" type="Button" parent="." unique_id=521944290]
+layout_mode = 0
+offset_left = 405.0
+offset_top = 88.0
+offset_right = 525.0
+offset_bottom = 144.0
+text = "Audio
+Pack"
+
+[connection signal="pressed" from="ui" to="." method="_on_ui_pressed"]
+[connection signal="pressed" from="aud" to="." method="_on_aud_pressed"]

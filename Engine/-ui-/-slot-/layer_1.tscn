@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://d2okygb5nujew"]
+
+[ext_resource type="FontFile" uid="uid://b4nhpyw65bywp" path="res://z.gdset/font/kenney_input_generic.ttf" id="1_5hxbb"]
+[ext_resource type="Texture2D" uid="uid://cisakts5i5a7h" path="res://z.gdset/ui_ico/ico/eye.png" id="2_3xymp"]
+[ext_resource type="Texture2D" uid="uid://cr4pjpalui76g" path="res://z.gdset/ui_ico/ico/eye-close.png" id="3_xed25"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qd0ox"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ey8c7"]
+bg_color = Color(7.2196127e-07, 0.6609201, 0.36299226, 1)
+border_color = Color(2.9359758e-06, 0.5763216, 0.4861471, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5hxbb"]
+bg_color = Color(7.2196127e-07, 0.6609201, 0.36299226, 1)
+border_color = Color(2.9359758e-06, 0.5763216, 0.4861471, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="layer1" type="HBoxContainer" unique_id=1504319293]
+size_flags_horizontal = 0
+
+[node name="|" type="VSeparator" parent="." unique_id=524320880]
+layout_mode = 2
+theme_override_constants/separation = -1
+theme_override_styles/separator = SubResource("StyleBoxEmpty_qd0ox")
+
+[node name="file" type="Button" parent="." unique_id=540281853]
+clip_contents = true
+custom_minimum_size = Vector2(91, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_5hxbb")
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxFlat_ey8c7")
+text = "file"
+
+[node name="type" type="Button" parent="." unique_id=863976179]
+custom_minimum_size = Vector2(21, 20)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_5hxbb")
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxFlat_5hxbb")
+text = "S"
+
+[node name="visible" type="TextureButton" parent="." unique_id=1666790833]
+custom_minimum_size = Vector2(21, 20)
+layout_mode = 2
+size_flags_horizontal = 0
+toggle_mode = true
+texture_normal = ExtResource("2_3xymp")
+texture_pressed = ExtResource("3_xed25")
+ignore_texture_size = true
+stretch_mode = 0
