@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dtmfk4xwkbvom"]
 
-[ext_resource type="Script" uid="uid://c5g6002cto3mc" path="res://Engine/-script-/-ins/crate.gd" id="1_j7xr2"]
-[ext_resource type="Texture2D" uid="uid://di8aifrtfmhl1" path="res://z.gdset/ui_ico/ra2_sprite/img_CrateBars.png" id="2_hlle1"]
+[ext_resource type="Script" uid="uid://bp3mbc2es2pxd" path="res://Engine/-script-/-ins/crate.gd" id="1_j7xr2"]
+[ext_resource type="Texture2D" uid="uid://bbbmeei1egguk" path="res://z.gdset/ui_ico/ra2_sprite/img_CrateBars.png" id="2_hlle1"]
 [ext_resource type="Theme" uid="uid://dacsd05ihal65" path="res://z.gdset/theme/Input_Iron.tres" id="3_3qrbg"]
 [ext_resource type="Texture2D" uid="uid://hgg71qmd30gc" path="res://ResPack/ScenePack/Scene-1.png" id="4_vlv2x"]
 [ext_resource type="Texture2D" uid="uid://m5a0a8lx51ox" path="res://ResPack/Crates/armor.png" id="5_py01c"]
@@ -15,10 +15,10 @@
 [ext_resource type="Texture2D" uid="uid://ramw6ta0pch7" path="res://ResPack/Crates/shroudx.png" id="13_qyymv"]
 [ext_resource type="Texture2D" uid="uid://cvxhcka5xxeta" path="res://ResPack/Crates/speed.png" id="14_3k43h"]
 [ext_resource type="Texture2D" uid="uid://d1kx1ixe18ni6" path="res://ResPack/Crates/veteran.png" id="15_x1fxf"]
-[ext_resource type="Texture2D" uid="uid://h1xb2oslh2v6" path="res://ResPack/Unit/deso_SpriteSheels.png" id="16_w51o1"]
-[ext_resource type="Texture2D" uid="uid://e0xxhl1j6o3i" path="res://ResPack/ScenePack/pix61_scene.png" id="17_3h0fu"]
-[ext_resource type="Texture2D" uid="uid://dy4gopy53av5v" path="res://ResPack/ScenePack/pix61_Crate.png" id="18_0obti"]
-[ext_resource type="Shader" uid="uid://b6m60a4r1q6xa" path="res://z.gdset/GShader/audiowave.gdshader" id="19_22ora"]
+[ext_resource type="Texture2D" uid="uid://cih7x0xybami2" path="res://ResPack/Unit/deso_SpriteSheels.png" id="16_w51o1"]
+[ext_resource type="Texture2D" uid="uid://dysrel7poeukw" path="res://ResPack/ScenePack/pix61_scene.png" id="17_3h0fu"]
+[ext_resource type="Texture2D" uid="uid://cv2yoxp7exu1x" path="res://ResPack/ScenePack/pix61_Crate.png" id="18_0obti"]
+[ext_resource type="Shader" uid="uid://coteucfoo8oqi" path="res://z.gdset/GShader/audiowave.gdshader" id="19_22ora"]
 [ext_resource type="Texture2D" uid="uid://ddexr2j1tpj6i" path="res://ResPack/ScenePack/CrateUnit.png" id="20_1ja2i"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wk44q"]
@@ -4422,6 +4422,11 @@ animations = [{
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j23xs"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m4ph8"]
+bg_color = Color(0, 0, 0, 1)
+border_width_bottom = 4
+border_color = Color(0.92941177, 0.30980393, 0, 1)
+
 [sub_resource type="Gradient" id="Gradient_xxt5l"]
 colors = PackedColorArray(0.26657522, 0.2665752, 0.2665752, 1, 0, 0, 0, 1)
 
@@ -4441,15 +4446,6 @@ load_path = "res://.godot/imported/CrateUnit.png-2bf4d5a8f74601b8a5cde94d86087b6
 atlas = SubResource("CompressedTexture2D_n2t58")
 region = Rect2(1, 0, 66, 66)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m4ph8"]
-bg_color = Color(0, 0, 0, 1)
-border_width_bottom = 4
-border_color = Color(0.92941177, 0.30980393, 0, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wrpte"]
-bg_color = Color(0, 0, 0, 1)
-border_color = Color(0.92941177, 0.30980393, 0, 1)
-
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_m4ph8"]
 shader = ExtResource("19_22ora")
 shader_parameter/lines = 80
@@ -4468,6 +4464,10 @@ shader_parameter/dot_matriz_size = 80
 shader_parameter/speech_sim = true
 shader_parameter/speech_intensity = 0.8
 shader_parameter/progress = 1.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wrpte"]
+bg_color = Color(0, 0, 0, 1)
+border_color = Color(0.92941177, 0.30980393, 0, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dpwwr"]
 bg_color = Color(0.99999994, 0.04050345, 0.022352884, 1)
@@ -4589,10 +4589,9 @@ layout_mode = 1
 offset_left = 640.0
 offset_top = 103.0
 offset_right = 920.0
-offset_bottom = 373.0
+offset_bottom = 399.0
 theme_override_constants/h_separation = 0
 theme_override_constants/v_separation = 0
-metadata/_edit_group_ = true
 
 [node name="slot_1" type="VBoxContainer" parent="flow" unique_id=1442690863]
 custom_minimum_size = Vector2(70, 0)
@@ -4710,7 +4709,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 texture = SubResource("AtlasTexture_hks71")
 
-[node name="WaterCrate" type="LineEdit" parent="flow/slot_5" unique_id=798253141]
+[node name="WoodCrate" type="LineEdit" parent="flow/slot_5" unique_id=798253141]
 layout_mode = 2
 size_flags_horizontal = 4
 theme = ExtResource("3_3qrbg")
@@ -4718,6 +4717,34 @@ text = "Money"
 alignment = 1
 
 [node name="info6" type="Label" parent="flow/slot_5" unique_id=70501308]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "单人任务
+木箱水箱"
+horizontal_alignment = 1
+
+[node name="slot_9" type="VBoxContainer" parent="flow" unique_id=646326944]
+visible = false
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Sprite2D6" type="TextureRect" parent="flow/slot_9" unique_id=1794170098]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 4
+texture = SubResource("AtlasTexture_hks71")
+
+[node name="WaterCrate" type="LineEdit" parent="flow/slot_9" unique_id=167716367]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("3_3qrbg")
+text = "Money"
+alignment = 1
+
+[node name="info6" type="Label" parent="flow/slot_9" unique_id=1724812391]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 1
@@ -4928,6 +4955,64 @@ offset_right = 59.0
 offset_bottom = 89.0
 text = "WCrate"
 
+[node name="Node2D" type="Node2D" parent="." unique_id=862454036]
+
+[node name="name" type="LineEdit" parent="Node2D" unique_id=361989528]
+offset_left = 225.0
+offset_top = 305.0
+offset_right = 336.0
+offset_bottom = 356.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4ph8")
+text = "armor"
+alignment = 1
+context_menu_enabled = false
+emoji_menu_enabled = false
+
+[node name="mult" type="LineEdit" parent="Node2D" unique_id=1871858700]
+offset_left = 344.0
+offset_top = 305.0
+offset_right = 455.0
+offset_bottom = 356.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4ph8")
+text = "1.5"
+alignment = 1
+context_menu_enabled = false
+emoji_menu_enabled = false
+
+[node name="percent" type="LineEdit" parent="Node2D" unique_id=1062999260]
+offset_left = 464.0
+offset_top = 301.0
+offset_right = 565.0
+offset_bottom = 363.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4ph8")
+placeholder_text = "概率%"
+alignment = 1
+max_length = 4
+context_menu_enabled = false
+emoji_menu_enabled = false
+
+[node name="aud" type="LineEdit" parent="Node2D" unique_id=1380354399]
+offset_left = 790.0
+offset_top = 382.0
+offset_right = 915.0
+offset_bottom = 433.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4ph8")
+text = "gcraarmo"
+alignment = 1
+context_menu_enabled = false
+emoji_menu_enabled = false
+
+[node name="label" type="Label" parent="Node2D" unique_id=2045897626]
+offset_left = 248.5
+offset_top = 361.0
+offset_right = 312.5
+offset_bottom = 384.0
+text = "动画名称            倍率/数量
+
+
+                                                                                                                                         音频名称"
+vertical_alignment = 1
+
 [node name="item" type="Node2D" parent="." unique_id=277287135]
 position = Vector2(23, 302)
 metadata/_edit_group_ = true
@@ -4943,8 +5028,7 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_m4ph8")
 position = Vector2(42, 39)
 scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_2ot3l")
-animation = &"armor"
-frame = 12
+animation = &"money"
 
 [node name="Line2" type="Line2D" parent="item" unique_id=47993637]
 position = Vector2(-78, -40)
@@ -4961,107 +5045,6 @@ offset_top = 2.0
 offset_right = 80.0
 offset_bottom = 78.0
 texture = SubResource("AtlasTexture_amjwn")
-
-[node name="LineEdit" type="LineEdit" parent="." unique_id=1062999260]
-layout_mode = 0
-offset_left = 464.0
-offset_top = 301.0
-offset_right = 565.0
-offset_bottom = 363.0
-theme_override_styles/normal = SubResource("StyleBoxFlat_m4ph8")
-placeholder_text = "概率%"
-alignment = 1
-max_length = 4
-context_menu_enabled = false
-emoji_menu_enabled = false
-
-[node name="LineEdit2" type="LineEdit" parent="." unique_id=361989528]
-layout_mode = 0
-offset_left = 225.0
-offset_top = 305.0
-offset_right = 336.0
-offset_bottom = 356.0
-theme_override_styles/normal = SubResource("StyleBoxFlat_m4ph8")
-text = "armor"
-alignment = 1
-context_menu_enabled = false
-emoji_menu_enabled = false
-
-[node name="LineEdit3" type="Label" parent="." unique_id=2045897626]
-layout_mode = 0
-offset_left = 248.5
-offset_top = 361.0
-offset_right = 312.5
-offset_bottom = 384.0
-text = "动画名称"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="LineEdit4" type="LineEdit" parent="." unique_id=1871858700]
-layout_mode = 0
-offset_left = 344.0
-offset_top = 305.0
-offset_right = 455.0
-offset_bottom = 356.0
-theme_override_styles/normal = SubResource("StyleBoxFlat_m4ph8")
-text = "1.5"
-alignment = 1
-context_menu_enabled = false
-emoji_menu_enabled = false
-
-[node name="LineEdit5" type="Label" parent="." unique_id=1362101375]
-layout_mode = 0
-offset_left = 363.5
-offset_top = 361.0
-offset_right = 434.5
-offset_bottom = 384.0
-text = "倍率/数量"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="LineEdit6" type="LineEdit" parent="." unique_id=1380354399]
-layout_mode = 0
-offset_left = 790.0
-offset_top = 382.0
-offset_right = 915.0
-offset_bottom = 433.0
-theme_override_styles/normal = SubResource("StyleBoxFlat_m4ph8")
-text = "gcraarmo"
-alignment = 1
-context_menu_enabled = false
-emoji_menu_enabled = false
-
-[node name="LineEdit7" type="Label" parent="." unique_id=1971838879]
-layout_mode = 0
-offset_left = 816.5
-offset_top = 438.0
-offset_right = 887.5
-offset_bottom = 461.0
-text = "音频名称"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="v1" type="Label" parent="." unique_id=551646074]
-layout_mode = 0
-offset_left = 123.0
-offset_top = 312.0
-offset_right = 216.0
-offset_bottom = 374.0
-theme_override_styles/normal = SubResource("StyleBoxFlat_wrpte")
-text = "护甲"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="v2" type="Label" parent="." unique_id=1891176052]
-layout_mode = 0
-offset_left = 123.0
-offset_top = 312.0
-offset_right = 216.0
-offset_bottom = 374.0
-theme_override_styles/normal = SubResource("StyleBoxFlat_wrpte")
-text = "护甲"
-horizontal_alignment = 1
-vertical_alignment = 1
 
 [node name="item2" type="Node2D" parent="." unique_id=1426062373]
 position = Vector2(462, 407)
@@ -5088,6 +5071,17 @@ points = PackedVector2Array(78, 45, 394, 45, 394, 115, 78, 115)
 closed = true
 width = 3.0
 default_color = Color(0.92941177, 0.30980393, 0, 1)
+
+[node name="v1" type="Label" parent="." unique_id=551646074]
+layout_mode = 0
+offset_left = 123.0
+offset_top = 312.0
+offset_right = 216.0
+offset_bottom = 374.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_wrpte")
+text = "护甲"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=193857988]
 layout_mode = 0
@@ -5317,11 +5311,3 @@ texture = SubResource("AtlasTexture_r7u8g")
 custom_minimum_size = Vector2(66, 66)
 layout_mode = 2
 texture = SubResource("AtlasTexture_rgvtc")
-
-[node name="select" type="Label" parent="." unique_id=887747717]
-layout_mode = 0
-offset_left = 179.0
-offset_right = 439.0
-offset_bottom = 64.0
-text = "Select:***.png"
-vertical_alignment = 1

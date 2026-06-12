@@ -1,0 +1,297 @@
+[gd_scene format=3 uid="uid://lw8iywtal18v"]
+
+[ext_resource type="Script" uid="uid://buo7su31x42e0" path="res://Engine/-class-/i.file_reaed.gd" id="1_bf5a5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_62byy"]
+bg_color = Color(0.3137255, 0.16078432, 0.7019608, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 1
+border_color = Color(0.19537044, 0.08596558, 0.46265644, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_32ack"]
+bg_color = Color(0.25349993, 0.195, 0.78, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 2
+border_width_bottom = 1
+border_color = Color(0.18507972, 0.13314986, 0.5991862, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lpu87"]
+bg_color = Color(0.17, 0.5326667, 0.85, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 2
+border_width_bottom = 1
+border_color = Color(0.08526527, 0.40089434, 0.66240525, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7c4yf"]
+bg_color = Color(0.85, 0.5666667, 0, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 2
+border_width_bottom = 1
+border_color = Color(0.6219204, 0.40802497, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wtjqo"]
+bg_color = Color(2.5509298e-06, 0.6868521, 0.33902475, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1.9492954e-06, 0.5104997, 0.2442416, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cm0pq"]
+bg_color = Color(0.3137255, 0.16078432, 0.7019608, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fos0i"]
+bg_color = Color(0.19999982, 0, 0.6, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3dxm6"]
+bg_color = Color(0.17415999, 0.1512, 0.84, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lgr22"]
+bg_color = Color(0.028400015, 0.16472003, 0.71, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_trn2v"]
+bg_color = Color(0, 0.02745098, 0.83137256, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_20pc6"]
+bg_color = Color(0.22745098, 0.11764706, 0.5019608, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m4pin"]
+bg_color = Color(0.19999982, 0, 0.6, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_03owx"]
+bg_color = Color(0.23333311, 0, 0.7, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wkp8b"]
+bg_color = Color(0.19999982, 0, 0.6, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p8gey"]
+bg_color = Color(0.23333311, 0, 0.7, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iiexd"]
+bg_color = Color(0.19999982, 0, 0.6, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7f4m5"]
+bg_color = Color(0.23333311, 0, 0.7, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ltb5c"]
+bg_color = Color(0.15792002, 0.13440003, 0.84, 1)
+
+[node name="file" type="Control" unique_id=282257635]
+visible = false
+z_index = 10
+layout_mode = 3
+anchors_preset = 0
+offset_left = 6.0
+offset_top = 68.0
+offset_right = 925.0
+offset_bottom = 488.0
+mouse_filter = 2
+script = ExtResource("1_bf5a5")
+metadata/_edit_vertical_guides_ = [916.0]
+
+[node name="Ares" type="Label" parent="." unique_id=2067579710]
+editor_description = "Ares.dll,Ares.dll.inj,ares.mix,Syringe.exe"
+layout_mode = 0
+offset_left = 836.0
+offset_right = 918.0
+offset_bottom = 60.0
+mouse_filter = 1
+theme_override_styles/normal = SubResource("StyleBoxFlat_62byy")
+text = "Ares"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Phobos" type="Label" parent="." unique_id=2085829757]
+editor_description = "Phobos.dll,Phobos.pdb"
+layout_mode = 0
+offset_left = 836.0
+offset_top = 60.0
+offset_right = 918.0
+offset_bottom = 114.0
+mouse_filter = 1
+theme_override_styles/normal = SubResource("StyleBoxFlat_32ack")
+text = "Phobos"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DDraw" type="Label" parent="." unique_id=1753233014]
+editor_description = "Shaders,ddraw.dll,ddraw.ini,cnc-ddraw config.exe"
+layout_mode = 0
+offset_left = 836.0
+offset_top = 114.0
+offset_right = 918.0
+offset_bottom = 206.0
+mouse_filter = 1
+theme_override_styles/normal = SubResource("StyleBoxFlat_lpu87")
+text = "DDraw"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Style" type="Label" parent="." unique_id=290106864]
+editor_description = "Style"
+layout_mode = 0
+offset_left = 836.0
+offset_top = 206.0
+offset_right = 918.0
+offset_bottom = 302.0
+mouse_filter = 1
+theme_override_styles/normal = SubResource("StyleBoxFlat_7c4yf")
+text = "Style"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Mods" type="Label" parent="." unique_id=1351200506]
+editor_description = "Mods"
+layout_mode = 0
+offset_left = 836.0
+offset_top = 302.0
+offset_right = 918.0
+offset_bottom = 419.0
+mouse_filter = 1
+theme_override_styles/normal = SubResource("StyleBoxFlat_wtjqo")
+text = "Mods"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="f1" type="Label" parent="." unique_id=819098920]
+layout_mode = 0
+offset_right = 170.0
+offset_bottom = 60.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_cm0pq")
+text = "Ares"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="f2" type="Label" parent="." unique_id=476442536]
+layout_mode = 0
+offset_top = 60.0
+offset_right = 170.0
+offset_bottom = 114.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_fos0i")
+text = "Config"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="f3" type="Label" parent="." unique_id=761995976]
+layout_mode = 0
+offset_top = 114.0
+offset_right = 80.0
+offset_bottom = 419.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_3dxm6")
+text = "mix"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="f3_1" type="Label" parent="." unique_id=1758071947]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 114.0
+offset_right = 170.0
+offset_bottom = 302.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_lgr22")
+text = "maps"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="f3_2" type="Label" parent="." unique_id=807694214]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 302.0
+offset_right = 170.0
+offset_bottom = 356.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_trn2v")
+text = "videos"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="1" type="Label" parent="." unique_id=1440349732]
+layout_mode = 0
+offset_left = 170.0
+offset_right = 836.0
+offset_bottom = 60.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_20pc6")
+text = "Ares.dll,Ares.dll.inj,ares.mix,Syringe.exe"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="2" type="Label" parent="." unique_id=371322970]
+layout_mode = 0
+offset_left = 170.0
+offset_top = 60.0
+offset_right = 836.0
+offset_bottom = 114.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4pin")
+text = "csf,fnt,lcf,pkt,ini,txt"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="3_1" type="Label" parent="." unique_id=909080688]
+layout_mode = 0
+offset_left = 170.0
+offset_top = 114.0
+offset_right = 836.0
+offset_bottom = 160.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_03owx")
+text = "mmx"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="3_2" type="Label" parent="." unique_id=505859325]
+layout_mode = 0
+offset_left = 170.0
+offset_top = 160.0
+offset_right = 836.0
+offset_bottom = 206.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_wkp8b")
+text = "yro"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="3_3" type="Label" parent="." unique_id=655860334]
+layout_mode = 0
+offset_left = 170.0
+offset_top = 206.0
+offset_right = 836.0
+offset_bottom = 252.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_p8gey")
+text = "rmcache"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="3" type="Label" parent="." unique_id=1564643569]
+layout_mode = 0
+offset_left = 170.0
+offset_top = 252.0
+offset_right = 836.0
+offset_bottom = 302.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_iiexd")
+text = "expandmd01.mix,mapsmd03.mix,multimd.mix"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="4" type="Label" parent="." unique_id=1526725197]
+layout_mode = 0
+offset_left = 170.0
+offset_top = 302.0
+offset_right = 836.0
+offset_bottom = 356.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_7f4m5")
+text = "audio.mix,audiomd.mix,movmd03.mix,thememd.mix,ea_wwlogo.bik,ra2ts_l.bik"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="bar8" type="Label" parent="." unique_id=1689785463]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 356.0
+offset_right = 836.0
+offset_bottom = 419.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ltb5c")
+text = "cameo.mix,cameomd.mix,ra2.mix,ra2md.mix"
+horizontal_alignment = 1
+vertical_alignment = 1

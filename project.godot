@@ -14,7 +14,7 @@ config/name="ClearDream"
 config/tags=PackedStringArray("toolbox")
 run/main_scene="uid://bpqw7d6be6ga2"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/icon="uid://d00l2kurtwmp1"
+config/icon="uid://bmjqi2u4cpipi"
 
 [autoload]
 

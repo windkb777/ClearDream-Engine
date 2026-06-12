@@ -15,7 +15,7 @@ func ReadShp(shp_file):
 	var NumberOfFrames = file.get_16()
 	var Header = [Width,Height]
 	Soft.LoadFrame.Frames = NumberOfFrames
-	#print("Header = ",Header," Width:",Width," Height:",Height," Frames:",NumberOfFrames)
+	print("Header = ",Header," Width:",Width," Height:",Height," Frames:",NumberOfFrames)
 	## Frames Header
 	var FramesHeader = []
 	for i in NumberOfFrames:
@@ -31,7 +31,7 @@ func ReadShp(shp_file):
 		Frame.Offset = file.get_32()
 		FramesHeader.append(Frame)
 	## Print Frames Header
-	#for i in FramesHeader:print(i)
+	for i in FramesHeader:print(i)
 	## Frames Data
 	## 压缩方式 1完全不透明 2包含透明度(未使用RLE) 3包含透明度(采用RLE)
 	for f in FramesHeader.size():
@@ -73,11 +73,11 @@ func ReadShp(shp_file):
 				## 着色
 				DrawRLE(result,f,y,length)
 	## 隐藏所有帧
-	#for i in get_children():i.hide()
+	for i in get_children():i.hide()
 func ReadPal(pal_file):
 	##加载读取文件
 	var loader = FileAccess.get_file_as_bytes(pal_file)
-	var cor : Array
+	var cor = []
 	##读取颜色,768/3=256,63x4=252
 	for i in range(0,loader.size(),3):
 		var pal_array : Array
@@ -85,7 +85,8 @@ func ReadPal(pal_file):
 		var colored = Color.from_rgba8(pal_array[0][0]*4,pal_array[0][1]*4,pal_array[0][2]*4)
 		cor.append(colored)
 	##赋予色盘颜色
-	for i in Sides.pal.size():Sides.pal[i].color = cor[i]
+	for i in 256:
+		Sides.pal[i].color = cor[i]
 func ReadCSF(path):
 	var file = FileAccess.open(path,FileAccess.READ)
 	## header
@@ -133,7 +134,45 @@ func ReadPicData(pic=load("res://ResPack/recolor.png")):
 				if is_color_similar(numOfColor,Sides.pal[i].color,0.16):
 					Sides.colorPos[i].append(numOfPixels)
 					break
+			connect("draw",func():draw_rect(Rect2(x,y,1,1),numOfColor))
+		for i in 16:Sides.colorPos.set("pal_%s"%i,[])
+	for i in 16:for p in Sides.res.size():if Sides.res[p][0]==i:Sides.colorPos["pal_%s"%i].append(Sides.res[p][1])
 #endregion 
+#func ReadPicData(pic=load("res://ResPack/recolor.png")):
+	#var img = {num=pic.get_image().get_data().size(),size=pic.get_image().get_size(),colors=pic.get_image().get_data(),data=[]}
+	#for i in range(0,img.num,3):img.data.append(img.colors.slice(i,i+3))
+	#DrawPic(Vector2(0,0),img)
+#func DrawPic(offset:Vector2,datas:Dictionary):
+	#for y in datas.size.y:
+		#for x in datas.size.x:
+			#var numOfPixels = x+y*(datas.size.x)
+			#var numOfColor = Color(datas.data[numOfPixels][0]/255.0,datas.data[numOfPixels][1]/255.0,datas.data[numOfPixels][2]/255.0)
+			### 对比像素颜色 与 Pal颜色的差异 颜色接近不大于阈值 就设置为Pal的颜色
+			#if numOfColor!=Color.BLACK:
+				#for i in 16:
+					#if is_color_similar(numOfColor,Sides.pal[i].color,0.16):
+						#Sides.res.append_array([[i,numOfPixels]])
+				#connect("draw",func():draw_rect(Rect2(offset.x+x,offset.y+y,1,1),numOfColor))
+		#for i in 16:Sides.colorPos.set("pal_%s"%i,[])
+		### 优化像素颜色位置
+	#for i in 16:for p in Sides.res.size():if Sides.res[p][0]==i:Sides.colorPos["pal_%s"%i].append(Sides.res[p][1])
+func PaintSideColors(color):
+	## 色盘着色
+	const sub = "0,16,32,44,60,76,88,104,120,132,148,164,176,192,208,220"
+	var n = []
+	for i in sub.split(",").size():n.append(sub.split(",")[i].to_int())
+	for i in Sides.pal.size():Sides.pal[i].color = color.from_rgba8(int((color*255)[0])-n[i],int((color*255)[1])-n[i],int((color*255)[2]-n[i]),255)
+	## 设置
+	if Input.is_anything_pressed():
+		for i in 16:
+			for a in Sides.colorPos["pal_%s"%i].size():
+				var pixelNum = Sides.colorPos["pal_%s"%i][a]
+				var pos = Vector2(pixelNum-((pixelNum / 320)*320),pixelNum / 320)
+				connect("draw",func():draw_rect(Rect2(pos.x,pos.y,1,1),Sides.pal[i].color))
+		queue_redraw()
+
+
+
 
 #region Calc
 func is_color_similar(c1:Color,c2:Color,threshold:float=0.1)->bool:
@@ -202,18 +241,4 @@ func Drawshp(offset:Vector2,datas:Dictionary):
 		queue_redraw()
 		## 行渲染图像
 		#await get_tree().create_timer(0.002).timeout
-func PaintSideColors(color):
-	## 色盘着色
-	const sub = "0,16,32,44,60,76,88,104,120,132,148,164,176,192,208,220"
-	var n = []
-	for i in sub.split(",").size():n.append(sub.split(",")[i].to_int())
-	for i in Sides.pal.size():Sides.pal[i].color = color.from_rgba8(int((color*255)[0])-n[i],int((color*255)[1])-n[i],int((color*255)[2]-n[i]),255)
-	## 设置
-	if Input.is_anything_pressed():
-		for i in 16:
-			for a in Sides.colorPos["pal_%s"%i].size():
-				var pixelNum = Sides.colorPos["pal_%s"%i][a]
-				var pos = Vector2(pixelNum-((pixelNum / 320)*320),pixelNum / 320)
-				connect("draw",func():draw_rect(Rect2(pos.x,pos.y,1,1),Sides.pal[i].color))
-		queue_redraw()
 #endregion

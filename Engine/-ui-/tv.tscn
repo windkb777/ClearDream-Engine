@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://blvxhexn3wp6a"]
 
-[ext_resource type="Script" uid="uid://dwfd812cajwdc" path="res://Engine/-script-/tv.gd" id="1_20x44"]
-[ext_resource type="Texture2D" uid="uid://c0q3booki2y4e" path="res://z.gdset/ui_ico/tv_img/img_TVs.png" id="2_rhh1i"]
-[ext_resource type="FontFile" uid="uid://bes7pqqna126y" path="res://z.gdset/font/AaYuanWeiTuSi-2.ttf" id="3_ev2nu"]
-[ext_resource type="Texture2D" uid="uid://bfcyn5gebsbwp" path="res://z.gdset/ui_ico/tv_img/tv_Open.png" id="4_id7o2"]
-[ext_resource type="Texture2D" uid="uid://eeouexja7p0f" path="res://z.gdset/ui_ico/tv_img/tv_Snow.png" id="5_k13ct"]
-[ext_resource type="SpriteFrames" uid="uid://ljvdgtw1m5te" path="res://z.gdset/ui_ico/tv_img/tv.tres" id="6_14g40"]
+[ext_resource type="Script" uid="uid://b6xahqtodwd05" path="res://Engine/-script-/tv.gd" id="1_20x44"]
+[ext_resource type="Texture2D" uid="uid://bjia4xifkdgl7" path="res://z.gdset/ui_ico/tv_img/img_TVs.png" id="2_rhh1i"]
+[ext_resource type="FontFile" uid="uid://b0itm5clp8xki" path="res://z.gdset/font/AaYuanWeiTuSi-2.ttf" id="3_ev2nu"]
+[ext_resource type="SpriteFrames" uid="uid://ljvdgtw1m5te" path="res://z.gdset/ui_ico/tv_img/tv.tres" id="4_id7o2"]
+[ext_resource type="Texture2D" uid="uid://drs58k64ytxaf" path="res://z.gdset/ui_ico/tv_img/tv_Open.png" id="5_k13ct"]
+[ext_resource type="Texture2D" uid="uid://dbtrlcu6l8hob" path="res://z.gdset/ui_ico/tv_img/tv_Snow.png" id="6_14g40"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7wta4"]
 bg_color = Color(0, 0, 0, 0.3137255)
@@ -13,6 +13,230 @@ corner_radius_top_left = 6
 corner_radius_top_right = 6
 corner_radius_bottom_right = 6
 corner_radius_bottom_left = 6
+
+[sub_resource type="Animation" id="Animation_w7dld"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("tv/10:toggle_mode")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("tv/9:toggle_mode")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("tv/10:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("tv/9:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_kh2no"]
+resource_name = "Unuse"
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("tv/10:toggle_mode")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("tv/9:toggle_mode")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("tv/10:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.3515629, 0.3515629, 0.35156286, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("tv/9:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.3515629, 0.3515629, 0.35156286, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_20x44"]
+_data = {
+&"RESET": SubResource("Animation_w7dld"),
+&"Unuse": SubResource("Animation_kh2no")
+}
+
+[sub_resource type="Animation" id="Animation_7tcno"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("tv/13/Area2D/warp:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(59.5, 47.5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("tv/13/Area2D/warp:shape:radius")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [33.50373]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("tv/6/Area2D/warp:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(59.5, 47.5)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("tv/6/Area2D/warp:shape:radius")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [33.50373]
+}
+
+[sub_resource type="Animation" id="Animation_rmfp1"]
+resource_name = "wave"
+length = 1.2
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("tv/13/Area2D/warp:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.3, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(59.5, 47.5), Vector2(1200, -550)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("tv/13/Area2D/warp:shape:radius")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 1.1999999),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [33.50373, 600.0, 33.50373]
+}
+
+[sub_resource type="Animation" id="Animation_chlhb"]
+resource_name = "wave2"
+length = 1.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("tv/6/Area2D/warp:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.3, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(59.5, 47.5), Vector2(-1200, 700)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("tv/6/Area2D/warp:shape:radius")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [33.50373, 800.0, 33.50373]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rhh1i"]
+_data = {
+&"RESET": SubResource("Animation_7tcno"),
+&"wave1": SubResource("Animation_rmfp1"),
+&"wave2": SubResource("Animation_chlhb")
+}
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8kqao"]
 
@@ -26,6 +250,9 @@ region = Rect2(0, 0, 121, 96)
 font_color = Color(1, 0.1882353, 0.1882353, 1)
 shadow_size = 4
 shadow_color = Color(0.5137255, 0.0627451, 0, 1)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_w7dld"]
+radius = 33.50373
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ufmsx"]
 atlas = ExtResource("2_rhh1i")
@@ -70,147 +297,147 @@ atlas = SubResource("CompressedTexture2D_7aba7")
 region = Rect2(605, 0, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v5rl6"]
-atlas = ExtResource("4_id7o2")
+atlas = ExtResource("5_k13ct")
 region = Rect2(0, 0, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_reyjh"]
-atlas = ExtResource("4_id7o2")
+atlas = ExtResource("5_k13ct")
 region = Rect2(121, 0, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uxcqf"]
-atlas = ExtResource("4_id7o2")
+atlas = ExtResource("5_k13ct")
 region = Rect2(242, 0, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h2gee"]
-atlas = ExtResource("4_id7o2")
+atlas = ExtResource("5_k13ct")
 region = Rect2(363, 0, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d6sf5"]
-atlas = ExtResource("4_id7o2")
+atlas = ExtResource("5_k13ct")
 region = Rect2(484, 0, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0gbnb"]
-atlas = ExtResource("4_id7o2")
+atlas = ExtResource("5_k13ct")
 region = Rect2(605, 0, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_l466f"]
-atlas = ExtResource("4_id7o2")
+atlas = ExtResource("5_k13ct")
 region = Rect2(0, 96, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_otkkd"]
-atlas = ExtResource("4_id7o2")
+atlas = ExtResource("5_k13ct")
 region = Rect2(121, 96, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fybmm"]
-atlas = ExtResource("4_id7o2")
+atlas = ExtResource("5_k13ct")
 region = Rect2(242, 96, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x28xd"]
-atlas = ExtResource("4_id7o2")
+atlas = ExtResource("5_k13ct")
 region = Rect2(363, 96, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uhqee"]
-atlas = ExtResource("4_id7o2")
+atlas = ExtResource("5_k13ct")
 region = Rect2(484, 96, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ah15c"]
-atlas = ExtResource("4_id7o2")
+atlas = ExtResource("5_k13ct")
 region = Rect2(605, 96, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_irfma"]
-atlas = ExtResource("4_id7o2")
+atlas = ExtResource("5_k13ct")
 region = Rect2(0, 192, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b4o3h"]
-atlas = ExtResource("4_id7o2")
+atlas = ExtResource("5_k13ct")
 region = Rect2(121, 192, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7ub3d"]
-atlas = ExtResource("4_id7o2")
+atlas = ExtResource("5_k13ct")
 region = Rect2(242, 192, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3tsii"]
-atlas = ExtResource("4_id7o2")
+atlas = ExtResource("5_k13ct")
 region = Rect2(363, 192, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_s2i5i"]
-atlas = ExtResource("4_id7o2")
+atlas = ExtResource("5_k13ct")
 region = Rect2(484, 192, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h7xbv"]
-atlas = ExtResource("4_id7o2")
+atlas = ExtResource("5_k13ct")
 region = Rect2(605, 192, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hjaab"]
-atlas = ExtResource("4_id7o2")
+atlas = ExtResource("5_k13ct")
 region = Rect2(0, 288, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tsx4w"]
-atlas = ExtResource("4_id7o2")
+atlas = ExtResource("5_k13ct")
 region = Rect2(121, 288, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eyys8"]
-atlas = ExtResource("4_id7o2")
+atlas = ExtResource("5_k13ct")
 region = Rect2(242, 288, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hxpy1"]
-atlas = ExtResource("4_id7o2")
+atlas = ExtResource("5_k13ct")
 region = Rect2(363, 288, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_exjlu"]
-atlas = ExtResource("4_id7o2")
+atlas = ExtResource("5_k13ct")
 region = Rect2(484, 288, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_is4mh"]
-atlas = ExtResource("4_id7o2")
+atlas = ExtResource("5_k13ct")
 region = Rect2(605, 288, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vb3dp"]
-atlas = ExtResource("5_k13ct")
+atlas = ExtResource("6_14g40")
 region = Rect2(0, 0, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qeudw"]
-atlas = ExtResource("5_k13ct")
+atlas = ExtResource("6_14g40")
 region = Rect2(121, 0, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_djmy6"]
-atlas = ExtResource("5_k13ct")
+atlas = ExtResource("6_14g40")
 region = Rect2(242, 0, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_btihf"]
-atlas = ExtResource("5_k13ct")
+atlas = ExtResource("6_14g40")
 region = Rect2(363, 0, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5cpd0"]
-atlas = ExtResource("5_k13ct")
+atlas = ExtResource("6_14g40")
 region = Rect2(0, 96, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wlfc5"]
-atlas = ExtResource("5_k13ct")
+atlas = ExtResource("6_14g40")
 region = Rect2(121, 96, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xf7vp"]
-atlas = ExtResource("5_k13ct")
+atlas = ExtResource("6_14g40")
 region = Rect2(242, 96, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y2t0n"]
-atlas = ExtResource("5_k13ct")
+atlas = ExtResource("6_14g40")
 region = Rect2(363, 96, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g8dx5"]
-atlas = ExtResource("5_k13ct")
+atlas = ExtResource("6_14g40")
 region = Rect2(0, 192, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_howrb"]
-atlas = ExtResource("5_k13ct")
+atlas = ExtResource("6_14g40")
 region = Rect2(121, 192, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iww18"]
-atlas = ExtResource("5_k13ct")
+atlas = ExtResource("6_14g40")
 region = Rect2(242, 192, 121, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d3ckc"]
-atlas = ExtResource("5_k13ct")
+atlas = ExtResource("6_14g40")
 region = Rect2(363, 192, 121, 96)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7tcno"]
@@ -331,8 +558,11 @@ animations = [{
 }],
 "loop": true,
 "name": &"snow",
-"speed": 30.0
+"speed": 60.0
 }]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7tcno"]
+radius = 33.50373
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rmfp1"]
 atlas = ExtResource("2_rhh1i")
@@ -394,6 +624,9 @@ shadow_color = Color(0.512657, 0.061313167, 0, 1)
 atlas = SubResource("CompressedTexture2D_w7dld")
 region = Rect2(0, 192, 121, 96)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_kh2no"]
+radius = 33.50373
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_vvds0"]
 atlas = ExtResource("2_rhh1i")
 region = Rect2(121, 192, 121, 96)
@@ -438,7 +671,7 @@ font_color = Color(1, 0.19215687, 0.96862745, 1)
 shadow_size = 4
 shadow_color = Color(0.13088822, 0.00020248607, 0.33287913, 1)
 
-[node name="tv" type="Control" unique_id=403657669]
+[node name="tv" type="Control" unique_id=582479008]
 layout_mode = 3
 anchors_preset = 0
 offset_left = 102.0
@@ -447,7 +680,7 @@ offset_right = 102.0
 offset_bottom = 134.0
 script = ExtResource("1_20x44")
 
-[node name="bg" type="Panel" parent="." unique_id=888327362]
+[node name="bg" type="Panel" parent="." unique_id=677588589]
 layout_mode = 0
 offset_left = -12.0
 offset_top = -12.0
@@ -456,7 +689,16 @@ offset_bottom = 300.0
 mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_7wta4")
 
-[node name="1" type="Button" parent="." unique_id=485391867]
+[node name="lock" type="AnimationPlayer" parent="." unique_id=1207081077]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_20x44")
+autoplay = &"Unuse"
+
+[node name="wave" type="AnimationPlayer" parent="." unique_id=827967523]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_rhh1i")
+
+[node name="1" type="Button" parent="." unique_id=1351096178]
 custom_minimum_size = Vector2(121, 96)
 layout_mode = 0
 offset_right = 121.0
@@ -468,7 +710,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_8kqao")
 icon = SubResource("AtlasTexture_qd0ox")
 flat = true
 
-[node name="side" type="Label" parent="1" unique_id=686260221]
+[node name="side" type="Label" parent="1" unique_id=1663095769]
 layout_mode = 0
 offset_left = 37.5
 offset_top = 36.5
@@ -483,7 +725,22 @@ label_settings = SubResource("LabelSettings_u22sw")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="2" type="Button" parent="." unique_id=861335477]
+[node name="Area2D" type="Area2D" parent="1" unique_id=1863615954]
+visible = false
+collision_mask = 0
+
+[node name="warp" type="CollisionShape2D" parent="1/Area2D" unique_id=961419815]
+position = Vector2(59.5, 47.5)
+shape = SubResource("CircleShape2D_w7dld")
+
+[node name="blank2" type="AnimatedSprite2D" parent="1" unique_id=1663979971]
+visible = false
+sprite_frames = ExtResource("4_id7o2")
+animation = &"snow"
+autoplay = "snow"
+centered = false
+
+[node name="2" type="Button" parent="." unique_id=2067325559]
 custom_minimum_size = Vector2(121, 96)
 layout_mode = 0
 offset_left = 121.0
@@ -495,7 +752,7 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_ad87m")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_8kqao")
 icon = SubResource("AtlasTexture_ufmsx")
 
-[node name="theme" type="Label" parent="2" unique_id=1195054258]
+[node name="theme" type="Label" parent="2" unique_id=1516152787]
 layout_mode = 0
 offset_left = 26.5
 offset_top = 36.5
@@ -510,7 +767,22 @@ label_settings = SubResource("LabelSettings_ixf11")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="3" type="Button" parent="." unique_id=1969463850]
+[node name="Area2D" type="Area2D" parent="2" unique_id=997378302]
+visible = false
+collision_mask = 0
+
+[node name="warp" type="CollisionShape2D" parent="2/Area2D" unique_id=2043177421]
+position = Vector2(59.5, 47.5)
+shape = SubResource("CircleShape2D_w7dld")
+
+[node name="blank2" type="AnimatedSprite2D" parent="2" unique_id=2124418717]
+visible = false
+sprite_frames = ExtResource("4_id7o2")
+animation = &"snow"
+autoplay = "snow"
+centered = false
+
+[node name="3" type="Button" parent="." unique_id=471918126]
 custom_minimum_size = Vector2(121, 96)
 layout_mode = 0
 offset_left = 242.0
@@ -522,7 +794,7 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_ad87m")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_8kqao")
 icon = SubResource("AtlasTexture_sn8lc")
 
-[node name="hotkey" type="Label" parent="3" unique_id=2064306836]
+[node name="hotkey" type="Label" parent="3" unique_id=441824070]
 layout_mode = 0
 offset_left = 24.0
 offset_top = 36.5
@@ -537,7 +809,22 @@ label_settings = SubResource("LabelSettings_bfw52")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="4" type="Button" parent="." unique_id=791528024]
+[node name="Area2D" type="Area2D" parent="3" unique_id=152403947]
+visible = false
+collision_mask = 0
+
+[node name="warp" type="CollisionShape2D" parent="3/Area2D" unique_id=1379999583]
+position = Vector2(59.5, 47.5)
+shape = SubResource("CircleShape2D_w7dld")
+
+[node name="blank2" type="AnimatedSprite2D" parent="3" unique_id=91223826]
+visible = false
+sprite_frames = ExtResource("4_id7o2")
+animation = &"snow"
+autoplay = "snow"
+centered = false
+
+[node name="4" type="Button" parent="." unique_id=1946030785]
 custom_minimum_size = Vector2(121, 96)
 layout_mode = 0
 offset_left = 363.0
@@ -549,7 +836,7 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_ad87m")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_8kqao")
 icon = SubResource("AtlasTexture_5rn5e")
 
-[node name="colors" type="Label" parent="4" unique_id=1673038064]
+[node name="colors" type="Label" parent="4" unique_id=2011573196]
 layout_mode = 0
 offset_left = 25.5
 offset_top = 36.5
@@ -566,7 +853,22 @@ label_settings = SubResource("LabelSettings_jdw5p")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="5" type="Button" parent="." unique_id=558673497]
+[node name="Area2D" type="Area2D" parent="4" unique_id=1958300932]
+visible = false
+collision_mask = 0
+
+[node name="warp" type="CollisionShape2D" parent="4/Area2D" unique_id=2006415194]
+position = Vector2(59.5, 47.5)
+shape = SubResource("CircleShape2D_w7dld")
+
+[node name="blank2" type="AnimatedSprite2D" parent="4" unique_id=1529631284]
+visible = false
+sprite_frames = ExtResource("4_id7o2")
+animation = &"snow"
+autoplay = "snow"
+centered = false
+
+[node name="5" type="Button" parent="." unique_id=2078877404]
 custom_minimum_size = Vector2(121, 96)
 layout_mode = 0
 offset_left = 484.0
@@ -578,7 +880,7 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_ad87m")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_8kqao")
 icon = SubResource("AtlasTexture_bm8xo")
 
-[node name="crate" type="Label" parent="5" unique_id=1441607783]
+[node name="crate" type="Label" parent="5" unique_id=2037893905]
 layout_mode = 0
 offset_left = 32.5
 offset_top = 36.5
@@ -593,7 +895,22 @@ label_settings = SubResource("LabelSettings_w7dld")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="6" type="Button" parent="." unique_id=1647666816]
+[node name="Area2D" type="Area2D" parent="5" unique_id=438610085]
+visible = false
+collision_mask = 0
+
+[node name="warp" type="CollisionShape2D" parent="5/Area2D" unique_id=2070190316]
+position = Vector2(59.5, 47.5)
+shape = SubResource("CircleShape2D_w7dld")
+
+[node name="blank2" type="AnimatedSprite2D" parent="5" unique_id=2014932175]
+visible = false
+sprite_frames = ExtResource("4_id7o2")
+animation = &"snow"
+autoplay = "snow"
+centered = false
+
+[node name="6" type="Button" parent="." unique_id=532260368]
 custom_minimum_size = Vector2(121, 96)
 layout_mode = 0
 offset_left = 605.0
@@ -605,12 +922,28 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_ad87m")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_8kqao")
 icon = SubResource("AtlasTexture_kh2no")
 
-[node name="blank1" type="AnimatedSprite2D" parent="6" unique_id=2081970673]
+[node name="blank1" type="AnimatedSprite2D" parent="6" unique_id=1913460965]
 sprite_frames = SubResource("SpriteFrames_7tcno")
 animation = &"snow"
+autoplay = "snow"
 centered = false
 
-[node name="7" type="Button" parent="." unique_id=145823784]
+[node name="Area2D" type="Area2D" parent="6" unique_id=2131751624]
+visible = false
+collision_layer = 0
+
+[node name="warp" type="CollisionShape2D" parent="6/Area2D" unique_id=604870638]
+position = Vector2(59.5, 47.5)
+shape = SubResource("CircleShape2D_7tcno")
+
+[node name="blank2" type="AnimatedSprite2D" parent="6" unique_id=487494335]
+visible = false
+sprite_frames = ExtResource("4_id7o2")
+animation = &"snow"
+autoplay = "snow"
+centered = false
+
+[node name="7" type="Button" parent="." unique_id=1121686043]
 custom_minimum_size = Vector2(121, 96)
 layout_mode = 0
 offset_top = 96.0
@@ -622,7 +955,7 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_ad87m")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_8kqao")
 icon = SubResource("AtlasTexture_rmfp1")
 
-[node name="build" type="Label" parent="7" unique_id=1916401768]
+[node name="build" type="Label" parent="7" unique_id=2102746927]
 layout_mode = 0
 offset_left = 33.0
 offset_top = 36.5
@@ -637,7 +970,22 @@ label_settings = SubResource("LabelSettings_chlhb")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="8" type="Button" parent="." unique_id=960521229]
+[node name="Area2D" type="Area2D" parent="7" unique_id=1796875570]
+visible = false
+collision_mask = 0
+
+[node name="warp" type="CollisionShape2D" parent="7/Area2D" unique_id=1804482275]
+position = Vector2(59.5, 47.5)
+shape = SubResource("CircleShape2D_w7dld")
+
+[node name="blank2" type="AnimatedSprite2D" parent="7" unique_id=211409395]
+visible = false
+sprite_frames = ExtResource("4_id7o2")
+animation = &"snow"
+autoplay = "snow"
+centered = false
+
+[node name="8" type="Button" parent="." unique_id=1257775753]
 custom_minimum_size = Vector2(121, 96)
 layout_mode = 0
 offset_left = 121.0
@@ -650,7 +998,7 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_ad87m")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_8kqao")
 icon = SubResource("AtlasTexture_l5xam")
 
-[node name="unit" type="Label" parent="8" unique_id=1123924176]
+[node name="unit" type="Label" parent="8" unique_id=2144425563]
 layout_mode = 0
 offset_left = 40.0
 offset_top = 36.5
@@ -665,7 +1013,22 @@ label_settings = SubResource("LabelSettings_ctxuk")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="9" type="Button" parent="." unique_id=84578817]
+[node name="Area2D" type="Area2D" parent="8" unique_id=1676807313]
+visible = false
+collision_mask = 0
+
+[node name="warp" type="CollisionShape2D" parent="8/Area2D" unique_id=1061149942]
+position = Vector2(59.5, 47.5)
+shape = SubResource("CircleShape2D_w7dld")
+
+[node name="blank2" type="AnimatedSprite2D" parent="8" unique_id=123243678]
+visible = false
+sprite_frames = ExtResource("4_id7o2")
+animation = &"snow"
+autoplay = "snow"
+centered = false
+
+[node name="9" type="Button" parent="." unique_id=1589919775]
 custom_minimum_size = Vector2(121, 96)
 layout_mode = 0
 offset_left = 242.0
@@ -673,12 +1036,14 @@ offset_top = 96.0
 offset_right = 363.0
 offset_bottom = 192.0
 pivot_offset = Vector2(60.5, 48)
+mouse_filter = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_8kqao")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_ad87m")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_8kqao")
+toggle_mode = true
 icon = SubResource("AtlasTexture_03660")
 
-[node name="methods" type="Label" parent="9" unique_id=1674439210]
+[node name="methods" type="Label" parent="9" unique_id=1868582767]
 layout_mode = 0
 offset_left = 16.5
 offset_top = 36.5
@@ -693,7 +1058,22 @@ label_settings = SubResource("LabelSettings_vg5m1")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="10" type="Button" parent="." unique_id=404946766]
+[node name="Area2D" type="Area2D" parent="9" unique_id=1557943421]
+visible = false
+collision_mask = 0
+
+[node name="warp" type="CollisionShape2D" parent="9/Area2D" unique_id=775900278]
+position = Vector2(59.5, 47.5)
+shape = SubResource("CircleShape2D_w7dld")
+
+[node name="blank2" type="AnimatedSprite2D" parent="9" unique_id=1575696810]
+visible = false
+sprite_frames = ExtResource("4_id7o2")
+animation = &"snow"
+autoplay = "snow"
+centered = false
+
+[node name="10" type="Button" parent="." unique_id=604367330]
 custom_minimum_size = Vector2(121, 96)
 layout_mode = 0
 offset_left = 363.0
@@ -701,12 +1081,14 @@ offset_top = 96.0
 offset_right = 484.0
 offset_bottom = 192.0
 pivot_offset = Vector2(60.5, 48)
+mouse_filter = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_8kqao")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_ad87m")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_8kqao")
+toggle_mode = true
 icon = SubResource("AtlasTexture_u22mm")
 
-[node name="particle" type="Label" parent="10" unique_id=1083288452]
+[node name="particle" type="Label" parent="10" unique_id=1353534746]
 layout_mode = 0
 offset_left = 18.0
 offset_top = 36.5
@@ -721,7 +1103,22 @@ label_settings = SubResource("LabelSettings_fqe5i")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="11" type="Button" parent="." unique_id=1651619962]
+[node name="Area2D" type="Area2D" parent="10" unique_id=392702071]
+visible = false
+collision_mask = 0
+
+[node name="warp" type="CollisionShape2D" parent="10/Area2D" unique_id=750944472]
+position = Vector2(59.5, 47.5)
+shape = SubResource("CircleShape2D_w7dld")
+
+[node name="blank2" type="AnimatedSprite2D" parent="10" unique_id=810321433]
+visible = false
+sprite_frames = ExtResource("4_id7o2")
+animation = &"snow"
+autoplay = "snow"
+centered = false
+
+[node name="11" type="Button" parent="." unique_id=578735207]
 custom_minimum_size = Vector2(121, 96)
 layout_mode = 0
 offset_left = 484.0
@@ -734,7 +1131,7 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_ad87m")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_8kqao")
 icon = SubResource("AtlasTexture_533ov")
 
-[node name="option" type="Label" parent="11" unique_id=1374637162]
+[node name="option" type="Label" parent="11" unique_id=835076059]
 layout_mode = 0
 offset_left = 27.0
 offset_top = 36.5
@@ -749,7 +1146,22 @@ label_settings = SubResource("LabelSettings_wk44q")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="12" type="Button" parent="." unique_id=1162375897]
+[node name="Area2D" type="Area2D" parent="11" unique_id=39824523]
+visible = false
+collision_mask = 0
+
+[node name="warp" type="CollisionShape2D" parent="11/Area2D" unique_id=819752418]
+position = Vector2(59.5, 47.5)
+shape = SubResource("CircleShape2D_w7dld")
+
+[node name="blank2" type="AnimatedSprite2D" parent="11" unique_id=420130342]
+visible = false
+sprite_frames = ExtResource("4_id7o2")
+animation = &"snow"
+autoplay = "snow"
+centered = false
+
+[node name="12" type="Button" parent="." unique_id=178178317]
 custom_minimum_size = Vector2(121, 96)
 layout_mode = 0
 offset_left = 605.0
@@ -762,7 +1174,7 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_ad87m")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_8kqao")
 icon = SubResource("AtlasTexture_xgcpp")
 
-[node name="ai core" type="Label" parent="12" unique_id=1465899755]
+[node name="ai core" type="Label" parent="12" unique_id=2060497251]
 layout_mode = 0
 offset_left = 24.0
 offset_top = 36.5
@@ -777,7 +1189,22 @@ label_settings = SubResource("LabelSettings_jjouk")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="13" type="Button" parent="." unique_id=1527482704]
+[node name="Area2D" type="Area2D" parent="12" unique_id=1286601824]
+visible = false
+collision_mask = 0
+
+[node name="warp" type="CollisionShape2D" parent="12/Area2D" unique_id=187203568]
+position = Vector2(59.5, 47.5)
+shape = SubResource("CircleShape2D_w7dld")
+
+[node name="blank2" type="AnimatedSprite2D" parent="12" unique_id=947752788]
+visible = false
+sprite_frames = ExtResource("4_id7o2")
+animation = &"snow"
+autoplay = "snow"
+centered = false
+
+[node name="13" type="Button" parent="." unique_id=1319314357]
 custom_minimum_size = Vector2(121, 96)
 layout_mode = 0
 offset_top = 192.0
@@ -789,12 +1216,21 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_ad87m")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_8kqao")
 icon = SubResource("AtlasTexture_sxhc5")
 
-[node name="blank2" type="AnimatedSprite2D" parent="13" unique_id=2111900841]
-sprite_frames = ExtResource("6_14g40")
+[node name="blank2" type="AnimatedSprite2D" parent="13" unique_id=1723915664]
+sprite_frames = ExtResource("4_id7o2")
 animation = &"snow"
+autoplay = "snow"
 centered = false
 
-[node name="14" type="Button" parent="." unique_id=847069033]
+[node name="Area2D" type="Area2D" parent="13" unique_id=290925857]
+visible = false
+collision_layer = 0
+
+[node name="warp" type="CollisionShape2D" parent="13/Area2D" unique_id=1524089598]
+position = Vector2(59.5, 47.5)
+shape = SubResource("CircleShape2D_kh2no")
+
+[node name="14" type="Button" parent="." unique_id=713810695]
 custom_minimum_size = Vector2(121, 96)
 layout_mode = 0
 offset_left = 121.0
@@ -807,7 +1243,7 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_ad87m")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_8kqao")
 icon = SubResource("AtlasTexture_vvds0")
 
-[node name="mission" type="Label" parent="14" unique_id=1972961573]
+[node name="mission" type="Label" parent="14" unique_id=243650940]
 layout_mode = 0
 offset_left = 20.5
 offset_top = 36.5
@@ -822,7 +1258,22 @@ label_settings = SubResource("LabelSettings_xxt5l")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="15" type="Button" parent="." unique_id=518478498]
+[node name="Area2D" type="Area2D" parent="14" unique_id=1388564391]
+visible = false
+collision_mask = 0
+
+[node name="warp" type="CollisionShape2D" parent="14/Area2D" unique_id=582850583]
+position = Vector2(59.5, 47.5)
+shape = SubResource("CircleShape2D_w7dld")
+
+[node name="blank2" type="AnimatedSprite2D" parent="14" unique_id=1867257510]
+visible = false
+sprite_frames = ExtResource("4_id7o2")
+animation = &"snow"
+autoplay = "snow"
+centered = false
+
+[node name="15" type="Button" parent="." unique_id=651280047]
 custom_minimum_size = Vector2(121, 96)
 layout_mode = 0
 offset_left = 242.0
@@ -835,7 +1286,7 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_ad87m")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_8kqao")
 icon = SubResource("AtlasTexture_mmcu0")
 
-[node name="maps" type="Label" parent="15" unique_id=499826007]
+[node name="maps" type="Label" parent="15" unique_id=38179005]
 layout_mode = 0
 offset_left = 33.0
 offset_top = 36.5
@@ -850,7 +1301,22 @@ label_settings = SubResource("LabelSettings_m4ph8")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="16" type="Button" parent="." unique_id=1450144848]
+[node name="Area2D" type="Area2D" parent="15" unique_id=1962082070]
+visible = false
+collision_mask = 0
+
+[node name="warp" type="CollisionShape2D" parent="15/Area2D" unique_id=1728682645]
+position = Vector2(59.5, 47.5)
+shape = SubResource("CircleShape2D_w7dld")
+
+[node name="blank2" type="AnimatedSprite2D" parent="15" unique_id=1157356129]
+visible = false
+sprite_frames = ExtResource("4_id7o2")
+animation = &"snow"
+autoplay = "snow"
+centered = false
+
+[node name="16" type="Button" parent="." unique_id=834086685]
 custom_minimum_size = Vector2(121, 96)
 layout_mode = 0
 offset_left = 363.0
@@ -863,7 +1329,7 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_ad87m")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_8kqao")
 icon = SubResource("AtlasTexture_n2t58")
 
-[node name="battle mode" type="Label" parent="16" unique_id=1708501676]
+[node name="battle mode" type="Label" parent="16" unique_id=1430077339]
 layout_mode = 0
 offset_left = 28.5
 offset_top = 23.5
@@ -879,7 +1345,22 @@ label_settings = SubResource("LabelSettings_dpwwr")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="17" type="Button" parent="." unique_id=846639961]
+[node name="Area2D" type="Area2D" parent="16" unique_id=2042621205]
+visible = false
+collision_mask = 0
+
+[node name="warp" type="CollisionShape2D" parent="16/Area2D" unique_id=104875255]
+position = Vector2(59.5, 47.5)
+shape = SubResource("CircleShape2D_w7dld")
+
+[node name="blank2" type="AnimatedSprite2D" parent="16" unique_id=226105356]
+visible = false
+sprite_frames = ExtResource("4_id7o2")
+animation = &"snow"
+autoplay = "snow"
+centered = false
+
+[node name="17" type="Button" parent="." unique_id=1530193927]
 custom_minimum_size = Vector2(121, 96)
 layout_mode = 0
 offset_left = 484.0
@@ -892,7 +1373,7 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_ad87m")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_8kqao")
 icon = SubResource("AtlasTexture_v1w6l")
 
-[node name="text" type="Label" parent="17" unique_id=194823521]
+[node name="text" type="Label" parent="17" unique_id=1044234046]
 layout_mode = 0
 offset_left = 37.0
 offset_top = 36.5
@@ -907,7 +1388,22 @@ label_settings = SubResource("LabelSettings_hdkr0")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="18" type="Button" parent="." unique_id=759763469]
+[node name="Area2D" type="Area2D" parent="17" unique_id=1638705207]
+visible = false
+collision_mask = 0
+
+[node name="warp" type="CollisionShape2D" parent="17/Area2D" unique_id=997024875]
+position = Vector2(59.5, 47.5)
+shape = SubResource("CircleShape2D_w7dld")
+
+[node name="blank2" type="AnimatedSprite2D" parent="17" unique_id=843554506]
+visible = false
+sprite_frames = ExtResource("4_id7o2")
+animation = &"snow"
+autoplay = "snow"
+centered = false
+
+[node name="18" type="Button" parent="." unique_id=1689859838]
 custom_minimum_size = Vector2(121, 96)
 layout_mode = 0
 offset_left = 605.0
@@ -920,7 +1416,7 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_ad87m")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_8kqao")
 icon = SubResource("AtlasTexture_a386o")
 
-[node name="ares+" type="Label" parent="18" unique_id=710291596]
+[node name="ares+" type="Label" parent="18" unique_id=1047569935]
 layout_mode = 0
 offset_left = 31.0
 offset_top = 36.5
@@ -934,3 +1430,23 @@ text = "Ares+"
 label_settings = SubResource("LabelSettings_yt21o")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Area2D" type="Area2D" parent="18" unique_id=1578626824]
+visible = false
+collision_mask = 0
+
+[node name="warp" type="CollisionShape2D" parent="18/Area2D" unique_id=1210316586]
+position = Vector2(59.5, 47.5)
+shape = SubResource("CircleShape2D_w7dld")
+
+[node name="blank2" type="AnimatedSprite2D" parent="18" unique_id=1188681175]
+visible = false
+sprite_frames = ExtResource("4_id7o2")
+animation = &"snow"
+autoplay = "snow"
+centered = false
+
+[connection signal="area_entered" from="6/Area2D" to="." method="area_entered"]
+[connection signal="area_exited" from="6/Area2D" to="." method="area_exited"]
+[connection signal="area_entered" from="13/Area2D" to="." method="area_entered"]
+[connection signal="area_exited" from="13/Area2D" to="." method="area_exited"]

@@ -1,90 +1,90 @@
 [gd_scene format=3 uid="uid://brenseyyelcyd"]
 
-[ext_resource type="Script" uid="uid://c0powommbtc6w" path="res://Engine/-script-/hotkey.gd" id="1_a63hl"]
-[ext_resource type="Texture2D" uid="uid://3vlp2xfixl6u" path="res://z.gdset/ui_ico/key/keyboard_escape.png" id="2_r0mjs"]
-[ext_resource type="Texture2D" uid="uid://3541lct3q4s6" path="res://z.gdset/ui_ico/key/keyboard_f1.png" id="3_r553l"]
-[ext_resource type="Texture2D" uid="uid://dckm841e4g8ge" path="res://z.gdset/ui_ico/key/keyboard_f2.png" id="4_kau36"]
-[ext_resource type="Texture2D" uid="uid://tavbuci6ktjm" path="res://z.gdset/ui_ico/key/keyboard_f3.png" id="5_dds13"]
-[ext_resource type="Texture2D" uid="uid://bdw5sm6y4jcnv" path="res://z.gdset/ui_ico/key/keyboard_f4.png" id="6_sxsnn"]
-[ext_resource type="Texture2D" uid="uid://c0o6dfbtnmqei" path="res://z.gdset/ui_ico/key/keyboard_f5.png" id="7_y5l1i"]
-[ext_resource type="Texture2D" uid="uid://byo10nrx82ulf" path="res://z.gdset/ui_ico/key/keyboard_f6.png" id="8_gdq24"]
-[ext_resource type="Texture2D" uid="uid://b2eu32h141hxy" path="res://z.gdset/ui_ico/key/keyboard_f7.png" id="9_ns60k"]
-[ext_resource type="Texture2D" uid="uid://lml0faa26ws4" path="res://z.gdset/ui_ico/key/keyboard_f8.png" id="10_uij7o"]
-[ext_resource type="Texture2D" uid="uid://bu3nfrlgier8b" path="res://z.gdset/ui_ico/key/keyboard_f9.png" id="11_wicer"]
-[ext_resource type="Texture2D" uid="uid://cdtyecmaqj6vu" path="res://z.gdset/ui_ico/key/keyboard_f10.png" id="12_00rpd"]
-[ext_resource type="Texture2D" uid="uid://b4mo3u5wjat0m" path="res://z.gdset/ui_ico/key/keyboard_f11.png" id="13_j0rfh"]
-[ext_resource type="Texture2D" uid="uid://ctmhioj3ljuuj" path="res://z.gdset/ui_ico/key/keyboard_f12.png" id="14_d31nf"]
-[ext_resource type="Texture2D" uid="uid://bj3tp8ad027kw" path="res://z.gdset/ui_ico/key/keyboard_tilde.png" id="15_ro3e7"]
-[ext_resource type="Texture2D" uid="uid://ms3k6ito8pdx" path="res://z.gdset/ui_ico/key/keyboard_1.png" id="16_ri5gf"]
-[ext_resource type="Texture2D" uid="uid://fjo1ilak2b28" path="res://z.gdset/ui_ico/key/keyboard_2.png" id="17_r73q2"]
-[ext_resource type="Texture2D" uid="uid://biwxmutycq5m3" path="res://z.gdset/ui_ico/key/keyboard_3.png" id="18_m0iye"]
-[ext_resource type="Texture2D" uid="uid://dymhvxftgixdi" path="res://z.gdset/ui_ico/key/keyboard_4.png" id="19_dt24q"]
-[ext_resource type="Texture2D" uid="uid://cpgnpb7qjtb3u" path="res://z.gdset/ui_ico/key/keyboard_5.png" id="20_yfwkq"]
-[ext_resource type="Texture2D" uid="uid://ddsnwk45xsey3" path="res://z.gdset/ui_ico/key/keyboard_6.png" id="21_j4mek"]
-[ext_resource type="Texture2D" uid="uid://c5dukmioxgk54" path="res://z.gdset/ui_ico/key/keyboard_7.png" id="22_o76nm"]
-[ext_resource type="Texture2D" uid="uid://dishucf1nyr6k" path="res://z.gdset/ui_ico/key/keyboard_8.png" id="23_20ad1"]
-[ext_resource type="Texture2D" uid="uid://d0pt6i2xdtwk4" path="res://z.gdset/ui_ico/key/keyboard_9.png" id="24_qwcsd"]
-[ext_resource type="Texture2D" uid="uid://df3v22rrfy2fa" path="res://z.gdset/ui_ico/key/keyboard_0.png" id="25_cqnge"]
-[ext_resource type="Texture2D" uid="uid://jip0hblkdk1u" path="res://z.gdset/ui_ico/key/keyboard_minus.png" id="26_o8424"]
-[ext_resource type="Texture2D" uid="uid://bmm8vi1fqww3m" path="res://z.gdset/ui_ico/key/keyboard_plus.png" id="27_sw3gd"]
-[ext_resource type="Texture2D" uid="uid://bjr2ekrqra36g" path="res://z.gdset/ui_ico/key/keyboard_backspace_icon.png" id="28_2b2f3"]
-[ext_resource type="Texture2D" uid="uid://b017rl2qnbqfw" path="res://z.gdset/ui_ico/key/keyboard_tab.png" id="29_gmftx"]
-[ext_resource type="Texture2D" uid="uid://qifcbxmckvs8" path="res://z.gdset/ui_ico/key/keyboard_q.png" id="30_y46k6"]
-[ext_resource type="Texture2D" uid="uid://bvftid3bn4t3j" path="res://z.gdset/ui_ico/key/keyboard_w.png" id="31_u62ly"]
-[ext_resource type="Texture2D" uid="uid://cttno08srbqew" path="res://z.gdset/ui_ico/key/keyboard_e.png" id="32_yffqb"]
-[ext_resource type="Texture2D" uid="uid://dw28gtt06l7jd" path="res://z.gdset/ui_ico/key/keyboard_r.png" id="33_qrwg2"]
-[ext_resource type="Texture2D" uid="uid://c7shicca0qdjf" path="res://z.gdset/ui_ico/key/keyboard_t.png" id="34_igo0y"]
-[ext_resource type="Texture2D" uid="uid://baewhrcm0a4j" path="res://z.gdset/ui_ico/key/keyboard_y.png" id="35_hyn3g"]
-[ext_resource type="Texture2D" uid="uid://b0b4komifdyfc" path="res://z.gdset/ui_ico/key/keyboard_u.png" id="36_cno6r"]
-[ext_resource type="Texture2D" uid="uid://buf5julyhtdwl" path="res://z.gdset/ui_ico/key/keyboard_i.png" id="37_8beql"]
-[ext_resource type="Texture2D" uid="uid://dx6dnunj5m5ed" path="res://z.gdset/ui_ico/key/keyboard_o.png" id="38_e2rm3"]
-[ext_resource type="Texture2D" uid="uid://dkg4n320p0pg6" path="res://z.gdset/ui_ico/key/keyboard_p.png" id="39_575t7"]
-[ext_resource type="Texture2D" uid="uid://dvu3fdg1dnxrk" path="res://z.gdset/ui_ico/key/keyboard_bracket_open.png" id="40_f1vta"]
-[ext_resource type="Texture2D" uid="uid://cgwjfg1qr6kjb" path="res://z.gdset/ui_ico/key/keyboard_bracket_close.png" id="41_502dw"]
-[ext_resource type="Texture2D" uid="uid://dpwc87s6v3gd1" path="res://z.gdset/ui_ico/key/keyboard_slash_back.png" id="42_rrpe1"]
-[ext_resource type="Texture2D" uid="uid://rbf7nva1ro6m" path="res://z.gdset/ui_ico/key/keyboard_capslock.png" id="43_jrek1"]
-[ext_resource type="Texture2D" uid="uid://b0l6srvpf73hw" path="res://z.gdset/ui_ico/key/keyboard_a.png" id="44_pc3k1"]
-[ext_resource type="Texture2D" uid="uid://pnipcvwf2yjt" path="res://z.gdset/ui_ico/key/keyboard_s.png" id="45_u2hip"]
-[ext_resource type="Texture2D" uid="uid://b5v5fnrvbq36t" path="res://z.gdset/ui_ico/key/keyboard_d.png" id="46_2uunn"]
-[ext_resource type="Texture2D" uid="uid://tfgj0lthrb1g" path="res://z.gdset/ui_ico/key/keyboard_f.png" id="47_ldqoi"]
-[ext_resource type="Texture2D" uid="uid://ciwdx6t3kdkay" path="res://z.gdset/ui_ico/key/keyboard_g.png" id="48_o2lb0"]
-[ext_resource type="Texture2D" uid="uid://b4ynga1st41si" path="res://z.gdset/ui_ico/key/keyboard_h.png" id="49_k2oa1"]
-[ext_resource type="Texture2D" uid="uid://de0pl3q66lshs" path="res://z.gdset/ui_ico/key/keyboard_j.png" id="50_dbmx4"]
-[ext_resource type="Texture2D" uid="uid://c0crxpm3ffdku" path="res://z.gdset/ui_ico/key/keyboard_k.png" id="51_77w1a"]
-[ext_resource type="Texture2D" uid="uid://c8foa3w346i3e" path="res://z.gdset/ui_ico/key/keyboard_l.png" id="52_3fvo2"]
-[ext_resource type="Texture2D" uid="uid://blfdg11evjtoh" path="res://z.gdset/ui_ico/key/keyboard_colon.png" id="53_uxesr"]
-[ext_resource type="Texture2D" uid="uid://b8g5iybo1cgkc" path="res://z.gdset/ui_ico/key/keyboard_quote.png" id="54_mlw1h"]
-[ext_resource type="Texture2D" uid="uid://d1w6wb0li7i66" path="res://z.gdset/ui_ico/key/keyboard_numpad_enter.png" id="55_l2jso"]
-[ext_resource type="Texture2D" uid="uid://c82dbbwuudae3" path="res://z.gdset/ui_ico/key/keyboard_z.png" id="56_2jjke"]
-[ext_resource type="Texture2D" uid="uid://dux7r50c0n4r7" path="res://z.gdset/ui_ico/key/keyboard_x.png" id="57_6g0ok"]
-[ext_resource type="Texture2D" uid="uid://cwle6xhd4cs3p" path="res://z.gdset/ui_ico/key/keyboard_c.png" id="58_7qwfr"]
-[ext_resource type="Texture2D" uid="uid://d2tm4vvmv08ot" path="res://z.gdset/ui_ico/key/keyboard_v.png" id="59_b86j3"]
-[ext_resource type="Texture2D" uid="uid://b4nasw02gsdye" path="res://z.gdset/ui_ico/key/keyboard_b.png" id="60_xqqnn"]
-[ext_resource type="Texture2D" uid="uid://b48ft7d5xqgp4" path="res://z.gdset/ui_ico/key/keyboard_n.png" id="61_no1ty"]
-[ext_resource type="Texture2D" uid="uid://d0el76qckb330" path="res://z.gdset/ui_ico/key/keyboard_m.png" id="62_ev3hm"]
-[ext_resource type="Texture2D" uid="uid://ct513eurlpgj" path="res://z.gdset/ui_ico/key/keyboard_bracket_less.png" id="63_5gbr3"]
-[ext_resource type="Texture2D" uid="uid://cgetbs40sl2bo" path="res://z.gdset/ui_ico/key/keyboard_bracket_greater.png" id="64_ql478"]
-[ext_resource type="Texture2D" uid="uid://4ek8nldt7iyf" path="res://z.gdset/ui_ico/key/keyboard_question.png" id="65_7fuqm"]
-[ext_resource type="Texture2D" uid="uid://ciuwnig13iw2q" path="res://z.gdset/ui_ico/key/keyboard_ctrl.png" id="66_8adnl"]
-[ext_resource type="Texture2D" uid="uid://c5gjgjq24cux2" path="res://z.gdset/ui_ico/key/keyboard_win.png" id="67_757lh"]
-[ext_resource type="Texture2D" uid="uid://pbe0wh04flk6" path="res://z.gdset/ui_ico/key/keyboard_alt.png" id="68_l2m63"]
-[ext_resource type="FontFile" uid="uid://bes7pqqna126y" path="res://z.gdset/font/AaYuanWeiTuSi-2.ttf" id="69_d4f2e"]
-[ext_resource type="Texture2D" uid="uid://dsxpumt1kiati" path="res://z.gdset/ui_ico/key/keyboard_function.png" id="70_h3d1i"]
-[ext_resource type="Texture2D" uid="uid://bthmxke8ot4lw" path="res://z.gdset/ui_ico/key/keyboard_arrow_down.png" id="71_dfrk6"]
-[ext_resource type="Texture2D" uid="uid://coir0topa56g3" path="res://z.gdset/ui_ico/key/keyboard_arrow_left.png" id="72_egnuq"]
-[ext_resource type="Texture2D" uid="uid://cvqgmtxuki6nt" path="res://z.gdset/ui_ico/key/keyboard_arrow_right.png" id="73_bb7mk"]
-[ext_resource type="Texture2D" uid="uid://ih7tr25al35c" path="res://z.gdset/ui_ico/key/keyboard_arrow_up.png" id="74_lij6i"]
-[ext_resource type="Texture2D" uid="uid://v3c3hfaaiq4q" path="res://z.gdset/ui_ico/key/keyboard_numlock.png" id="75_5xi6q"]
-[ext_resource type="Texture2D" uid="uid://gud6l8r5b2hl" path="res://z.gdset/ui_ico/key/keyboard_slash_forward.png" id="76_begvw"]
-[ext_resource type="Texture2D" uid="uid://bf7r48jc6coxa" path="res://z.gdset/ui_ico/key/keyboard_asterisk.png" id="77_wmile"]
-[ext_resource type="Texture2D" uid="uid://cpvrwhtquxik5" path="res://z.gdset/ui_ico/key/keyboard_period.png" id="78_gymda"]
-[ext_resource type="Texture2D" uid="uid://dpo8eawfl5ovr" path="res://z.gdset/ui_ico/key/keyboard_printscreen.png" id="79_w2oyk"]
-[ext_resource type="Texture2D" uid="uid://dmj050u8yr3tr" path="res://z.gdset/ui_ico/key/keyboard_insert.png" id="80_15qt8"]
-[ext_resource type="Texture2D" uid="uid://cpoy4nq615m2g" path="res://z.gdset/ui_ico/key/keyboard_delete.png" id="81_p2sry"]
-[ext_resource type="Texture2D" uid="uid://iifx7na5eyw6" path="res://z.gdset/ui_ico/key/keyboard_page_down.png" id="82_0e0vk"]
-[ext_resource type="Texture2D" uid="uid://cqb2140jqejx1" path="res://z.gdset/ui_ico/key/keyboard_page_up.png" id="83_ohjs5"]
-[ext_resource type="Texture2D" uid="uid://bd75e3teyeilh" path="res://z.gdset/ui_ico/key/keyboard_home.png" id="84_l4why"]
-[ext_resource type="Texture2D" uid="uid://1vx1mlf4kc38" path="res://z.gdset/ui_ico/key/keyboard_end.png" id="85_6800u"]
+[ext_resource type="Script" uid="uid://bysykvx3luenm" path="res://Engine/-script-/hotkey.gd" id="1_a63hl"]
+[ext_resource type="Texture2D" uid="uid://cn4w4qnq8f38b" path="res://z.gdset/ui_ico/key/keyboard_escape.png" id="2_r0mjs"]
+[ext_resource type="Texture2D" uid="uid://bk4av8ygxcgov" path="res://z.gdset/ui_ico/key/keyboard_f1.png" id="3_r553l"]
+[ext_resource type="Texture2D" uid="uid://qqtl5enpyg5u" path="res://z.gdset/ui_ico/key/keyboard_f2.png" id="4_kau36"]
+[ext_resource type="Texture2D" uid="uid://b01e70jyxv3in" path="res://z.gdset/ui_ico/key/keyboard_f3.png" id="5_dds13"]
+[ext_resource type="Texture2D" uid="uid://c7maixhedl5r4" path="res://z.gdset/ui_ico/key/keyboard_f4.png" id="6_sxsnn"]
+[ext_resource type="Texture2D" uid="uid://c20som4dvwlfm" path="res://z.gdset/ui_ico/key/keyboard_f5.png" id="7_y5l1i"]
+[ext_resource type="Texture2D" uid="uid://cblaxlecqxvwq" path="res://z.gdset/ui_ico/key/keyboard_f6.png" id="8_gdq24"]
+[ext_resource type="Texture2D" uid="uid://bkxedwy0euvkb" path="res://z.gdset/ui_ico/key/keyboard_f7.png" id="9_ns60k"]
+[ext_resource type="Texture2D" uid="uid://bw1vbfhu2bilu" path="res://z.gdset/ui_ico/key/keyboard_f8.png" id="10_uij7o"]
+[ext_resource type="Texture2D" uid="uid://c7nuuyhpmsgl2" path="res://z.gdset/ui_ico/key/keyboard_f9.png" id="11_wicer"]
+[ext_resource type="Texture2D" uid="uid://7d3u7u55m5r0" path="res://z.gdset/ui_ico/key/keyboard_f10.png" id="12_00rpd"]
+[ext_resource type="Texture2D" uid="uid://bpbdrtw6od6vo" path="res://z.gdset/ui_ico/key/keyboard_f11.png" id="13_j0rfh"]
+[ext_resource type="Texture2D" uid="uid://6bo8r7518jx6" path="res://z.gdset/ui_ico/key/keyboard_f12.png" id="14_d31nf"]
+[ext_resource type="Texture2D" uid="uid://d38ptpyjx3t2y" path="res://z.gdset/ui_ico/key/keyboard_tilde.png" id="15_ro3e7"]
+[ext_resource type="Texture2D" uid="uid://bkc461qx40jsc" path="res://z.gdset/ui_ico/key/keyboard_1.png" id="16_ri5gf"]
+[ext_resource type="Texture2D" uid="uid://t3nauaad6fs5" path="res://z.gdset/ui_ico/key/keyboard_2.png" id="17_r73q2"]
+[ext_resource type="Texture2D" uid="uid://8dn0a4k5tagb" path="res://z.gdset/ui_ico/key/keyboard_3.png" id="18_m0iye"]
+[ext_resource type="Texture2D" uid="uid://xvknsxse3im4" path="res://z.gdset/ui_ico/key/keyboard_4.png" id="19_dt24q"]
+[ext_resource type="Texture2D" uid="uid://up4ase3tb5ld" path="res://z.gdset/ui_ico/key/keyboard_5.png" id="20_yfwkq"]
+[ext_resource type="Texture2D" uid="uid://booveuefvkaji" path="res://z.gdset/ui_ico/key/keyboard_6.png" id="21_j4mek"]
+[ext_resource type="Texture2D" uid="uid://c2eppvwli5ds7" path="res://z.gdset/ui_ico/key/keyboard_7.png" id="22_o76nm"]
+[ext_resource type="Texture2D" uid="uid://c5k8fuhieqx0r" path="res://z.gdset/ui_ico/key/keyboard_8.png" id="23_20ad1"]
+[ext_resource type="Texture2D" uid="uid://vqdeny4wj282" path="res://z.gdset/ui_ico/key/keyboard_9.png" id="24_qwcsd"]
+[ext_resource type="Texture2D" uid="uid://cve1xcgsc0yho" path="res://z.gdset/ui_ico/key/keyboard_0.png" id="25_cqnge"]
+[ext_resource type="Texture2D" uid="uid://c068h3ypmjkwa" path="res://z.gdset/ui_ico/key/keyboard_minus.png" id="26_o8424"]
+[ext_resource type="Texture2D" uid="uid://dlwytks8j52eg" path="res://z.gdset/ui_ico/key/keyboard_plus.png" id="27_sw3gd"]
+[ext_resource type="Texture2D" uid="uid://st2jndaykcpd" path="res://z.gdset/ui_ico/key/keyboard_backspace_icon.png" id="28_2b2f3"]
+[ext_resource type="Texture2D" uid="uid://ctgbkcwml6ej7" path="res://z.gdset/ui_ico/key/keyboard_tab.png" id="29_gmftx"]
+[ext_resource type="Texture2D" uid="uid://bnr1uvntl38m" path="res://z.gdset/ui_ico/key/keyboard_q.png" id="30_y46k6"]
+[ext_resource type="Texture2D" uid="uid://c2gxfbbmpw1m6" path="res://z.gdset/ui_ico/key/keyboard_w.png" id="31_u62ly"]
+[ext_resource type="Texture2D" uid="uid://c7ye1aajip4tn" path="res://z.gdset/ui_ico/key/keyboard_e.png" id="32_yffqb"]
+[ext_resource type="Texture2D" uid="uid://011u3f2h2hbn" path="res://z.gdset/ui_ico/key/keyboard_r.png" id="33_qrwg2"]
+[ext_resource type="Texture2D" uid="uid://dnjdlicat8l16" path="res://z.gdset/ui_ico/key/keyboard_t.png" id="34_igo0y"]
+[ext_resource type="Texture2D" uid="uid://n8bpoux8boqf" path="res://z.gdset/ui_ico/key/keyboard_y.png" id="35_hyn3g"]
+[ext_resource type="Texture2D" uid="uid://dkvjxofttvs5k" path="res://z.gdset/ui_ico/key/keyboard_u.png" id="36_cno6r"]
+[ext_resource type="Texture2D" uid="uid://jh8kn41itykr" path="res://z.gdset/ui_ico/key/keyboard_i.png" id="37_8beql"]
+[ext_resource type="Texture2D" uid="uid://dkmlmnl1h5kkh" path="res://z.gdset/ui_ico/key/keyboard_o.png" id="38_e2rm3"]
+[ext_resource type="Texture2D" uid="uid://bbo1ayr4lp1yf" path="res://z.gdset/ui_ico/key/keyboard_p.png" id="39_575t7"]
+[ext_resource type="Texture2D" uid="uid://dq307icvoashq" path="res://z.gdset/ui_ico/key/keyboard_bracket_open.png" id="40_f1vta"]
+[ext_resource type="Texture2D" uid="uid://dkqhgm46f6r7q" path="res://z.gdset/ui_ico/key/keyboard_bracket_close.png" id="41_502dw"]
+[ext_resource type="Texture2D" uid="uid://c58tpyewaxwbo" path="res://z.gdset/ui_ico/key/keyboard_slash_back.png" id="42_rrpe1"]
+[ext_resource type="Texture2D" uid="uid://cn1vesq67bf2s" path="res://z.gdset/ui_ico/key/keyboard_capslock.png" id="43_jrek1"]
+[ext_resource type="Texture2D" uid="uid://dtw6r73s0lunw" path="res://z.gdset/ui_ico/key/keyboard_a.png" id="44_pc3k1"]
+[ext_resource type="Texture2D" uid="uid://ct4b8f8ucxqr4" path="res://z.gdset/ui_ico/key/keyboard_s.png" id="45_u2hip"]
+[ext_resource type="Texture2D" uid="uid://bwtcrgddhgjp8" path="res://z.gdset/ui_ico/key/keyboard_d.png" id="46_2uunn"]
+[ext_resource type="Texture2D" uid="uid://yb21hx0a125a" path="res://z.gdset/ui_ico/key/keyboard_f.png" id="47_ldqoi"]
+[ext_resource type="Texture2D" uid="uid://c6c3c0lsow4s7" path="res://z.gdset/ui_ico/key/keyboard_g.png" id="48_o2lb0"]
+[ext_resource type="Texture2D" uid="uid://bmf62yn05by6j" path="res://z.gdset/ui_ico/key/keyboard_h.png" id="49_k2oa1"]
+[ext_resource type="Texture2D" uid="uid://wtsj7m70iim7" path="res://z.gdset/ui_ico/key/keyboard_j.png" id="50_dbmx4"]
+[ext_resource type="Texture2D" uid="uid://pdn66wigyi3p" path="res://z.gdset/ui_ico/key/keyboard_k.png" id="51_77w1a"]
+[ext_resource type="Texture2D" uid="uid://drep2exbi582d" path="res://z.gdset/ui_ico/key/keyboard_l.png" id="52_3fvo2"]
+[ext_resource type="Texture2D" uid="uid://bh8hketdom55b" path="res://z.gdset/ui_ico/key/keyboard_colon.png" id="53_uxesr"]
+[ext_resource type="Texture2D" uid="uid://diyfxnn6ggiya" path="res://z.gdset/ui_ico/key/keyboard_quote.png" id="54_mlw1h"]
+[ext_resource type="Texture2D" uid="uid://b612jh7n8823d" path="res://z.gdset/ui_ico/key/keyboard_numpad_enter.png" id="55_l2jso"]
+[ext_resource type="Texture2D" uid="uid://jwct1xgwes7w" path="res://z.gdset/ui_ico/key/keyboard_z.png" id="56_2jjke"]
+[ext_resource type="Texture2D" uid="uid://dl7gsbt7iqs4x" path="res://z.gdset/ui_ico/key/keyboard_x.png" id="57_6g0ok"]
+[ext_resource type="Texture2D" uid="uid://r0s4onxbmhnk" path="res://z.gdset/ui_ico/key/keyboard_c.png" id="58_7qwfr"]
+[ext_resource type="Texture2D" uid="uid://rwxcqdhowfh8" path="res://z.gdset/ui_ico/key/keyboard_v.png" id="59_b86j3"]
+[ext_resource type="Texture2D" uid="uid://df7bip45lg4s6" path="res://z.gdset/ui_ico/key/keyboard_b.png" id="60_xqqnn"]
+[ext_resource type="Texture2D" uid="uid://bdba6vi01yajw" path="res://z.gdset/ui_ico/key/keyboard_n.png" id="61_no1ty"]
+[ext_resource type="Texture2D" uid="uid://bvyl5ftcsfktc" path="res://z.gdset/ui_ico/key/keyboard_m.png" id="62_ev3hm"]
+[ext_resource type="Texture2D" uid="uid://coxbd3drmi0t0" path="res://z.gdset/ui_ico/key/keyboard_bracket_less.png" id="63_5gbr3"]
+[ext_resource type="Texture2D" uid="uid://ch3v3doy448pq" path="res://z.gdset/ui_ico/key/keyboard_bracket_greater.png" id="64_ql478"]
+[ext_resource type="Texture2D" uid="uid://cbqlh3pj736y7" path="res://z.gdset/ui_ico/key/keyboard_question.png" id="65_7fuqm"]
+[ext_resource type="Texture2D" uid="uid://bgf5tt28g1men" path="res://z.gdset/ui_ico/key/keyboard_ctrl.png" id="66_8adnl"]
+[ext_resource type="Texture2D" uid="uid://libdm8ovufah" path="res://z.gdset/ui_ico/key/keyboard_win.png" id="67_757lh"]
+[ext_resource type="Texture2D" uid="uid://baucjl2v5ix1o" path="res://z.gdset/ui_ico/key/keyboard_alt.png" id="68_l2m63"]
+[ext_resource type="FontFile" uid="uid://b0itm5clp8xki" path="res://z.gdset/font/AaYuanWeiTuSi-2.ttf" id="69_d4f2e"]
+[ext_resource type="Texture2D" uid="uid://cjpo6fuum62m3" path="res://z.gdset/ui_ico/key/keyboard_function.png" id="70_h3d1i"]
+[ext_resource type="Texture2D" uid="uid://cy66mn7nsfprd" path="res://z.gdset/ui_ico/key/keyboard_arrow_down.png" id="71_dfrk6"]
+[ext_resource type="Texture2D" uid="uid://d0qws5kojynl8" path="res://z.gdset/ui_ico/key/keyboard_arrow_left.png" id="72_egnuq"]
+[ext_resource type="Texture2D" uid="uid://dxr21diihx4yw" path="res://z.gdset/ui_ico/key/keyboard_arrow_right.png" id="73_bb7mk"]
+[ext_resource type="Texture2D" uid="uid://buv3u0wni374x" path="res://z.gdset/ui_ico/key/keyboard_arrow_up.png" id="74_lij6i"]
+[ext_resource type="Texture2D" uid="uid://bn1ikbr30ygwg" path="res://z.gdset/ui_ico/key/keyboard_numlock.png" id="75_5xi6q"]
+[ext_resource type="Texture2D" uid="uid://dhif537ybu0gp" path="res://z.gdset/ui_ico/key/keyboard_slash_forward.png" id="76_begvw"]
+[ext_resource type="Texture2D" uid="uid://kspfhbn5negk" path="res://z.gdset/ui_ico/key/keyboard_asterisk.png" id="77_wmile"]
+[ext_resource type="Texture2D" uid="uid://da8vdjjmk837w" path="res://z.gdset/ui_ico/key/keyboard_period.png" id="78_gymda"]
+[ext_resource type="Texture2D" uid="uid://tmj8rdt6ak4l" path="res://z.gdset/ui_ico/key/keyboard_printscreen.png" id="79_w2oyk"]
+[ext_resource type="Texture2D" uid="uid://bs0x4shdj4lii" path="res://z.gdset/ui_ico/key/keyboard_insert.png" id="80_15qt8"]
+[ext_resource type="Texture2D" uid="uid://d2pcsw4vxnsv2" path="res://z.gdset/ui_ico/key/keyboard_delete.png" id="81_p2sry"]
+[ext_resource type="Texture2D" uid="uid://b3ycktwjbvtv8" path="res://z.gdset/ui_ico/key/keyboard_page_down.png" id="82_0e0vk"]
+[ext_resource type="Texture2D" uid="uid://cdub1qnyjw4h2" path="res://z.gdset/ui_ico/key/keyboard_page_up.png" id="83_ohjs5"]
+[ext_resource type="Texture2D" uid="uid://demj56xp0wcv6" path="res://z.gdset/ui_ico/key/keyboard_home.png" id="84_l4why"]
+[ext_resource type="Texture2D" uid="uid://dk5ynhlten4dh" path="res://z.gdset/ui_ico/key/keyboard_end.png" id="85_6800u"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2svdq"]
 bg_color = Color(0, 0.6313726, 0.8784314, 1)
@@ -597,8 +597,8 @@ layout_mode = 3
 anchors_preset = 0
 offset_left = 7.0
 offset_top = 69.0
-offset_right = 924.0
-offset_bottom = 487.0
+offset_right = 7.0
+offset_bottom = 69.0
 script = ExtResource("1_a63hl")
 
 [node name="Flow" type="FlowContainer" parent="." unique_id=768550691]
@@ -606,7 +606,7 @@ layout_mode = 0
 offset_left = 3.0
 offset_top = 3.0
 offset_right = 827.0
-offset_bottom = 176.0
+offset_bottom = 254.0
 size_flags_horizontal = 4
 size_flags_vertical = 0
 mouse_filter = 2
@@ -615,6 +615,8 @@ mouse_filter = 2
 editor_description = "建筑/Q"
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_2svdq")
 text = "建筑
@@ -626,6 +628,8 @@ vertical_alignment = 1
 editor_description = "防御/W"
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_7aba7")
 text = "防御
@@ -637,6 +641,8 @@ vertical_alignment = 1
 editor_description = "步兵/E"
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_bepe2")
 text = "步兵
@@ -648,6 +654,8 @@ vertical_alignment = 1
 editor_description = "车辆/R"
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_h2gee")
 text = "车辆
@@ -659,6 +667,8 @@ vertical_alignment = 1
 editor_description = "设置/ESC"
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_jdw5p")
 text = "设置
@@ -670,6 +680,8 @@ vertical_alignment = 1
 editor_description = "修复/K"
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_bm8xo")
 text = "修复
@@ -681,6 +693,8 @@ vertical_alignment = 1
 editor_description = "变卖/L"
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_w7dld")
 text = "变卖
@@ -692,6 +706,8 @@ vertical_alignment = 1
 editor_description = "路径/Z"
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_kh2no")
 text = "路径
@@ -703,6 +719,8 @@ vertical_alignment = 1
 editor_description = "部署/D"
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_7tcno")
 text = "部署
@@ -714,6 +732,8 @@ vertical_alignment = 1
 editor_description = "停止/S"
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_rmfp1")
 text = "停止
@@ -725,6 +745,8 @@ vertical_alignment = 1
 editor_description = "分散/X"
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_chlhb")
 text = "分散
@@ -736,6 +758,8 @@ vertical_alignment = 1
 editor_description = "喝彩/C"
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_l5xam")
 text = "喝彩
@@ -747,6 +771,8 @@ vertical_alignment = 1
 editor_description = "警戒/G"
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_ctxuk")
 text = "警戒
@@ -758,6 +784,8 @@ vertical_alignment = 1
 editor_description = "信标/B"
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_03660")
 text = "信标
@@ -769,6 +797,8 @@ vertical_alignment = 1
 editor_description = "上一个/N"
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_vg5m1")
 text = "上一个
@@ -780,6 +810,8 @@ vertical_alignment = 1
 editor_description = "下一个/M"
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_u22mm")
 text = "下一个
@@ -791,6 +823,8 @@ vertical_alignment = 1
 editor_description = "跟随/F"
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_fqe5i")
 text = "跟随
@@ -802,6 +836,8 @@ vertical_alignment = 1
 editor_description = "类型/T"
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_533ov")
 text = "类型
@@ -813,6 +849,8 @@ vertical_alignment = 1
 editor_description = "基地/H"
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_wk44q")
 text = "基地
@@ -824,6 +862,8 @@ vertical_alignment = 1
 editor_description = "全选/P"
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_xgcpp")
 text = "全选
@@ -835,6 +875,8 @@ vertical_alignment = 1
 editor_description = "事件/Space"
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_jjouk")
 text = "事件
@@ -846,6 +888,8 @@ vertical_alignment = 1
 editor_description = "删除/Del"
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_sxhc5")
 text = "删除
@@ -857,6 +901,8 @@ vertical_alignment = 1
 editor_description = "地图快照/"
 custom_minimum_size = Vector2(60, 45)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_vvds0")
 text = "地图
@@ -868,6 +914,8 @@ vertical_alignment = 1
 editor_description = "屏幕截图/"
 custom_minimum_size = Vector2(60, 45)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_xxt5l")
 text = "屏幕
@@ -879,6 +927,8 @@ vertical_alignment = 1
 editor_description = "FPS显示/"
 custom_minimum_size = Vector2(60, 45)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_mmcu0")
 text = "FPS
@@ -890,6 +940,8 @@ vertical_alignment = 1
 editor_description = "物体信息/"
 custom_minimum_size = Vector2(60, 45)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_m4ph8")
 text = "物体
@@ -901,6 +953,8 @@ vertical_alignment = 1
 editor_description = "伤害显示/"
 custom_minimum_size = Vector2(60, 45)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_n2t58")
 text = "伤害
@@ -912,6 +966,8 @@ vertical_alignment = 1
 editor_description = "切换数字/"
 custom_minimum_size = Vector2(60, 45)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_dpwwr")
 text = "切换
@@ -923,6 +979,8 @@ vertical_alignment = 1
 editor_description = "单帧模式/"
 custom_minimum_size = Vector2(60, 45)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_v1w6l")
 text = "单帧
@@ -934,6 +992,8 @@ vertical_alignment = 1
 editor_description = "FPS1/"
 custom_minimum_size = Vector2(60, 45)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_hdkr0")
 text = "FPS
@@ -945,6 +1005,8 @@ vertical_alignment = 1
 editor_description = "FPS5/"
 custom_minimum_size = Vector2(60, 45)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_a386o")
 text = "FPS
@@ -956,6 +1018,8 @@ vertical_alignment = 1
 editor_description = "FPS10/"
 custom_minimum_size = Vector2(60, 45)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_yt21o")
 text = "FPS
@@ -967,6 +1031,8 @@ vertical_alignment = 1
 editor_description = "FPS15/"
 custom_minimum_size = Vector2(60, 45)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_rnirn")
 text = "FPS
@@ -978,6 +1044,8 @@ vertical_alignment = 1
 editor_description = "FPS30/"
 custom_minimum_size = Vector2(60, 45)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_0wsyf")
 text = "FPS
@@ -989,6 +1057,8 @@ vertical_alignment = 1
 editor_description = "FPS60/"
 custom_minimum_size = Vector2(60, 45)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_0jlaa")
 text = "FPS

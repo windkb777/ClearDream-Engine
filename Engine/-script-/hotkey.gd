@@ -13,20 +13,18 @@ var lastkey = "F1"
 var sel = null
 var cmd = {Board="",Nums="",Obj=""}
 
-#func _ready():
-	#position = Vector2(7,69)
+func _ready():
+	position = Vector2(7,69)
+	var buttons = $Flow.get_children()
+	for i in buttons:
+		i.connect("mouse_entered",func():sel=i)
+		i.connect("mouse_exited",func():sel=null)
+	HotKeys()
 
-#func _ready():
-	#var buttons = $Flow.get_children()
-	#for i in buttons:
-		#i.connect("mouse_entered",func():sel=i)
-		#i.connect("mouse_exited",func():sel=null)
-	#HotKeys()
-
-#func _input(event):
-	#Soft.DragWindows(event,self)
-	#KeyBoard(event)
-	#Mouse()
+func _input(event):
+	Soft.DragWindows(event,self)
+	KeyBoard(event)
+	Mouse()
 
 func Mouse():
 	if Input.is_action_just_pressed("L_Click") and sel!=null:
@@ -103,7 +101,7 @@ func Default():
 ##################################
 func HotKeys(file="KeyboardMD.ini"):
 	var content = "[Hotkey]\n"
-	var slot = $"-Ra2Keys/V1/Flow".get_children()
+	var slot = $Flow.get_children()
 	for i in slot:
 		var space = "				;"
 		var keycodes = str(i.editor_description.split("/")[1].to_ascii_buffer().decode_s8(0))

@@ -1,10 +1,7 @@
 [gd_scene format=3 uid="uid://bdgk33ja1qm3d"]
 
-[ext_resource type="Script" uid="uid://dvstqhekebdib" path="res://Engine/-ui-/-slot-/image.gd" id="1_tkl8y"]
-[ext_resource type="Texture2D" uid="uid://bh51a0ml22x0y" path="res://z.gdset/ui_ico/ico/expand.svg" id="2_3qvi7"]
-[ext_resource type="Texture2D" uid="uid://ddmetkvqe8e60" path="res://z.gdset/ui_ico/ico/minus.svg" id="3_4ywpt"]
-[ext_resource type="Texture2D" uid="uid://c0c8gvbvy7i7d" path="res://z.gdset/ui_ico/ico/close.svg" id="4_18byb"]
-[ext_resource type="Script" uid="uid://dyndmcfpei83b" path="res://Engine/-class-/Format.gd" id="5_ibep2"]
+[ext_resource type="Script" uid="uid://d00mv1u84tgx8" path="res://Engine/-script-/image.gd" id="1_tkl8y"]
+[ext_resource type="Script" uid="uid://dcmm0jkgtn25i" path="res://Engine/-class-/Format.gd" id="5_ibep2"]
 
 [sub_resource type="Gradient" id="Gradient_0p7jv"]
 colors = PackedColorArray(0.30980393, 0.11372549, 0.6784314, 1, 0.14260218, 0.011843101, 0.42092565, 1)
@@ -18,6 +15,15 @@ fill_to = Vector2(1, 1)
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b5eic"]
 texture = SubResource("GradientTexture2D_vggtd")
 texture_margin_left = 8.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2mp8g"]
+load_path = "res://.godot/imported/minus.svg-725a995809e108ecdf40a32064ef74e9.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4uen4"]
+load_path = "res://.godot/imported/expand.svg-4c3e5fdb317b30929f3c5dfa9ed4d0b9.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qh126"]
+load_path = "res://.godot/imported/close.svg-fb00028cb7b79481c3d4387abd84d53c.ctex"
 
 [node name="Test_shp" type="Control" unique_id=1598018473]
 layout_mode = 3
@@ -47,7 +53,6 @@ offset_bottom = 268.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("5_ibep2")
-metadata/_custom_type_script = "uid://dyndmcfpei83b"
 
 [node name="line" type="Line2D" parent="." unique_id=610216045]
 visible = false
@@ -68,7 +73,7 @@ custom_minimum_size = Vector2(20, 20)
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
-icon = ExtResource("3_4ywpt")
+icon = SubResource("CompressedTexture2D_2mp8g")
 expand_icon = true
 
 [node name="full" type="Button" parent="-" unique_id=1551932018]
@@ -76,7 +81,7 @@ custom_minimum_size = Vector2(20, 20)
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
-icon = ExtResource("2_3qvi7")
+icon = SubResource("CompressedTexture2D_4uen4")
 expand_icon = true
 
 [node name="close" type="Button" parent="-" unique_id=1608956768]
@@ -84,5 +89,7 @@ custom_minimum_size = Vector2(20, 20)
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
-icon = ExtResource("4_18byb")
+icon = SubResource("CompressedTexture2D_qh126")
 expand_icon = true
+
+[connection signal="gui_input" from="title" to="." method="Drag"]

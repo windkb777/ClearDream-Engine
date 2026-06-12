@@ -1,8 +1,7 @@
 [gd_scene format=3 uid="uid://d2okygb5nujew"]
 
-[ext_resource type="FontFile" uid="uid://b4nhpyw65bywp" path="res://z.gdset/font/kenney_input_generic.ttf" id="1_5hxbb"]
-[ext_resource type="Texture2D" uid="uid://cisakts5i5a7h" path="res://z.gdset/ui_ico/ico/eye.png" id="2_3xymp"]
-[ext_resource type="Texture2D" uid="uid://cr4pjpalui76g" path="res://z.gdset/ui_ico/ico/eye-close.png" id="3_xed25"]
+[ext_resource type="Texture2D" uid="uid://cflg5see3nmso" path="res://z.gdset/ui_ico/ico/eye.png" id="2_3xymp"]
+[ext_resource type="Texture2D" uid="uid://ca3nd8udixtn8" path="res://z.gdset/ui_ico/ico/eye-close.png" id="3_xed25"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qd0ox"]
 
@@ -36,7 +35,6 @@ custom_minimum_size = Vector2(91, 0)
 layout_mode = 2
 size_flags_horizontal = 0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("1_5hxbb")
 theme_override_font_sizes/font_size = 14
 theme_override_styles/normal = SubResource("StyleBoxFlat_ey8c7")
 text = "file"
@@ -45,7 +43,6 @@ text = "file"
 custom_minimum_size = Vector2(21, 20)
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("1_5hxbb")
 theme_override_font_sizes/font_size = 14
 theme_override_styles/normal = SubResource("StyleBoxFlat_5hxbb")
 text = "S"

@@ -1,150 +1,138 @@
 [gd_scene format=3 uid="uid://dwfsqvk7g18qb"]
 
-[ext_resource type="Script" uid="uid://g3q5id8bu8ng" path="res://Engine/-script-/-ins/unit.gd" id="1_qd6cy"]
-[ext_resource type="Shader" uid="uid://dqgenoxs3ylq7" path="res://z.gdset/GShader/z.Key_Color.gdshader" id="1_rm01g"]
-[ext_resource type="Texture2D" uid="uid://c5v6cvaojc2ue" path="res://ResPack/Unit/infantry/gi.png" id="2_qd6cy"]
-[ext_resource type="Texture2D" uid="uid://d1heybhtjsgch" path="res://ResPack/Unit/infantry/ggi.png" id="3_01mon"]
-[ext_resource type="Texture2D" uid="uid://dunt01ljf5otk" path="res://ResPack/Unit/infantry/snipe.png" id="4_8gmu3"]
-[ext_resource type="Texture2D" uid="uid://c540pmbgpn46h" path="res://ResPack/Unit/infantry/seal.png" id="5_y08gn"]
-[ext_resource type="Texture2D" uid="uid://drs2wo7evlpc3" path="res://ResPack/Unit/infantry/spy.png" id="6_bxq4l"]
-[ext_resource type="Texture2D" uid="uid://dyo8wcbty3c73" path="res://ResPack/Unit/infantry/tany.png" id="7_qy6pv"]
-[ext_resource type="Texture2D" uid="uid://clakqgseu50dt" path="res://ResPack/Unit/infantry/rock.png" id="8_3dh0e"]
-[ext_resource type="Texture2D" uid="uid://carhftrkbg7gd" path="res://ResPack/Unit/infantry/cleg.png" id="9_ckap8"]
-[ext_resource type="Texture2D" uid="uid://bhi2ksiy83b04" path="res://ResPack/Unit/infantry/cons.png" id="10_gqybc"]
-[ext_resource type="Texture2D" uid="uid://de28ss7fjd5ey" path="res://ResPack/Unit/infantry/flakt.png" id="11_brb5v"]
-[ext_resource type="Texture2D" uid="uid://c3p1nwhyr0et2" path="res://ResPack/Unit/infantry/shk.png" id="12_ly1ql"]
-[ext_resource type="Texture2D" uid="uid://b8e6wn2n3mv6y" path="res://ResPack/Unit/infantry/ivan.png" id="13_enndc"]
-[ext_resource type="Texture2D" uid="uid://cworaawgyprc5" path="res://ResPack/Unit/infantry/trst.png" id="14_bxgie"]
-[ext_resource type="Texture2D" uid="uid://cpipoukrw17kp" path="res://ResPack/Unit/infantry/boris.png" id="15_7hwrl"]
-[ext_resource type="Texture2D" uid="uid://kxc4gohh7cxf" path="res://ResPack/Unit/infantry/lunr.png" id="16_56jem"]
-[ext_resource type="Texture2D" uid="uid://dn0ansi06n7ax" path="res://ResPack/Unit/infantry/deso.png" id="17_yo045"]
-[ext_resource type="Texture2D" uid="uid://cq7i3yl587ebd" path="res://ResPack/Unit/infantry/init.png" id="18_jt542"]
-[ext_resource type="Texture2D" uid="uid://bap8m4y6ui746" path="res://ResPack/Unit/infantry/brute.png" id="19_qw6gx"]
-[ext_resource type="Texture2D" uid="uid://c7xm6p7kjk8ef" path="res://ResPack/Unit/infantry/virus.png" id="20_a06ua"]
-[ext_resource type="Texture2D" uid="uid://dehfqmun14uws" path="res://ResPack/Unit/infantry/slav.png" id="21_kgslv"]
-[ext_resource type="Texture2D" uid="uid://c6obe8hao02li" path="res://ResPack/Unit/infantry/yuri.png" id="22_clhic"]
-[ext_resource type="Texture2D" uid="uid://dbikndxbjpdat" path="res://ResPack/Unit/infantry/yurix.png" id="23_cap1g"]
-[ext_resource type="Texture2D" uid="uid://dxmd3gqkdbbx" path="res://ResPack/Unit/infantry/yuripr.png" id="24_buut0"]
-[ext_resource type="Texture2D" uid="uid://dc4ahvktmr8c" path="res://ResPack/Unit/infantry/ccomand.png" id="25_io6lv"]
-[ext_resource type="Texture2D" uid="uid://bann6tkber8xm" path="res://ResPack/Unit/infantry/ccocivan.png" id="26_vk0x7"]
-[ext_resource type="Texture2D" uid="uid://djocafpgidk51" path="res://ResPack/Unit/infantry/ptroop.png" id="27_0wnod"]
-[ext_resource type="Texture2D" uid="uid://bo1olffngom2d" path="res://ResPack/Unit/infantry/engineer.png" id="28_r74sd"]
-[ext_resource type="Texture2D" uid="uid://lfsde8k6gygj" path="res://ResPack/Unit/infantry/seala.png" id="29_u8hc0"]
-[ext_resource type="Texture2D" uid="uid://d2svmhr5aema2" path="res://ResPack/Build/item/cdmsc11 0000.png" id="30_663ni"]
-[ext_resource type="Texture2D" uid="uid://b3cxl78kd3tbi" path="res://ResPack/Build/item/cumisc05 0000.png" id="31_tx6sb"]
-[ext_resource type="Texture2D" uid="uid://cox6ta8uuo7rd" path="res://ResPack/Build/item/cdfrmb 0000.png" id="32_f4hvv"]
-[ext_resource type="Texture2D" uid="uid://bi274eq5ex1a8" path="res://ResPack/Build/item/cdmsc01 0000.png" id="33_m166d"]
-[ext_resource type="Texture2D" uid="uid://qwjbapt6iw8a" path="res://ResPack/Build/item/cawsh18a 0000.png" id="34_m6aux"]
-[ext_resource type="Texture2D" uid="uid://vfp7glpik2it" path="res://ResPack/Build/item/cdmsc06a 0000.png" id="35_k6mgk"]
-[ext_resource type="Texture2D" uid="uid://cma103c0dl5ty" path="res://ResPack/Build/item/cdmsc13 0000.png" id="36_apj36"]
-[ext_resource type="Texture2D" uid="uid://bxt4h5yam5l2f" path="res://ResPack/Build/item/castrt02 0000.png" id="37_vj8wh"]
-[ext_resource type="Texture2D" uid="uid://b8hpuh872xkre" path="res://ResPack/Build/item/cdpark02 0000.png" id="38_vs0fy"]
-[ext_resource type="Texture2D" uid="uid://bwbtmjm1xaisq" path="res://ResPack/Build/item/castrt05 0000.png" id="39_cqf5v"]
-[ext_resource type="Texture2D" uid="uid://crt7d12mu4ta8" path="res://ResPack/Build/item/cumisc06 0000.png" id="40_5m8b2"]
-[ext_resource type="Texture2D" uid="uid://k066ogvme4rm" path="res://ResPack/Build/item/cgla10_a 0000.png" id="41_lew4d"]
-[ext_resource type="Texture2D" uid="uid://s3mific1gi2j" path="res://ResPack/Unit/people/arnd.png" id="42_7ujvg"]
-[ext_resource type="Texture2D" uid="uid://cowywgyntsoox" path="res://ResPack/Unit/people/stln.png" id="43_5he4b"]
-[ext_resource type="Texture2D" uid="uid://be8ay3drcs6wh" path="res://ResPack/Unit/people/enis.png" id="44_bk5si"]
-[ext_resource type="Texture2D" uid="uid://dn5k4ix7vm7s1" path="res://ResPack/Unit/people/civstm.png" id="45_1kd3o"]
-[ext_resource type="Texture2D" uid="uid://bsgrhe312ty3a" path="res://ResPack/Unit/people/civ1.png" id="46_gcymv"]
-[ext_resource type="Texture2D" uid="uid://3mfetjr0jhdf" path="res://ResPack/Unit/people/civ2.png" id="47_r3f6c"]
-[ext_resource type="Texture2D" uid="uid://c1nsunxaqc20p" path="res://ResPack/Unit/people/civ3.png" id="48_vekow"]
-[ext_resource type="Texture2D" uid="uid://dbobbvm2fgyc5" path="res://ResPack/Unit/people/civa.png" id="49_dwsvq"]
-[ext_resource type="Texture2D" uid="uid://bkq3bntkeynnb" path="res://ResPack/Unit/people/civb.png" id="50_p4oxu"]
-[ext_resource type="Texture2D" uid="uid://cw1s3d4udc3v0" path="res://ResPack/Unit/people/civbbp.png" id="51_0ej18"]
-[ext_resource type="Texture2D" uid="uid://2038p7bpbnio" path="res://ResPack/Unit/people/civbf.png" id="52_7m8wh"]
-[ext_resource type="Texture2D" uid="uid://x72v3d5phdpv" path="res://ResPack/Unit/people/civbfm.png" id="53_x16t8"]
-[ext_resource type="Texture2D" uid="uid://dswdcig70rm8i" path="res://ResPack/Unit/people/civbtm.png" id="54_708qs"]
-[ext_resource type="Texture2D" uid="uid://glwqmuxvlpwi" path="res://ResPack/Unit/people/civc.png" id="55_ishis"]
-[ext_resource type="Texture2D" uid="uid://bpl68juafrvcy" path="res://ResPack/Unit/people/civsf.png" id="56_uyep7"]
-[ext_resource type="Texture2D" uid="uid://bxf5x0fr2g3yg" path="res://ResPack/Unit/people/civsfm.png" id="57_lidbr"]
-[ext_resource type="Texture2D" uid="uid://wk6d20qmtnp" path="res://ResPack/Unit/people/ssrv.png" id="58_2ega0"]
-[ext_resource type="Texture2D" uid="uid://c2pgg5241scpr" path="res://ResPack/Unit/people/pres.png" id="59_caxyi"]
-[ext_resource type="Texture2D" uid="uid://b5psrj3uj6hsg" path="res://ResPack/Unit/people/rmnv.png" id="60_upyek"]
-[ext_resource type="Texture2D" uid="uid://debqodmt8sfsw" path="res://ResPack/Unit/people/pentgen.png" id="61_1ku42"]
-[ext_resource type="Texture2D" uid="uid://kp5ycdb83ouc" path="res://ResPack/Unit/people/vladimir.png" id="62_aeltl"]
-[ext_resource type="Texture2D" uid="uid://dp4tondcyhasl" path="res://ResPack/Unit/animal/dog.png" id="63_ugjn0"]
-[ext_resource type="Texture2D" uid="uid://crcenlrqvdtvs" path="res://ResPack/Unit/animal/cow.png" id="64_73lyg"]
-[ext_resource type="Texture2D" uid="uid://cv4tiuba1b5j0" path="res://ResPack/Unit/animal/caml.png" id="65_526ds"]
-[ext_resource type="Texture2D" uid="uid://3cqkb8gqtpam" path="res://ResPack/Unit/animal/josh.png" id="66_bqd70"]
-[ext_resource type="Texture2D" uid="uid://c50tw1u662v5c" path="res://ResPack/Unit/animal/polarb.png" id="67_bo0q2"]
-[ext_resource type="Texture2D" uid="uid://cl6efc2xuc2h0" path="res://ResPack/Unit/animal/dnoa.png" id="68_8mjs6"]
-[ext_resource type="Texture2D" uid="uid://bb4of54qnhufm" path="res://ResPack/Unit/animal/dnob.png" id="69_m1ub3"]
-[ext_resource type="Texture2D" uid="uid://ckc43tch0amyo" path="res://ResPack/Unit/animal/dlph.png" id="70_1d1vl"]
-[ext_resource type="Texture2D" uid="uid://cfw70mhun4ev7" path="res://ResPack/Unit/animal/all.png" id="71_gkfar"]
-[ext_resource type="Texture2D" uid="uid://bwgia7n4pil7c" path="res://ResPack/Unit/animal/sqd.png" id="72_u3d8o"]
-[ext_resource type="Texture2D" uid="uid://bv17woenc0cke" path="res://ResPack/Unit/car/ambu.png" id="73_52pu0"]
-[ext_resource type="Texture2D" uid="uid://1t8dh7ffrp36" path="res://ResPack/Unit/car/bacb.png" id="74_rseqg"]
-[ext_resource type="Texture2D" uid="uid://c5amlrse13mpv" path="res://ResPack/Unit/car/bus.png" id="75_euj3i"]
-[ext_resource type="Texture2D" uid="uid://sbholl6hvfgd" path="res://ResPack/Unit/car/car.png" id="76_2ayxu"]
-[ext_resource type="Texture2D" uid="uid://dsxrj854s22jm" path="res://ResPack/Unit/car/cblc.png" id="77_ikwhx"]
-[ext_resource type="Texture2D" uid="uid://n60j1pjyih13" path="res://ResPack/Unit/car/cona.png" id="78_pcgak"]
-[ext_resource type="Texture2D" uid="uid://dm5ki8wx2scgd" path="res://ResPack/Unit/car/cop.png" id="79_6h3ro"]
-[ext_resource type="Texture2D" uid="uid://oua5lvqmc8sc" path="res://ResPack/Unit/car/ddbx.png" id="80_0kd6r"]
-[ext_resource type="Texture2D" uid="uid://baqx8y1vgvugx" path="res://ResPack/Unit/car/doly.png" id="81_b7dhv"]
-[ext_resource type="Texture2D" uid="uid://bpyfvnuph762i" path="res://ResPack/Unit/car/euroc.png" id="82_5o54j"]
-[ext_resource type="Texture2D" uid="uid://d24lu5cgoem7l" path="res://ResPack/Unit/car/ftrk.png" id="83_wbjce"]
-[ext_resource type="Texture2D" uid="uid://50q5lb68o7c7" path="res://ResPack/Unit/car/jeep.png" id="84_ukamx"]
-[ext_resource type="Texture2D" uid="uid://ch0stuvsudnxt" path="res://ResPack/Unit/car/limo.png" id="85_rfu13"]
-[ext_resource type="Texture2D" uid="uid://bnmis8meplj6o" path="res://ResPack/Unit/car/pick.png" id="86_88naf"]
-[ext_resource type="Texture2D" uid="uid://baeytlgu77o7k" path="res://ResPack/Unit/car/propa.png" id="87_x10di"]
-[ext_resource type="Texture2D" uid="uid://bbbmq37x8nnkb" path="res://ResPack/Unit/car/ptruck.png" id="88_j2171"]
-[ext_resource type="Texture2D" uid="uid://caya251b8cgk0" path="res://ResPack/Unit/car/stang.png" id="89_kxpat"]
-[ext_resource type="Texture2D" uid="uid://ce60frrxscs23" path="res://ResPack/Unit/car/suvb.png" id="90_2cor0"]
-[ext_resource type="Texture2D" uid="uid://768duvfov043" path="res://ResPack/Unit/car/suvw.png" id="91_htxxg"]
-[ext_resource type="Texture2D" uid="uid://bdhiaefkxaevl" path="res://ResPack/Unit/car/taxi.png" id="92_crhod"]
-[ext_resource type="Texture2D" uid="uid://cnwpb3xocrkih" path="res://ResPack/Unit/car/wini.png" id="93_23jhl"]
-[ext_resource type="Texture2D" uid="uid://cl2dmvmta4gle" path="res://ResPack/Unit/car/ycab.png" id="94_lgks8"]
-[ext_resource type="Texture2D" uid="uid://badd2egl2tuck" path="res://ResPack/Unit/tank/mtnk.png" id="95_rtu07"]
-[ext_resource type="Texture2D" uid="uid://beap7aalqxhhh" path="res://ResPack/Unit/tank/tnkd.png" id="96_ir5n4"]
-[ext_resource type="Texture2D" uid="uid://gtnsbuavwgei" path="res://ResPack/Unit/tank/mgtk.png" id="97_wh8gp"]
-[ext_resource type="Texture2D" uid="uid://gdk1ghueum5" path="res://ResPack/Unit/tank/sref.png" id="98_4s61s"]
-[ext_resource type="Texture2D" uid="uid://dj574jv2mjhbb" path="res://ResPack/Unit/tank/ifv.png" id="99_crdwx"]
-[ext_resource type="Texture2D" uid="uid://tewwsnvscvm6" path="res://ResPack/Unit/tank/bfrt.png" id="100_0gcc5"]
-[ext_resource type="Texture2D" uid="uid://bk786dspcfutu" path="res://ResPack/Unit/tank/robo.png" id="101_3ng1d"]
-[ext_resource type="Texture2D" uid="uid://dr13y6caos83e" path="res://ResPack/Unit/tank/htnk.png" id="102_w6klo"]
-[ext_resource type="Texture2D" uid="uid://6p67sbfx7gof" path="res://ResPack/Unit/tank/htk.png" id="103_lx50w"]
-[ext_resource type="Texture2D" uid="uid://dannjd0favmud" path="res://ResPack/Unit/tank/ttnk.png" id="104_j6xtj"]
-[ext_resource type="Texture2D" uid="uid://dhbglibncr2v6" path="res://ResPack/Unit/tank/apoc.png" id="105_cyree"]
-[ext_resource type="Texture2D" uid="uid://c28w6ulau4o80" path="res://ResPack/Unit/tank/dtruck.png" id="106_vs0b5"]
-[ext_resource type="Texture2D" uid="uid://dccdfv48ws6rv" path="res://ResPack/Unit/tank/v3.png" id="107_8154j"]
-[ext_resource type="Texture2D" uid="uid://c2x85wpjxav7u" path="res://ResPack/Unit/tank/dron.png" id="108_3jnto"]
-[ext_resource type="Texture2D" uid="uid://cyhy435mssg43" path="res://ResPack/Unit/tank/ltnk.png" id="109_q3ldh"]
-[ext_resource type="Texture2D" uid="uid://blfmfvfv7hvt3" path="res://ResPack/Unit/tank/ytnk.png" id="110_2q3va"]
-[ext_resource type="Texture2D" uid="uid://buvews2i4ye34" path="res://ResPack/Unit/tank/caos.png" id="111_i6ecu"]
-[ext_resource type="Texture2D" uid="uid://ddkr0sra5rbah" path="res://ResPack/Unit/tank/tele.png" id="112_oj51k"]
-[ext_resource type="Texture2D" uid="uid://1ff8728umvoo" path="res://ResPack/Unit/tank/mind.png" id="113_bmjvp"]
-[ext_resource type="Texture2D" uid="uid://ogdb2h3idwiq" path="res://ResPack/Unit/tank/cmin.png" id="114_1oi1r"]
-[ext_resource type="Texture2D" uid="uid://crd736yahduv3" path="res://ResPack/Unit/tank/harv.png" id="115_7f7kv"]
-[ext_resource type="Texture2D" uid="uid://wnsecfmmtt8o" path="res://ResPack/Unit/tank/amcv.png" id="116_3am8x"]
-[ext_resource type="Texture2D" uid="uid://dwhfpwhr64j7s" path="res://ResPack/Unit/tank/smcv.png" id="117_ayqii"]
-[ext_resource type="Texture2D" uid="uid://cfsb87g5rpwgd" path="res://ResPack/Unit/tank/pcv.png" id="118_u1hs0"]
-[ext_resource type="Texture2D" uid="uid://dhqu1y2lju8vu" path="res://ResPack/Unit/tank/smin.png" id="119_bsssl"]
-[ext_resource type="Texture2D" uid="uid://cw430kcjpbxfb" path="res://ResPack/Unit/ship/aegis.png" id="120_lvi1w"]
-[ext_resource type="Texture2D" uid="uid://mvcy3xdojjdu" path="res://ResPack/Unit/ship/carrier.png" id="121_hg7sa"]
-[ext_resource type="Texture2D" uid="uid://mk7pj84lp3y5" path="res://ResPack/Unit/ship/cdest.png" id="122_qs1ki"]
-[ext_resource type="Texture2D" uid="uid://bvud4aaufsee8" path="res://ResPack/Unit/ship/dest.png" id="123_2ebol"]
-[ext_resource type="Texture2D" uid="uid://b3jqia3ald3ac" path="res://ResPack/Unit/ship/cruise.png" id="124_je60i"]
-[ext_resource type="Texture2D" uid="uid://b6m1kvtosps33" path="res://ResPack/Unit/ship/dred.png" id="125_oi1hv"]
-[ext_resource type="Texture2D" uid="uid://b85me560hay32" path="res://ResPack/Unit/ship/vlad.png" id="126_0tcdk"]
-[ext_resource type="Texture2D" uid="uid://cx3hpco252amf" path="res://ResPack/Unit/ship/hyd.png" id="127_pv0ar"]
-[ext_resource type="Texture2D" uid="uid://ccd4f5e5xnk68" path="res://ResPack/Unit/ship/tug.png" id="128_2wosw"]
-[ext_resource type="Texture2D" uid="uid://b1ngoh0qwkcf4" path="res://ResPack/Unit/ship/sub.png" id="129_epg48"]
-[ext_resource type="Texture2D" uid="uid://baqdjkdgcfcka" path="res://ResPack/Unit/ship/lcrf.png" id="130_2iex0"]
-[ext_resource type="Texture2D" uid="uid://8s23da4iekax" path="res://ResPack/Unit/ship/sapc.png" id="131_avn7t"]
-[ext_resource type="Texture2D" uid="uid://c12uqjpm7m2i7" path="res://ResPack/Unit/ship/yhvr.png" id="132_peaso"]
-[ext_resource type="Texture2D" uid="uid://dbb5q6li67nf" path="res://ResPack/Unit/ship/dsub.png" id="133_atdtg"]
-[ext_resource type="Texture2D" uid="uid://dpffp3tsgxheq" path="res://ResPack/Unit/plane/schp.png" id="134_aerd7"]
-[ext_resource type="Texture2D" uid="uid://bjmwm77yk1cq7" path="res://ResPack/Unit/plane/shad.png" id="135_dhidi"]
-[ext_resource type="Texture2D" uid="uid://2raxj7nc5ygx" path="res://ResPack/Unit/plane/spyp.png" id="136_t2rnn"]
-[ext_resource type="Texture2D" uid="uid://dm086ljhna4nw" path="res://ResPack/Unit/plane/pdplane.png" id="137_ler0h"]
-[ext_resource type="Texture2D" uid="uid://bn2ggxa7nuun6" path="res://ResPack/Unit/plane/zep.png" id="138_5n0nb"]
-[ext_resource type="Texture2D" uid="uid://bojb8hv5mn5wm" path="res://ResPack/Unit/plane/hornet.png" id="139_62lan"]
-[ext_resource type="Texture2D" uid="uid://clbeouoflrtdk" path="res://ResPack/Unit/plane/orca.png" id="140_7f8cp"]
-[ext_resource type="Texture2D" uid="uid://bqr6mv3wpi8bv" path="res://ResPack/Unit/plane/beag.png" id="141_bsxem"]
-[ext_resource type="Texture2D" uid="uid://c0h78n7hgl8bj" path="res://ResPack/Unit/plane/asw.png" id="142_3610u"]
-[ext_resource type="Texture2D" uid="uid://lpa6dk8n8g3d" path="res://ResPack/Unit/plane/bpln.png" id="143_2kg8h"]
-[ext_resource type="Texture2D" uid="uid://lx1tm0ge83vq" path="res://ResPack/Unit/plane/disk.png" id="144_53ryq"]
+[ext_resource type="Script" uid="uid://bkv8g1xybfmhc" path="res://Engine/-script-/-ins/unit.gd" id="1_qd6cy"]
+[ext_resource type="Shader" uid="uid://c1v3pd4csjf2a" path="res://z.gdset/GShader/z.Key_Color.gdshader" id="1_rm01g"]
+[ext_resource type="Texture2D" uid="uid://vii3im4gi43y" path="res://ResPack/Unit/infantry/gi.png" id="2_qd6cy"]
+[ext_resource type="Texture2D" uid="uid://us1f0advhkpy" path="res://ResPack/Unit/infantry/ggi.png" id="3_01mon"]
+[ext_resource type="Texture2D" uid="uid://ccacvnn6mefkn" path="res://ResPack/Unit/infantry/snipe.png" id="4_8gmu3"]
+[ext_resource type="Texture2D" uid="uid://vbsw63tiigju" path="res://ResPack/Unit/infantry/seal.png" id="5_y08gn"]
+[ext_resource type="Texture2D" uid="uid://dnbcmt0nas1hf" path="res://ResPack/Unit/infantry/spy.png" id="6_bxq4l"]
+[ext_resource type="Texture2D" uid="uid://dg5r3y6bafmci" path="res://ResPack/Unit/infantry/tany.png" id="7_qy6pv"]
+[ext_resource type="Texture2D" uid="uid://bxi31fxpypaqt" path="res://ResPack/Unit/infantry/rock.png" id="8_3dh0e"]
+[ext_resource type="Texture2D" uid="uid://cvs58om57odc3" path="res://ResPack/Unit/infantry/cleg.png" id="9_ckap8"]
+[ext_resource type="Texture2D" uid="uid://ciwv1bpjw03ux" path="res://ResPack/Unit/infantry/cons.png" id="10_gqybc"]
+[ext_resource type="Texture2D" uid="uid://il2wwowiyji4" path="res://ResPack/Unit/infantry/flakt.png" id="11_brb5v"]
+[ext_resource type="Texture2D" uid="uid://se2hpfeb2tkk" path="res://ResPack/Unit/infantry/shk.png" id="12_ly1ql"]
+[ext_resource type="Texture2D" uid="uid://6qdoslu2l0cs" path="res://ResPack/Unit/infantry/ivan.png" id="13_enndc"]
+[ext_resource type="Texture2D" uid="uid://durit10ckyhd6" path="res://ResPack/Unit/infantry/trst.png" id="14_bxgie"]
+[ext_resource type="Texture2D" uid="uid://bhrv4idih57td" path="res://ResPack/Unit/infantry/boris.png" id="15_7hwrl"]
+[ext_resource type="Texture2D" uid="uid://b4y2xnjmqryd1" path="res://ResPack/Unit/infantry/lunr.png" id="16_56jem"]
+[ext_resource type="Texture2D" uid="uid://drvw5qkbygs2y" path="res://ResPack/Unit/infantry/deso.png" id="17_yo045"]
+[ext_resource type="Texture2D" uid="uid://dnvwqpvk7vbim" path="res://ResPack/Unit/infantry/init.png" id="18_jt542"]
+[ext_resource type="Texture2D" uid="uid://cvjqtgcwj55r3" path="res://ResPack/Unit/infantry/brute.png" id="19_qw6gx"]
+[ext_resource type="Texture2D" uid="uid://be54uigmiba0c" path="res://ResPack/Unit/infantry/virus.png" id="20_a06ua"]
+[ext_resource type="Texture2D" uid="uid://7o1s6f3jo07e" path="res://ResPack/Unit/infantry/slav.png" id="21_kgslv"]
+[ext_resource type="Texture2D" uid="uid://df0uftprjpjqf" path="res://ResPack/Unit/infantry/yuri.png" id="22_clhic"]
+[ext_resource type="Texture2D" uid="uid://cdseb7md28brk" path="res://ResPack/Unit/infantry/yurix.png" id="23_cap1g"]
+[ext_resource type="Texture2D" uid="uid://b6dluhpjgmup4" path="res://ResPack/Unit/infantry/yuripr.png" id="24_buut0"]
+[ext_resource type="Texture2D" uid="uid://cu33glu7h8umk" path="res://ResPack/Unit/infantry/ccomand.png" id="25_io6lv"]
+[ext_resource type="Texture2D" uid="uid://c70yi777hdf3v" path="res://ResPack/Unit/infantry/ccocivan.png" id="26_vk0x7"]
+[ext_resource type="Texture2D" uid="uid://nxtn6em15hma" path="res://ResPack/Unit/infantry/ptroop.png" id="27_0wnod"]
+[ext_resource type="Texture2D" uid="uid://nrgy16slu207" path="res://ResPack/Unit/infantry/engineer.png" id="28_r74sd"]
+[ext_resource type="Texture2D" uid="uid://ct7v083pvjtt4" path="res://ResPack/Unit/infantry/seala.png" id="29_u8hc0"]
+[ext_resource type="Texture2D" uid="uid://uh4ates6th2s" path="res://ResPack/Unit/people/arnd.png" id="42_7ujvg"]
+[ext_resource type="Texture2D" uid="uid://ew510d34v7oq" path="res://ResPack/Unit/people/stln.png" id="43_5he4b"]
+[ext_resource type="Texture2D" uid="uid://cns6vblne54t4" path="res://ResPack/Unit/people/enis.png" id="44_bk5si"]
+[ext_resource type="Texture2D" uid="uid://bqlbvhw4vh7ma" path="res://ResPack/Unit/people/civstm.png" id="45_1kd3o"]
+[ext_resource type="Texture2D" uid="uid://6kaw52dsgwb0" path="res://ResPack/Unit/people/civ1.png" id="46_gcymv"]
+[ext_resource type="Texture2D" uid="uid://brrno4o8roc4s" path="res://ResPack/Unit/people/civ2.png" id="47_r3f6c"]
+[ext_resource type="Texture2D" uid="uid://d4nldbpigp4yt" path="res://ResPack/Unit/people/civ3.png" id="48_vekow"]
+[ext_resource type="Texture2D" uid="uid://cr2a8bd16kwra" path="res://ResPack/Unit/people/civa.png" id="49_dwsvq"]
+[ext_resource type="Texture2D" uid="uid://d17r6kflo6fhr" path="res://ResPack/Unit/people/civb.png" id="50_p4oxu"]
+[ext_resource type="Texture2D" uid="uid://d2av37ixvyu7m" path="res://ResPack/Unit/people/civbbp.png" id="51_0ej18"]
+[ext_resource type="Texture2D" uid="uid://cbnq3dqooqevw" path="res://ResPack/Unit/people/civbf.png" id="52_7m8wh"]
+[ext_resource type="Texture2D" uid="uid://cmapvu8t30f3q" path="res://ResPack/Unit/people/civbfm.png" id="53_x16t8"]
+[ext_resource type="Texture2D" uid="uid://e6vsvyt56ugd" path="res://ResPack/Unit/people/civbtm.png" id="54_708qs"]
+[ext_resource type="Texture2D" uid="uid://muv2l0jd4j4l" path="res://ResPack/Unit/people/civc.png" id="55_ishis"]
+[ext_resource type="Texture2D" uid="uid://8s11nj8w6htb" path="res://ResPack/Unit/people/civsf.png" id="56_uyep7"]
+[ext_resource type="Texture2D" uid="uid://dqml8kw0lh0pg" path="res://ResPack/Unit/people/civsfm.png" id="57_lidbr"]
+[ext_resource type="Texture2D" uid="uid://pcjfkbuu40qa" path="res://ResPack/Unit/people/ssrv.png" id="58_2ega0"]
+[ext_resource type="Texture2D" uid="uid://bwimfnpx51stv" path="res://ResPack/Unit/people/pres.png" id="59_caxyi"]
+[ext_resource type="Texture2D" uid="uid://cnq7dgww2uk0r" path="res://ResPack/Unit/people/rmnv.png" id="60_upyek"]
+[ext_resource type="Texture2D" uid="uid://bdw1ly8hsxy12" path="res://ResPack/Unit/people/pentgen.png" id="61_1ku42"]
+[ext_resource type="Texture2D" uid="uid://s0ekat4674el" path="res://ResPack/Unit/people/vladimir.png" id="62_aeltl"]
+[ext_resource type="Texture2D" uid="uid://dbgq7lf72o80a" path="res://ResPack/Unit/animal/dog.png" id="63_ugjn0"]
+[ext_resource type="Texture2D" uid="uid://cfb6mw6tsomy6" path="res://ResPack/Unit/animal/cow.png" id="64_73lyg"]
+[ext_resource type="Texture2D" uid="uid://cyc17lntm3w3r" path="res://ResPack/Unit/animal/caml.png" id="65_526ds"]
+[ext_resource type="Texture2D" uid="uid://kjvlukplko61" path="res://ResPack/Unit/animal/josh.png" id="66_bqd70"]
+[ext_resource type="Texture2D" uid="uid://b0gy7uj61yglv" path="res://ResPack/Unit/animal/polarb.png" id="67_bo0q2"]
+[ext_resource type="Texture2D" uid="uid://5fhpcul1g1to" path="res://ResPack/Unit/animal/dnoa.png" id="68_8mjs6"]
+[ext_resource type="Texture2D" uid="uid://d2l7akro8l0ix" path="res://ResPack/Unit/animal/dnob.png" id="69_m1ub3"]
+[ext_resource type="Texture2D" uid="uid://d3nynxeqhcki8" path="res://ResPack/Unit/animal/dlph.png" id="70_1d1vl"]
+[ext_resource type="Texture2D" uid="uid://7j6lv351p36s" path="res://ResPack/Unit/animal/all.png" id="71_gkfar"]
+[ext_resource type="Texture2D" uid="uid://cjedcj4lv46ry" path="res://ResPack/Unit/animal/sqd.png" id="72_u3d8o"]
+[ext_resource type="Texture2D" uid="uid://72oslje2r8nj" path="res://ResPack/Unit/car/ambu.png" id="73_52pu0"]
+[ext_resource type="Texture2D" uid="uid://b2pfdanaeiel" path="res://ResPack/Unit/car/bacb.png" id="74_rseqg"]
+[ext_resource type="Texture2D" uid="uid://b2f742t2q0vud" path="res://ResPack/Unit/car/bus.png" id="75_euj3i"]
+[ext_resource type="Texture2D" uid="uid://b53000w5rgjgy" path="res://ResPack/Unit/car/car.png" id="76_2ayxu"]
+[ext_resource type="Texture2D" uid="uid://w84chtulkcw1" path="res://ResPack/Unit/car/cblc.png" id="77_ikwhx"]
+[ext_resource type="Texture2D" uid="uid://c6yi3ln4d488k" path="res://ResPack/Unit/car/cona.png" id="78_pcgak"]
+[ext_resource type="Texture2D" uid="uid://cmr2obusr41tg" path="res://ResPack/Unit/car/cop.png" id="79_6h3ro"]
+[ext_resource type="Texture2D" uid="uid://1djggcyksflx" path="res://ResPack/Unit/car/ddbx.png" id="80_0kd6r"]
+[ext_resource type="Texture2D" uid="uid://b8ocygvi74g0i" path="res://ResPack/Unit/car/doly.png" id="81_b7dhv"]
+[ext_resource type="Texture2D" uid="uid://qstw63vs6ujp" path="res://ResPack/Unit/car/euroc.png" id="82_5o54j"]
+[ext_resource type="Texture2D" uid="uid://dmj2566icethl" path="res://ResPack/Unit/car/ftrk.png" id="83_wbjce"]
+[ext_resource type="Texture2D" uid="uid://cltonmty6gwnp" path="res://ResPack/Unit/car/jeep.png" id="84_ukamx"]
+[ext_resource type="Texture2D" uid="uid://cll1tku0ogr7l" path="res://ResPack/Unit/car/limo.png" id="85_rfu13"]
+[ext_resource type="Texture2D" uid="uid://bdlkwshswrink" path="res://ResPack/Unit/car/pick.png" id="86_88naf"]
+[ext_resource type="Texture2D" uid="uid://bmtqh3mrexxmx" path="res://ResPack/Unit/car/propa.png" id="87_x10di"]
+[ext_resource type="Texture2D" uid="uid://df8347a4ubl37" path="res://ResPack/Unit/car/ptruck.png" id="88_j2171"]
+[ext_resource type="Texture2D" uid="uid://cppvyxyqnwter" path="res://ResPack/Unit/car/stang.png" id="89_kxpat"]
+[ext_resource type="Texture2D" uid="uid://djwcyapb1i0g7" path="res://ResPack/Unit/car/suvb.png" id="90_2cor0"]
+[ext_resource type="Texture2D" uid="uid://sh7w2fwovv0w" path="res://ResPack/Unit/car/suvw.png" id="91_htxxg"]
+[ext_resource type="Texture2D" uid="uid://b8k2akmcx2c1f" path="res://ResPack/Unit/car/taxi.png" id="92_crhod"]
+[ext_resource type="Texture2D" uid="uid://dkxpcr1icosrc" path="res://ResPack/Unit/car/wini.png" id="93_23jhl"]
+[ext_resource type="Texture2D" uid="uid://b6srqsycnodyq" path="res://ResPack/Unit/car/ycab.png" id="94_lgks8"]
+[ext_resource type="Texture2D" uid="uid://q0tinq6ici41" path="res://ResPack/Unit/tank/mtnk.png" id="95_rtu07"]
+[ext_resource type="Texture2D" uid="uid://crlo2j6m12pgk" path="res://ResPack/Unit/tank/tnkd.png" id="96_ir5n4"]
+[ext_resource type="Texture2D" uid="uid://bp1arig5iq7xf" path="res://ResPack/Unit/tank/mgtk.png" id="97_wh8gp"]
+[ext_resource type="Texture2D" uid="uid://ytqv3ypqt304" path="res://ResPack/Unit/tank/sref.png" id="98_4s61s"]
+[ext_resource type="Texture2D" uid="uid://kg84res3jhhx" path="res://ResPack/Unit/tank/ifv.png" id="99_crdwx"]
+[ext_resource type="Texture2D" uid="uid://c05opmlmpwka0" path="res://ResPack/Unit/tank/bfrt.png" id="100_0gcc5"]
+[ext_resource type="Texture2D" uid="uid://s5ymg7ecj01m" path="res://ResPack/Unit/tank/robo.png" id="101_3ng1d"]
+[ext_resource type="Texture2D" uid="uid://dk0efv655f6yf" path="res://ResPack/Unit/tank/htnk.png" id="102_w6klo"]
+[ext_resource type="Texture2D" uid="uid://c5q5fwtxh37qi" path="res://ResPack/Unit/tank/htk.png" id="103_lx50w"]
+[ext_resource type="Texture2D" uid="uid://vp11r10ldgdl" path="res://ResPack/Unit/tank/ttnk.png" id="104_j6xtj"]
+[ext_resource type="Texture2D" uid="uid://cv6475j6qeny2" path="res://ResPack/Unit/tank/apoc.png" id="105_cyree"]
+[ext_resource type="Texture2D" uid="uid://bnqxdooygldeh" path="res://ResPack/Unit/tank/dtruck.png" id="106_vs0b5"]
+[ext_resource type="Texture2D" uid="uid://ctqqrrffcn750" path="res://ResPack/Unit/tank/v3.png" id="107_8154j"]
+[ext_resource type="Texture2D" uid="uid://d125f5760ck5k" path="res://ResPack/Unit/tank/dron.png" id="108_3jnto"]
+[ext_resource type="Texture2D" uid="uid://bhedof8ihmnil" path="res://ResPack/Unit/tank/ltnk.png" id="109_q3ldh"]
+[ext_resource type="Texture2D" uid="uid://bj5lf416aye2c" path="res://ResPack/Unit/tank/ytnk.png" id="110_2q3va"]
+[ext_resource type="Texture2D" uid="uid://baufhk1sc4oy6" path="res://ResPack/Unit/tank/caos.png" id="111_i6ecu"]
+[ext_resource type="Texture2D" uid="uid://cbxdf0v5idsbw" path="res://ResPack/Unit/tank/tele.png" id="112_oj51k"]
+[ext_resource type="Texture2D" uid="uid://cmipkj7mvkwk" path="res://ResPack/Unit/tank/mind.png" id="113_bmjvp"]
+[ext_resource type="Texture2D" uid="uid://bw616a6m6i8t8" path="res://ResPack/Unit/tank/cmin.png" id="114_1oi1r"]
+[ext_resource type="Texture2D" uid="uid://bmbmco5mwfpad" path="res://ResPack/Unit/tank/harv.png" id="115_7f7kv"]
+[ext_resource type="Texture2D" uid="uid://bsxwl16casjv2" path="res://ResPack/Unit/tank/amcv.png" id="116_3am8x"]
+[ext_resource type="Texture2D" uid="uid://cv115ajhfnb6x" path="res://ResPack/Unit/tank/smcv.png" id="117_ayqii"]
+[ext_resource type="Texture2D" uid="uid://d0kl1y4uio4gc" path="res://ResPack/Unit/tank/pcv.png" id="118_u1hs0"]
+[ext_resource type="Texture2D" uid="uid://c0jxfq0rpnidt" path="res://ResPack/Unit/tank/smin.png" id="119_bsssl"]
+[ext_resource type="Texture2D" uid="uid://c88s4sgn0qf5l" path="res://ResPack/Unit/ship/aegis.png" id="120_lvi1w"]
+[ext_resource type="Texture2D" uid="uid://bff08th12vuo" path="res://ResPack/Unit/ship/carrier.png" id="121_hg7sa"]
+[ext_resource type="Texture2D" uid="uid://ctcibgjqe3c6" path="res://ResPack/Unit/ship/cdest.png" id="122_qs1ki"]
+[ext_resource type="Texture2D" uid="uid://ccuwhtiix4tn3" path="res://ResPack/Unit/ship/dest.png" id="123_2ebol"]
+[ext_resource type="Texture2D" uid="uid://14d6irtd52tn" path="res://ResPack/Unit/ship/cruise.png" id="124_je60i"]
+[ext_resource type="Texture2D" uid="uid://cixlqduk3pqax" path="res://ResPack/Unit/ship/dred.png" id="125_oi1hv"]
+[ext_resource type="Texture2D" uid="uid://cuo1ru6xll1ah" path="res://ResPack/Unit/ship/vlad.png" id="126_0tcdk"]
+[ext_resource type="Texture2D" uid="uid://ctyaha8neyomm" path="res://ResPack/Unit/ship/hyd.png" id="127_pv0ar"]
+[ext_resource type="Texture2D" uid="uid://df3m7onkb55sa" path="res://ResPack/Unit/ship/tug.png" id="128_2wosw"]
+[ext_resource type="Texture2D" uid="uid://bw1nuf72ymx45" path="res://ResPack/Unit/ship/sub.png" id="129_epg48"]
+[ext_resource type="Texture2D" uid="uid://n6m8v2c2a34p" path="res://ResPack/Unit/ship/lcrf.png" id="130_2iex0"]
+[ext_resource type="Texture2D" uid="uid://cjr3yrmlqfqx3" path="res://ResPack/Unit/ship/sapc.png" id="131_avn7t"]
+[ext_resource type="Texture2D" uid="uid://ovqyilmvykux" path="res://ResPack/Unit/ship/yhvr.png" id="132_peaso"]
+[ext_resource type="Texture2D" uid="uid://8lk7kp3hqcya" path="res://ResPack/Unit/ship/dsub.png" id="133_atdtg"]
+[ext_resource type="Texture2D" uid="uid://bfvp352sipafr" path="res://ResPack/Unit/plane/schp.png" id="134_aerd7"]
+[ext_resource type="Texture2D" uid="uid://co3y415m87x21" path="res://ResPack/Unit/plane/shad.png" id="135_dhidi"]
+[ext_resource type="Texture2D" uid="uid://byqary5r110w1" path="res://ResPack/Unit/plane/spyp.png" id="136_t2rnn"]
+[ext_resource type="Texture2D" uid="uid://crut1lkpstv7y" path="res://ResPack/Unit/plane/pdplane.png" id="137_ler0h"]
+[ext_resource type="Texture2D" uid="uid://dqneih3nfp5m3" path="res://ResPack/Unit/plane/zep.png" id="138_5n0nb"]
+[ext_resource type="Texture2D" uid="uid://c4yalogfyk0yd" path="res://ResPack/Unit/plane/hornet.png" id="139_62lan"]
+[ext_resource type="Texture2D" uid="uid://c6wy50kommmeh" path="res://ResPack/Unit/plane/orca.png" id="140_7f8cp"]
+[ext_resource type="Texture2D" uid="uid://bkqhxt4lj1ouu" path="res://ResPack/Unit/plane/beag.png" id="141_bsxem"]
+[ext_resource type="Texture2D" uid="uid://78kjqvgq3ki8" path="res://ResPack/Unit/plane/asw.png" id="142_3610u"]
+[ext_resource type="Texture2D" uid="uid://ln0hv8s2uhvr" path="res://ResPack/Unit/plane/bpln.png" id="143_2kg8h"]
+[ext_resource type="Texture2D" uid="uid://5ns8ybb8v557" path="res://ResPack/Unit/plane/disk.png" id="144_53ryq"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uxcqf"]
 bg_color = Color(0.2509804, 0.078431375, 0.5882353, 1)
@@ -172,11 +160,6 @@ corner_radius_bottom_left = 3
 shader = ExtResource("1_rm01g")
 shader_parameter/Key_Color = Color(0, 0, 1, 1)
 shader_parameter/tolerance = 0.01
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_px23x"]
-shader = ExtResource("1_rm01g")
-shader_parameter/Key_Color = Color(0, 0, 1, 1)
-shader_parameter/tolerance = 0.5
 
 [node name="unit" type="Control" unique_id=1365539123]
 layout_mode = 3
@@ -1031,149 +1014,6 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_qd6cy")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_01mon")
 toggle_mode = true
 button_group = SubResource("ButtonGroup_01mon")
-
-[node name="HBoxContainer" type="Control" parent="infantry" unique_id=1662907153]
-visible = false
-anchors_preset = 0
-offset_left = -3.0
-offset_top = 22.0
-offset_right = 269.0
-offset_bottom = 194.0
-
-[node name="Cdmsc110000" type="TextureRect" parent="infantry/HBoxContainer" unique_id=362801496]
-material = SubResource("ShaderMaterial_px23x")
-layout_mode = 0
-offset_left = -4.0
-offset_top = -25.0
-offset_right = 50.0
-offset_bottom = 35.0
-size_flags_horizontal = 0
-size_flags_vertical = 0
-texture = ExtResource("30_663ni")
-
-[node name="Cumisc050000" type="TextureRect" parent="infantry/HBoxContainer" unique_id=74153795]
-material = SubResource("ShaderMaterial_px23x")
-layout_mode = 0
-offset_left = 30.0
-offset_top = -20.0
-offset_right = 104.0
-offset_bottom = 42.0
-size_flags_horizontal = 0
-size_flags_vertical = 0
-texture = ExtResource("31_tx6sb")
-
-[node name="Cdfrmb0000" type="TextureRect" parent="infantry/HBoxContainer" unique_id=1271988859]
-material = SubResource("ShaderMaterial_px23x")
-layout_mode = 0
-offset_left = 70.0
-offset_top = -17.0
-offset_right = 136.0
-offset_bottom = 41.0
-size_flags_horizontal = 0
-size_flags_vertical = 0
-texture = ExtResource("32_f4hvv")
-
-[node name="Cdmsc010000" type="TextureRect" parent="infantry/HBoxContainer" unique_id=902370367]
-material = SubResource("ShaderMaterial_px23x")
-layout_mode = 0
-offset_left = 130.0
-offset_top = -12.0
-offset_right = 196.0
-offset_bottom = 40.0
-size_flags_horizontal = 0
-size_flags_vertical = 0
-texture = ExtResource("33_m166d")
-
-[node name="Cawsh18a0000" type="TextureRect" parent="infantry/HBoxContainer" unique_id=176468980]
-material = SubResource("ShaderMaterial_px23x")
-layout_mode = 0
-offset_left = -16.0
-offset_top = -5.0
-offset_right = 74.0
-offset_bottom = 91.0
-size_flags_horizontal = 0
-size_flags_vertical = 0
-texture = ExtResource("34_m6aux")
-
-[node name="Cdmsc06a0000" type="TextureRect" parent="infantry/HBoxContainer" unique_id=1908782178]
-material = SubResource("ShaderMaterial_px23x")
-layout_mode = 0
-offset_left = 104.0
-offset_top = -25.0
-offset_right = 156.0
-offset_bottom = 35.0
-size_flags_horizontal = 0
-size_flags_vertical = 0
-texture = ExtResource("35_k6mgk")
-
-[node name="Cdmsc130000" type="TextureRect" parent="infantry/HBoxContainer" unique_id=142932383]
-material = SubResource("ShaderMaterial_px23x")
-layout_mode = 0
-offset_left = 36.0
-offset_top = 7.0
-offset_right = 132.0
-offset_bottom = 89.0
-size_flags_horizontal = 0
-size_flags_vertical = 0
-texture = ExtResource("36_apj36")
-
-[node name="Castrt020000" type="TextureRect" parent="infantry/HBoxContainer" unique_id=1247554532]
-z_index = 1
-material = SubResource("ShaderMaterial_px23x")
-layout_mode = 0
-offset_left = 188.0
-offset_top = 23.0
-offset_right = 292.0
-offset_bottom = 135.0
-size_flags_horizontal = 0
-size_flags_vertical = 0
-texture = ExtResource("37_vj8wh")
-
-[node name="Cdpark020000" type="TextureRect" parent="infantry/HBoxContainer" unique_id=820137369]
-material = SubResource("ShaderMaterial_px23x")
-layout_mode = 0
-offset_left = 110.0
-offset_top = 10.0
-offset_right = 232.0
-offset_bottom = 94.0
-size_flags_horizontal = 0
-size_flags_vertical = 0
-texture = ExtResource("38_vs0fy")
-
-[node name="Castrt050000" type="TextureRect" parent="infantry/HBoxContainer" unique_id=1394796557]
-material = SubResource("ShaderMaterial_px23x")
-layout_mode = 0
-offset_left = 128.0
-offset_top = -39.0
-offset_right = 264.0
-offset_bottom = 73.0
-size_flags_horizontal = 0
-size_flags_vertical = 0
-texture = ExtResource("39_cqf5v")
-
-[node name="Cumisc060000" type="TextureRect" parent="infantry/HBoxContainer" unique_id=287014761]
-material = SubResource("ShaderMaterial_px23x")
-layout_mode = 0
-offset_left = 44.0
-offset_top = 28.0
-offset_right = 216.0
-offset_bottom = 112.0
-scale = Vector2(0.8, 0.8)
-size_flags_horizontal = 0
-size_flags_vertical = 0
-texture = ExtResource("40_5m8b2")
-
-[node name="Cgla10A0000" type="TextureRect" parent="infantry/HBoxContainer" unique_id=1741397471]
-material = SubResource("ShaderMaterial_px23x")
-layout_mode = 0
-offset_left = 210.0
-offset_top = -2.0
-offset_right = 372.0
-offset_bottom = 128.0
-scale = Vector2(0.5, 0.5)
-size_flags_horizontal = 0
-size_flags_vertical = 0
-texture = ExtResource("41_lew4d")
 
 [node name="people" type="Label" parent="." unique_id=1402538480]
 layout_mode = 0
