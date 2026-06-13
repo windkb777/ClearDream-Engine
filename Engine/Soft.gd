@@ -4,7 +4,7 @@ extends Node
 @onready var md = Ra2md.new()
 @onready var read = Format.new()
 #var SmallUIs = {}
-var LoadFrame = {Frames=0}
+@export var file = {windows=[],layer=[1,0],frames=0}
 
 
 ## Global Function

@@ -1,8 +1,11 @@
 class_name Format
 extends Panel
 
-## SideColors
-var Sides = {pal=null,res=[],colorPos={}}
+## SideColors 
+@onready var Sides = {pal=get_tree().get_root().get_node("ClearDream/Editer").pal256,res=[],colorPos={}}
+var FramesHeader = []
+var FileHead = []
+
 
 #region Read File Format
 func ReadShp(shp_file):
@@ -13,11 +16,11 @@ func ReadShp(shp_file):
 	var Width = file.get_16()
 	var Height = file.get_16()
 	var NumberOfFrames = file.get_16()
-	var Header = [Width,Height]
-	Soft.LoadFrame.Frames = NumberOfFrames
-	print("Header = ",Header," Width:",Width," Height:",Height," Frames:",NumberOfFrames)
+	FileHead = {size=[Width,Height],frames=NumberOfFrames}
+	Soft.file.set("frames",NumberOfFrames)
+	#print("Header = ",Header," Width:",Width," Height:",Height," Frames:",NumberOfFrames)
 	## Frames Header
-	var FramesHeader = []
+	#var FramesHeader = []
 	for i in NumberOfFrames:
 		var Frame = {Frame="Frame",empty="Empty",X="X",Y="Y",FWidth="FWidth",FHeight="FHeight",Flags="Flags",FColor="FColor",Reserved="Reserved",Offset="Offset"}
 		Frame.Frame = "Frame " + str(i)
@@ -30,49 +33,9 @@ func ReadShp(shp_file):
 		Frame.Reserved = file.get_32()
 		Frame.Offset = file.get_32()
 		FramesHeader.append(Frame)
-	## Print Frames Header
-	for i in FramesHeader:print(i)
-	## Frames Data
-	## 压缩方式 1完全不透明 2包含透明度(未使用RLE) 3包含透明度(采用RLE)
-	for f in FramesHeader.size():
-		var Data = {size=FramesHeader[f].FWidth * FramesHeader[f].FHeight,x=FramesHeader[f].FWidth,y=FramesHeader[f].FHeight,flag=FramesHeader[f].Flags,colors=[]}
-		if Data.size==0:DrawOpacity(f,Header)
-		if Data.flag==1:
-			## 压缩模式1 不压缩
-			for y in Data.y:
-				for x in Data.x:
-					var color = file.get_8()
-					Data.colors.append(color)
-					DrawCompress(x,y,f,color)
-		elif Data.flag==2:
-			## 压缩模式2 有透明帧 但未使用透明压缩
-			## 获取头信息以外的颜色数据
-			for y in Data.y:
-				file.seek(file.get_position()+2)
-				for x in Data.x:
-					var color = file.get_8()
-					Data.colors.append(color)
-					#DrawTransparency(x,y,f,color)
-					print("Frame:%s "%f,"Use Transparency")
-		elif Data.flag==3:
-			## 压缩模式3 有透明帧 使用RLE压缩
-			for y in Data.y:
-				## 获取每行长度
-				var length = file.get_16()
-				## 获取每行颜色信息
-				var line = ""
-				for x in length-2:line+=str(file.get_8())+","
-				line=line.split(",")
-				## 输出结果
-				var result = ""
-				for i in line.size():
-					if i!=line.size()-1:
-						if line[i-1]=="0":result+="0,".repeat(line[i].to_int()-1)
-						else:result+=line[i]+","
-				result=result.erase(result.length()-1)
-				## 着色
-				DrawRLE(result,f,y,length)
 	## 隐藏所有帧
+	#for i in FramesHeader:print(i)
+	DrawShp(file)
 	for i in get_children():i.hide()
 func ReadPal(pal_file):
 	##加载读取文件
@@ -172,6 +135,51 @@ func PaintSideColors(color):
 		queue_redraw()
 
 
+func DrawShp(file):
+	## Frames Data
+	## 压缩方式 1完全不透明 2包含透明度(未使用RLE) 3包含透明度(采用RLE)
+	for f in FramesHeader.size():
+		var Data = {size=FramesHeader[f].FWidth * FramesHeader[f].FHeight,x=FramesHeader[f].FWidth,y=FramesHeader[f].FHeight,flag=FramesHeader[f].Flags,FColor=FramesHeader[f].FColor,colors=[]}
+		if Data.size==0:DrawOpacity(f,FileHead)
+		if Data.flag==1:
+			## 压缩模式1 不压缩
+			for y in Data.y:
+				for x in Data.x:
+					var color = file.get_8()
+					#Data.colors.append(color)
+					DrawCompress(x,y,f,color)
+		elif Data.flag==2:
+			## 压缩模式2 有透明帧 但未使用透明压缩
+			## 获取头信息以外的颜色数据
+			for y in Data.y:
+				file.seek(file.get_position()+2)
+				for x in Data.x:
+					var color = file.get_8()
+					#Data.colors.append(color)
+					DrawTransparency(FramesHeader[f].X,FramesHeader[f].Y,f,color)
+					
+		elif Data.flag==3:
+			## 压缩模式3 有透明帧 使用RLE压缩
+			for y in Data.y:
+				## 获取每行长度
+				var length = file.get_16()
+				## 获取每行颜色信息
+				var line = ""
+				for x in length-2:line+=str(file.get_8())+","
+				line=line.split(",")
+				## 输出结果
+				var x = ""
+				for i in line.size():
+					if line[i-1]=="0" and line[i]!="0":
+						x+="0,".repeat(line[i].to_int()-1)
+					elif line[i-1]=="0" and line[i]!="0":
+						x+="0,"
+					else:
+						x+=line[i]+","
+				x=x.erase(x.length()-1)
+				#x=x.erase(x.length()-1)
+				## 着色
+				DrawRLE(x,f,y)
 
 
 #region Calc
@@ -188,9 +196,10 @@ func is_color_similar(c1:Color,c2:Color,threshold:float=0.1)->bool:
 func DrawOpacity(f,Size):
 	var frame = Panel.new();frame.name = "frame_%s"%f
 	add_child(frame)
-	for x in Size[0]:
-		for y in Size[1]:
+	for x in Size.size[0]:
+		for y in Size.size[1]:
 			frame.connect("draw",func():frame.draw_rect(Rect2(x,y,1,1),Sides.pal[0].color))
+	queue_redraw()
 	#print("Frame:%s "%f,"Transparency Empty Frame")
 func DrawCompress(x,y,f,color):
 	if x==0 and y==0:
@@ -199,13 +208,14 @@ func DrawCompress(x,y,f,color):
 	frame.connect("draw",func():frame.draw_rect(Rect2(x,y,1,1),Sides.pal[color].color))
 	queue_redraw()
 	#print("Frame:%s "%f,"Use Compress Length:",color)
-#func DrawTransparency(x,y,f,color):
-	#if x==0 and y==0:
-		#var Frame = Panel.new();Frame.name = "frame_%s"%f;add_child(Frame)
-	#var frame = get_node("frame_%s"%f)
-	#frame.connect("draw",func():frame.draw_rect(Rect2(x + f*30-30,y,1,1),Sides.pal[color].color))
-	#queue_redraw()
-func DrawRLE(result,f,y,length):
+func DrawTransparency(x,y,f,color):
+	if x==0 and y==0:
+		var Frame = Panel.new();Frame.name = "frame_%s"%f;add_child(Frame)
+	var frame = get_node("frame_%s"%f)
+	frame.connect("draw",func():frame.draw_rect(Rect2(x,y,1,1),Sides.pal[color].color))
+	queue_redraw()
+	#print("Frame:%s "%f,"Use Transparency")
+func DrawRLE(result,f,y):
 	if y==0:var Frame = Panel.new();Frame.name = "frame_%s"%f;add_child(Frame)
 	## RLE 3
 	var frame = get_node("frame_%s"%f)
@@ -213,6 +223,7 @@ func DrawRLE(result,f,y,length):
 		var pos = result.split(",")[x].to_int()
 		frame.connect("draw",func():frame.draw_rect(Rect2(x,y,1,1),Sides.pal[pos].color))
 		frame.queue_redraw()
+	queue_redraw()
 	#print("Frame:%s "%f,"Use RLE Length:",length)
 #region Draw
 #func Draw(offset:Vector2,datas:Dictionary):

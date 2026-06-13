@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cpbdfr0a81yxd"]
 
-[ext_resource type="Script" uid="uid://2a5kseywh6qg" path="res://Editer/shp_editer.gd" id="1_8hrb2"]
+[ext_resource type="Script" uid="uid://2a5kseywh6qg" path="res://Engine/-script-/shp_editer.gd" id="1_8hrb2"]
 [ext_resource type="Script" uid="uid://b8mmotw8kp0qu" path="res://Editer/L.gd" id="2_8ylcp"]
 [ext_resource type="Texture2D" uid="uid://c4rum41rv1i36" path="res://z.gdset/ui_ico/timeline/previous_64px.png" id="2_jqa41"]
 [ext_resource type="Texture2D" uid="uid://cuuscxfof5d58" path="res://z.gdset/ui_ico/timeline/previous_frame_64px.png" id="3_8ylcp"]
@@ -2295,11 +2295,11 @@ libraries/ = SubResource("AnimationLibrary_ad87m")
 
 [node name="FileDialog" type="FileDialog" parent="left" unique_id=2120755602]
 oversampling_override = 1.0
-title = "Open a File"
+title = "Open File(s)"
 initial_position = 1
 force_native = true
 dialog_hide_on_ok = true
-file_mode = 0
+file_mode = 1
 access = 2
 filters = PackedStringArray("*.shp", "*.pal", "*.jpg,*.bmp,*.png")
 use_native_dialog = true
@@ -2508,7 +2508,6 @@ icon = ExtResource("12_u0lqc")
 icon_alignment = 1
 
 [node name="file" parent="TimeLine/LPad" unique_id=1504319293 instance=ExtResource("13_3yy25")]
-visible = false
 layout_mode = 2
 
 [node name="RPad" type="ScrollContainer" parent="TimeLine" unique_id=1940856705]
@@ -3920,8 +3919,7 @@ button_mask = 2
 layout_mode = 2
 mouse_filter = 2
 
-[node name="walk" type="Label" parent="TimeLine/RPad/-/Sliders" unique_id=1705055903]
-visible = false
+[node name="walk" type="Button" parent="TimeLine/RPad/-/Sliders" unique_id=466488277]
 layout_mode = 0
 offset_left = 18.0
 offset_top = 75.0
@@ -3931,11 +3929,18 @@ theme_override_colors/font_color = Color(0.39999974, 0.100000024, 1, 1)
 theme_override_font_sizes/font_size = 13
 theme_override_styles/normal = SubResource("StyleBoxFlat_rmfp1")
 text = "Walk"
-horizontal_alignment = 1
-vertical_alignment = 1
 
-[node name="fire" type="Label" parent="TimeLine/RPad/-/Sliders" unique_id=302265215]
-visible = false
+[node name="frame" type="Button" parent="TimeLine/RPad/-/Sliders" unique_id=1515912117]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 75.0
+offset_right = 16.0
+offset_bottom = 95.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 13
+theme_override_styles/normal = SubResource("StyleBoxFlat_w7dld")
+
+[node name="fire" type="Button" parent="TimeLine/RPad/-/Sliders" unique_id=979787701]
 layout_mode = 0
 offset_left = 146.0
 offset_top = 75.0
@@ -3945,11 +3950,8 @@ theme_override_colors/font_color = Color(0.39999974, 0.100000024, 1, 1)
 theme_override_font_sizes/font_size = 13
 theme_override_styles/normal = SubResource("StyleBoxFlat_w7dld")
 text = "Fire"
-horizontal_alignment = 1
-vertical_alignment = 1
 
-[node name="fire2" type="Label" parent="TimeLine/RPad/-/Sliders" unique_id=689437841]
-visible = false
+[node name="fire2" type="Button" parent="TimeLine/RPad/-/Sliders" unique_id=1120242067]
 layout_mode = 0
 offset_left = 178.0
 offset_top = 53.0
@@ -3959,11 +3961,8 @@ theme_override_colors/font_color = Color(0.39999974, 0.100000024, 1, 1)
 theme_override_font_sizes/font_size = 13
 theme_override_styles/normal = SubResource("StyleBoxFlat_w7dld")
 text = "Fire"
-horizontal_alignment = 1
-vertical_alignment = 1
 
-[node name="depoly" type="Label" parent="TimeLine/RPad/-/Sliders" unique_id=810433030]
-visible = false
+[node name="depoly" type="Button" parent="TimeLine/RPad/-/Sliders" unique_id=207240646]
 layout_mode = 0
 offset_left = 274.0
 offset_top = 75.0
@@ -3973,11 +3972,8 @@ theme_override_colors/font_color = Color(1, 0.54901963, 0.101960786, 1)
 theme_override_font_sizes/font_size = 13
 theme_override_styles/normal = SubResource("StyleBoxFlat_kh2no")
 text = "Depoly"
-horizontal_alignment = 1
-vertical_alignment = 1
 
-[node name="depoly2" type="Label" parent="TimeLine/RPad/-/Sliders" unique_id=256373540]
-visible = false
+[node name="depoly2" type="Button" parent="TimeLine/RPad/-/Sliders" unique_id=1642420398]
 layout_mode = 0
 offset_left = 370.0
 offset_top = 75.0
@@ -4007,21 +4003,6 @@ theme_override_font_sizes/font_size = 13
 text = "Depoly"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="SliderMenu" type="PopupMenu" parent="TimeLine/RPad" unique_id=441332590]
-oversampling_override = 1.0
-size = Vector2i(118, 116)
-force_native = true
-theme = ExtResource("31_ovkge")
-item_count = 4
-item_0/text = "Add"
-item_0/id = 0
-item_1/text = "Delete"
-item_1/id = 1
-item_2/text = "Reverse"
-item_2/id = 2
-item_3/text = "Replace"
-item_3/id = 3
 
 [node name="EX" type="Panel" parent="." unique_id=742134721]
 modulate = Color(0, 0, 0, 0)
@@ -5639,7 +5620,19 @@ closed = true
 width = 4.0
 default_color = Color(0.101960786, 0.101960786, 0.101960786, 1)
 
-[node name="-----" type="Node2D" parent="." unique_id=1952505554]
+[node name="SliderMenu" type="PopupMenu" parent="." unique_id=441332590]
+oversampling_override = 1.0
+size = Vector2i(118, 116)
+theme = ExtResource("31_ovkge")
+item_count = 4
+item_0/text = "Add"
+item_0/id = 0
+item_1/text = "Delete"
+item_1/id = 1
+item_2/text = "Reverse"
+item_2/id = 2
+item_3/text = "Replace"
+item_3/id = 3
 
-[connection signal="file_selected" from="left/FileDialog" to="left" method="File"]
-[connection signal="index_pressed" from="TimeLine/RPad/SliderMenu" to="TimeLine/RPad" method="detail_items"]
+[connection signal="files_selected" from="left/FileDialog" to="." method="File"]
+[connection signal="index_pressed" from="SliderMenu" to="." method="SliderMenu"]

@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://drac63toe0ui5"]
+
+[ext_resource type="Script" uid="uid://gwg8mpleyb7f" path="res://Editer/frame.gd" id="1_kebla"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w7dld"]
+bg_color = Color(0.68549186, 0.4554367, 1, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[node name="frame" type="Label" unique_id=1842884754]
+custom_minimum_size = Vector2(0, 20)
+offset_right = 120.0
+offset_bottom = 20.0
+mouse_filter = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 13
+theme_override_styles/normal = SubResource("StyleBoxFlat_w7dld")
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("1_kebla")
