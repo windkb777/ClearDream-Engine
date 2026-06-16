@@ -1,13 +1,15 @@
 [gd_scene format=3 uid="uid://bpqw7d6be6ga2"]
 
+[ext_resource type="Script" uid="uid://ctlieqprb1sdx" path="res://Engine/-script-/title.gd" id="1_cx4oc"]
 [ext_resource type="Texture2D" uid="uid://cud7bhmmsvpgl" path="res://z.gdset/ui_ico/ico/toolbox.png" id="2_l62bh"]
 [ext_resource type="Texture2D" uid="uid://dkcn0uixx575k" path="res://z.gdset/ui_ico/28704.jpg" id="3_v7wno"]
 [ext_resource type="Texture2D" uid="uid://bipwctng1y042" path="res://z.gdset/ui_ico/spritesheel/undo.png" id="4_3oahs"]
+[ext_resource type="Script" uid="uid://b8uevweu14hm6" path="res://Engine/button.gd" id="5_2q4e6"]
 [ext_resource type="Texture2D" uid="uid://qxkb8k6sjl2h" path="res://z.gdset/ui_ico/ico/container.svg" id="6_dy1w4"]
 [ext_resource type="Texture2D" uid="uid://ghipjg60slyv" path="res://z.gdset/ui_ico/ico/b_skin.png" id="7_kg3aa"]
 [ext_resource type="Texture2D" uid="uid://bbpuu3bb4mpcq" path="res://z.gdset/ui_ico/ico/b_close.png" id="8_ntx7n"]
 [ext_resource type="PackedScene" uid="uid://blvxhexn3wp6a" path="res://Engine/-ui-/tv.tscn" id="11_remxr"]
-[ext_resource type="PackedScene" uid="uid://cpbdfr0a81yxd" path="res://Engine/-ui-/editer.tscn" id="14_a0dyo"]
+[ext_resource type="AudioStream" uid="uid://co4e040a1didy" path="res://Engine/sfx/Chipzel - focus.mp3" id="17_3oahs"]
 
 [sub_resource type="Gradient" id="Gradient_0p7jv"]
 colors = PackedColorArray(0.30980393, 0.11372549, 0.6784314, 1, 0.14260218, 0.011843101, 0.42092565, 1)
@@ -370,6 +372,7 @@ content_margin_right = 12.0
 texture = SubResource("GradientTexture2D_vgfqu")
 
 [node name="ClearDream" type="Node" unique_id=732338532]
+metadata/_edit_horizontal_guides_ = [490.0]
 
 [node name="Engine" type="Control" parent="." unique_id=649323521]
 layout_mode = 3
@@ -381,11 +384,12 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Title" type="Panel" parent="Engine/UI" unique_id=1190326137 groups=["Drag"]]
+[node name="Title" type="Panel" parent="Engine/UI" unique_id=1190326137]
 layout_mode = 1
 offset_right = 930.0
 offset_bottom = 62.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_dy1w4")
+script = ExtResource("1_cx4oc")
 
 [node name="ico" type="TextureRect" parent="Engine/UI" unique_id=1592675028]
 texture_filter = 1
@@ -415,10 +419,23 @@ layout_mode = 0
 offset_left = 8.0
 offset_top = 69.0
 offset_right = 924.0
-offset_bottom = 490.0
+offset_bottom = 572.0
 mouse_filter = 2
 texture = SubResource("AtlasTexture_ey07w")
 expand_mode = 1
+
+[node name="bg statement" type="RichTextLabel" parent="Engine/UI" unique_id=252856592]
+layout_mode = 0
+offset_left = 792.0
+offset_top = 547.0
+offset_right = 920.0
+offset_bottom = 570.0
+mouse_filter = 2
+bbcode_enabled = true
+text = "BG from [color=00FA9A]freepik"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 2
 
 [node name="Bar" type="Panel" parent="Engine/UI" unique_id=465810808]
 custom_minimum_size = Vector2(0, 87)
@@ -450,19 +467,6 @@ points = PackedVector2Array(4, 576, 927, 576, 927, 65, 4, 65)
 closed = true
 width = 2.0
 default_color = Color(0, 0.38039216, 0.88235295, 1)
-
-[node name="bg statement" type="RichTextLabel" parent="Engine/UI" unique_id=252856592]
-layout_mode = 0
-offset_left = 792.0
-offset_top = 463.0
-offset_right = 920.0
-offset_bottom = 486.0
-mouse_filter = 2
-bbcode_enabled = true
-text = "BG from [color=00FA9A]freepik"
-fit_content = true
-horizontal_alignment = 1
-vertical_alignment = 2
 
 [node name="tips" type="RichTextLabel" parent="Engine/UI" unique_id=1488958092]
 visible = false
@@ -536,6 +540,7 @@ centered = false
 [node name="Button" type="Control" parent="Engine" unique_id=1368325011]
 anchors_preset = 0
 mouse_filter = 2
+script = ExtResource("5_2q4e6")
 
 [node name="-" type="Node2D" parent="Engine/Button" unique_id=635528008]
 
@@ -577,7 +582,6 @@ pivot_offset = Vector2(16, 16)
 texture_normal = ExtResource("8_ntx7n")
 
 [node name="A" type="Node2D" parent="Engine/Button" unique_id=1916546418]
-visible = false
 
 [node name="window" type="CheckBox" parent="Engine/Button/A" unique_id=928444701]
 z_index = 1
@@ -657,6 +661,8 @@ size_flags_vertical = 4
 theme = SubResource("Theme_vx10i")
 text = "Import"
 
+[node name="tv" parent="." unique_id=582479008 instance=ExtResource("11_remxr")]
+
 [node name="D-Pad" type="Control" parent="." unique_id=2112621585]
 visible = false
 layout_mode = 3
@@ -669,7 +675,7 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Title" type="Panel" parent="D-Pad/UI" unique_id=17026266 groups=["Drag"]]
+[node name="Title" type="Panel" parent="D-Pad/UI" unique_id=17026266]
 layout_mode = 1
 offset_right = 360.0
 offset_bottom = 62.0
@@ -843,9 +849,6 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_styles/normal = SubResource("StyleBoxTexture_remxr")
 text = "Building"
 
-[node name="tv" parent="." unique_id=582479008 instance=ExtResource("11_remxr")]
-visible = false
-
-[node name="-----" type="Node2D" parent="." unique_id=1135913734]
-
-[node name="Editer" parent="." unique_id=631289000 instance=ExtResource("14_a0dyo")]
+[node name="BGM" type="AudioStreamPlayer" parent="." unique_id=751022909]
+stream = ExtResource("17_3oahs")
+autoplay = true

@@ -21,7 +21,7 @@ func TV_Press(node):
 	else:
 		if node.name=="6":wave.play("wave2")
 		elif node.name=="13":wave.play("wave1")
-	
+
 func area_entered(area):
 	var button = area.get_parent()
 	area.get_parent().get_node("blank2").show()

@@ -2,9 +2,8 @@ extends Node
 
 #var game_path = OS.get_executable_path()
 @onready var md = Ra2md.new()
-@onready var read = Format.new()
 #var SmallUIs = {}
-@export var file = {windows=[],layer=[1,0],frames=0}
+var file = {windows=[],layer=[1,0],frames=0}
 
 
 ## Global Function

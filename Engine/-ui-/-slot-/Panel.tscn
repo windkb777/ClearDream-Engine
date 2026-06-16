@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://xkjpck05rviu"]
 
-[ext_resource type="Script" uid="uid://cj2kok1dyyx60" path="res://Engine/-script-/ins.Panel.gd" id="1_fdpmk"]
+[ext_resource type="Script" uid="uid://wfxapfapim05" path="res://Engine/-script-/ins.Panel.gd" id="1_fdpmk"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_adp5o"]
 bg_color = Color(0.08235294, 0.08235294, 0.08235294, 1)
@@ -81,7 +81,8 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_adp5o")
 [node name="Title" type="Label" parent="." unique_id=336197397]
 z_index = 1
 layout_mode = 0
-offset_right = 800.0
+offset_left = 368.0
+offset_right = 432.0
 offset_bottom = 45.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_nlhmg")
 text = "测试面板"
@@ -90,6 +91,7 @@ vertical_alignment = 1
 
 [node name="BG" type="Panel" parent="." unique_id=1004255544]
 layout_mode = 0
+offset_top = 45.0
 offset_right = 800.0
 offset_bottom = 600.0
 mouse_filter = 2
@@ -182,7 +184,7 @@ toggle_mode = true
 button_group = SubResource("ButtonGroup_63sbe")
 
 [node name="Min" type="Button" parent="Buttons" unique_id=1174632057]
-custom_minimum_size = Vector2(0, 35)
+custom_minimum_size = Vector2(60, 35)
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
@@ -195,7 +197,7 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_nlhmg")
 text = "-"
 
 [node name="Close" type="Button" parent="Buttons" unique_id=1236917463]
-custom_minimum_size = Vector2(0, 35)
+custom_minimum_size = Vector2(60, 35)
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4

@@ -31,6 +31,7 @@ func ChangePal(sel):
 	$"../left/Label".text = sel_pal
 	ReadPal(path)
 	owner.ReDraw()
+	
 func ReadPal(pal_file):
 	##加载读取文件
 	var loader = FileAccess.get_file_as_bytes(pal_file)

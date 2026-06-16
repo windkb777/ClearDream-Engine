@@ -6,7 +6,6 @@ extends Panel
 var FramesHeader = []
 var FileHead = []
 
-
 #region Read File Format
 func ReadShp(shp_file):
 	var path = shp_file
@@ -18,6 +17,7 @@ func ReadShp(shp_file):
 	var NumberOfFrames = file.get_16()
 	FileHead = {size=[Width,Height],frames=NumberOfFrames}
 	Soft.file.set("frames",NumberOfFrames)
+	Soft.file.set("size",Vector2(Width,Height))
 	#print("Header = ",Header," Width:",Width," Height:",Height," Frames:",NumberOfFrames)
 	## Frames Header
 	#var FramesHeader = []
@@ -33,10 +33,12 @@ func ReadShp(shp_file):
 		Frame.Reserved = file.get_32()
 		Frame.Offset = file.get_32()
 		FramesHeader.append(Frame)
-	## 隐藏所有帧
-	#for i in FramesHeader:print(i)
 	DrawShp(file)
-	for i in get_children():i.hide()
+	var imgs = get_children()
+	for i in imgs.size():
+		imgs[i].position = Vector2(FramesHeader[i].X,FramesHeader[i].Y)
+		#i.hide()
+	file.close()
 func ReadPal(pal_file):
 	##加载读取文件
 	var loader = FileAccess.get_file_as_bytes(pal_file)
@@ -157,7 +159,6 @@ func DrawShp(file):
 					var color = file.get_8()
 					#Data.colors.append(color)
 					DrawTransparency(FramesHeader[f].X,FramesHeader[f].Y,f,color)
-					
 		elif Data.flag==3:
 			## 压缩模式3 有透明帧 使用RLE压缩
 			for y in Data.y:
@@ -167,19 +168,28 @@ func DrawShp(file):
 				var line = ""
 				for x in length-2:line+=str(file.get_8())+","
 				line=line.split(",")
+				line.remove_at(line.size()-1)
 				## 输出结果
 				var x = ""
+				## 读取压缩后的颜色数据
 				for i in line.size():
-					if line[i-1]=="0" and line[i]!="0":
-						x+="0,".repeat(line[i].to_int()-1)
-					elif line[i-1]=="0" and line[i]!="0":
-						x+="0,"
-					else:
-						x+=line[i]+","
-				x=x.erase(x.length()-1)
-				#x=x.erase(x.length()-1)
+					## 类似   "56","0","3","12" 
+					## 转换为 "56","0","0","0","12"
+					
+					## 要是上一个数值为"0"
+					if line[i-1]=="0":
+						## 这个数值不为"0",则将"0"复制至现在这个数值的倍数
+						if line[i]!="0":x+="0,".repeat(line[i].to_int()-1)
+						## 这个数值为"0",则拼接两位"0,0"
+						elif line[i]=="0":x+="0,0,"
+					## 要是上一个数值不为"0",则拼接数值
+					elif line[i-1]!="0":x+=line[i]+","
+				## 删除x最后一位","
+				if x!="":x=x.erase(x.length()-1)
 				## 着色
 				DrawRLE(x,f,y)
+				#print(line)
+				#breakpoint
 
 
 #region Calc
@@ -206,7 +216,7 @@ func DrawCompress(x,y,f,color):
 		var Frame = Panel.new();Frame.name = "frame_%s"%f;add_child(Frame)
 	var frame = get_node("frame_%s"%f)
 	frame.connect("draw",func():frame.draw_rect(Rect2(x,y,1,1),Sides.pal[color].color))
-	queue_redraw()
+	#queue_redraw()
 	#print("Frame:%s "%f,"Use Compress Length:",color)
 func DrawTransparency(x,y,f,color):
 	if x==0 and y==0:
@@ -219,8 +229,9 @@ func DrawRLE(result,f,y):
 	if y==0:var Frame = Panel.new();Frame.name = "frame_%s"%f;add_child(Frame)
 	## RLE 3
 	var frame = get_node("frame_%s"%f)
-	for x in result.split(",").size():
-		var pos = result.split(",")[x].to_int()
+	var X = result.split(",")
+	for x in X.size():
+		var pos = X[x].to_int()
 		frame.connect("draw",func():frame.draw_rect(Rect2(x,y,1,1),Sides.pal[pos].color))
 		frame.queue_redraw()
 	queue_redraw()
@@ -242,14 +253,4 @@ func DrawRLE(result,f,y):
 		### 优化像素颜色位置
 		#for i in 16:for p in Sides.res.size():if Sides.res[p][0]==i:Sides.colorPos["pal_%s"%i].append(Sides.res[p][1])
 	#wait get_tree().create_timer(0.002).timeout
-
-func Drawshp(offset:Vector2,datas:Dictionary):
-	for y in datas.y:
-		for x in datas.x:
-			var numOfPixels = x+y*(datas.x)
-			var numOfPal = datas.colors[numOfPixels]
-			connect("draw",func():draw_rect(Rect2(offset.x+x,offset.y+y,1,1),$Pal.get_child(numOfPal).color))
-		queue_redraw()
-		## 行渲染图像
-		#await get_tree().create_timer(0.002).timeout
 #endregion

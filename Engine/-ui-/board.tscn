@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://ca78teg2a3gbs" path="res://z.gdset/ui_ico/ico/file-braces-corner.svg" id="4_y1e77"]
 [ext_resource type="Texture2D" uid="uid://cp2wnhrjtqnt3" path="res://z.gdset/ui_ico/ico/clipboard-pen.svg" id="5_w5ui2"]
 [ext_resource type="Texture2D" uid="uid://ccr7ac77qhlqd" path="res://z.gdset/ui_ico/ico/file-sliders.svg" id="6_m0snf"]
-[ext_resource type="Script" uid="uid://cvnq0p33y2i0n" path="res://build_mode.gd" id="7_m0snf"]
 [ext_resource type="Texture2D" uid="uid://bul41wj33jdcx" path="res://ResPack/Cameo/00116.png" id="8_si7w3"]
 [ext_resource type="Shader" uid="uid://c1v3pd4csjf2a" path="res://z.gdset/GShader/z.Key_Color.gdshader" id="9_cmjs6"]
 [ext_resource type="Texture2D" uid="uid://dq5c35dsn7xsa" path="res://ResPack/Build/GDI/gdpowrmk.png" id="10_saabf"]
@@ -54,6 +53,9 @@ corner_radius_bottom_right = 6
 corner_radius_bottom_left = 6
 
 [sub_resource type="ButtonGroup" id="ButtonGroup_xyl7e"]
+
+[sub_resource type="Resource" id="Resource_w5ui2"]
+metadata/__load_path__ = "res://build_mode.gd"
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f41e2"]
 bg_color = Color(1, 1, 1, 1)
@@ -257,7 +259,7 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Title" type="Panel" parent="UI" unique_id=17026266 groups=["Drag"]]
+[node name="Title" type="Panel" parent="UI" unique_id=17026266]
 layout_mode = 1
 offset_right = 360.0
 offset_bottom = 62.0
@@ -352,7 +354,7 @@ offset_left = -6.0
 offset_top = -68.0
 offset_right = 34.0
 offset_bottom = -28.0
-script = ExtResource("7_m0snf")
+script = SubResource("Resource_w5ui2")
 
 [node name="Num" type="Control" parent="Mode/Img/Build" unique_id=636976775]
 anchors_preset = 0

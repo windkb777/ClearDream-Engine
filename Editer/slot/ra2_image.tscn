@@ -1,0 +1,112 @@
+[gd_scene format=3 uid="uid://b611ym8ddr3uu"]
+
+[ext_resource type="Script" uid="uid://brt8g6vo1q77n" path="res://Editer/gd/window.gd" id="1_hp783"]
+[ext_resource type="Script" uid="uid://du7s1aajgfyp4" path="res://Editer/gd/i_imgs.gd" id="2_y2dox"]
+
+[sub_resource type="Gradient" id="Gradient_0p7jv"]
+colors = PackedColorArray(0.30980393, 0.11372549, 0.6784314, 1, 0.14260218, 0.011843101, 0.42092565, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_vggtd"]
+gradient = SubResource("Gradient_0p7jv")
+width = 930
+height = 20
+fill_to = Vector2(1, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b5eic"]
+texture = SubResource("GradientTexture2D_vggtd")
+texture_margin_left = 8.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2mp8g"]
+load_path = "res://.godot/imported/minus.svg-725a995809e108ecdf40a32064ef74e9.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4uen4"]
+load_path = "res://.godot/imported/expand.svg-4c3e5fdb317b30929f3c5dfa9ed4d0b9.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qh126"]
+load_path = "res://.godot/imported/close.svg-fb00028cb7b79481c3d4387abd84d53c.ctex"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_imavs"]
+bg_color = Color(0.14406255, 0.14406255, 0.14406249, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b5165"]
+bg_color = Color(0.10747974, 0.10747974, 0.10747967, 1)
+
+[node name="Test_shp" type="VBoxContainer" unique_id=1462626391]
+z_index = 2
+offset_right = 160.0
+offset_bottom = 136.0
+mouse_filter = 2
+theme_override_constants/separation = 0
+script = ExtResource("1_hp783")
+
+[node name="title" type="Label" parent="." unique_id=2111300493]
+z_index = 1
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+size_flags_vertical = 0
+mouse_filter = 0
+theme_override_styles/normal = SubResource("StyleBoxTexture_b5eic")
+text = "Test.shp"
+
+[node name="|" type="HBoxContainer" parent="title" unique_id=198503731]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 2.0
+offset_right = 158.0
+offset_bottom = 22.0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+alignment = 2
+
+[node name="min" type="Button" parent="title/|" unique_id=927086133]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+icon = SubResource("CompressedTexture2D_2mp8g")
+expand_icon = true
+
+[node name="full" type="Button" parent="title/|" unique_id=1551932018]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+icon = SubResource("CompressedTexture2D_4uen4")
+expand_icon = true
+
+[node name="close" type="Button" parent="title/|" unique_id=1608956768]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+icon = SubResource("CompressedTexture2D_qh126")
+expand_icon = true
+
+[node name="line" type="Line2D" parent="." unique_id=610216045]
+position = Vector2(-1, -1)
+points = PackedVector2Array(0, 0, 162, 0, 162, 138, 0, 138)
+closed = true
+width = 2.0
+default_color = Color(0.38928655, 0.38928664, 0.38928658, 1)
+
+[node name="|" type="Control" parent="." unique_id=2023283186]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Panel" type="Panel" parent="|" unique_id=783500505]
+layout_mode = 0
+offset_right = 160.0
+offset_bottom = 112.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_imavs")
+
+[node name="Image" type="Panel" parent="|" unique_id=1015956553]
+custom_minimum_size = Vector2(40, 30)
+layout_mode = 0
+offset_left = 60.0
+offset_top = 41.0
+offset_right = 100.0
+offset_bottom = 71.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_b5165")
+script = ExtResource("2_y2dox")

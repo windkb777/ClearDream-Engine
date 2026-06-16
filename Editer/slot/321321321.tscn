@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bdgk33ja1qm3d"]
 
-[ext_resource type="Script" uid="uid://brt8g6vo1q77n" path="res://Engine/-script-/image.gd" id="1_tkl8y"]
-[ext_resource type="Script" uid="uid://cr5e0xd8q26mo" path="res://Editer/Format.gd" id="5_ibep2"]
+[ext_resource type="Script" uid="uid://brt8g6vo1q77n" path="res://Editer/gd/window.gd" id="1_ww1q0"]
+[ext_resource type="Script" uid="uid://du7s1aajgfyp4" path="res://Editer/gd/i_imgs.gd" id="2_x6xe8"]
 
 [sub_resource type="Gradient" id="Gradient_0p7jv"]
 colors = PackedColorArray(0.30980393, 0.11372549, 0.6784314, 1, 0.14260218, 0.011843101, 0.42092565, 1)
@@ -16,6 +16,12 @@ fill_to = Vector2(1, 1)
 texture = SubResource("GradientTexture2D_vggtd")
 texture_margin_left = 8.0
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_imavs"]
+bg_color = Color(0.14406255, 0.14406255, 0.14406249, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b5165"]
+bg_color = Color(0.10747974, 0.10747974, 0.10747967, 1)
+
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2mp8g"]
 load_path = "res://.godot/imported/minus.svg-725a995809e108ecdf40a32064ef74e9.ctex"
 
@@ -29,46 +35,57 @@ load_path = "res://.godot/imported/close.svg-fb00028cb7b79481c3d4387abd84d53c.ct
 layout_mode = 3
 anchors_preset = 0
 mouse_filter = 2
-script = ExtResource("1_tkl8y")
+script = ExtResource("1_ww1q0")
+metadata/_edit_vertical_guides_ = [82.0]
+metadata/_edit_horizontal_guides_ = [83.0]
 
-[node name="title" type="Label" parent="." unique_id=2111300493 groups=["Drag"]]
+[node name="title" type="Label" parent="." unique_id=2111300493]
 layout_mode = 0
 offset_left = 2.0
 offset_top = 2.0
-offset_right = 322.0
+offset_right = 162.0
 offset_bottom = 28.0
 mouse_filter = 0
 theme_override_styles/normal = SubResource("StyleBoxTexture_b5eic")
 text = "Test.shp"
+
+[node name="Panel" type="Panel" parent="." unique_id=783500505]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 28.0
+offset_right = 162.0
+offset_bottom = 138.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_imavs")
 
 [node name="Image" type="Panel" parent="." unique_id=1015956553]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 2.0
-offset_top = 28.0
-offset_right = 322.0
-offset_bottom = 268.0
+offset_left = 62.0
+offset_top = 68.0
+offset_right = 102.0
+offset_bottom = 98.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("5_ibep2")
+theme_override_styles/panel = SubResource("StyleBoxFlat_b5165")
+script = ExtResource("2_x6xe8")
 
 [node name="line" type="Line2D" parent="." unique_id=610216045]
-visible = false
-points = PackedVector2Array(0, 0, 322, 0, 322, 268, 0, 268)
+position = Vector2(1, 1)
+points = PackedVector2Array(0, 0, 162, 0, 162, 138, 0, 138)
 closed = true
 width = 2.0
-default_color = Color(0.29219037, 0.2921899, 0.29219013, 1)
+default_color = Color(1, 0.29411766, 0.29411766, 1)
 
-[node name="-" type="HBoxContainer" parent="." unique_id=198503731]
+[node name="window_button" type="HBoxContainer" parent="." unique_id=198503731]
 layout_mode = 1
-offset_left = 251.0
+offset_left = 91.0
 offset_top = 5.0
-offset_right = 319.0
+offset_right = 159.0
 offset_bottom = 25.0
 
-[node name="min" type="Button" parent="-" unique_id=927086133]
+[node name="min" type="Button" parent="window_button" unique_id=927086133]
 custom_minimum_size = Vector2(20, 20)
 layout_mode = 2
 size_flags_horizontal = 0
@@ -76,7 +93,7 @@ size_flags_vertical = 0
 icon = SubResource("CompressedTexture2D_2mp8g")
 expand_icon = true
 
-[node name="full" type="Button" parent="-" unique_id=1551932018]
+[node name="full" type="Button" parent="window_button" unique_id=1551932018]
 custom_minimum_size = Vector2(20, 20)
 layout_mode = 2
 size_flags_horizontal = 0
@@ -84,12 +101,10 @@ size_flags_vertical = 0
 icon = SubResource("CompressedTexture2D_4uen4")
 expand_icon = true
 
-[node name="close" type="Button" parent="-" unique_id=1608956768]
+[node name="close" type="Button" parent="window_button" unique_id=1608956768]
 custom_minimum_size = Vector2(20, 20)
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
 icon = SubResource("CompressedTexture2D_qh126")
 expand_icon = true
-
-[connection signal="gui_input" from="title" to="." method="Drag"]

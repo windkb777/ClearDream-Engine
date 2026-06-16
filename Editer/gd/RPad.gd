@@ -8,9 +8,8 @@ var Pin_Frame : int
 
 func _ready():
 	TimeLine.get_node("tick").connect("gui_input",PinSlide)
-	for i in TimeLine.get_node("times").get_children():
-		for a in i.get_children():
-			a.connect("gui_input",detail.bind(a))
+	for i in TimeLine.get_node("times").get_children():for a in i.get_children():a.connect("gui_input",detail.bind(a))
+	
 
 func PinSlide(event:InputEvent):
 	if event.button_mask==1 and event is InputEventMouseMotion:
@@ -25,7 +24,7 @@ func PinSlide(event:InputEvent):
 func ShowFrames():
 	Pin_Frame = snappedi(snappedf(Pin.position.x / 16,0.5),1.0)
 	if owner.sel_file!=null:
-		var frame =  owner.sel_file.get_node("Image")
+		var frame =  Soft.file.windows[0].imgs
 		var _max = frame.get_child_count()
 		var SelFrame = (Soft.file.windows[1].position.x-2)/16
 		## Limit Head & End Frames Visible
@@ -34,14 +33,11 @@ func ShowFrames():
 		## Show Hide Current Frame
 		else:
 			for i in _max:if frame.get_child(i).visible==true:frame.get_child(i).hide()
-			frame.get_child(Pin_Frame-SelFrame).show()
+			frame.get_child(Pin_Frame).show()
 			#print(Pin_Frame-5)
 				#elif Pin_Frame==SelFrame-i:
 					#print(Pin_Frame+_max)
 					#frame.get_child(SelFrame).show()
-		## Show Frame	
-		#print(Pin_Frame)
-		#elif node.owner.name=="ClearDream":node.owner.get_parent().position += Vector2i(event.relative)
 
 func detail(event:InputEvent,node2):
 	if event is InputEventMouseButton:
@@ -56,3 +52,20 @@ func detail_items(index):
 		1:print(Soft.file)
 		2:pass
 		3:pass
+
+#func TimeSet(maxFrame):
+	#var frame = $"-/TimeLine/times"
+
+	
+	#for i in 4:
+		#frame.get_node("z1").add_child(b,true)
+	#for i in frame.get_children():
+		#for c in 4:i.add_child(b,true)
+		#i.add_child(a,true)
+		#
+		#i.add_child(a,true)
+		#i.add_child(a,true)
+		#i.add_child(b,true)
+	#add_sibling(a)
+	#add_sibling(b)
+	#print(a,b)

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cpbdfr0a81yxd"]
 
-[ext_resource type="Script" uid="uid://2a5kseywh6qg" path="res://Editer/shp_editer.gd" id="1_8hrb2"]
-[ext_resource type="Script" uid="uid://b8mmotw8kp0qu" path="res://Editer/L.gd" id="2_8ylcp"]
+[ext_resource type="Script" uid="uid://cyj4nac8eg8ly" path="res://Editer/gd/shp_editer.gd" id="1_8hrb2"]
+[ext_resource type="Script" uid="uid://c1cmakgp6kxei" path="res://Editer/gd/L.gd" id="2_8ylcp"]
 [ext_resource type="Texture2D" uid="uid://c4rum41rv1i36" path="res://z.gdset/ui_ico/timeline/previous_64px.png" id="2_jqa41"]
 [ext_resource type="Texture2D" uid="uid://cuuscxfof5d58" path="res://z.gdset/ui_ico/timeline/previous_frame_64px.png" id="3_8ylcp"]
 [ext_resource type="Texture2D" uid="uid://0ol3g88rh25o" path="res://z.gdset/ui_ico/timeline/play_64px.png" id="4_qwkrt"]
@@ -13,11 +13,11 @@
 [ext_resource type="Texture2D" uid="uid://i8o0v4e8giq6" path="res://z.gdset/ui_ico/timeline/paintbrush_64px.png" id="10_8dpvu"]
 [ext_resource type="Texture2D" uid="uid://bchqogvbafw01" path="res://z.gdset/ui_ico/timeline/funnel_64px.png" id="11_uc8tg"]
 [ext_resource type="Texture2D" uid="uid://bji802ry513r0" path="res://z.gdset/ui_ico/timeline/visible_64px.png" id="12_u0lqc"]
-[ext_resource type="PackedScene" uid="uid://d2okygb5nujew" path="res://Engine/-ui-/-slot-/layer_1.tscn" id="13_3yy25"]
+[ext_resource type="PackedScene" uid="uid://d2okygb5nujew" path="res://Editer/slot/layer_1.tscn" id="13_3yy25"]
 [ext_resource type="Shader" uid="uid://c34yt4ck7gc32" path="res://z.gdset/GShader/reverse.gdshader" id="14_xuy2e"]
-[ext_resource type="Script" uid="uid://degwkrpncix70" path="res://Editer/RPad.gd" id="15_qwkrt"]
+[ext_resource type="Script" uid="uid://c1i2qn6h7clvq" path="res://Editer/gd/RPad.gd" id="15_qwkrt"]
 [ext_resource type="Texture2D" uid="uid://daoahil1i2rd4" path="res://z.gdset/ui_ico/ico/grid-off.png" id="15_vhd6f"]
-[ext_resource type="Script" uid="uid://uged5ymo0noe" path="res://Editer/EX.gd" id="16_8ylcp"]
+[ext_resource type="Script" uid="uid://kwjsjmlkil6b" path="res://Editer/gd/EX.gd" id="16_8ylcp"]
 [ext_resource type="Texture2D" uid="uid://cu3qlnp1sohe6" path="res://z.gdset/ui_ico/ra2_sprite/grid.png" id="16_o6o62"]
 [ext_resource type="Texture2D" uid="uid://cflg5see3nmso" path="res://z.gdset/ui_ico/ico/eye.png" id="17_lyxvl"]
 [ext_resource type="Texture2D" uid="uid://2a864hpjiddn" path="res://z.gdset/ui_ico/ico/op.png" id="18_k7b8o"]
@@ -5638,8 +5638,6 @@ points = PackedVector2Array(880, 156, 1143, 156, 1143, 732, 880, 732)
 closed = true
 width = 4.0
 default_color = Color(0.101960786, 0.101960786, 0.101960786, 1)
-
-[node name="-----" type="Node2D" parent="." unique_id=1952505554]
 
 [connection signal="file_selected" from="left/FileDialog" to="left" method="File"]
 [connection signal="index_pressed" from="TimeLine/RPad/SliderMenu" to="TimeLine/RPad" method="detail_items"]
