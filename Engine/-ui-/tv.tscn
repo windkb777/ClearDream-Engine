@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://blvxhexn3wp6a"]
 
-[ext_resource type="Script" uid="uid://d2dduwm6j2fin" path="res://Engine/-script-/tv.gd" id="1_20x44"]
+[ext_resource type="Script" uid="uid://cvmbvi4mecvfn" path="res://Engine/-script-/tv.gd" id="1_20x44"]
 [ext_resource type="Texture2D" uid="uid://bjia4xifkdgl7" path="res://z.gdset/ui_ico/tv_img/img_TVs.png" id="2_rhh1i"]
 [ext_resource type="FontFile" uid="uid://b0itm5clp8xki" path="res://z.gdset/font/AaYuanWeiTuSi-2.ttf" id="3_ev2nu"]
 [ext_resource type="SpriteFrames" uid="uid://ljvdgtw1m5te" path="res://z.gdset/ui_ico/tv_img/tv.tres" id="4_id7o2"]
@@ -515,7 +515,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_is4mh")
 }],
-"loop": true,
+"loop": 1,
 "name": &"open",
 "speed": 30.0
 }, {
@@ -556,7 +556,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_d3ckc")
 }],
-"loop": true,
+"loop": 1,
 "name": &"snow",
 "speed": 60.0
 }]

@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://bb6wit8ut3aj0"]
+
+[ext_resource type="Script" uid="uid://cc1pbqtivy1no" path="res://timeline.gd" id="1_vxp2d"]
+
+[node name="Node" type="VBoxContainer" unique_id=650669211]
+offset_right = 528.0
+offset_bottom = 331.0
+theme_override_constants/separation = 0
+script = ExtResource("1_vxp2d")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1896541571]
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+color = Color(0.21950102, 0.21950102, 0.21950102, 1)
+
+[node name="tick" type="Control" parent="ColorRect" unique_id=306687744]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="tick_detail" type="Control" parent="ColorRect" unique_id=903505263]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Z1" type="HBoxContainer" parent="." unique_id=1626049599]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+theme_override_constants/separation = -1
+
+[node name="space" type="HSlider" parent="." unique_id=1544174672]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+max_value = 200.0
+value = 63.0
+
+[connection signal="gui_input" from="ColorRect" to="." method="gui_input"]
+[connection signal="value_changed" from="space" to="." method="value_changed"]

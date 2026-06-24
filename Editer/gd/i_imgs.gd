@@ -159,38 +159,34 @@ func DrawShp(file):
 					var color = file.get_8()
 					#Data.colors.append(color)
 					DrawTransparency(FramesHeader[f].X,FramesHeader[f].Y,f,color)
-		elif Data.flag==3:
-			## 压缩模式3 有透明帧 使用RLE压缩
+		elif Data.flag == 3:
+			## 获取每行信息
 			for y in Data.y:
-				## 获取每行长度
-				var length = file.get_16()
-				## 获取每行颜色信息
-				var line = ""
-				for x in length-2:line+=str(file.get_8())+","
-				line=line.split(",")
-				line.remove_at(line.size()-1)
-				## 输出结果
-				var x = ""
-				## 读取压缩后的颜色数据
-				for i in line.size():
-					## 类似   "56","0","3","12" 
-					## 转换为 "56","0","0","0","12"
-					
-					## 要是上一个数值为"0"
-					if line[i-1]=="0":
-						## 这个数值不为"0",则将"0"复制至现在这个数值的倍数
-						if line[i]!="0":x+="0,".repeat(line[i].to_int()-1)
-						## 这个数值为"0",则拼接两位"0,0"
-						elif line[i]=="0":x+="0,0,"
-					## 要是上一个数值不为"0",则拼接数值
-					elif line[i-1]!="0":x+=line[i]+","
-				## 删除x最后一位","
-				if x!="":x=x.erase(x.length()-1)
-				## 着色
-				DrawRLE(x,f,y)
-				#print(line)
+				## 头部2字节
+				var length = [file.get_8(),file.get_8()]
+				#var length = file.get_16()
+				var pix = []
+				var res = ""
+				## 读取头部字节里 每行的像素数量-2 并添加至pix数组里
+				for i in length[0] - 2:pix.append(file.get_8())
+				## 解码
+				##  [9, 0][0, 5, 102, 144, 92, 0, 8]
+				##  ["0", "0", "0", "0", "0", "102", "144", "92", "0", "0", "0", "0", "0", "0", "0", "0"]
+				for i in pix.size():
+					## 要是上一个数值为0 则添加这个数值的0的倍数
+					if pix[i-1]==0:res+="0,".repeat(pix[i]-1)
+					## 否则添加每个数值
+					else:res+="%s,"%pix[i]
+				## 移除后一个多余数值
+				res=res.erase(res.length()-1)
+				## String 转换为 Array
+				res=res.split(",")
+				## 丢弃多余数值 将每行颜色值限定在行宽度内
+				res.resize(Data.x)
+				## Print 打印查看 [行长度,RLE压缩后像素，RLE解码]
+				#print(length,pix,res)
 				#breakpoint
-
+				DrawRLE(res,f,y)
 
 #region Calc
 func is_color_similar(c1:Color,c2:Color,threshold:float=0.1)->bool:
@@ -229,9 +225,8 @@ func DrawRLE(result,f,y):
 	if y==0:var Frame = Panel.new();Frame.name = "frame_%s"%f;add_child(Frame)
 	## RLE 3
 	var frame = get_node("frame_%s"%f)
-	var X = result.split(",")
-	for x in X.size():
-		var pos = X[x].to_int()
+	for x in result.size():
+		var pos = result[x].to_int()
 		frame.connect("draw",func():frame.draw_rect(Rect2(x,y,1,1),Sides.pal[pos].color))
 		frame.queue_redraw()
 	queue_redraw()

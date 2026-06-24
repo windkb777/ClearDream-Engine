@@ -42,11 +42,11 @@ func button(node):
 func CheckSize():
 	$"|/Image".position = Vector2.ZERO
 	if imgs.size <= Vector2(60,40):
-		print("Check Success! \nIt's Small Pad!")
+		print("Check Success! \nIt's Cameo!")
 	else:
 		$"title/|".position.x = imgs.size.x - 70 
 		size.x = imgs.size.x
 		$"|/Panel".size.x = imgs.size.x
 		$line.points[1].x = imgs.size.x + 2;$line.points[2].x = imgs.size.x + 2
 		$line.points[2].y = imgs.size.y + 2 + 24;$line.points[3].y = imgs.size.y + 2 + 24
-		print("Check Success! \nIt's Big Pad!")
+		print("Check Success! \nIt's Big Window!")

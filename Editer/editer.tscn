@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cpbdfr0a81yxd"]
 
-[ext_resource type="Script" uid="uid://cyj4nac8eg8ly" path="res://Editer/gd/shp_editer.gd" id="1_8hrb2"]
-[ext_resource type="Script" uid="uid://c1cmakgp6kxei" path="res://Editer/gd/L.gd" id="2_8ylcp"]
+[ext_resource type="Script" uid="uid://b31hl1hh0wfng" path="res://Editer/gd/shp_editer.gd" id="1_8hrb2"]
+[ext_resource type="Script" uid="uid://dv4n5bxu5mel1" path="res://Editer/gd/L.gd" id="2_8ylcp"]
 [ext_resource type="Texture2D" uid="uid://c4rum41rv1i36" path="res://z.gdset/ui_ico/timeline/previous_64px.png" id="2_jqa41"]
 [ext_resource type="Texture2D" uid="uid://cuuscxfof5d58" path="res://z.gdset/ui_ico/timeline/previous_frame_64px.png" id="3_8ylcp"]
 [ext_resource type="Texture2D" uid="uid://0ol3g88rh25o" path="res://z.gdset/ui_ico/timeline/play_64px.png" id="4_qwkrt"]
@@ -15,9 +15,9 @@
 [ext_resource type="Texture2D" uid="uid://bji802ry513r0" path="res://z.gdset/ui_ico/timeline/visible_64px.png" id="12_u0lqc"]
 [ext_resource type="PackedScene" uid="uid://d2okygb5nujew" path="res://Editer/slot/layer_1.tscn" id="13_3yy25"]
 [ext_resource type="Shader" uid="uid://c34yt4ck7gc32" path="res://z.gdset/GShader/reverse.gdshader" id="14_xuy2e"]
-[ext_resource type="Script" uid="uid://c1i2qn6h7clvq" path="res://Editer/gd/RPad.gd" id="15_qwkrt"]
+[ext_resource type="Script" uid="uid://bhsb0lyjbkvs2" path="res://Editer/gd/RPad.gd" id="15_qwkrt"]
 [ext_resource type="Texture2D" uid="uid://daoahil1i2rd4" path="res://z.gdset/ui_ico/ico/grid-off.png" id="15_vhd6f"]
-[ext_resource type="Script" uid="uid://kwjsjmlkil6b" path="res://Editer/gd/EX.gd" id="16_8ylcp"]
+[ext_resource type="Script" uid="uid://tlt2b5f3tutp" path="res://Editer/gd/EX.gd" id="16_8ylcp"]
 [ext_resource type="Texture2D" uid="uid://cu3qlnp1sohe6" path="res://z.gdset/ui_ico/ra2_sprite/grid.png" id="16_o6o62"]
 [ext_resource type="Texture2D" uid="uid://cflg5see3nmso" path="res://z.gdset/ui_ico/ico/eye.png" id="17_lyxvl"]
 [ext_resource type="Texture2D" uid="uid://2a864hpjiddn" path="res://z.gdset/ui_ico/ico/op.png" id="18_k7b8o"]
@@ -11526,8 +11526,8 @@ icon = ExtResource("25_8o114")
 icon_alignment = 1
 
 [node name="Dir2" type="Button" parent="LayerManager/Margin/-/ScrollContainer/VBoxContainer/layer1/detail/nodes" unique_id=2072327453]
-clip_contents = true
 custom_minimum_size = Vector2(168, 0)
+clip_contents = true
 layout_mode = 2
 size_flags_horizontal = 0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -11546,8 +11546,8 @@ icon = ExtResource("26_ceqfw")
 icon_alignment = 1
 
 [node name="Dir6" type="Button" parent="LayerManager/Margin/-/ScrollContainer/VBoxContainer/layer1/detail/nodes" unique_id=1457313940]
-clip_contents = true
 custom_minimum_size = Vector2(168, 0)
+clip_contents = true
 layout_mode = 2
 size_flags_horizontal = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -11696,8 +11696,8 @@ icon = ExtResource("24_obhxv")
 icon_alignment = 1
 
 [node name="Dir6" type="Button" parent="LayerManager/Margin/-/ScrollContainer/VBoxContainer/layer2/detail2/layer4/detail/nodes" unique_id=959754037]
-clip_contents = true
 custom_minimum_size = Vector2(144, 0)
+clip_contents = true
 layout_mode = 2
 size_flags_horizontal = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -11724,8 +11724,8 @@ icon = ExtResource("24_obhxv")
 icon_alignment = 1
 
 [node name="Dir7" type="Button" parent="LayerManager/Margin/-/ScrollContainer/VBoxContainer/layer2/detail2/layer4/detail/nodes" unique_id=147299967]
-clip_contents = true
 custom_minimum_size = Vector2(144, 0)
+clip_contents = true
 layout_mode = 2
 size_flags_horizontal = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -11752,8 +11752,8 @@ icon = ExtResource("24_obhxv")
 icon_alignment = 1
 
 [node name="Dir8" type="Button" parent="LayerManager/Margin/-/ScrollContainer/VBoxContainer/layer2/detail2/layer4/detail/nodes" unique_id=1119399770]
-clip_contents = true
 custom_minimum_size = Vector2(144, 0)
+clip_contents = true
 layout_mode = 2
 size_flags_horizontal = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -11841,8 +11841,8 @@ icon = ExtResource("24_obhxv")
 icon_alignment = 1
 
 [node name="Dir6" type="Button" parent="LayerManager/Margin/-/ScrollContainer/VBoxContainer/layer2/detail2/layer4/detail2/nodes" unique_id=288544067]
-clip_contents = true
 custom_minimum_size = Vector2(144, 0)
+clip_contents = true
 layout_mode = 2
 size_flags_horizontal = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -11930,8 +11930,8 @@ icon = ExtResource("24_obhxv")
 icon_alignment = 1
 
 [node name="Dir6" type="Button" parent="LayerManager/Margin/-/ScrollContainer/VBoxContainer/layer2/detail2/layer4/detail3/nodes" unique_id=743294326]
-clip_contents = true
 custom_minimum_size = Vector2(144, 0)
+clip_contents = true
 layout_mode = 2
 size_flags_horizontal = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -12028,8 +12028,8 @@ icon = ExtResource("24_obhxv")
 icon_alignment = 1
 
 [node name="Dir6" type="Button" parent="LayerManager/Margin/-/ScrollContainer/VBoxContainer/layer3/detail/nodes" unique_id=52195930]
-clip_contents = true
 custom_minimum_size = Vector2(91, 0)
+clip_contents = true
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -12115,8 +12115,8 @@ icon = ExtResource("24_obhxv")
 icon_alignment = 1
 
 [node name="Dir3" type="Button" parent="LayerManager/Margin/-/ScrollContainer/VBoxContainer/layer4/detail/nodes" unique_id=1673613203]
-clip_contents = true
 custom_minimum_size = Vector2(91, 0)
+clip_contents = true
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_colors/font_color = Color(1, 1, 1, 1)

@@ -22,7 +22,7 @@ func WindowsImage(Name,path):
 	window_img.ReadShp(path)
 	window_img.size = Soft.file.size
 	window.position = Vector2(148,66)
-	$"../../-----".add_child(window)
+	owner.add_child(window)
 	Soft.file.windows.append(window)
 	owner.sel_file = window
 

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://i7qgdb77vm44"]
 
 [ext_resource type="Texture2D" uid="uid://b2nmnvv0uound" path="res://z.gdset/ui_ico/ra2_sprite/img_Side.png" id="1_8ljsu"]
-[ext_resource type="Script" uid="uid://chdwr0hn7d544" path="res://Engine/-script-/-ins/side.gd" id="1_pklgd"]
+[ext_resource type="Script" uid="uid://cv88rqxgyxbe1" path="res://Engine/-ui-/side.gd" id="1_kqa3x"]
 [ext_resource type="Theme" uid="uid://cx50ltwhyporl" path="res://z.gdset/theme/Side/Flag.tres" id="2_np8at"]
 [ext_resource type="Theme" uid="uid://cg0h00hsidvr4" path="res://z.gdset/theme/Side/Set Ico.tres" id="3_hcdtn"]
 [ext_resource type="Theme" uid="uid://kq7xyaisxja8" path="res://z.gdset/theme/Side/Set Tex.tres" id="4_5mtdr"]
@@ -15,9 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://bkepwl6mrwk8s" path="res://ResPack/Flags/lati.png" id="12_2ta47"]
 [ext_resource type="Texture2D" uid="uid://qtvrxtx3ea13" path="res://ResPack/Flags/rusi.png" id="13_x3owo"]
 [ext_resource type="Texture2D" uid="uid://bywdl500fv1hg" path="res://ResPack/Flags/yrii.png" id="14_cn7ug"]
-[ext_resource type="Texture2D" uid="uid://bmjqi2u4cpipi" path="res://z.gdset/ui_ico/yr-yuri-logo.png" id="15_qemld"]
 [ext_resource type="Texture2D" uid="uid://bbpbtnnk4et2o" path="res://ResPack/Flags/rani.png" id="15_rnxqe"]
-[ext_resource type="Texture2D" uid="uid://lpadi463asje" path="res://ResPack/Cameo/GDI/00059.png" id="23_isq13"]
 [ext_resource type="Texture2D" uid="uid://ccchm8kvk1wi" path="res://ResPack/Cameo/00096.png" id="26_p876w"]
 [ext_resource type="Texture2D" uid="uid://dp1v56i3sicn1" path="res://ResPack/Cameo/00128.png" id="27_4248f"]
 [ext_resource type="Texture2D" uid="uid://bmdi0ygbtcg7h" path="res://ResPack/Cameo/00051.png" id="28_56qr1"]
@@ -51,6 +49,7 @@
 [ext_resource type="Texture2D" uid="uid://11vrpyw4mjh2" path="res://ResPack/Cameo/00011.png" id="56_p2kx4"]
 [ext_resource type="Texture2D" uid="uid://hlg3lt3pxf21" path="res://ResPack/Cameo/00056.png" id="57_08jwr"]
 [ext_resource type="Texture2D" uid="uid://dlf7hyjc08hg5" path="res://ResPack/Cameo/00068.png" id="58_57bjy"]
+[ext_resource type="Texture2D" uid="uid://blcsq7w18w2j4" path="res://ResPack/Cameo/00059.png" id="58_kqa3x"]
 [ext_resource type="Texture2D" uid="uid://bb08nbcurvkci" path="res://ResPack/Cameo/00130.png" id="59_mi4vy"]
 [ext_resource type="Texture2D" uid="uid://evhnfqwabcpy" path="res://ResPack/Cameo/00132.png" id="60_kmxuy"]
 [ext_resource type="Texture2D" uid="uid://c0px437vnwgdo" path="res://ResPack/Cameo/00155.png" id="61_fv3wq"]
@@ -148,8 +147,13 @@
 [ext_resource type="Texture2D" uid="uid://bk2t7mypptxwo" path="res://ResPack/Cameo/00002.png" id="153_bw625"]
 [ext_resource type="Texture2D" uid="uid://bjern8vb7u60k" path="res://ResPack/Cameo/00200.png" id="153_ecnsx"]
 [ext_resource type="Texture2D" uid="uid://bkhvxmoonaibx" path="res://ResPack/Cameo/00185.png" id="154_8d6ma"]
+[ext_resource type="Texture2D" uid="uid://dvysqmyuhhabs" path="res://z.gdset/ui_ico/gdi.png" id="154_bw625"]
+[ext_resource type="Texture2D" uid="uid://yuwbc32he3to" path="res://z.gdset/ui_ico/sov.png" id="155_00ekc"]
+[ext_resource type="FontFile" uid="uid://b0itm5clp8xki" path="res://z.gdset/font/AaYuanWeiTuSi-2.ttf" id="155_otxc5"]
 [ext_resource type="Texture2D" uid="uid://cxvnyct72ijf3" path="res://ResPack/Cameo/00022.png" id="155_t0gyn"]
+[ext_resource type="Texture2D" uid="uid://c1qxxvbiy4bnl" path="res://z.gdset/ui_ico/yuri.png" id="156_bw625"]
 [ext_resource type="Texture2D" uid="uid://gmbl03mlnn31" path="res://ResPack/Cameo/00126.png" id="156_eiqmw"]
+[ext_resource type="Texture2D" uid="uid://biq3t5sxsm4fk" path="res://z.gdset/ui_ico/civlian.png" id="157_00ekc"]
 [ext_resource type="Texture2D" uid="uid://b5thghiv4ogbs" path="res://ResPack/Cameo/00067.png" id="157_ha6ja"]
 [ext_resource type="Texture2D" uid="uid://co4gp8qdlgktw" path="res://ResPack/Cameo/00103.png" id="158_8anw1"]
 [ext_resource type="Texture2D" uid="uid://dgptfnx6gclfj" path="res://ResPack/Cameo/00113.png" id="159_f6sk8"]
@@ -157,6 +161,37 @@
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hisxl"]
 bg_color = Color(0.2509804, 0.078431375, 0.5882353, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_kqa3x"]
+font_color = Color(0.1882353, 0.76862746, 1, 1)
+shadow_size = 4
+shadow_color = Color(0.015686275, 0.19607843, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_s1khn"]
+font_color = Color(0.99999994, 0.18887126, 0.18864053, 1)
+shadow_size = 4
+shadow_color = Color(0.512657, 0.061313167, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_otxc5"]
+font_color = Color(0.5137255, 0.1882353, 1, 1)
+shadow_size = 4
+shadow_color = Color(0.08627451, 0, 0.23529412, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_y0w1w"]
+font_color = Color(1, 0.19215687, 0.96862745, 1)
+shadow_size = 4
+shadow_color = Color(0.34901962, 0, 0.7882353, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g4v7s"]
+bg_color = Color(0.025363795, 0.025363805, 0.02536378, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_l8r1r"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_u86dk"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rej87"]
 bg_color = Color(0, 0, 0, 1)
@@ -167,13 +202,9 @@ corner_radius_bottom_left = 48
 
 [sub_resource type="ButtonGroup" id="ButtonGroup_iceqs"]
 
-[sub_resource type="ButtonGroup" id="ButtonGroup_l8r1r"]
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_7wta4"]
 atlas = ExtResource("1_8ljsu")
 region = Rect2(0, 0, 85, 85)
-
-[sub_resource type="ButtonGroup" id="ButtonGroup_u86dk"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ad87m"]
 atlas = ExtResource("1_8ljsu")
@@ -193,11 +224,1047 @@ anchors_preset = 0
 offset_left = 7.0
 offset_top = 69.0
 offset_right = 924.0
-offset_bottom = 487.0
+offset_bottom = 492.0
 mouse_filter = 2
-script = ExtResource("1_pklgd")
+script = ExtResource("1_kqa3x")
+metadata/_edit_horizontal_guides_ = [69.0, 92.0, 493.0]
+metadata/_edit_vertical_guides_ = [7.0, 924.0]
+
+[node name="bg" type="ColorRect" parent="." unique_id=600947347]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.06469653, 0.06469653, 0.06469653, 1)
+
+[node name="Side Mode" type="Control" parent="." unique_id=685567840]
+anchors_preset = 0
+
+[node name="title2" type="Label" parent="Side Mode" unique_id=1027789507]
+layout_mode = 0
+offset_right = 917.0
+offset_bottom = 23.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_hisxl")
+text = "Side Select Mode"
+horizontal_alignment = 1
+tab_stops = PackedFloat32Array(220)
+
+[node name="|" type="HBoxContainer" parent="Side Mode" unique_id=1989356244]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 26.5
+offset_top = 112.5
+offset_right = 890.5
+offset_bottom = 310.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+
+[node name="盟军" type="Button" parent="Side Mode/|" unique_id=778181152]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/icon_max_width = 190
+icon = ExtResource("154_bw625")
+flat = true
+icon_alignment = 1
+
+[node name="gdi" type="Label" parent="Side Mode/|/盟军" unique_id=954712383]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -31.5
+offset_top = 25.0
+offset_right = 31.5
+offset_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 0
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("155_otxc5")
+text = "Allied"
+label_settings = SubResource("LabelSettings_kqa3x")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="苏军" type="Button" parent="Side Mode/|" unique_id=1953594856]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/icon_max_width = 190
+icon = ExtResource("155_00ekc")
+flat = true
+
+[node name="nod" type="Label" parent="Side Mode/|/苏军" unique_id=1031612477]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -32.5
+offset_top = 25.0
+offset_right = 32.5
+offset_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 0
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("155_otxc5")
+text = "Soviet"
+label_settings = SubResource("LabelSettings_s1khn")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="尤里" type="Button" parent="Side Mode/|" unique_id=1114622151]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/icon_max_width = 190
+icon = ExtResource("156_bw625")
+flat = true
+
+[node name="yuri" type="Label" parent="Side Mode/|/尤里" unique_id=2067722461]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -21.0
+offset_top = 25.0
+offset_right = 21.0
+offset_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 0
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("155_otxc5")
+text = "Yuri"
+label_settings = SubResource("LabelSettings_otxc5")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="其他" type="Button" parent="Side Mode/|" unique_id=1699724812]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/icon_max_width = 190
+icon = ExtResource("157_00ekc")
+flat = true
+
+[node name="other" type="Label" parent="Side Mode/|/其他" unique_id=1394478165]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -28.5
+offset_top = 25.0
+offset_right = 28.5
+offset_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 0
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("155_otxc5")
+text = "Other"
+label_settings = SubResource("LabelSettings_y0w1w")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Tech Mode" type="Control" parent="." unique_id=349405293]
+visible = false
+anchors_preset = 0
+
+[node name="title" type="Label" parent="Tech Mode" unique_id=689257630]
+layout_mode = 0
+offset_right = 917.0
+offset_bottom = 23.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_hisxl")
+text = "                                                                    Cameo                                                                                                 View"
+
+[node name="view" type="Panel" parent="Tech Mode" unique_id=1661775407]
+layout_mode = 0
+offset_left = 632.0
+offset_top = 45.0
+offset_right = 892.0
+offset_bottom = 245.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_g4v7s")
+
+[node name="盟军" type="Control" parent="Tech Mode" unique_id=1280789846]
+anchors_preset = 0
+
+[node name="tech" type="Control" parent="Tech Mode/盟军" unique_id=2023988666]
+anchors_preset = 0
+
+[node name="base" type="FlowContainer" parent="Tech Mode/盟军/tech" unique_id=927575628]
+z_index = 1
+layout_mode = 0
+offset_left = 11.0
+offset_top = 30.0
+offset_right = 199.0
+offset_bottom = 130.0
+
+[node name="AMCV|GACNST" type="TextureRect" parent="Tech Mode/盟军/tech/base" unique_id=915906153]
+layout_mode = 2
+texture = ExtResource("26_p876w")
+
+[node name="GAPOWR" type="TextureRect" parent="Tech Mode/盟军/tech/base" unique_id=1655212704]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("32_jpuje")
+
+[node name="GAREFN" type="TextureRect" parent="Tech Mode/盟军/tech/base" unique_id=1075855799]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("27_4248f")
+
+[node name="GADEPT" type="TextureRect" parent="Tech Mode/盟军/tech/base" unique_id=675976776]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("28_56qr1")
+
+[node name="GAROBO" type="TextureRect" parent="Tech Mode/盟军/tech/base" unique_id=254416155]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("29_7d8ud")
+
+[node name="GAOREP" type="TextureRect" parent="Tech Mode/盟军/tech/base" unique_id=1722810224]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("30_0dy4b")
+
+[node name="def" type="FlowContainer" parent="Tech Mode/盟军/tech" unique_id=2096569257]
+z_index = 2
+custom_minimum_size = Vector2(124, 0)
+layout_mode = 0
+offset_left = 11.0
+offset_top = 146.0
+offset_right = 199.0
+offset_bottom = 246.0
+
+[node name="GAWALL" type="TextureRect" parent="Tech Mode/盟军/tech/def" unique_id=791473690]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("37_120n5")
+
+[node name="GAPILL" type="TextureRect" parent="Tech Mode/盟军/tech/def" unique_id=1423987545]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("33_cxjvn")
+
+[node name="ATESLA" type="TextureRect" parent="Tech Mode/盟军/tech/def" unique_id=1158947298]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("34_3fw78")
+
+[node name="NASAM" type="TextureRect" parent="Tech Mode/盟军/tech/def" unique_id=1468051832]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("35_ef1rq")
+
+[node name="GAGAP" type="TextureRect" parent="Tech Mode/盟军/tech/def" unique_id=2069576013]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("36_gumrh")
+
+[node name="GAGCAN" type="TextureRect" parent="Tech Mode/盟军/tech/def" unique_id=1902420825]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("58_kqa3x")
+
+[node name="ship" type="FlowContainer" parent="Tech Mode/盟军/tech" unique_id=916892559]
+z_index = 2
+layout_mode = 0
+offset_left = 11.0
+offset_top = 264.0
+offset_right = 199.0
+offset_bottom = 416.0
+
+[node name="GAYARD" type="TextureRect" parent="Tech Mode/盟军/tech/ship" unique_id=593350217]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("63_qpn4p")
+
+[node name="AEGIS" type="TextureRect" parent="Tech Mode/盟军/tech/ship" unique_id=739362373]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("64_u4mgl")
+
+[node name="CARRIER" type="TextureRect" parent="Tech Mode/盟军/tech/ship" unique_id=1576734050]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("65_0qnsw")
+
+[node name="DEST" type="TextureRect" parent="Tech Mode/盟军/tech/ship" unique_id=699444592]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("66_dcttr")
+
+[node name="DRED" type="TextureRect" parent="Tech Mode/盟军/tech/ship" unique_id=1759757711]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("67_yp3es")
+
+[node name="LCRF" type="TextureRect" parent="Tech Mode/盟军/tech/ship" unique_id=1641264941]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("68_4opw4")
+
+[node name="DLPH" type="TextureRect" parent="Tech Mode/盟军/tech/ship" unique_id=1239012592]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("69_sbyn3")
+
+[node name="unit" type="FlowContainer" parent="Tech Mode/盟军/tech" unique_id=1308481847]
+z_index = 2
+layout_mode = 0
+offset_left = 216.0
+offset_top = 30.0
+offset_right = 404.0
+offset_bottom = 234.0
+
+[node name="GAPLIE" type="TextureRect" parent="Tech Mode/盟军/tech/unit" unique_id=1948124090]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("38_6sqqy")
+
+[node name="ADOG" type="TextureRect" parent="Tech Mode/盟军/tech/unit" unique_id=1903868380]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("39_m36mh")
+
+[node name="ENGINNER" type="TextureRect" parent="Tech Mode/盟军/tech/unit" unique_id=154281470]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("40_7cygu")
+
+[node name="GGI" type="TextureRect" parent="Tech Mode/盟军/tech/unit" unique_id=1014489317]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("41_r8xev")
+
+[node name="E1" type="TextureRect" parent="Tech Mode/盟军/tech/unit" unique_id=1255004395]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("42_sxlqm")
+
+[node name="JUMPJET" type="TextureRect" parent="Tech Mode/盟军/tech/unit" unique_id=1600542752]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("43_omlm7")
+
+[node name="GHOST" type="TextureRect" parent="Tech Mode/盟军/tech/unit" unique_id=872660918]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("44_fwgsb")
+
+[node name="SPY" type="TextureRect" parent="Tech Mode/盟军/tech/unit" unique_id=353095797]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("46_ast62")
+
+[node name="TANY" type="TextureRect" parent="Tech Mode/盟军/tech/unit" unique_id=1937656517]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("47_ytv0g")
+
+[node name="SNIPE" type="TextureRect" parent="Tech Mode/盟军/tech/unit" unique_id=1162310069]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("45_cjje1")
+
+[node name="CLEG" type="TextureRect" parent="Tech Mode/盟军/tech/unit" unique_id=860623171]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("48_3rrrg")
+
+[node name="CC0MAND" type="TextureRect" parent="Tech Mode/盟军/tech/unit" unique_id=1128449775]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("49_2jp61")
+
+[node name="plane" type="FlowContainer" parent="Tech Mode/盟军/tech" unique_id=1454792784]
+z_index = 2
+layout_mode = 0
+offset_left = 216.0
+offset_top = 264.0
+offset_right = 404.0
+offset_bottom = 364.0
+
+[node name="AMRADR" type="TextureRect" parent="Tech Mode/盟军/tech/plane" unique_id=964805979]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("50_y2xea")
+
+[node name="ORCA" type="TextureRect" parent="Tech Mode/盟军/tech/plane" unique_id=481510999]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("51_6emx4")
+
+[node name="SHAD" type="TextureRect" parent="Tech Mode/盟军/tech/plane" unique_id=1487858647]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("53_qmtot")
+
+[node name="BEAG" type="TextureRect" parent="Tech Mode/盟军/tech/plane" unique_id=1927102885]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("52_2cb67")
+
+[node name="tank" type="FlowContainer" parent="Tech Mode/盟军/tech" unique_id=1902232073]
+z_index = 2
+layout_mode = 0
+offset_left = 421.0
+offset_top = 30.0
+offset_right = 610.0
+offset_bottom = 234.0
+
+[node name="GAWEAP" type="TextureRect" parent="Tech Mode/盟军/tech/tank" unique_id=1509302039]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("54_ri30v")
+
+[node name="CMON" type="TextureRect" parent="Tech Mode/盟军/tech/tank" unique_id=310130568]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("55_vr36g")
+
+[node name="BFRT" type="TextureRect" parent="Tech Mode/盟军/tech/tank" unique_id=421604495]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("56_p2kx4")
+
+[node name="FV" type="TextureRect" parent="Tech Mode/盟军/tech/tank" unique_id=274198938]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("57_08jwr")
+
+[node name="MTNK" type="TextureRect" parent="Tech Mode/盟军/tech/tank" unique_id=873345809]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("58_57bjy")
+
+[node name="AMCV" type="TextureRect" parent="Tech Mode/盟军/tech/tank" unique_id=1143174942]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("26_p876w")
+
+[node name="ROBO" type="TextureRect" parent="Tech Mode/盟军/tech/tank" unique_id=984854396]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("59_mi4vy")
+
+[node name="MGTK" type="TextureRect" parent="Tech Mode/盟军/tech/tank" unique_id=1503656564]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("60_kmxuy")
+
+[node name="SREF" type="TextureRect" parent="Tech Mode/盟军/tech/tank" unique_id=724625829]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("61_fv3wq")
+
+[node name="TNKD" type="TextureRect" parent="Tech Mode/盟军/tech/tank" unique_id=1969180198]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("62_3ypj8")
+
+[node name="lab" type="FlowContainer" parent="Tech Mode/盟军/tech" unique_id=585918812]
+z_index = 2
+layout_mode = 0
+offset_left = 421.0
+offset_top = 264.0
+offset_right = 609.0
+offset_bottom = 364.0
+
+[node name="GATECH" type="TextureRect" parent="Tech Mode/盟军/tech/lab" unique_id=1597641623]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("70_a13j2")
+
+[node name="GACSPH" type="TextureRect" parent="Tech Mode/盟军/tech/lab" unique_id=1748184305]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("71_513xn")
+
+[node name="GAWEAT" type="TextureRect" parent="Tech Mode/盟军/tech/lab" unique_id=410424866]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("72_v2acq")
+
+[node name="Force Shield" type="TextureRect" parent="Tech Mode/盟军/tech/lab" unique_id=703865218]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("73_6lx0v")
+
+[node name="Chrono Sphere" type="TextureRect" parent="Tech Mode/盟军/tech/lab" unique_id=1454560434]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("76_vv6k8")
+
+[node name="Lightning Storm" type="TextureRect" parent="Tech Mode/盟军/tech/lab" unique_id=2124082857]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("74_llt61")
+
+[node name="American Paratrooper Drop" type="TextureRect" parent="Tech Mode/盟军/tech/lab" unique_id=746990474]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("75_7ekfa")
+
+[node name="GASPYSAT" type="TextureRect" parent="Tech Mode/盟军/tech/lab" unique_id=1388494057]
+modulate = Color(0.39308554, 0.3930855, 0.39308548, 1)
+layout_mode = 2
+texture = ExtResource("31_vnacs")
+
+[node name="country" type="Control" parent="Tech Mode/盟军" unique_id=1589883556]
+z_index = 1
+anchors_preset = 0
+offset_left = 4.0
+offset_top = 429.99997
+offset_right = 520.0
+offset_bottom = 499.99997
+
+[node name="flag_1" type="Button" parent="Tech Mode/盟军/country" unique_id=1909176239]
+editor_description = "Allied,G,Gold,America"
+custom_minimum_size = Vector2(100, 70)
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 70.0
+theme = ExtResource("2_np8at")
+toggle_mode = true
+button_pressed = true
+button_group = SubResource("ButtonGroup_l8r1r")
+text = "
+Americans"
+
+[node name="ico" type="TextureRect" parent="Tech Mode/盟军/country/flag_1" unique_id=586860055]
+texture_filter = 1
+layout_mode = 0
+offset_left = 26.5
+offset_top = 11.0
+offset_right = 71.5
+offset_bottom = 32.0
+size_flags_horizontal = 4
+mouse_filter = 2
+texture = ExtResource("5_s1khn")
+stretch_mode = 3
+
+[node name="flag_2" type="Button" parent="Tech Mode/盟军/country" unique_id=1059304669]
+editor_description = "Allied,G,Gold,Asian Alliance"
+custom_minimum_size = Vector2(100, 70)
+layout_mode = 0
+offset_left = 104.0
+offset_right = 204.0
+offset_bottom = 70.0
+theme = ExtResource("2_np8at")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_l8r1r")
+text = "
+Alliance"
+
+[node name="ico" type="TextureRect" parent="Tech Mode/盟军/country/flag_2" unique_id=1630605648]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 35)
+layout_mode = 0
+offset_left = 19.5
+offset_top = 4.0
+offset_right = 80.5
+offset_bottom = 39.0
+mouse_filter = 2
+texture = ExtResource("6_y0w1w")
+stretch_mode = 3
+
+[node name="flag_3" type="Button" parent="Tech Mode/盟军/country" unique_id=814737784]
+editor_description = "Allied,G,Gold,France"
+custom_minimum_size = Vector2(100, 70)
+layout_mode = 0
+offset_left = 208.0
+offset_right = 308.0
+offset_bottom = 70.0
+theme = ExtResource("2_np8at")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_l8r1r")
+text = "
+French"
+
+[node name="ico" type="TextureRect" parent="Tech Mode/盟军/country/flag_3" unique_id=1206472082]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 35)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 4.0
+offset_right = 80.0
+offset_bottom = 39.0
+mouse_filter = 2
+texture = ExtResource("7_1v0pq")
+stretch_mode = 3
+
+[node name="flag_4" type="Button" parent="Tech Mode/盟军/country" unique_id=63786892]
+editor_description = "Allied,G,Gold,Germany"
+custom_minimum_size = Vector2(100, 70)
+layout_mode = 0
+offset_left = 312.0
+offset_right = 412.0
+offset_bottom = 70.0
+theme = ExtResource("2_np8at")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_l8r1r")
+text = "
+Germans"
+
+[node name="ico" type="TextureRect" parent="Tech Mode/盟军/country/flag_4" unique_id=580863166]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 35)
+layout_mode = 0
+offset_left = 14.5
+offset_top = 4.0
+offset_right = 85.5
+offset_bottom = 39.0
+mouse_filter = 2
+texture = ExtResource("8_wah2g")
+stretch_mode = 3
+
+[node name="flag_5" type="Button" parent="Tech Mode/盟军/country" unique_id=542990812]
+editor_description = "Allied,G,Gold,Great Britain"
+custom_minimum_size = Vector2(100, 70)
+layout_mode = 0
+offset_left = 416.0
+offset_right = 516.0
+offset_bottom = 70.0
+theme = ExtResource("2_np8at")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_l8r1r")
+text = "
+British"
+
+[node name="ico" type="TextureRect" parent="Tech Mode/盟军/country/flag_5" unique_id=705962425]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 35)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 4.0
+offset_right = 80.0
+offset_bottom = 39.0
+mouse_filter = 2
+texture = ExtResource("9_jv70m")
+stretch_mode = 3
+
+[node name="苏军" type="Control" parent="Tech Mode" unique_id=2065999159]
+visible = false
+anchors_preset = 0
+
+[node name="tech" type="Control" parent="Tech Mode/苏军" unique_id=1406177220]
+anchors_preset = 0
+offset_left = -0.049987793
+offset_top = -3.0517578e-05
+offset_right = -0.049987793
+offset_bottom = -3.0517578e-05
+
+[node name="base" type="FlowContainer" parent="Tech Mode/苏军/tech" unique_id=1231349953]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 30.0
+offset_right = 199.0
+offset_bottom = 130.0
+
+[node name="00145" type="TextureRect" parent="Tech Mode/苏军/tech/base" unique_id=1571253377]
+layout_mode = 2
+texture = ExtResource("77_gqdr0")
+
+[node name="00107" type="TextureRect" parent="Tech Mode/苏军/tech/base" unique_id=470670768]
+layout_mode = 2
+texture = ExtResource("78_4ofhx")
+
+[node name="00105" type="TextureRect" parent="Tech Mode/苏军/tech/base" unique_id=2056281605]
+layout_mode = 2
+texture = ExtResource("79_3i4ed")
+
+[node name="00129" type="TextureRect" parent="Tech Mode/苏军/tech/base" unique_id=359328453]
+layout_mode = 2
+texture = ExtResource("81_0hldh")
+
+[node name="00080" type="TextureRect" parent="Tech Mode/苏军/tech/base" unique_id=638569416]
+layout_mode = 2
+texture = ExtResource("82_skwnn")
+
+[node name="def" type="FlowContainer" parent="Tech Mode/苏军/tech" unique_id=1433850965]
+z_index = 2
+custom_minimum_size = Vector2(124, 0)
+layout_mode = 0
+offset_left = 11.0
+offset_top = 146.0
+offset_right = 199.0
+offset_bottom = 246.0
+
+[node name="00104" type="TextureRect" parent="Tech Mode/苏军/tech/def" unique_id=2070666478]
+layout_mode = 2
+texture = ExtResource("83_m6bvh")
+
+[node name="00013" type="TextureRect" parent="Tech Mode/苏军/tech/def" unique_id=481288336]
+layout_mode = 2
+texture = ExtResource("84_3fpqe")
+
+[node name="00052" type="TextureRect" parent="Tech Mode/苏军/tech/def" unique_id=592579625]
+layout_mode = 2
+texture = ExtResource("85_dqcg4")
+
+[node name="00110" type="TextureRect" parent="Tech Mode/苏军/tech/def" unique_id=1885409006]
+layout_mode = 2
+texture = ExtResource("86_pa50o")
+
+[node name="00115" type="TextureRect" parent="Tech Mode/苏军/tech/def" unique_id=1047973196]
+layout_mode = 2
+texture = ExtResource("87_c8clw")
+
+[node name="00169" type="TextureRect" parent="Tech Mode/苏军/tech/def" unique_id=1484897765]
+layout_mode = 2
+texture = ExtResource("88_w4gb8")
+
+[node name="unit" type="FlowContainer" parent="Tech Mode/苏军/tech" unique_id=1004269124]
+z_index = 2
+layout_mode = 0
+offset_left = 216.0
+offset_top = 30.0
+offset_right = 404.0
+offset_bottom = 234.0
+
+[node name="00071" type="TextureRect" parent="Tech Mode/苏军/tech/unit" unique_id=1649208461]
+layout_mode = 2
+texture = ExtResource("89_kywq5")
+
+[node name="00017" type="TextureRect" parent="Tech Mode/苏军/tech/unit" unique_id=1357391103]
+layout_mode = 2
+texture = ExtResource("90_mhup8")
+
+[node name="00043" type="TextureRect" parent="Tech Mode/苏军/tech/unit" unique_id=2077599359]
+layout_mode = 2
+texture = ExtResource("92_s7xt2")
+
+[node name="00047" type="TextureRect" parent="Tech Mode/苏军/tech/unit" unique_id=322549773]
+layout_mode = 2
+texture = ExtResource("93_rd0lc")
+
+[node name="00053" type="TextureRect" parent="Tech Mode/苏军/tech/unit" unique_id=1997596682]
+layout_mode = 2
+texture = ExtResource("94_782rp")
+
+[node name="00085" type="TextureRect" parent="Tech Mode/苏军/tech/unit" unique_id=1597461682]
+layout_mode = 2
+texture = ExtResource("95_o5k63")
+
+[node name="00094" type="TextureRect" parent="Tech Mode/苏军/tech/unit" unique_id=2050680544]
+layout_mode = 2
+texture = ExtResource("96_3vpju")
+
+[node name="00143" type="TextureRect" parent="Tech Mode/苏军/tech/unit" unique_id=2140085029]
+layout_mode = 2
+texture = ExtResource("97_5s5bb")
+
+[node name="00122" type="TextureRect" parent="Tech Mode/苏军/tech/unit" unique_id=12789688]
+layout_mode = 2
+texture = ExtResource("99_ka804")
+
+[node name="00118" type="TextureRect" parent="Tech Mode/苏军/tech/unit" unique_id=1096615859]
+layout_mode = 2
+texture = ExtResource("100_fabsc")
+
+[node name="00167" type="TextureRect" parent="Tech Mode/苏军/tech/unit" unique_id=343876525]
+layout_mode = 2
+texture = ExtResource("98_e17l7")
+
+[node name="00037" type="TextureRect" parent="Tech Mode/苏军/tech/unit" unique_id=539447354]
+layout_mode = 2
+texture = ExtResource("91_y25kf")
+
+[node name="plane" type="FlowContainer" parent="Tech Mode/苏军/tech" unique_id=178477286]
+z_index = 2
+layout_mode = 0
+offset_left = 421.0
+offset_top = 264.0
+offset_right = 609.0
+offset_bottom = 364.0
+
+[node name="00201" type="TextureRect" parent="Tech Mode/苏军/tech/plane" unique_id=326330502]
+layout_mode = 2
+texture = ExtResource("101_dw6fr")
+
+[node name="00137" type="TextureRect" parent="Tech Mode/苏军/tech/plane" unique_id=2073260399]
+layout_mode = 2
+texture = ExtResource("102_4nba3")
+
+[node name="00152" type="TextureRect" parent="Tech Mode/苏军/tech/plane" unique_id=1620648973]
+layout_mode = 2
+texture = ExtResource("103_upvci")
+
+[node name="00015" type="TextureRect" parent="Tech Mode/苏军/tech/plane" unique_id=1081064853]
+layout_mode = 2
+texture = ExtResource("104_2ojxn")
+
+[node name="tank" type="FlowContainer" parent="Tech Mode/苏军/tech" unique_id=1605358604]
+z_index = 2
+layout_mode = 0
+offset_left = 421.0
+offset_top = 30.0
+offset_right = 610.0
+offset_bottom = 234.0
+
+[node name="00111" type="TextureRect" parent="Tech Mode/苏军/tech/tank" unique_id=566710406]
+layout_mode = 2
+texture = ExtResource("105_xoock")
+
+[node name="00072" type="TextureRect" parent="Tech Mode/苏军/tech/tank" unique_id=1469836210]
+layout_mode = 2
+texture = ExtResource("106_nrkct")
+
+[node name="00076" type="TextureRect" parent="Tech Mode/苏军/tech/tank" unique_id=646391214]
+layout_mode = 2
+texture = ExtResource("107_lldop")
+
+[node name="00078" type="TextureRect" parent="Tech Mode/苏军/tech/tank" unique_id=362091388]
+layout_mode = 2
+texture = ExtResource("108_a6tm1")
+
+[node name="00101" type="TextureRect" parent="Tech Mode/苏军/tech/tank" unique_id=1498619621]
+layout_mode = 2
+texture = ExtResource("109_wgdf4")
+
+[node name="00172" type="TextureRect" parent="Tech Mode/苏军/tech/tank" unique_id=1030681256]
+layout_mode = 2
+texture = ExtResource("112_2j1e8")
+
+[node name="00170" type="TextureRect" parent="Tech Mode/苏军/tech/tank" unique_id=50285006]
+layout_mode = 2
+texture = ExtResource("111_80jv2")
+
+[node name="00166" type="TextureRect" parent="Tech Mode/苏军/tech/tank" unique_id=60850633]
+layout_mode = 2
+texture = ExtResource("110_inm16")
+
+[node name="ship" type="FlowContainer" parent="Tech Mode/苏军/tech" unique_id=1943015544]
+z_index = 2
+layout_mode = 0
+offset_left = 216.0
+offset_top = 264.0
+offset_right = 408.0
+offset_bottom = 416.0
+
+[node name="00179" type="TextureRect" parent="Tech Mode/苏军/tech/ship" unique_id=1848338450]
+layout_mode = 2
+texture = ExtResource("113_j5cax")
+
+[node name="00157" type="TextureRect" parent="Tech Mode/苏军/tech/ship" unique_id=691400338]
+layout_mode = 2
+texture = ExtResource("114_qiawq")
+
+[node name="00136" type="TextureRect" parent="Tech Mode/苏军/tech/ship" unique_id=1236672735]
+layout_mode = 2
+texture = ExtResource("115_oue15")
+
+[node name="00154" type="TextureRect" parent="Tech Mode/苏军/tech/ship" unique_id=611880478]
+layout_mode = 2
+texture = ExtResource("116_1lpir")
+
+[node name="00075" type="TextureRect" parent="Tech Mode/苏军/tech/ship" unique_id=1396126780]
+layout_mode = 2
+texture = ExtResource("117_pkxms")
+
+[node name="lab" type="FlowContainer" parent="Tech Mode/苏军/tech" unique_id=673541864]
+z_index = 2
+layout_mode = 0
+offset_left = 11.0
+offset_top = 264.0
+offset_right = 199.0
+offset_bottom = 416.0
+
+[node name="00108" type="TextureRect" parent="Tech Mode/苏军/tech/lab" unique_id=1288079741]
+layout_mode = 2
+texture = ExtResource("80_xbueo")
+
+[node name="00100" type="TextureRect" parent="Tech Mode/苏军/tech/lab" unique_id=208680205]
+layout_mode = 2
+texture = ExtResource("118_ek0ye")
+
+[node name="00084" type="TextureRect" parent="Tech Mode/苏军/tech/lab" unique_id=2146140610]
+layout_mode = 2
+texture = ExtResource("119_aajrn")
+
+[node name="00034" type="TextureRect" parent="Tech Mode/苏军/tech/lab" unique_id=667831187]
+layout_mode = 2
+texture = ExtResource("120_h5wk6")
+
+[node name="00109" type="TextureRect" parent="Tech Mode/苏军/tech/lab" unique_id=1115403265]
+layout_mode = 2
+texture = ExtResource("121_0i4xj")
+
+[node name="00083" type="TextureRect" parent="Tech Mode/苏军/tech/lab" unique_id=312078462]
+layout_mode = 2
+texture = ExtResource("122_vdhbm")
+
+[node name="00120" type="TextureRect" parent="Tech Mode/苏军/tech/lab" unique_id=1415433465]
+layout_mode = 2
+texture = ExtResource("124_btcj6")
+
+[node name="00106" type="TextureRect" parent="Tech Mode/苏军/tech/lab" unique_id=783069346]
+layout_mode = 2
+texture = ExtResource("125_o3e65")
+
+[node name="00087" type="TextureRect" parent="Tech Mode/苏军/tech/lab" unique_id=338146876]
+layout_mode = 2
+texture = ExtResource("123_r3xoc")
+
+[node name="spec" type="FlowContainer" parent="Tech Mode/苏军/tech" unique_id=1656195887]
+layout_mode = 0
+offset_left = 624.0
+offset_top = 30.0
+offset_right = 684.0
+offset_bottom = 182.0
+
+[node name="country" type="Control" parent="Tech Mode/苏军" unique_id=1195670903]
+z_index = 1
+anchors_preset = 0
+offset_left = 3.9500122
+offset_top = 430.0
+offset_right = 519.95
+offset_bottom = 500.0
+
+[node name="flag_6" type="Button" parent="Tech Mode/苏军/country" unique_id=1023038833]
+editor_description = "Soviet,B,DarkRed,African Empire"
+custom_minimum_size = Vector2(100, 70)
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 70.0
+theme = ExtResource("2_np8at")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_u86dk")
+text = "
+Africans"
+
+[node name="ico" type="TextureRect" parent="Tech Mode/苏军/country/flag_6" unique_id=51239208]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 35)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 4.0
+offset_right = 80.0
+offset_bottom = 39.0
+mouse_filter = 2
+texture = ExtResource("10_4ibf3")
+stretch_mode = 3
+
+[node name="flag_7" type="Button" parent="Tech Mode/苏军/country" unique_id=1326590083]
+editor_description = "Soviet,B,DarkRed,Arab Union"
+custom_minimum_size = Vector2(100, 70)
+layout_mode = 0
+offset_left = 104.0
+offset_right = 204.0
+offset_bottom = 70.0
+theme = ExtResource("2_np8at")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_u86dk")
+text = "
+Arabs"
+
+[node name="ico" type="TextureRect" parent="Tech Mode/苏军/country/flag_7" unique_id=1843304205]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 35)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 4.0
+offset_right = 80.0
+offset_bottom = 39.0
+mouse_filter = 2
+texture = ExtResource("11_4pfpo")
+stretch_mode = 3
+
+[node name="flag_8" type="Button" parent="Tech Mode/苏军/country" unique_id=1606163100]
+editor_description = "Soviet,B,DarkRed,Latin Confederation"
+custom_minimum_size = Vector2(100, 70)
+layout_mode = 0
+offset_left = 208.0
+offset_right = 308.0
+offset_bottom = 70.0
+theme = ExtResource("2_np8at")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_u86dk")
+text = "
+Cuba"
+
+[node name="ico" type="TextureRect" parent="Tech Mode/苏军/country/flag_8" unique_id=1894866900]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 35)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 4.0
+offset_right = 80.0
+offset_bottom = 39.0
+mouse_filter = 2
+texture = ExtResource("12_2ta47")
+stretch_mode = 3
+
+[node name="flag_9" type="Button" parent="Tech Mode/苏军/country" unique_id=689888849]
+editor_description = "Soviet,B,DarkRed,Russia"
+custom_minimum_size = Vector2(100, 70)
+layout_mode = 0
+offset_left = 312.0
+offset_right = 412.0
+offset_bottom = 70.0
+theme = ExtResource("2_np8at")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_u86dk")
+text = "
+Russians"
+
+[node name="ico" type="TextureRect" parent="Tech Mode/苏军/country/flag_9" unique_id=301536334]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 35)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 4.0
+offset_right = 80.0
+offset_bottom = 39.0
+mouse_filter = 2
+texture = ExtResource("13_x3owo")
+stretch_mode = 3
+
+[node name="RichTextLabel" type="Label" parent="Tech Mode" unique_id=431477169]
+layout_mode = 0
+offset_left = 638.0
+offset_top = 279.0
+offset_right = 724.0
+offset_bottom = 302.0
+text = "部署-可变形
+陆地移动
+无法开火"
+
+[node name="RichTextLabel4" type="Label" parent="Tech Mode" unique_id=386019971]
+layout_mode = 0
+offset_left = 831.0
+offset_top = 279.0
+offset_right = 863.0
+offset_bottom = 302.0
+text = "图像
+音频
+代码"
 
 [node name="title" type="Label" parent="." unique_id=1970665514]
+visible = false
 layout_mode = 0
 offset_right = 917.0
 offset_bottom = 23.0
@@ -205,6 +1272,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_hisxl")
 text = "      Base / Defense / Lab                     Unit / Ship                             Tank / Plane                Spec                      PowerAdd"
 
 [node name="side" type="Control" parent="." unique_id=24684322]
+visible = false
 anchors_preset = 0
 offset_left = -7.0
 offset_top = -69.0
@@ -212,6 +1280,7 @@ offset_right = -7.0
 offset_bottom = -69.0
 
 [node name="GDI" type="Button" parent="side" unique_id=961087047]
+visible = false
 clip_children = 1
 layout_mode = 0
 offset_left = 604.0
@@ -365,6 +1434,7 @@ offset_right = -597.0
 offset_bottom = -437.00003
 
 [node name="base" type="FlowContainer" parent="side/GDI/tech" unique_id=923064659]
+z_index = 1
 layout_mode = 0
 offset_left = 11.0
 offset_top = 30.0
@@ -633,7 +1703,6 @@ texture = ExtResource("52_2cb67")
 
 [node name="00059" type="TextureRect" parent="side/GDI/tech/spec" unique_id=118951534]
 layout_mode = 2
-texture = ExtResource("23_isq13")
 
 [node name="00164" type="TextureRect" parent="side/GDI/tech/spec" unique_id=1925290126]
 layout_mode = 2
@@ -666,7 +1735,6 @@ toggle_mode = true
 button_group = SubResource("ButtonGroup_iceqs")
 
 [node name="country" type="Control" parent="side/NOD" unique_id=510507662]
-visible = false
 z_index = 1
 anchors_preset = 0
 offset_left = -656.05
@@ -774,7 +1842,6 @@ texture = ExtResource("13_x3owo")
 stretch_mode = 3
 
 [node name="tech" type="Control" parent="side/NOD" unique_id=1458689674]
-visible = false
 anchors_preset = 0
 offset_left = -660.05
 offset_top = -437.00003
@@ -1057,7 +2124,7 @@ offset_right = 790.1
 offset_bottom = 566.0
 toggle_mode = true
 button_group = SubResource("ButtonGroup_iceqs")
-icon = ExtResource("15_qemld")
+icon = ExtResource("156_bw625")
 flat = true
 icon_alignment = 1
 expand_icon = true
@@ -1466,5 +2533,14 @@ layout_mode = 2
 theme = ExtResource("4_5mtdr")
 text = "添加特性
 +"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=906089001]
+visible = false
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.099985994, 0.099985994, 0.099985994, 1)
 
 [connection signal="pressed" from="NewSet/addSet" to="." method="_on_add_set_pressed"]

@@ -4,7 +4,7 @@ var pal256 = null
 var sel_file = null
 
 func _ready():
-	$BG.connect("pressed",func():print("bg");for i in [$left/display,$left/anmi]:if i.button_pressed:$left/anime.play_backwards();i.button_pressed=false)
+	$BG.connect("focus_entered",func():print("bg");for i in [$left/display,$left/anmi]:if i.button_pressed:$left/anime.play_backwards();i.button_pressed=false)
 
 func ReDraw():
 	var imgs = Soft.file.windows[0].imgs

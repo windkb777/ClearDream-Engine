@@ -13,8 +13,8 @@ config_version=5
 config/name="ClearDream"
 config/tags=PackedStringArray("toolbox")
 run/main_scene="uid://bpqw7d6be6ga2"
-config/features=PackedStringArray("4.6", "GL Compatibility")
-config/icon="uid://bmjqi2u4cpipi"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+config/icon="uid://c1qxxvbiy4bnl"
 
 [autoload]
 
@@ -26,7 +26,7 @@ gdscript/warnings/integer_division=0
 
 [display]
 
-window/size/viewport_width=930
+window/size/viewport_width=1290
 window/size/viewport_height=580
 window/size/borderless=true
 window/size/transparent=true

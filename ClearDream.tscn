@@ -1,15 +1,25 @@
 [gd_scene format=3 uid="uid://bpqw7d6be6ga2"]
 
-[ext_resource type="Script" uid="uid://ctlieqprb1sdx" path="res://Engine/-script-/title.gd" id="1_cx4oc"]
+[ext_resource type="Script" uid="uid://cg4qmke2ek5bj" path="res://Engine/-script-/title.gd" id="1_cx4oc"]
 [ext_resource type="Texture2D" uid="uid://cud7bhmmsvpgl" path="res://z.gdset/ui_ico/ico/toolbox.png" id="2_l62bh"]
 [ext_resource type="Texture2D" uid="uid://dkcn0uixx575k" path="res://z.gdset/ui_ico/28704.jpg" id="3_v7wno"]
 [ext_resource type="Texture2D" uid="uid://bipwctng1y042" path="res://z.gdset/ui_ico/spritesheel/undo.png" id="4_3oahs"]
-[ext_resource type="Script" uid="uid://b8uevweu14hm6" path="res://Engine/button.gd" id="5_2q4e6"]
+[ext_resource type="Script" uid="uid://s2borbooe0yy" path="res://Engine/button.gd" id="5_2q4e6"]
 [ext_resource type="Texture2D" uid="uid://qxkb8k6sjl2h" path="res://z.gdset/ui_ico/ico/container.svg" id="6_dy1w4"]
 [ext_resource type="Texture2D" uid="uid://ghipjg60slyv" path="res://z.gdset/ui_ico/ico/b_skin.png" id="7_kg3aa"]
 [ext_resource type="Texture2D" uid="uid://bbpuu3bb4mpcq" path="res://z.gdset/ui_ico/ico/b_close.png" id="8_ntx7n"]
+[ext_resource type="PackedScene" uid="uid://cpbdfr0a81yxd" path="res://Editer/editer.tscn" id="9_cx4oc"]
+[ext_resource type="Texture2D" uid="uid://bq6epil5ojk3c" path="res://z.gdset/ui_ico/ico/expand.svg" id="10_remxr"]
+[ext_resource type="Texture2D" uid="uid://bul41wj33jdcx" path="res://ResPack/Cameo/00116.png" id="11_bx7f4"]
 [ext_resource type="PackedScene" uid="uid://blvxhexn3wp6a" path="res://Engine/-ui-/tv.tscn" id="11_remxr"]
-[ext_resource type="AudioStream" uid="uid://co4e040a1didy" path="res://Engine/sfx/Chipzel - focus.mp3" id="17_3oahs"]
+[ext_resource type="Shader" uid="uid://c1v3pd4csjf2a" path="res://z.gdset/GShader/z.Key_Color.gdshader" id="12_kg3aa"]
+[ext_resource type="Texture2D" uid="uid://dq5c35dsn7xsa" path="res://ResPack/Build/GDI/gdpowrmk.png" id="13_ntx7n"]
+[ext_resource type="Texture2D" uid="uid://l1642d2ghaqt" path="res://z.gdset/ui_ico/ra2_sprite/GridA.png" id="14_xtvkp"]
+[ext_resource type="Texture2D" uid="uid://ca78teg2a3gbs" path="res://z.gdset/ui_ico/ico/file-braces-corner.svg" id="15_ax4mu"]
+[ext_resource type="Texture2D" uid="uid://cp2wnhrjtqnt3" path="res://z.gdset/ui_ico/ico/clipboard-pen.svg" id="16_kowqm"]
+[ext_resource type="Texture2D" uid="uid://ccr7ac77qhlqd" path="res://z.gdset/ui_ico/ico/file-sliders.svg" id="17_md5ue"]
+[ext_resource type="Script" uid="uid://bkpl14my1qkbx" path="res://Input/input.gd" id="19_bx7f4"]
+[ext_resource type="PackedScene" uid="uid://i7qgdb77vm44" path="res://Engine/-ui-/side.tscn" id="19_kg3aa"]
 
 [sub_resource type="Gradient" id="Gradient_0p7jv"]
 colors = PackedColorArray(0.30980393, 0.11372549, 0.6784314, 1, 0.14260218, 0.011843101, 0.42092565, 1)
@@ -258,7 +268,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_rma2o")
 }],
-"loop": true,
+"loop": 1,
 "name": &"default",
 "speed": 30.0
 }]
@@ -278,6 +288,8 @@ corner_radius_top_left = 6
 corner_radius_top_right = 6
 corner_radius_bottom_right = 6
 corner_radius_bottom_left = 6
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_kg3aa"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0p7jv"]
 bg_color = Color(0.4609242, 0.3201086, 1, 1)
@@ -330,49 +342,273 @@ Button/styles/focus = SubResource("StyleBoxEmpty_fqk53")
 Button/styles/normal = SubResource("StyleBoxFlat_rxg2q")
 MenuButton/styles/normal = SubResource("StyleBoxFlat_rxg2q")
 
-[sub_resource type="Gradient" id="Gradient_l62bh"]
+[sub_resource type="Gradient" id="Gradient_hisxl"]
 colors = PackedColorArray(0.30980393, 0.11372549, 0.6784314, 1, 0.14260218, 0.011843101, 0.42092565, 1)
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_v7wno"]
-gradient = SubResource("Gradient_l62bh")
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_b5gx1"]
+gradient = SubResource("Gradient_hisxl")
 width = 930
 height = 62
 fill_to = Vector2(1, 1)
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3oahs"]
-texture = SubResource("GradientTexture2D_v7wno")
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r5lup"]
+texture = SubResource("GradientTexture2D_b5gx1")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_remxr"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6cxkw"]
 bg_color = Color(0, 0, 0, 1)
 corner_radius_top_left = 6
 corner_radius_top_right = 6
 corner_radius_bottom_right = 6
 corner_radius_bottom_left = 6
 
-[sub_resource type="Theme" id="Theme_bx7f4"]
-Panel/styles/panel = SubResource("StyleBoxFlat_remxr")
+[sub_resource type="Theme" id="Theme_2ggk3"]
+Panel/styles/panel = SubResource("StyleBoxFlat_6cxkw")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kg3aa"]
-bg_color = Color(0, 0, 0, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jrt2t"]
+bg_color = Color(0.039215688, 0.039215688, 0.039215688, 1)
 corner_radius_bottom_right = 6
 corner_radius_bottom_left = 6
 
-[sub_resource type="Gradient" id="Gradient_v7wno"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a0dyo"]
+bg_color = Color(0.01, 0.01, 0.01, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l62bh"]
+bg_color = Color(0.26666668, 0.09019608, 0.6156863, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_2svdq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f41e2"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2svdq"]
+load_path = "res://.godot/imported/d-pad.png-9d91a2d403da349226cf5e1748d15396.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qs41q"]
+atlas = SubResource("CompressedTexture2D_2svdq")
+region = Rect2(0, 420, 141, 128)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ax4mu"]
+load_path = "res://.godot/imported/d-pad.png-9d91a2d403da349226cf5e1748d15396.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0gn0d"]
+atlas = SubResource("CompressedTexture2D_ax4mu")
+region = Rect2(280, 280, 128, 128)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_r5lup"]
+load_path = "res://.godot/imported/d-pad.png-9d91a2d403da349226cf5e1748d15396.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bufce"]
+atlas = SubResource("CompressedTexture2D_r5lup")
+region = Rect2(980, 140, 128, 128)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2ggk3"]
+load_path = "res://.godot/imported/d-pad.png-9d91a2d403da349226cf5e1748d15396.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v1m8g"]
+atlas = SubResource("CompressedTexture2D_2ggk3")
+region = Rect2(1540, 140, 128, 128)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kowqm"]
+load_path = "res://.godot/imported/d-pad.png-9d91a2d403da349226cf5e1748d15396.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qjuik"]
+atlas = SubResource("CompressedTexture2D_kowqm")
+region = Rect2(1120, 0, 128, 128)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7wta4"]
+load_path = "res://.godot/imported/d-pad.png-9d91a2d403da349226cf5e1748d15396.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3vac5"]
+atlas = SubResource("CompressedTexture2D_7wta4")
+region = Rect2(152, 420, 178, 128)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ad87m"]
+load_path = "res://.godot/imported/d-pad.png-9d91a2d403da349226cf5e1748d15396.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d1p5i"]
+atlas = SubResource("CompressedTexture2D_ad87m")
+region = Rect2(347, 420, 187, 128)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_an7du"]
+bg_color = Color(0.15847227, 0.15847233, 0.15847221, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_waaog"]
+shader = ExtResource("12_kg3aa")
+shader_parameter/Key_Color = Color(0, 0, 1, 1)
+shader_parameter/tolerance = 0.01
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_avtfv"]
+shader = ExtResource("12_kg3aa")
+shader_parameter/Key_Color = Color(0, 0, 0.9882353, 1)
+shader_parameter/tolerance = 0.01
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xtvkp"]
+load_path = "res://.godot/imported/d-pad.png-9d91a2d403da349226cf5e1748d15396.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m0snf"]
+atlas = SubResource("CompressedTexture2D_xtvkp")
+region = Rect2(700, 280, 128, 128)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_si7w3"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6cxkw"]
+load_path = "res://.godot/imported/d-pad.png-9d91a2d403da349226cf5e1748d15396.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cmjs6"]
+atlas = SubResource("CompressedTexture2D_6cxkw")
+region = Rect2(980, 280, 165, 128)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_b5gx1"]
+load_path = "res://.godot/imported/d-pad.png-9d91a2d403da349226cf5e1748d15396.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_saabf"]
+atlas = SubResource("CompressedTexture2D_b5gx1")
+region = Rect2(840, 280, 128, 128)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8kqao"]
+load_path = "res://.godot/imported/d-pad.png-9d91a2d403da349226cf5e1748d15396.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jkogd"]
+atlas = SubResource("CompressedTexture2D_8kqao")
+region = Rect2(1480, 280, 174, 128)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_bepe2"]
+load_path = "res://.godot/imported/d-pad.png-9d91a2d403da349226cf5e1748d15396.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f41e2"]
+atlas = SubResource("CompressedTexture2D_bepe2")
+region = Rect2(1321, 280, 154, 128)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hisxl"]
+load_path = "res://.godot/imported/d-pad.png-9d91a2d403da349226cf5e1748d15396.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_an7du"]
+atlas = SubResource("CompressedTexture2D_hisxl")
+region = Rect2(1154, 280, 155, 128)
+
+[sub_resource type="Gradient" id="Gradient_tdqlf"]
 colors = PackedColorArray(1, 0.1882353, 0.1882353, 1, 0.5137255, 0.0627451, 0, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_vgfqu"]
-gradient = SubResource("Gradient_v7wno")
+gradient = SubResource("Gradient_tdqlf")
 width = 1
 height = 24
 fill_to = Vector2(0, 1)
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_remxr"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a0dyo"]
 content_margin_left = 12.0
 content_margin_right = 12.0
 texture = SubResource("GradientTexture2D_vgfqu")
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xyl7e"]
+bg_color = Color(0.5137255, 0.0627451, 0, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="Gradient" id="Gradient_vgfqu"]
+colors = PackedColorArray(0.541, 0.19, 1, 1, 0.34901962, 0, 0.7882353, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_a0dyo"]
+gradient = SubResource("Gradient_vgfqu")
+width = 1
+height = 24
+fill_to = Vector2(0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l62bh"]
+content_margin_left = 12.0
+content_margin_right = 12.0
+texture = SubResource("GradientTexture2D_a0dyo")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tdqlf"]
+bg_color = Color(0.34901962, 0, 0.7882353, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vgfqu"]
+bg_color = Color(0.95686275, 0.56078434, 0, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="Gradient" id="Gradient_xyl7e"]
+colors = PackedColorArray(0.08235294, 0.28235295, 0.8901961, 1, 0.399765, 0.2697, 0.87, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_tdqlf"]
+gradient = SubResource("Gradient_xyl7e")
+width = 1
+height = 24
+fill_to = Vector2(0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vgfqu"]
+texture = SubResource("GradientTexture2D_tdqlf")
+
+[sub_resource type="Gradient" id="Gradient_a0dyo"]
+colors = PackedColorArray(0.4868371, 0, 0.02994397, 1, 0.4170537, 0.04450152, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_l62bh"]
+gradient = SubResource("Gradient_a0dyo")
+width = 1
+height = 24
+fill_to = Vector2(0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_v7wno"]
+content_margin_left = 12.0
+content_margin_right = 12.0
+texture = SubResource("GradientTexture2D_l62bh")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_remxr"]
+bg_color = Color(0, 0, 0, 0.627451)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ntx7n"]
+bg_color = Color(0, 0, 0, 0.54901963)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bx7f4"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kg3aa"]
+bg_color = Color(0, 0.38039216, 0.88235295, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_bx7f4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bx7f4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_remxr"]
+
 [node name="ClearDream" type="Node" unique_id=732338532]
-metadata/_edit_horizontal_guides_ = [490.0]
 
 [node name="Engine" type="Control" parent="." unique_id=649323521]
 layout_mode = 3
@@ -551,6 +787,9 @@ offset_right = 709.0
 offset_bottom = 51.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_l466f")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_0gbnb")
+toggle_mode = true
+button_pressed = true
+button_group = SubResource("ButtonGroup_kg3aa")
 text = "Editer"
 
 [node name="Menu" type="Button" parent="Engine/Button/-" unique_id=1720568279]
@@ -561,6 +800,8 @@ offset_bottom = 51.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_l466f")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_0gbnb")
 theme_override_styles/hover = SubResource("StyleBoxFlat_l466f")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_kg3aa")
 text = "Menu"
 
 [node name="paint" type="TextureButton" parent="Engine/Button/-" unique_id=321272066]
@@ -662,26 +903,27 @@ theme = SubResource("Theme_vx10i")
 text = "Import"
 
 [node name="tv" parent="." unique_id=582479008 instance=ExtResource("11_remxr")]
+visible = false
 
-[node name="D-Pad" type="Control" parent="." unique_id=2112621585]
+[node name="Board" type="Control" parent="." unique_id=1897402594]
 visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_left = 930.0
 offset_right = 930.0
 
-[node name="UI" type="Control" parent="D-Pad" unique_id=1655683315]
+[node name="UI" type="Control" parent="Board" unique_id=1655683315]
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Title" type="Panel" parent="D-Pad/UI" unique_id=17026266]
+[node name="Title" type="Panel" parent="Board/UI" unique_id=17026266]
 layout_mode = 1
 offset_right = 360.0
 offset_bottom = 62.0
-theme_override_styles/panel = SubResource("StyleBoxTexture_3oahs")
+theme_override_styles/panel = SubResource("StyleBoxTexture_r5lup")
 
-[node name="Title2" type="Label" parent="D-Pad/UI" unique_id=1307422163]
+[node name="Title2" type="Label" parent="Board/UI" unique_id=1307422163]
 custom_minimum_size = Vector2(0, 60)
 layout_mode = 0
 offset_left = 60.0
@@ -694,7 +936,7 @@ text = "副面板"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="close" type="TextureButton" parent="D-Pad/UI" unique_id=824693651]
+[node name="close" type="TextureButton" parent="Board/UI" unique_id=824693651]
 modulate = Color(0, 0.38109186, 0.8808251, 1)
 layout_mode = 0
 offset_left = 316.0
@@ -704,7 +946,7 @@ offset_bottom = 48.0
 pivot_offset = Vector2(16, 16)
 texture_normal = ExtResource("8_ntx7n")
 
-[node name="shadow" type="TextureRect" parent="D-Pad/UI" unique_id=2045988684]
+[node name="shadow" type="TextureRect" parent="Board/UI" unique_id=2045988684]
 modulate = Color(0, 0, 0, 1)
 texture_filter = 1
 layout_mode = 0
@@ -716,7 +958,7 @@ scale = Vector2(0.335, 0.335)
 texture = ExtResource("6_dy1w4")
 expand_mode = 4
 
-[node name="ico" type="TextureRect" parent="D-Pad/UI" unique_id=906250533]
+[node name="ico" type="TextureRect" parent="Board/UI" unique_id=906250533]
 texture_filter = 1
 layout_mode = 0
 offset_left = 10.0
@@ -727,7 +969,7 @@ scale = Vector2(0.335, 0.335)
 texture = ExtResource("6_dy1w4")
 expand_mode = 4
 
-[node name="Bar" type="Panel" parent="D-Pad/UI" unique_id=1323837613]
+[node name="Bar" type="Panel" parent="Board/UI" unique_id=1323837613]
 custom_minimum_size = Vector2(0, 87)
 layout_mode = 0
 offset_top = 62.0
@@ -735,120 +977,1075 @@ offset_right = 360.0
 offset_bottom = 580.0
 size_flags_vertical = 4
 mouse_filter = 2
-theme = SubResource("Theme_bx7f4")
-theme_override_styles/panel = SubResource("StyleBoxFlat_kg3aa")
+theme = SubResource("Theme_2ggk3")
+theme_override_styles/panel = SubResource("StyleBoxFlat_jrt2t")
 
-[node name="-" type="VBoxContainer" parent="D-Pad" unique_id=1525690798]
+[node name="Mode" type="Control" parent="Board" unique_id=2064243651]
+anchors_preset = 0
+offset_left = 6.0
+offset_top = 68.0
+offset_right = 354.0
+offset_bottom = 574.0
+
+[node name="Img" type="Button" parent="Board/Mode" unique_id=556934697]
+custom_minimum_size = Vector2(0, 40)
 layout_mode = 0
-offset_top = 62.0
-offset_right = 360.0
-offset_bottom = 580.0
+offset_right = 84.0
+offset_bottom = 40.0
+size_flags_horizontal = 3
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0.38039216, 0.88235295, 1)
+theme_override_constants/icon_max_width = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_a0dyo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_l62bh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a0dyo")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_l62bh")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_2svdq")
+icon = ExtResource("10_remxr")
+icon_alignment = 1
+expand_icon = true
 
-[node name="Button3" type="Button" parent="D-Pad/-" unique_id=662745836]
-custom_minimum_size = Vector2(0, 35)
+[node name="Build" type="Control" parent="Board/Mode/Img" unique_id=307701031]
+visible = false
+anchors_preset = 0
+offset_left = -6.0
+offset_top = -68.0
+offset_right = 34.0
+offset_bottom = -28.0
+
+[node name="Num" type="Control" parent="Board/Mode/Img/Build" unique_id=636976775]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BuildUp" type="Button" parent="Board/Mode/Img/Build/Num" unique_id=1358540738]
+custom_minimum_size = Vector2(40, 30)
+layout_mode = 0
+offset_left = 6.0
+offset_top = 120.0
+offset_right = 46.0
+offset_bottom = 151.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "♠"
+
+[node name="Normal" type="Button" parent="Board/Mode/Img/Build/Num" unique_id=566993452]
+custom_minimum_size = Vector2(40, 30)
+layout_mode = 0
+offset_left = 6.0
+offset_top = 155.0
+offset_right = 46.0
+offset_bottom = 186.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "♣"
+
+[node name="Inn" type="Button" parent="Board/Mode/Img/Build/Num" unique_id=1100963463]
+custom_minimum_size = Vector2(40, 30)
+layout_mode = 0
+offset_left = 6.0
+offset_top = 190.0
+offset_right = 46.0
+offset_bottom = 221.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "♦"
+
+[node name="Break" type="Button" parent="Board/Mode/Img/Build/Num" unique_id=79910250]
+custom_minimum_size = Vector2(40, 30)
+layout_mode = 0
+offset_left = 6.0
+offset_top = 225.0
+offset_right = 46.0
+offset_bottom = 256.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "♥"
+
+[node name="Crash" type="Button" parent="Board/Mode/Img/Build/Num" unique_id=602614065]
+custom_minimum_size = Vector2(40, 30)
+layout_mode = 0
+offset_left = 6.0
+offset_top = 260.0
+offset_right = 46.0
+offset_bottom = 291.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "✘"
+
+[node name="Button18" type="Button" parent="Board/Mode/Img/Build/Num" unique_id=176260672]
+custom_minimum_size = Vector2(40, 30)
+layout_mode = 0
+offset_left = 314.0
+offset_top = 120.0
+offset_right = 354.0
+offset_bottom = 151.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "▶"
+
+[node name="Shadow" type="Button" parent="Board/Mode/Img/Build/Num" unique_id=1132078156]
+custom_minimum_size = Vector2(40, 30)
+layout_mode = 0
+offset_left = 314.0
+offset_top = 155.0
+offset_right = 354.0
+offset_bottom = 186.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "▒"
+
+[node name="Sound" type="Button" parent="Board/Mode/Img/Build/Num" unique_id=980881295]
+custom_minimum_size = Vector2(40, 30)
+layout_mode = 0
+offset_left = 314.0
+offset_top = 190.0
+offset_right = 354.0
+offset_bottom = 221.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "♪"
+
+[node name="ChangeSideColor" type="Button" parent="Board/Mode/Img/Build/Num" unique_id=701411983]
+custom_minimum_size = Vector2(40, 30)
+layout_mode = 0
+offset_left = 314.0
+offset_top = 225.0
+offset_right = 354.0
+offset_bottom = 256.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "☁"
+
+[node name="RandomBG" type="Button" parent="Board/Mode/Img/Build/Num" unique_id=1175879969]
+custom_minimum_size = Vector2(40, 30)
+layout_mode = 0
+offset_left = 314.0
+offset_top = 260.0
+offset_right = 354.0
+offset_bottom = 291.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "〼"
+
+[node name="UIName" type="LineEdit" parent="Board/Mode/Img/Build/Num" unique_id=1179006757]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 0
+offset_left = 71.0
+offset_top = 313.0
+offset_right = 180.0
+offset_bottom = 344.0
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_f41e2")
+text = "GAPOWR"
+alignment = 1
+
+[node name="Name" type="LineEdit" parent="Board/Mode/Img/Build/Num" unique_id=451036706]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 0
+offset_left = 183.0
+offset_top = 313.0
+offset_right = 354.0
+offset_bottom = 344.0
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_f41e2")
+text = "Allied Power Plant"
+alignment = 1
+
+[node name="Cost" type="LineEdit" parent="Board/Mode/Img/Build/Num" unique_id=845809046]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 0
+offset_left = 50.0
+offset_top = 360.0
+offset_right = 120.0
+offset_bottom = 400.0
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_f41e2")
+text = "800"
+alignment = 1
+
+[node name="Strength" type="LineEdit" parent="Board/Mode/Img/Build/Num" unique_id=1281485316]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 0
+offset_left = 50.0
+offset_top = 404.0
+offset_right = 120.0
+offset_bottom = 444.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_f41e2")
+text = "750"
+alignment = 1
+
+[node name="Points" type="LineEdit" parent="Board/Mode/Img/Build/Num" unique_id=1563255101]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 0
+offset_left = 50.0
+offset_top = 448.0
+offset_right = 120.0
+offset_bottom = 488.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_f41e2")
+text = "40"
+alignment = 1
+
+[node name="TechLevel" type="LineEdit" parent="Board/Mode/Img/Build/Num" unique_id=1900257498]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 0
+offset_left = 50.0
+offset_top = 492.0
+offset_right = 120.0
+offset_bottom = 532.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_f41e2")
+text = "1"
+alignment = 1
+
+[node name="Passengers" type="LineEdit" parent="Board/Mode/Img/Build/Num" unique_id=2117230100]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 0
+offset_left = 50.0
+offset_top = 536.0
+offset_right = 120.0
+offset_bottom = 576.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_f41e2")
+text = "/"
+alignment = 1
+
+[node name="Owner" type="LineEdit" parent="Board/Mode/Img/Build/Num" unique_id=1382066487]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 0
+offset_left = 183.0
+offset_top = 360.0
+offset_right = 354.0
+offset_bottom = 400.0
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_f41e2")
+text = "GDI Side"
+alignment = 1
+
+[node name="Explosion" type="LineEdit" parent="Board/Mode/Img/Build/Num" unique_id=337128251]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 0
+offset_left = 183.0
+offset_top = 404.0
+offset_right = 354.0
+offset_bottom = 444.0
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_f41e2")
+text = "Test"
+alignment = 1
+
+[node name="DebrisAnims" type="LineEdit" parent="Board/Mode/Img/Build/Num" unique_id=1391328978]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 0
+offset_left = 183.0
+offset_top = 447.0
+offset_right = 354.0
+offset_bottom = 487.0
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_f41e2")
+text = "Test"
+alignment = 1
+
+[node name="DamageSmokeOffset" type="LineEdit" parent="Board/Mode/Img/Build/Num" unique_id=41799880]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 0
+offset_left = 183.0
+offset_top = 490.0
+offset_right = 354.0
+offset_bottom = 530.0
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_f41e2")
+text = "Test"
+alignment = 1
+
+[node name="DieSound" type="LineEdit" parent="Board/Mode/Img/Build/Num" unique_id=1967276235]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 0
+offset_left = 183.0
+offset_top = 534.0
+offset_right = 354.0
+offset_bottom = 574.0
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_f41e2")
+text = "Test"
+alignment = 1
+
+[node name="Ico" type="Control" parent="Board/Mode/Img/Build" unique_id=777472740]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="cameo" type="TextureRect" parent="Board/Mode/Img/Build/Ico" unique_id=29289621]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 304.0
+offset_right = 68.0
+offset_bottom = 352.0
+texture = ExtResource("11_bx7f4")
+
+[node name="cost" type="TextureRect" parent="Board/Mode/Img/Build/Ico" unique_id=1380348334]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 0
+offset_left = 6.0
+offset_top = 360.0
+offset_right = 46.0
+offset_bottom = 400.0
+size_flags_horizontal = 4
+texture = SubResource("AtlasTexture_qs41q")
+expand_mode = 1
+
+[node name="hp" type="TextureRect" parent="Board/Mode/Img/Build/Ico" unique_id=1822053023]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 0
+offset_left = 6.0
+offset_top = 404.0
+offset_right = 46.0
+offset_bottom = 444.0
+size_flags_horizontal = 4
+texture = SubResource("AtlasTexture_0gn0d")
+expand_mode = 1
+
+[node name="exp" type="TextureRect" parent="Board/Mode/Img/Build/Ico" unique_id=583571214]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 0
+offset_left = 6.0
+offset_top = 448.0
+offset_right = 46.0
+offset_bottom = 488.0
+size_flags_horizontal = 4
+texture = SubResource("AtlasTexture_bufce")
+expand_mode = 1
+
+[node name="tech" type="TextureRect" parent="Board/Mode/Img/Build/Ico" unique_id=1324390082]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 0
+offset_left = 6.0
+offset_top = 492.0
+offset_right = 46.0
+offset_bottom = 532.0
+size_flags_horizontal = 4
+texture = SubResource("AtlasTexture_v1m8g")
+expand_mode = 1
+
+[node name="pip" type="TextureRect" parent="Board/Mode/Img/Build/Ico" unique_id=1944244961]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 0
+offset_left = 6.0
+offset_top = 536.0
+offset_right = 46.0
+offset_bottom = 576.0
+size_flags_horizontal = 4
+texture = SubResource("AtlasTexture_qjuik")
+expand_mode = 1
+
+[node name="buildowner" type="TextureRect" parent="Board/Mode/Img/Build/Ico" unique_id=1630405666]
+custom_minimum_size = Vector2(60, 40)
+layout_mode = 0
+offset_left = 122.0
+offset_top = 360.0
+offset_right = 182.0
+offset_bottom = 400.0
+size_flags_horizontal = 4
+texture = SubResource("AtlasTexture_3vac5")
+expand_mode = 1
+
+[node name="boom" type="TextureRect" parent="Board/Mode/Img/Build/Ico" unique_id=1125164742]
+custom_minimum_size = Vector2(60, 40)
+layout_mode = 0
+offset_left = 120.0
+offset_top = 421.0
+offset_right = 180.0
+offset_bottom = 466.0
+size_flags_horizontal = 4
+texture = SubResource("AtlasTexture_d1p5i")
+expand_mode = 1
+
+[node name="off" type="TextureRect" parent="Board/Mode/Img/Build/Ico" unique_id=1960260606]
+custom_minimum_size = Vector2(60, 40)
+layout_mode = 0
+offset_left = 120.0
+offset_top = 504.0
+offset_right = 180.0
+offset_bottom = 549.0
+size_flags_horizontal = 4
+texture = SubResource("AtlasTexture_d1p5i")
+expand_mode = 1
+
+[node name="view" type="Panel" parent="Board/Mode/Img/Build" unique_id=1402491632]
+clip_children = 2
+custom_minimum_size = Vector2(260, 170)
+layout_mode = 0
+offset_left = 50.0
+offset_top = 120.0
+offset_right = 310.0
+offset_bottom = 290.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_an7du")
+
+[node name="frame" type="Label" parent="Board/Mode/Img/Build" unique_id=1740989778]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 273.0
+offset_right = 310.0
+offset_bottom = 290.0
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 12
+text = "Frame:23"
+
+[node name="Gdpowrmk" type="Sprite2D" parent="Board/Mode/Img/Build" unique_id=1844287773]
+material = SubResource("ShaderMaterial_waaog")
+position = Vector2(178, 202)
+texture = ExtResource("13_ntx7n")
+hframes = 7
+vframes = 8
+frame = 24
+
+[node name="GridA" type="Sprite2D" parent="Board/Mode/Img/Build" unique_id=651479260]
+visible = false
+material = SubResource("ShaderMaterial_avtfv")
+position = Vector2(1105, 205)
+texture = ExtResource("14_xtvkp")
+
+[node name="Human" type="Control" parent="Board/Mode/Img" unique_id=2064850507]
+visible = false
+anchors_preset = 0
+offset_left = -6.0
+offset_top = -68.0
+offset_right = 34.0
+offset_bottom = -28.0
+
+[node name="VBoxContainer2" type="GridContainer" parent="Board/Mode/Img/Human" unique_id=1472456121]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 320.0
+offset_right = 353.0
+offset_bottom = 424.0
+size_flags_horizontal = 0
+columns = 4
+
+[node name="TextureRect" type="TextureRect" parent="Board/Mode/Img/Human/VBoxContainer2" unique_id=1937656118]
+custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_styles/normal = SubResource("StyleBoxTexture_remxr")
-text = "INI"
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = SubResource("AtlasTexture_m0snf")
+expand_mode = 1
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="D-Pad/-" unique_id=452844333]
+[node name="Button4" type="Button" parent="Board/Mode/Img/Human/VBoxContainer2" unique_id=579705214]
+custom_minimum_size = Vector2(110, 40)
 layout_mode = 2
-theme_override_constants/separation = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_si7w3")
+text = "4"
 
-[node name="Button6" type="Button" parent="D-Pad/-/HBoxContainer2" unique_id=900421416]
-custom_minimum_size = Vector2(0, 35)
+[node name="TextureRect3" type="TextureRect" parent="Board/Mode/Img/Human/VBoxContainer2" unique_id=304726286]
+custom_minimum_size = Vector2(60, 50)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = SubResource("AtlasTexture_cmjs6")
+expand_mode = 1
+
+[node name="Button7" type="Button" parent="Board/Mode/Img/Human/VBoxContainer2" unique_id=1389425850]
+custom_minimum_size = Vector2(110, 40)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_si7w3")
+text = "4"
+
+[node name="TextureRect2" type="TextureRect" parent="Board/Mode/Img/Human/VBoxContainer2" unique_id=573136816]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = SubResource("AtlasTexture_saabf")
+expand_mode = 1
+
+[node name="Button6" type="Button" parent="Board/Mode/Img/Human/VBoxContainer2" unique_id=825114115]
+custom_minimum_size = Vector2(110, 40)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_si7w3")
+text = "4"
+
+[node name="TextureRect6" type="TextureRect" parent="Board/Mode/Img/Human/VBoxContainer2" unique_id=1307196738]
+custom_minimum_size = Vector2(60, 50)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = SubResource("AtlasTexture_jkogd")
+expand_mode = 1
+
+[node name="Button5" type="Button" parent="Board/Mode/Img/Human/VBoxContainer2" unique_id=417334350]
+custom_minimum_size = Vector2(110, 40)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_si7w3")
+text = "4"
+
+[node name="TextureRect5" type="TextureRect" parent="Board/Mode/Img/Human" unique_id=1303694995]
+custom_minimum_size = Vector2(60, 50)
+layout_mode = 0
+offset_left = 5.0
+offset_top = 429.0
+offset_right = 65.0
+offset_bottom = 479.0
+size_flags_horizontal = 4
+texture = SubResource("AtlasTexture_f41e2")
+expand_mode = 1
+
+[node name="TextureRect6" type="TextureRect" parent="Board/Mode/Img/Human" unique_id=309222568]
+custom_minimum_size = Vector2(60, 50)
+layout_mode = 0
+offset_left = 5.0
+offset_top = 519.0
+offset_right = 65.0
+offset_bottom = 569.0
+size_flags_horizontal = 4
+texture = SubResource("AtlasTexture_an7du")
+expand_mode = 1
+
+[node name="GridContainer" type="GridContainer" parent="Board/Mode/Img/Human" unique_id=1559002524]
+layout_mode = 0
+offset_left = 71.0
+offset_top = 431.0
+offset_right = 349.0
+offset_bottom = 515.0
+columns = 3
+
+[node name="Button4" type="Button" parent="Board/Mode/Img/Human/GridContainer" unique_id=1323990138]
+custom_minimum_size = Vector2(90, 40)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_si7w3")
+text = "4"
+
+[node name="Button5" type="Button" parent="Board/Mode/Img/Human/GridContainer" unique_id=124076502]
+custom_minimum_size = Vector2(90, 40)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_si7w3")
+text = "4"
+
+[node name="Button6" type="Button" parent="Board/Mode/Img/Human/GridContainer" unique_id=2039143098]
+custom_minimum_size = Vector2(90, 40)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_si7w3")
+text = "4"
+
+[node name="Button7" type="Button" parent="Board/Mode/Img/Human/GridContainer" unique_id=837453075]
+custom_minimum_size = Vector2(90, 40)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_si7w3")
+text = "4"
+
+[node name="Button8" type="Button" parent="Board/Mode/Img/Human/GridContainer" unique_id=454885616]
+custom_minimum_size = Vector2(90, 40)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_si7w3")
+text = "4"
+
+[node name="Button9" type="Button" parent="Board/Mode/Img/Human/GridContainer" unique_id=26254561]
+custom_minimum_size = Vector2(90, 40)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_si7w3")
+text = "4"
+
+[node name="GridContainer2" type="GridContainer" parent="Board/Mode/Img/Human" unique_id=1600407454]
+layout_mode = 0
+offset_left = 71.0
+offset_top = 521.0
+offset_right = 349.0
+offset_bottom = 569.0
+columns = 2
+
+[node name="Button4" type="Button" parent="Board/Mode/Img/Human/GridContainer2" unique_id=649771929]
+custom_minimum_size = Vector2(90, 40)
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_styles/normal = SubResource("StyleBoxTexture_remxr")
-text = "Rules"
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_si7w3")
+text = "4"
 
-[node name="Button8" type="Button" parent="D-Pad/-/HBoxContainer2" unique_id=936948668]
-custom_minimum_size = Vector2(0, 35)
+[node name="Button5" type="Button" parent="Board/Mode/Img/Human/GridContainer2" unique_id=691570994]
+custom_minimum_size = Vector2(90, 40)
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_styles/normal = SubResource("StyleBoxTexture_remxr")
-text = "Sound"
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_si7w3")
+text = "4"
 
-[node name="Button9" type="Button" parent="D-Pad/-/HBoxContainer2" unique_id=1633749783]
+[node name="Code" type="Button" parent="Board/Mode" unique_id=1311258393]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 0
+offset_left = 88.0
+offset_right = 172.0
+offset_bottom = 40.0
+size_flags_horizontal = 3
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0.38039216, 0.88235295, 1)
+theme_override_constants/icon_max_width = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_a0dyo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_l62bh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a0dyo")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_l62bh")
+toggle_mode = true
+button_pressed = true
+button_group = SubResource("ButtonGroup_2svdq")
+icon = ExtResource("15_ax4mu")
+icon_alignment = 1
+expand_icon = true
+
+[node name="History" type="Button" parent="Board/Mode" unique_id=700172080]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 0
+offset_left = 176.0
+offset_right = 260.0
+offset_bottom = 40.0
+size_flags_horizontal = 3
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0.38039216, 0.88235295, 1)
+theme_override_constants/icon_max_width = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_a0dyo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_l62bh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a0dyo")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_l62bh")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_2svdq")
+icon = ExtResource("16_kowqm")
+icon_alignment = 1
+expand_icon = true
+
+[node name="-" type="VBoxContainer" parent="Board/Mode/History" unique_id=397076907]
+visible = false
+layout_mode = 0
+offset_left = -176.0
+offset_top = 50.0
+offset_right = 172.0
+offset_bottom = 508.0
+
+[node name="||" type="HBoxContainer" parent="Board/Mode/History/-" unique_id=1408595524]
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="Board/Mode/History/-/||" unique_id=1845959407]
 custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxTexture_a0dyo")
+text = "Side"
+
+[node name="-" type="VBoxContainer" parent="Board/Mode/History/-/||" unique_id=673202160]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_styles/normal = SubResource("StyleBoxTexture_remxr")
-text = "Art"
 
-[node name="Button5" type="Button" parent="D-Pad/-" unique_id=844831159]
+[node name="Button3" type="Button" parent="Board/Mode/History/-/||/-" unique_id=1526222809]
 custom_minimum_size = Vector2(0, 35)
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_styles/normal = SubResource("StyleBoxTexture_remxr")
-text = "Audio"
+theme_override_styles/normal = SubResource("StyleBoxTexture_a0dyo")
+text = "新增一个国家"
 
-[node name="HBoxContainer3" type="HBoxContainer" parent="D-Pad/-" unique_id=505800060]
-layout_mode = 2
-theme_override_constants/separation = 2
-
-[node name="Button6" type="Button" parent="D-Pad/-/HBoxContainer3" unique_id=562969850]
+[node name="Button4" type="Button" parent="Board/Mode/History/-/||/-" unique_id=641279480]
 custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_xyl7e")
+text = "修改一些特性"
+
+[node name="||2" type="HBoxContainer" parent="Board/Mode/History/-" unique_id=143017726]
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="Board/Mode/History/-/||2" unique_id=1854849636]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxTexture_l62bh")
+text = "Theme"
+
+[node name="-" type="VBoxContainer" parent="Board/Mode/History/-/||2" unique_id=1511401148]
 layout_mode = 2
 size_flags_horizontal = 3
+
+[node name="Button5" type="Button" parent="Board/Mode/History/-/||2/-" unique_id=1520118473]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_styles/normal = SubResource("StyleBoxTexture_remxr")
+theme_override_styles/normal = SubResource("StyleBoxFlat_tdqlf")
+text = "更改一些乐曲"
+
+[node name="Button5" type="Button" parent="Board/Mode/History/-" unique_id=1692619046]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_vgfqu")
+text = "设置快捷键"
+
+[node name="Button6" type="Button" parent="Board/Mode/History/-" unique_id=549231368]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxTexture_vgfqu")
+text = "设置快捷键"
+
+[node name="Setting" type="Button" parent="Board/Mode" unique_id=1856821720]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 0
+offset_left = 264.0
+offset_right = 348.0
+offset_bottom = 40.0
+size_flags_horizontal = 3
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0.38039216, 0.88235295, 1)
+theme_override_constants/icon_max_width = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_a0dyo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_l62bh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a0dyo")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_l62bh")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_2svdq")
+icon = ExtResource("17_md5ue")
+icon_alignment = 1
+expand_icon = true
+
+[node name="2" type="VBoxContainer" parent="Board/Mode/Setting" unique_id=254391815]
+visible = false
+layout_mode = 0
+offset_left = -264.0
+offset_top = 52.0
+offset_right = 84.0
+offset_bottom = 359.0
+size_flags_horizontal = 3
+
+[node name="Button3" type="Button" parent="Board/Mode/Setting/2" unique_id=503650501]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxTexture_a0dyo")
+text = "Soundmd.ini"
+
+[node name="Button4" type="Button" parent="Board/Mode/Setting/2" unique_id=1342635266]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxTexture_a0dyo")
+text = "Rulesmd.ini"
+
+[node name="Button8" type="Button" parent="Board/Mode/Setting/2" unique_id=14592477]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxTexture_v7wno")
+text = "side.ini"
+
+[node name="Button9" type="Button" parent="Board/Mode/Setting/2" unique_id=1510455560]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxTexture_v7wno")
+text = "theme.ini"
+
+[node name="Button10" type="Button" parent="Board/Mode/Setting/2" unique_id=1862483193]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxTexture_v7wno")
+text = "colors.ini"
+
+[node name="Button11" type="Button" parent="Board/Mode/Setting/2" unique_id=401830120]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxTexture_v7wno")
+text = "crate.ini"
+
+[node name="Button5" type="Button" parent="Board/Mode/Setting/2" unique_id=1126522385]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxTexture_a0dyo")
+text = "Artmd.ini"
+
+[node name="Button6" type="Button" parent="Board/Mode/Setting/2" unique_id=778122209]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxTexture_a0dyo")
+text = "Aimd.ini"
+
+[node name="Button7" type="Button" parent="Board/Mode/Setting/2" unique_id=685296037]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxTexture_a0dyo")
+text = "KeyBoardMD.ini"
+
+[node name="Editer" parent="." unique_id=631289000 instance=ExtResource("9_cx4oc")]
+
+[node name="side" parent="." unique_id=366494639 instance=ExtResource("19_kg3aa")]
+visible = false
+offset_left = 8.0
+offset_right = 925.0
+
+[node name="Input (可能是废案)" type="Panel" parent="." unique_id=2086089197]
+visible = false
+offset_left = 12.0
+offset_top = 73.0
+offset_right = 920.0
+offset_bottom = 489.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_remxr")
+script = ExtResource("19_bx7f4")
+
+[node name="m" type="MarginContainer" parent="Input (可能是废案)" unique_id=1508293129]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="|" type="HBoxContainer" parent="Input (可能是废案)/m" unique_id=1820520482]
+layout_mode = 2
+
+[node name="-" type="VBoxContainer" parent="Input (可能是废案)/m/|" unique_id=1929382318]
+layout_mode = 2
+
+[node name="o" type="PanelContainer" parent="Input (可能是废案)/m/|/-" unique_id=1377098760]
+custom_minimum_size = Vector2(566, 223)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_ntx7n")
+
+[node name="0" type="MarginContainer" parent="Input (可能是废案)/m/|/-/o" unique_id=27622241]
+custom_minimum_size = Vector2(320, 220)
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="-" type="GridContainer" parent="Input (可能是废案)/m/|/-/o/0" unique_id=759847863]
+layout_mode = 2
+columns = 5
+
+[node name="|" type="HBoxContainer" parent="Input (可能是废案)/m/|/-" unique_id=32029034]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="info" type="Label" parent="Input (可能是废案)/m/|/-/|" unique_id=456795816]
+custom_minimum_size = Vector2(60, 40)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "文件："
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="path" type="LineEdit" parent="Input (可能是废案)/m/|/-/|" unique_id=70410721]
+custom_minimum_size = Vector2(450, 0)
+layout_mode = 2
+
+[node name="Button" type="Button" parent="Input (可能是废案)/m/|/-/|" unique_id=1900004652]
+custom_minimum_size = Vector2(60, 40)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_bx7f4")
+text = "..."
+
+[node name="info" type="GridContainer" parent="Input (可能是废案)/m/|/-" unique_id=529828380]
+layout_mode = 2
+size_flags_horizontal = 0
+columns = 5
+
+[node name="LineEdit3" type="Label" parent="Input (可能是废案)/m/|/-/info" unique_id=825583698]
+custom_minimum_size = Vector2(60, 40)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "格式："
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button2" type="Button" parent="Input (可能是废案)/m/|/-/info" unique_id=333197171]
+custom_minimum_size = Vector2(110, 45)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_bx7f4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_kg3aa")
+toggle_mode = true
+button_pressed = true
+button_group = SubResource("ButtonGroup_bx7f4")
+text = "PNG单帧"
+
+[node name="Button" type="Button" parent="Input (可能是废案)/m/|/-/info" unique_id=1595814684]
+custom_minimum_size = Vector2(110, 45)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_bx7f4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_kg3aa")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_bx7f4")
+text = "Sprite精灵图"
+
+[node name="Button3" type="Button" parent="Input (可能是废案)/m/|/-/info" unique_id=1007787534]
+custom_minimum_size = Vector2(110, 45)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_bx7f4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_kg3aa")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_bx7f4")
+text = "SHP序列帧"
+
+[node name="Button4" type="Button" parent="Input (可能是废案)/m/|/-/info" unique_id=1006920846]
+custom_minimum_size = Vector2(110, 45)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_bx7f4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_kg3aa")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_bx7f4")
+text = "Pal色盘"
+
+[node name="|" type="VSeparator" parent="Input (可能是废案)/m/|/-/info" unique_id=1067302632]
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_bx7f4")
+
+[node name="Button5" type="Button" parent="Input (可能是废案)/m/|/-/info" unique_id=1396612755]
+custom_minimum_size = Vector2(110, 45)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_bx7f4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_kg3aa")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_bx7f4")
+text = "GIF"
+
+[node name="--" type="VBoxContainer" parent="Input (可能是废案)/m/|" unique_id=1148523926]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="size" type="GridContainer" parent="Input (可能是废案)/m/|/--" unique_id=83073285]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+columns = 4
+
+[node name="Label" type="Label" parent="Input (可能是废案)/m/|/--/size" unique_id=10807755]
+layout_mode = 2
+size_flags_horizontal = 0
+text = " 设定："
+
+[node name="Button" type="Button" parent="Input (可能是废案)/m/|/--/size" unique_id=1343587608]
+custom_minimum_size = Vector2(70, 40)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_bx7f4")
 text = "Cameo"
 
-[node name="Button7" type="Button" parent="D-Pad/-/HBoxContainer3" unique_id=1045756334]
-custom_minimum_size = Vector2(0, 35)
+[node name="Button2" type="Button" parent="Input (可能是废案)/m/|/--/size" unique_id=1952279342]
+custom_minimum_size = Vector2(70, 40)
 layout_mode = 2
-size_flags_horizontal = 3
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_styles/normal = SubResource("StyleBoxTexture_remxr")
-text = "Cameo"
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_bx7f4")
+text = "角色"
 
-[node name="Button9" type="Button" parent="D-Pad/-/HBoxContainer3" unique_id=1951291380]
-custom_minimum_size = Vector2(0, 35)
+[node name="Button3" type="Button" parent="Input (可能是废案)/m/|/--/size" unique_id=358195009]
+custom_minimum_size = Vector2(70, 40)
 layout_mode = 2
-size_flags_horizontal = 3
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_styles/normal = SubResource("StyleBoxTexture_remxr")
-text = "Cameo"
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_bx7f4")
+text = "建筑"
 
-[node name="Button8" type="Button" parent="D-Pad/-/HBoxContainer3" unique_id=754198817]
-custom_minimum_size = Vector2(0, 35)
+[node name="VSeparator" type="VSeparator" parent="Input (可能是废案)/m/|/--/size" unique_id=767524289]
 layout_mode = 2
-size_flags_horizontal = 3
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_styles/normal = SubResource("StyleBoxTexture_remxr")
-text = "Building"
+theme_override_styles/separator = SubResource("StyleBoxEmpty_remxr")
 
-[node name="Button6" type="Button" parent="D-Pad/-" unique_id=725048703]
-custom_minimum_size = Vector2(0, 35)
+[node name="Button5" type="Button" parent="Input (可能是废案)/m/|/--/size" unique_id=216153528]
+custom_minimum_size = Vector2(70, 40)
 layout_mode = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_styles/normal = SubResource("StyleBoxTexture_remxr")
-text = "Image"
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_bx7f4")
+text = "单位"
 
-[node name="HBoxContainer" type="HBoxContainer" parent="D-Pad/-" unique_id=2016161599]
+[node name="Button6" type="Button" parent="Input (可能是废案)/m/|/--/size" unique_id=446925477]
+custom_minimum_size = Vector2(70, 40)
 layout_mode = 2
-theme_override_constants/separation = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_bx7f4")
+text = "动画"
 
-[node name="Button6" type="Button" parent="D-Pad/-/HBoxContainer" unique_id=1881028129]
-custom_minimum_size = Vector2(0, 35)
+[node name="Button7" type="Button" parent="Input (可能是废案)/m/|/--/size" unique_id=2132981642]
+custom_minimum_size = Vector2(70, 40)
 layout_mode = 2
-size_flags_horizontal = 3
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_styles/normal = SubResource("StyleBoxTexture_remxr")
-text = "Cameo"
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_bx7f4")
+text = "-"
 
-[node name="Button8" type="Button" parent="D-Pad/-/HBoxContainer" unique_id=408582988]
-custom_minimum_size = Vector2(0, 35)
+[node name="size2" type="HBoxContainer" parent="Input (可能是废案)/m/|/--" unique_id=1493375619]
 layout_mode = 2
-size_flags_horizontal = 3
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_styles/normal = SubResource("StyleBoxTexture_remxr")
-text = "Building"
+size_flags_horizontal = 4
+size_flags_vertical = 0
 
-[node name="BGM" type="AudioStreamPlayer" parent="." unique_id=751022909]
-stream = ExtResource("17_3oahs")
-autoplay = true
+[node name="Label" type="Label" parent="Input (可能是废案)/m/|/--/size2" unique_id=1084472307]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "精灵图 - 长宽比："
+
+[node name="Button" type="LineEdit" parent="Input (可能是废案)/m/|/--/size2" unique_id=1108253571]
+custom_minimum_size = Vector2(70, 40)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_bx7f4")
+text = "20"
+alignment = 1
+
+[node name="Button4" type="LineEdit" parent="Input (可能是废案)/m/|/--/size2" unique_id=1570347459]
+custom_minimum_size = Vector2(70, 40)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_bx7f4")
+text = "30"
+alignment = 1
+
+[node name="FileDialog" type="FileDialog" parent="Input (可能是废案)" unique_id=1574878123]
+oversampling_override = 1.0
+title = "Open a File"
+initial_position = 1
+force_native = true
+dialog_hide_on_ok = true
+file_mode = 0
+access = 2
+filters = PackedStringArray("*.shp", "*.pal", "*.jpg,*.bmp,*.png", "*.gif")
+use_native_dialog = true
+
+[connection signal="pressed" from="Input (可能是废案)/m/|/-/|/Button" to="Input (可能是废案)" method="LoadFile"]
+[connection signal="file_selected" from="Input (可能是废案)/FileDialog" to="Input (可能是废案)" method="file_selected"]
